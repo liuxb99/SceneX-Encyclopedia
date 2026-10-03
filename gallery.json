@@ -1,11 +1,694 @@
 {
   "schema": "scenex.wikipedia.gallery/v2",
   "version": "2.1.0",
-  "authority_note": "All executable Golden Classes are visible in the encyclopedia. READY means published visual assets exist; CLASS_READY means the executable Class exists and visual publication is pending. Class contract is the authority; this registry is derived.",
+  "authority_note": "All executable Golden Classes (bridge and road) are visible in the encyclopedia. READY means published visual assets exist; PUBLISHED_LOCAL means rendered and visually reviewed assets exist in the repository but are not uploaded to a public host; CLASS_READY means an executable Class exists and visual publication is pending; PARTIAL means a declared capability is still UNRESOLVED.",
   "visual_qa_revision": "b3",
   "generated_from_commit": "6f78a6a890db665ad3f7532bdf61168669edca3a",
   "bridge_class_count": 16,
   "entries": [
+    {
+      "class_id": "road.road",
+      "label_zh": "道路",
+      "label_en": "Road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road.py",
+      "asset_manifest": "buildings_and_structures/road_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment",
+        "IfcCourse",
+        "IfcEarthworksCut",
+        "IfcEarthworksFill",
+        "IfcKerb",
+        "IfcRailing",
+        "IfcSurfaceFeature"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 35,
+      "component_count": 16,
+      "variant_count": 7,
+      "unresolved_items": [
+        "subgrade"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Road",
+        "Road surface",
+        "Carriageway",
+        "Lane",
+        "Shoulder (road)",
+        "Median strip",
+        "Road verge",
+        "Road drainage",
+        "Guard rail",
+        "Road marking"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 42,
+      "view_count": 42
+    },
+    {
+      "class_id": "road.pavement",
+      "label_zh": "道路鋪面",
+      "label_en": "Road pavement",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_components.py",
+      "asset_manifest": "buildings_and_structures/road_pavement.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Road surface",
+      "ifc_reference": [
+        "IfcCourse",
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 28,
+      "component_count": 4,
+      "variant_count": 3,
+      "unresolved_items": [
+        "subgrade"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Road surface",
+        "Pavement (material)",
+        "Asphalt concrete",
+        "Subbase",
+        "Base course"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 15,
+      "view_count": 15
+    },
+    {
+      "class_id": "road.earthwork",
+      "label_zh": "道路土方",
+      "label_en": "Road earthwork",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_components.py",
+      "asset_manifest": "buildings_and_structures/road_earthwork.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Earthworks (engineering)",
+      "ifc_reference": [
+        "IfcEarthworksCut",
+        "IfcEarthworksFill",
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 29,
+      "component_count": 4,
+      "variant_count": 4,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Earthworks (engineering)",
+        "Embankment (earthworks)",
+        "Cut (earthmoving)",
+        "Cut and fill",
+        "Grade (slope)",
+        "Retaining wall"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 20,
+      "view_count": 20
+    },
+    {
+      "class_id": "road.drainage",
+      "label_zh": "道路排水",
+      "label_en": "Road drainage",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_components.py",
+      "asset_manifest": "buildings_and_structures/road_drainage.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Storm drain",
+      "ifc_reference": [
+        "IfcDitch",
+        "IfcCulvert",
+        "IfcPipeSegment",
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 38,
+      "component_count": 5,
+      "variant_count": 4,
+      "unresolved_items": [
+        "catch_basin",
+        "gutter",
+        "pipe"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Storm drain",
+        "Drainage",
+        "Culvert",
+        "Ditch",
+        "Gutter",
+        "Catch basin"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 20,
+      "view_count": 20
+    },
+    {
+      "class_id": "road.safety",
+      "label_zh": "道路安全設施",
+      "label_en": "Road safety",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_components.py",
+      "asset_manifest": "buildings_and_structures/road_safety.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Guard rail",
+      "ifc_reference": [
+        "IfcRailing",
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 31,
+      "component_count": 5,
+      "variant_count": 4,
+      "unresolved_items": [
+        "terminal"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Guard rail",
+        "Traffic barrier",
+        "Jersey barrier",
+        "Crash cushion",
+        "Delineator"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 20,
+      "view_count": 20
+    },
+    {
+      "class_id": "road.traffic_control",
+      "label_zh": "道路交通控制",
+      "label_en": "Road traffic control",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_components.py",
+      "asset_manifest": "buildings_and_structures/road_traffic_control.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Road marking",
+      "ifc_reference": [
+        "IfcSurfaceFeature",
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 30,
+      "component_count": 5,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Road marking",
+        "Traffic sign",
+        "Traffic light",
+        "Lane control signal"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 15,
+      "view_count": 15
+    },
+    {
+      "class_id": "road.intersection",
+      "label_zh": "交叉路口",
+      "label_en": "Intersection",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_topology_classes.py",
+      "asset_manifest": "buildings_and_structures/road_intersection.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Intersection (road)",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 21,
+      "component_count": 5,
+      "variant_count": 3,
+      "unresolved_items": [
+        "turn_lane"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Intersection (road)",
+        "Junction (traffic)",
+        "Three-way junction",
+        "Grade separation",
+        "Turn lane",
+        "Channelization (roads)"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 18,
+      "view_count": 18
+    },
+    {
+      "class_id": "road.roundabout",
+      "label_zh": "圓環",
+      "label_en": "Roundabout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_topology_classes.py",
+      "asset_manifest": "buildings_and_structures/road_roundabout.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roundabout",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 24,
+      "component_count": 5,
+      "variant_count": 3,
+      "unresolved_items": [
+        "splitter_island"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roundabout",
+        "Traffic circle",
+        "Central reservation",
+        "Splitter island"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 18,
+      "view_count": 18
+    },
+    {
+      "class_id": "road.ramp",
+      "label_zh": "匝道",
+      "label_en": "Ramp",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_topology_classes.py",
+      "asset_manifest": "buildings_and_structures/road_ramp.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Slip road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 26,
+      "component_count": 3,
+      "variant_count": 4,
+      "unresolved_items": [
+        "gore_area"
+      ],
+      "composes": [],
+      "wikipedia_titles": [
+        "Slip road",
+        "Interchange (road)",
+        "On-ramp",
+        "Off-ramp"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 20,
+      "view_count": 20
+    },
+    {
+      "class_id": "road.highway",
+      "label_zh": "公路",
+      "label_en": "Highway",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_highway.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Highway",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment",
+        "IfcCourse"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 40,
+      "component_count": 9,
+      "variant_count": 4,
+      "unresolved_items": [],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.drainage",
+        "road.safety"
+      ],
+      "wikipedia_titles": [
+        "Highway",
+        "Road",
+        "Carriageway",
+        "Shoulder (road)",
+        "Road surface",
+        "Guard rail"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 24,
+      "view_count": 24
+    },
+    {
+      "class_id": "road.controlled_access_highway",
+      "label_zh": "封閉式快速公路",
+      "label_en": "Controlled-access highway",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_controlled_access_highway.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Controlled-access highway",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcAlignment"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 43,
+      "component_count": 10,
+      "variant_count": 4,
+      "unresolved_items": [
+        "interchange"
+      ],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.safety",
+        "road.ramp"
+      ],
+      "wikipedia_titles": [
+        "Controlled-access highway",
+        "Freeway",
+        "Motorway",
+        "Interchange (road)",
+        "Grade separation",
+        "Median strip"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 16,
+      "view_count": 16
+    },
+    {
+      "class_id": "road.urban_road",
+      "label_zh": "都市道路",
+      "label_en": "Urban road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_urban_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Urban road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcKerb",
+        "IfcSurfaceFeature"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 47,
+      "component_count": 11,
+      "variant_count": 3,
+      "unresolved_items": [
+        "intersection"
+      ],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.traffic_control"
+      ],
+      "wikipedia_titles": [
+        "Urban road",
+        "Street",
+        "Sidewalk",
+        "Curb",
+        "Road marking",
+        "Traffic light"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 18,
+      "view_count": 18
+    },
+    {
+      "class_id": "road.rural_road",
+      "label_zh": "鄉道",
+      "label_en": "Rural road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_rural_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Rural road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcDitch",
+        "IfcCourse"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 41,
+      "component_count": 9,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.drainage"
+      ],
+      "wikipedia_titles": [
+        "Rural road",
+        "Road",
+        "Shoulder (road)",
+        "Drainage ditch",
+        "Guard rail"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 12,
+      "view_count": 12
+    },
+    {
+      "class_id": "road.mountain_road",
+      "label_zh": "山區道路",
+      "label_en": "Mountain road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_mountain_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Mountain pass",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcEarthworksCut",
+        "IfcRailing"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 42,
+      "component_count": 9,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.earthwork",
+        "road.safety"
+      ],
+      "wikipedia_titles": [
+        "Mountain pass",
+        "Hairpin turn",
+        "Cut (earthmoving)",
+        "Retaining wall",
+        "Guard rail",
+        "Landslide"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 12,
+      "view_count": 12
+    },
+    {
+      "class_id": "road.forest_road",
+      "label_zh": "林道",
+      "label_en": "Forest road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_classes.py",
+      "asset_manifest": "buildings_and_structures/road_forest_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Forest road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcDitch",
+        "IfcCulvert"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 47,
+      "component_count": 10,
+      "variant_count": 3,
+      "unresolved_items": [
+        "passing_place"
+      ],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.drainage"
+      ],
+      "wikipedia_titles": [
+        "Forest road",
+        "Logging truck",
+        "Drainage ditch",
+        "Culvert"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 12,
+      "view_count": 12
+    },
+    {
+      "class_id": "road.temporary_road",
+      "label_zh": "臨時道路",
+      "label_en": "Temporary road",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_temporary_classes.py",
+      "asset_manifest": "buildings_and_structures/road_temporary_road.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Temporary road",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcCulvert",
+        "IfcEarthworksFill",
+        "IfcCourse"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 50,
+      "component_count": 11,
+      "variant_count": 4,
+      "unresolved_items": [
+        "flow_opening"
+      ],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.earthwork",
+        "road.drainage",
+        "road.safety"
+      ],
+      "wikipedia_titles": [
+        "Diversion (road)",
+        "Detour",
+        "Culvert",
+        "Embankment (earthworks)",
+        "Construction"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 24,
+      "view_count": 24
+    },
+    {
+      "class_id": "road.riverbed_detour",
+      "label_zh": "河床改道道路",
+      "label_en": "Riverbed detour",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_temporary_classes.py",
+      "asset_manifest": "buildings_and_structures/road_riverbed_detour.assets.json",
+      "status": "PUBLISHED_PUBLIC",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Stream bed",
+      "ifc_reference": [
+        "IfcRoad",
+        "IfcRoadPart",
+        "IfcCulvert",
+        "IfcEarthworksFill",
+        "IfcCourse"
+      ],
+      "dual_tree_status": "PARTIAL",
+      "sensitivity_status": "PASS",
+      "parameter_count": 52,
+      "component_count": 12,
+      "variant_count": 4,
+      "unresolved_items": [
+        "flow_opening",
+        "slope_protection"
+      ],
+      "composes": [
+        "road",
+        "road.pavement",
+        "road.earthwork",
+        "road.drainage",
+        "road.safety"
+      ],
+      "wikipedia_titles": [
+        "Stream bed",
+        "Detour",
+        "Culvert",
+        "Embankment (earthworks)",
+        "Riprap",
+        "Flood"
+      ],
+      "asset_delivery": "public_url",
+      "public_view_count": 24,
+      "view_count": 24
+    },
     {
       "class_id": "bridge.slab",
       "label_zh": "版橋",
@@ -326,5 +1009,6 @@
       ],
       "carries_bearing": false
     }
-  ]
+  ],
+  "road_class_count": 17
 }

@@ -1880,14 +1880,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/arch_bridge.py",
       "asset_manifest": "buildings_and_structures/arch_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "ARCH",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 12,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.truss",
@@ -1898,14 +1900,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/truss_bridge.py",
       "asset_manifest": "buildings_and_structures/truss_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "TRUSS",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 21,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.suspension",
@@ -1916,14 +1920,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/suspension_bridge.py",
       "asset_manifest": "buildings_and_structures/suspension_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SUSPENSION",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 12,
       "unresolved_items": [],
-      "carries_bearing": false
+      "carries_bearing": false,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.cable_stayed",
@@ -1934,7 +1940,7 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/cable_stayed_bridge.py",
       "asset_manifest": "buildings_and_structures/cable_stayed_bridge.assets.json",
-      "status": "PUBLISHED_INCOMPLETE",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "CABLE_STAYED",
       "dual_tree_status": "PASS",
@@ -1943,7 +1949,9 @@
       "unresolved_items": [
         "foundation.tower_foundation"
       ],
-      "carries_bearing": false
+      "carries_bearing": false,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.rigid_frame",
@@ -1954,7 +1962,7 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/rigid_frame_bridge.py",
       "asset_manifest": "buildings_and_structures/rigid_frame_bridge.assets.json",
-      "status": "PUBLISHED_INCOMPLETE",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "RIGID_FRAME",
       "dual_tree_status": "PASS",
@@ -1963,7 +1971,9 @@
       "unresolved_items": [
         "foundation.pile_or_pilecap"
       ],
-      "carries_bearing": false
+      "carries_bearing": false,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.extradosed",

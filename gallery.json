@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "authority_note": "All executable Golden Classes (bridge and road) are visible in the encyclopedia. READY means published visual assets exist; PUBLISHED_LOCAL means rendered and visually reviewed assets exist in the repository but are not uploaded to a public host; CLASS_READY means an executable Class exists and visual publication is pending; PARTIAL means a declared capability is still UNRESOLVED. Vehicle Golden Classes live under the existing Wikipedia Vehicles family; Taiwan road vehicles are a regional profile.",
   "visual_qa_revision": "excavator-v1",
-  "generated_from_commit": "1f5b4ca1b20c9b6bd346c287a6919a11a4f00536",
+  "generated_from_commit": "b32de757d94266b0c47b37953c2cfec9c58c87b3",
   "bridge_class_count": 16,
   "entries": [
     {
@@ -14,8 +14,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road.py",
-      "asset_manifest": "buildings_and_structures/road_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Road",
       "ifc_reference": [
@@ -49,10 +49,7 @@
         "Road drainage",
         "Guard rail",
         "Road marking"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 42,
-      "view_count": 42
+      ]
     },
     {
       "class_id": "road.pavement",
@@ -62,8 +59,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_components.py",
-      "asset_manifest": "buildings_and_structures/road_pavement.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Road surface",
       "ifc_reference": [
@@ -85,10 +82,7 @@
         "Asphalt concrete",
         "Subbase",
         "Base course"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 15,
-      "view_count": 15
+      ]
     },
     {
       "class_id": "road.earthwork",
@@ -98,8 +92,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_components.py",
-      "asset_manifest": "buildings_and_structures/road_earthwork.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Earthworks (engineering)",
       "ifc_reference": [
@@ -121,10 +115,7 @@
         "Cut and fill",
         "Grade (slope)",
         "Retaining wall"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 20,
-      "view_count": 20
+      ]
     },
     {
       "class_id": "road.drainage",
@@ -134,8 +125,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_components.py",
-      "asset_manifest": "buildings_and_structures/road_drainage.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Storm drain",
       "ifc_reference": [
@@ -162,10 +153,7 @@
         "Ditch",
         "Gutter",
         "Catch basin"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 20,
-      "view_count": 20
+      ]
     },
     {
       "class_id": "road.safety",
@@ -175,8 +163,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_components.py",
-      "asset_manifest": "buildings_and_structures/road_safety.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Guard rail",
       "ifc_reference": [
@@ -198,10 +186,7 @@
         "Jersey barrier",
         "Crash cushion",
         "Delineator"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 20,
-      "view_count": 20
+      ]
     },
     {
       "class_id": "road.traffic_control",
@@ -211,8 +196,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_components.py",
-      "asset_manifest": "buildings_and_structures/road_traffic_control.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Road marking",
       "ifc_reference": [
@@ -231,10 +216,7 @@
         "Traffic sign",
         "Traffic light",
         "Lane control signal"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 15,
-      "view_count": 15
+      ]
     },
     {
       "class_id": "road.tw_permanent_traffic_facilities",
@@ -244,8 +226,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_classes.py",
-      "asset_manifest": "buildings_and_structures/road_tw_permanent_traffic_facilities.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Traffic sign",
       "ifc_reference": [
@@ -267,9 +249,12 @@
         "Guard rail",
         "Delineator"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 16,
-      "view_count": 16
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "aggregate",
+      "taxonomy_family_label_zh": "永久交通設施",
+      "gallery_mode": "LAYOUT_OVERVIEW"
     },
     {
       "class_id": "road.tw.warning_sign",
@@ -279,27 +264,30 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_warning_sign.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Warning sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
-      "variant_count": 3,
+      "variant_count": 5,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Warning sign",
         "Traffic sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "sign",
+      "taxonomy_family_label_zh": "標誌類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.regulatory_sign",
@@ -309,27 +297,30 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_regulatory_sign.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Regulatory sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 27,
+      "parameter_count": 26,
       "component_count": 1,
-      "variant_count": 3,
+      "variant_count": 5,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Regulatory sign",
         "Traffic sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "sign",
+      "taxonomy_family_label_zh": "標誌類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.traffic_signal",
@@ -339,37 +330,72 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_traffic_signal.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic light",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 26,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 3,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Traffic light"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "signal",
+      "taxonomy_family_label_zh": "號誌類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.road_marking",
-      "label_zh": "臺灣道路標線",
-      "label_en": "Taiwan road marking",
+      "label_zh": "臺灣道路標線樣本",
+      "label_en": "Taiwan road marking sample",
       "family": "buildings_and_structures",
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_road_marking.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Road surface marking",
+      "ifc_reference": [
+        "IfcSurfaceFeature"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 28,
+      "component_count": 1,
+      "variant_count": 4,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Road surface marking"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "marking",
+      "taxonomy_family_label_zh": "標線類",
+      "gallery_mode": "LINEAR_FACILITY"
+    },
+    {
+      "class_id": "road.tw.road_marking_layout",
+      "label_zh": "臺灣道路標線配置",
+      "label_en": "Taiwan road marking layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Road surface marking",
       "ifc_reference": [
@@ -385,20 +411,56 @@
       "wikipedia_titles": [
         "Road surface marking"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "配置類",
+      "gallery_mode": "LINEAR_FACILITY"
     },
     {
       "class_id": "road.tw.guardrail",
-      "label_zh": "臺灣道路護欄",
-      "label_en": "Taiwan road guardrail",
+      "label_zh": "臺灣道路護欄詳圖",
+      "label_en": "Taiwan road guardrail detail",
       "family": "buildings_and_structures",
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_guardrail.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Traffic barrier",
+      "ifc_reference": [
+        "IfcRailing"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 27,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Traffic barrier",
+        "Guard rail"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "protection",
+      "taxonomy_family_label_zh": "防護設施",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.guardrail_layout",
+      "label_zh": "臺灣道路護欄配置",
+      "label_en": "Taiwan road guardrail layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Traffic barrier",
       "ifc_reference": [
@@ -415,9 +477,12 @@
         "Traffic barrier",
         "Guard rail"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "配置類",
+      "gallery_mode": "LINEAR_FACILITY"
     },
     {
       "class_id": "road.tw.delineator",
@@ -427,9 +492,9 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_delineator.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.2.0",
       "wikipedia_identity": "Wikipedia:Roadside marker",
       "ifc_reference": [
         "IfcRoadPart"
@@ -438,16 +503,19 @@
       "sensitivity_status": "PASS",
       "parameter_count": 27,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 6,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Delineator",
         "Roadside marker"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "guidance",
+      "taxonomy_family_label_zh": "導引設施",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.safety_direction_guide",
@@ -457,9 +525,9 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_safety_direction_guide.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.2.0",
       "wikipedia_identity": "Wikipedia:Chevron alignment sign",
       "ifc_reference": [
         "IfcRoadPart"
@@ -468,16 +536,19 @@
       "sensitivity_status": "PASS",
       "parameter_count": 26,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 4,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Chevron alignment sign",
         "Traffic sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "permanent",
+      "taxonomy_lifecycle_label_zh": "永久交通設施",
+      "taxonomy_family": "guidance",
+      "taxonomy_family_label_zh": "導引設施",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw_construction_traffic_maintenance",
@@ -487,8 +558,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_classes.py",
-      "asset_manifest": "buildings_and_structures/road_tw_construction_traffic_maintenance.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Traffic cone",
       "ifc_reference": [
@@ -509,9 +580,12 @@
         "Roadworks",
         "Traffic sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 16,
-      "view_count": 16
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "aggregate",
+      "taxonomy_family_label_zh": "施工交通維持",
+      "gallery_mode": "LAYOUT_OVERVIEW"
     },
     {
       "class_id": "road.tw.work_zone.barricade",
@@ -521,26 +595,29 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_barricade.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Barricade",
       "ifc_reference": [
         "IfcElementAssembly"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 30,
+      "parameter_count": 29,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 3,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Barricade"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "closure",
+      "taxonomy_family_label_zh": "封閉／阻隔類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.traffic_cone",
@@ -550,10 +627,141 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_traffic_cone.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic cone",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 26,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "channelization",
+      "taxonomy_family_label_zh": "渠化／導引類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.traffic_drum",
+      "label_zh": "臺灣交通筒",
+      "label_en": "Taiwan traffic drum",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Traffic drum",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 26,
+      "component_count": 1,
+      "variant_count": 1,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Traffic drum",
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "channelization",
+      "taxonomy_family_label_zh": "渠化／導引類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.traffic_post",
+      "label_zh": "臺灣交通桿",
+      "label_en": "Taiwan traffic post",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Traffic delineator",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 26,
+      "component_count": 1,
+      "variant_count": 1,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Traffic delineator",
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "channelization",
+      "taxonomy_family_label_zh": "渠化／導引類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.traffic_panel",
+      "label_zh": "臺灣交通板",
+      "label_en": "Taiwan traffic panel",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Traffic barricade",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 27,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Barricade",
+        "Traffic sign"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "channelization",
+      "taxonomy_family_label_zh": "渠化／導引類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.reflective_delineator",
+      "label_zh": "臺灣施工反光導標",
+      "label_en": "Taiwan work-zone reflective delineator",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Roadside marker",
       "ifc_reference": [
         "IfcRoadPart"
       ],
@@ -565,101 +773,15 @@
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
-        "Traffic cone"
+        "Delineator",
+        "Roadside marker"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
-    },
-    {
-      "class_id": "road.tw.work_zone.traffic_drum",
-      "label_zh": "臺灣交通筒",
-      "label_en": "Taiwan traffic drum",
-      "family": "buildings_and_structures",
-      "group": "roads",
-      "group_label_zh": "道路",
-      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_traffic_drum.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
-      "wikipedia_identity": "Wikipedia:Traffic drum",
-      "ifc_reference": [
-        "IfcRoadPart"
-      ],
-      "dual_tree_status": "PASS",
-      "sensitivity_status": "PASS",
-      "parameter_count": 28,
-      "component_count": 1,
-      "variant_count": 2,
-      "unresolved_items": [],
-      "composes": [],
-      "wikipedia_titles": [
-        "Traffic drum",
-        "Traffic cone"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
-    },
-    {
-      "class_id": "road.tw.work_zone.traffic_post",
-      "label_zh": "臺灣交通桿",
-      "label_en": "Taiwan traffic post",
-      "family": "buildings_and_structures",
-      "group": "roads",
-      "group_label_zh": "道路",
-      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_traffic_post.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
-      "wikipedia_identity": "Wikipedia:Traffic delineator",
-      "ifc_reference": [
-        "IfcRoadPart"
-      ],
-      "dual_tree_status": "PASS",
-      "sensitivity_status": "PASS",
-      "parameter_count": 28,
-      "component_count": 1,
-      "variant_count": 2,
-      "unresolved_items": [],
-      "composes": [],
-      "wikipedia_titles": [
-        "Traffic delineator",
-        "Traffic cone"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
-    },
-    {
-      "class_id": "road.tw.work_zone.traffic_panel",
-      "label_zh": "臺灣交通板",
-      "label_en": "Taiwan traffic panel",
-      "family": "buildings_and_structures",
-      "group": "roads",
-      "group_label_zh": "道路",
-      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_traffic_panel.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
-      "wikipedia_identity": "Wikipedia:Traffic barricade",
-      "ifc_reference": [
-        "IfcRoadPart"
-      ],
-      "dual_tree_status": "PASS",
-      "sensitivity_status": "PASS",
-      "parameter_count": 28,
-      "component_count": 1,
-      "variant_count": 2,
-      "unresolved_items": [],
-      "composes": [],
-      "wikipedia_titles": [
-        "Barricade",
-        "Traffic sign"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "channelization",
+      "taxonomy_family_label_zh": "渠化／導引類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.warning_light",
@@ -669,26 +791,29 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_warning_light.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Warning light",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 3,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Warning light"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "warning",
+      "taxonomy_family_label_zh": "警示類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.construction_sign",
@@ -698,16 +823,16 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_construction_sign.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Roadworks sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
       "variant_count": 2,
       "unresolved_items": [],
@@ -716,9 +841,12 @@
         "Roadworks",
         "Traffic sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "warning",
+      "taxonomy_family_label_zh": "警示類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.sign_vehicle",
@@ -728,16 +856,16 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_sign_vehicle.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic control vehicle",
       "ifc_reference": [
         "IfcVehicle"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
       "variant_count": 2,
       "unresolved_items": [],
@@ -746,9 +874,12 @@
         "Traffic control",
         "Roadworks"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "vehicle_mounted",
+      "taxonomy_family_label_zh": "車載設備類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.arrow_board",
@@ -758,9 +889,9 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_arrow_board.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Arrow board",
       "ifc_reference": [
         "IfcRoadPart"
@@ -769,16 +900,19 @@
       "sensitivity_status": "PASS",
       "parameter_count": 28,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 6,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Arrow board",
         "Roadworks"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "vehicle_mounted",
+      "taxonomy_family_label_zh": "車載設備類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.precast_barrier",
@@ -788,9 +922,9 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_precast_barrier.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic barrier",
       "ifc_reference": [
         "IfcRoadPart"
@@ -799,16 +933,19 @@
       "sensitivity_status": "PASS",
       "parameter_count": 28,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 4,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Traffic barrier",
         "Jersey barrier"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "closure",
+      "taxonomy_family_label_zh": "封閉／阻隔類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.light_box",
@@ -818,27 +955,30 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_light_box.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Variable-message sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 26,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 1,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Variable-message sign",
         "Roadworks"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "warning",
+      "taxonomy_family_label_zh": "警示類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.water_barrier",
@@ -848,16 +988,16 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_water_barrier.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic barrier",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
       "variant_count": 2,
       "unresolved_items": [],
@@ -865,9 +1005,12 @@
       "wikipedia_titles": [
         "Traffic barrier"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "closure",
+      "taxonomy_family_label_zh": "封閉／阻隔類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.message_board",
@@ -877,57 +1020,30 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_message_board.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Traffic sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
-      "variant_count": 2,
+      "variant_count": 3,
       "unresolved_items": [],
       "composes": [],
       "wikipedia_titles": [
         "Traffic sign",
         "Roadworks"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
-    },
-    {
-      "class_id": "road.tw.work_zone.temporary_sign",
-      "label_zh": "臺灣臨時標誌",
-      "label_en": "Taiwan temporary traffic sign",
-      "family": "buildings_and_structures",
-      "group": "roads",
-      "group_label_zh": "道路",
-      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_temporary_sign.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
-      "wikipedia_identity": "Wikipedia:Roadworks sign",
-      "ifc_reference": [
-        "IfcRoadPart"
-      ],
-      "dual_tree_status": "PASS",
-      "sensitivity_status": "PASS",
-      "parameter_count": 28,
-      "component_count": 1,
-      "variant_count": 2,
-      "unresolved_items": [],
-      "composes": [],
-      "wikipedia_titles": [
-        "Roadworks",
-        "Traffic sign"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "information",
+      "taxonomy_family_label_zh": "資訊發布類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.cms",
@@ -937,16 +1053,16 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_cms.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Variable-message sign",
       "ifc_reference": [
         "IfcRoadPart"
       ],
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
-      "parameter_count": 28,
+      "parameter_count": 27,
       "component_count": 1,
       "variant_count": 2,
       "unresolved_items": [],
@@ -954,9 +1070,12 @@
       "wikipedia_titles": [
         "Variable-message sign"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "information",
+      "taxonomy_family_label_zh": "資訊發布類",
+      "gallery_mode": "FACILITY_DETAIL"
     },
     {
       "class_id": "road.tw.work_zone.mobile_attenuator",
@@ -966,9 +1085,9 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
-      "asset_manifest": "buildings_and_structures/road_tw_work_zone_mobile_attenuator.assets.json",
-      "status": "PUBLISHED_PUBLIC",
-      "class_version": "1.0.0",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
       "wikipedia_identity": "Wikipedia:Impact attenuator",
       "ifc_reference": [
         "IfcRoadPart"
@@ -983,9 +1102,210 @@
       "wikipedia_titles": [
         "Impact attenuator"
       ],
-      "asset_delivery": "public_url",
-      "public_view_count": 8,
-      "view_count": 8
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "vehicle_mounted",
+      "taxonomy_family_label_zh": "車載設備類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.flagger",
+      "label_zh": "臺灣施工旗手",
+      "label_en": "Taiwan work-zone flagger",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_traffic_catalog.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.1.0",
+      "wikipedia_identity": "Wikipedia:Flagger (traffic control)",
+      "ifc_reference": [
+        "IfcActor"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 26,
+      "component_count": 1,
+      "variant_count": 2,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Flagger (traffic control)",
+        "Roadworks"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "personnel",
+      "taxonomy_family_label_zh": "人員交通指揮類",
+      "gallery_mode": "FACILITY_DETAIL"
+    },
+    {
+      "class_id": "road.tw.work_zone.layout.advance_warning",
+      "label_zh": "臺灣施工前置警告區配置",
+      "label_en": "Taiwan work-zone advance warning layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_work_zone_layout.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roadworks",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 28,
+      "component_count": 1,
+      "variant_count": 2,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roadworks",
+        "Traffic sign"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "工區配置類",
+      "gallery_mode": "LAYOUT"
+    },
+    {
+      "class_id": "road.tw.work_zone.layout.taper",
+      "label_zh": "臺灣施工前漸變區配置",
+      "label_en": "Taiwan work-zone transition taper layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_work_zone_layout.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roadworks",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 27,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roadworks",
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "工區配置類",
+      "gallery_mode": "LAYOUT"
+    },
+    {
+      "class_id": "road.tw.work_zone.layout.buffer",
+      "label_zh": "臺灣施工緩衝區配置",
+      "label_en": "Taiwan work-zone buffer layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_work_zone_layout.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roadworks",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 27,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roadworks",
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "工區配置類",
+      "gallery_mode": "LAYOUT"
+    },
+    {
+      "class_id": "road.tw.work_zone.layout.activity",
+      "label_zh": "臺灣施工工作區配置",
+      "label_en": "Taiwan work-zone activity area layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_work_zone_layout.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roadworks",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 28,
+      "component_count": 1,
+      "variant_count": 2,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roadworks",
+        "Traffic barrier"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "工區配置類",
+      "gallery_mode": "LAYOUT"
+    },
+    {
+      "class_id": "road.tw.work_zone.layout.termination",
+      "label_zh": "臺灣施工終止區配置",
+      "label_en": "Taiwan work-zone termination layout",
+      "family": "buildings_and_structures",
+      "group": "roads",
+      "group_label_zh": "道路",
+      "class_path": "buildings_and_structures/road_tw_work_zone_layout.py",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Wikipedia:Roadworks",
+      "ifc_reference": [
+        "IfcRoadPart"
+      ],
+      "dual_tree_status": "PASS",
+      "sensitivity_status": "PASS",
+      "parameter_count": 29,
+      "component_count": 1,
+      "variant_count": 3,
+      "unresolved_items": [],
+      "composes": [],
+      "wikipedia_titles": [
+        "Roadworks",
+        "Traffic cone"
+      ],
+      "taxonomy_domain": "traffic_facility",
+      "taxonomy_lifecycle": "temporary",
+      "taxonomy_lifecycle_label_zh": "施工交通維持設施",
+      "taxonomy_family": "layout",
+      "taxonomy_family_label_zh": "工區配置類",
+      "gallery_mode": "LAYOUT"
     },
     {
       "class_id": "road.intersection",
@@ -995,8 +1315,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_topology_classes.py",
-      "asset_manifest": "buildings_and_structures/road_intersection.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Intersection (road)",
       "ifc_reference": [
@@ -1020,10 +1340,7 @@
         "Grade separation",
         "Turn lane",
         "Channelization (roads)"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 18,
-      "view_count": 18
+      ]
     },
     {
       "class_id": "road.roundabout",
@@ -1033,8 +1350,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_topology_classes.py",
-      "asset_manifest": "buildings_and_structures/road_roundabout.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Roundabout",
       "ifc_reference": [
@@ -1056,10 +1373,7 @@
         "Traffic circle",
         "Central reservation",
         "Splitter island"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 18,
-      "view_count": 18
+      ]
     },
     {
       "class_id": "road.ramp",
@@ -1069,8 +1383,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_topology_classes.py",
-      "asset_manifest": "buildings_and_structures/road_ramp.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Slip road",
       "ifc_reference": [
@@ -1092,10 +1406,7 @@
         "Interchange (road)",
         "On-ramp",
         "Off-ramp"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 20,
-      "view_count": 20
+      ]
     },
     {
       "class_id": "road.highway",
@@ -1105,8 +1416,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_highway.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Highway",
       "ifc_reference": [
@@ -1134,10 +1445,7 @@
         "Shoulder (road)",
         "Road surface",
         "Guard rail"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 24,
-      "view_count": 24
+      ]
     },
     {
       "class_id": "road.controlled_access_highway",
@@ -1147,8 +1455,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_controlled_access_highway.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Controlled-access highway",
       "ifc_reference": [
@@ -1177,10 +1485,7 @@
         "Interchange (road)",
         "Grade separation",
         "Median strip"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 16,
-      "view_count": 16
+      ]
     },
     {
       "class_id": "road.urban_road",
@@ -1190,8 +1495,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_urban_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Urban road",
       "ifc_reference": [
@@ -1220,10 +1525,7 @@
         "Curb",
         "Road marking",
         "Traffic light"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 18,
-      "view_count": 18
+      ]
     },
     {
       "class_id": "road.rural_road",
@@ -1233,8 +1535,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_rural_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Rural road",
       "ifc_reference": [
@@ -1260,10 +1562,7 @@
         "Shoulder (road)",
         "Drainage ditch",
         "Guard rail"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      ]
     },
     {
       "class_id": "road.mountain_road",
@@ -1273,8 +1572,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_mountain_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Mountain pass",
       "ifc_reference": [
@@ -1302,10 +1601,7 @@
         "Retaining wall",
         "Guard rail",
         "Landslide"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      ]
     },
     {
       "class_id": "road.forest_road",
@@ -1315,8 +1611,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_classes.py",
-      "asset_manifest": "buildings_and_structures/road_forest_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Forest road",
       "ifc_reference": [
@@ -1343,10 +1639,7 @@
         "Logging truck",
         "Drainage ditch",
         "Culvert"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 12,
-      "view_count": 12
+      ]
     },
     {
       "class_id": "road.temporary_road",
@@ -1356,8 +1649,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_temporary_classes.py",
-      "asset_manifest": "buildings_and_structures/road_temporary_road.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Temporary road",
       "ifc_reference": [
@@ -1388,10 +1681,7 @@
         "Culvert",
         "Embankment (earthworks)",
         "Construction"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 24,
-      "view_count": 24
+      ]
     },
     {
       "class_id": "road.riverbed_detour",
@@ -1401,8 +1691,8 @@
       "group": "roads",
       "group_label_zh": "道路",
       "class_path": "buildings_and_structures/road_temporary_classes.py",
-      "asset_manifest": "buildings_and_structures/road_riverbed_detour.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "asset_manifest": null,
+      "status": "CLASS_READY",
       "class_version": "1.0.0",
       "wikipedia_identity": "Wikipedia:Stream bed",
       "ifc_reference": [
@@ -1435,10 +1725,7 @@
         "Embankment (earthworks)",
         "Riprap",
         "Flood"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 24,
-      "view_count": 24
+      ]
     },
     {
       "class_id": "bridge.slab",
@@ -2187,23 +2474,16 @@
       "asset_manifest": "machines/excavator.assets.json",
       "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
-      "wikipedia_identity": "Wikipedia:Excavator",
-      "dual_tree_status": "PASS",
-      "sensitivity_status": "NOT_APPLICABLE_STATIC_B_CLASS",
+      "wikipedia_identity": "Excavator",
+      "regional_profile": "Taiwan",
+      "geometry_source": "static_python",
       "parameter_count": 15,
       "component_count": 21,
-      "variant_count": 4,
-      "unresolved_items": [],
-      "composes": [],
-      "wikipedia_titles": [
-        "Excavator"
-      ],
-      "asset_delivery": "public_url",
-      "public_view_count": 16,
-      "view_count": 16
+      "view_count": 16,
+      "dimension_policy": "representative_geometry_not_manufacturer_spec_or_legal_limit",
+      "unresolved_items": []
     }
   ],
-  "road_class_count": 42,
-  "vehicle_class_count": 19,
-  "machine_class_count": 1
+  "road_class_count": 50,
+  "vehicle_class_count": 19
 }

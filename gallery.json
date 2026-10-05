@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "authority_note": "All executable Golden Classes (bridge and road) are visible in the encyclopedia. READY means published visual assets exist; PUBLISHED_LOCAL means rendered and visually reviewed assets exist in the repository but are not uploaded to a public host; CLASS_READY means an executable Class exists and visual publication is pending; PARTIAL means a declared capability is still UNRESOLVED. Vehicle Golden Classes live under the existing Wikipedia Vehicles family; Taiwan road vehicles are a regional profile.",
   "visual_qa_revision": "b4",
-  "generated_from_commit": "231156312890ff564a8091b16d5059266ed4e244",
+  "generated_from_commit": "1f5b4ca1b20c9b6bd346c287a6919a11a4f00536",
   "bridge_class_count": 16,
   "entries": [
     {

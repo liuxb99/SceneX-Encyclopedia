@@ -2175,8 +2175,34 @@
       "view_count": 16,
       "dimension_policy": "reference_geometry_not_legal_limit",
       "unresolved_items": []
+    },
+    {
+      "class_id": "machine.construction.tw.excavator",
+      "label_zh": "液壓挖土機",
+      "label_en": "Hydraulic excavator",
+      "family": "machines",
+      "group": "construction_machinery",
+      "group_label_zh": "施工機械",
+      "class_path": "machines/taiwan_construction_machines.py",
+      "asset_manifest": "machines/hydraulic_excavator.assets.json",
+      "status": "PUBLISHED_LOCAL",
+      "class_version": "1.0.0",
+      "wikipedia_identity": "Excavator",
+      "regional_profile": "Taiwan",
+      "operational_role": "earthmoving",
+      "locomotion": "crawler",
+      "work_equipment": "boom_arm_bucket",
+      "geometry_source": "static_python",
+      "source_asset_license": "CC0-1.0",
+      "parameter_count": 18,
+      "component_count": 17,
+      "view_count": 16,
+      "visual_qa_status": "RENDER_PASS_VISUAL_REVIEW_PENDING",
+      "dimension_policy": "reference_geometry_not_legal_limit",
+      "unresolved_items": []
     }
   ],
   "road_class_count": 42,
-  "vehicle_class_count": 19
+  "vehicle_class_count": 19,
+  "machine_class_count": 1
 }

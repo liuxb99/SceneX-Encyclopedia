@@ -1736,14 +1736,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/slab_bridge.py",
       "asset_manifest": "buildings_and_structures/slab_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SLAB",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 30,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.hollow_slab",
@@ -1754,14 +1756,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/hollow_slab_bridge.py",
       "asset_manifest": "buildings_and_structures/hollow_slab_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SLAB",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 33,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.t_beam",
@@ -1772,14 +1776,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/t_beam_bridge.py",
       "asset_manifest": "buildings_and_structures/t_beam_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "T_BEAM",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 39,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.prestressed_i",
@@ -1790,14 +1796,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/prestressed_i_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/prestressed_i_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "PRESTRESSED_I_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 40,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.pci",
@@ -1826,14 +1834,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/prestressed_box_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/prestressed_box_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "PRESTRESSED_BOX_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 42,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.steel_i",
@@ -1844,14 +1854,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/steel_i_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/steel_i_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "STEEL_I_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 41,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.steel_box",
@@ -1862,14 +1874,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/steel_box_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/steel_box_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.0.0",
       "ifc_predefined_type": "STEEL_BOX_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 53,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "2026-10-06-oo-refresh"
     },
     {
       "class_id": "bridge.arch",

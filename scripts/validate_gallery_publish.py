@@ -52,13 +52,14 @@ def main():
         fail("registry contains missing or duplicate class_id")
 
     asset_ids = set(assets)
-    entry_ids = set(ids)
-    if asset_ids != entry_ids:
-        missing = sorted(entry_ids - asset_ids)
-        extra = sorted(asset_ids - entry_ids)
+    manifest_ids = {e["class_id"] for e in entries if e.get("asset_manifest")}
+    if asset_ids != manifest_ids:
+        missing = sorted(manifest_ids - asset_ids)
+        extra = sorted(asset_ids - manifest_ids)
         fail(f"asset/registry key mismatch; missing={missing[:8]} extra={extra[:8]}")
 
-    published = [e["class_id"] for e in entries if e.get("status") == "PUBLISHED_PUBLIC"]
+    published = [e["class_id"] for e in entries if e.get("status") in
+                 {"PUBLISHED_PUBLIC", "PRODUCTION_READY", "READY"}]
     missing_public = [cid for cid in published if cid not in assets]
     if missing_public:
         fail(f"PUBLISHED_PUBLIC entries missing assets: {missing_public[:8]}")
@@ -72,6 +73,8 @@ def main():
         flat_assets = manifest.get("assets")
         if variants is None and flat_assets is None:
             fail(f"{cid}: no variants/assets payload")
+        if cid in published and not (variants or flat_assets):
+            fail(f"{cid}: published entry has an empty asset payload")
 
     node = shutil.which("node")
     if not node:

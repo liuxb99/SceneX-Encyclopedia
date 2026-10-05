@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="PCI Girder Bridge — Typical Section">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#444"/></marker></defs>
+<rect width="1200" height="720" fill="#fff"/>
+<text x="40" y="44" font-family="sans-serif" font-size="26" font-weight="700">PCI Girder Bridge — Typical Section</text>
+<g id="barrier" class="engineering-part barrier" data-semantic-role="barrier" data-label="barriers">
+<rect x="151.8" y="110.8" width="32.4" height="79.2" fill="#C8C8C8" stroke="#303030" stroke-width="2"/>
+<rect x="1015.8" y="110.8" width="32.4" height="79.2" fill="#C8C8C8" stroke="#303030" stroke-width="2"/>
+</g>
+<g id="deck" class="engineering-part deck" data-semantic-role="deck" data-label="deck slab">
+<rect x="150" y="190" width="900" height="15.84" fill="#D9D9D9" stroke="#303030" stroke-width="2"/>
+</g>
+<g id="pci_girder" class="engineering-part pci_girder" data-semantic-role="pci_girder" data-label="5 parameterized PCI sections">
+<polygon points="240,205.84 189.6,205.84 189.6,217.11 229.2,234.014 229.2,290.362 214.8,307.266 214.8,335.44 265.2,335.44 265.2,307.266 250.8,290.362 250.8,234.014 290.4,217.11 290.4,205.84" fill="#9FB7C9" stroke="#303030" stroke-width="2"/>
+<polygon points="420,205.84 369.6,205.84 369.6,217.11 409.2,234.014 409.2,290.362 394.8,307.266 394.8,335.44 445.2,335.44 445.2,307.266 430.8,290.362 430.8,234.014 470.4,217.11 470.4,205.84" fill="#9FB7C9" stroke="#303030" stroke-width="2"/>
+<polygon points="600,205.84 549.6,205.84 549.6,217.11 589.2,234.014 589.2,290.362 574.8,307.266 574.8,335.44 625.2,335.44 625.2,307.266 610.8,290.362 610.8,234.014 650.4,217.11 650.4,205.84" fill="#9FB7C9" stroke="#303030" stroke-width="2"/>
+<polygon points="780,205.84 729.6,205.84 729.6,217.11 769.2,234.014 769.2,290.362 754.8,307.266 754.8,335.44 805.2,335.44 805.2,307.266 790.8,290.362 790.8,234.014 830.4,217.11 830.4,205.84" fill="#9FB7C9" stroke="#303030" stroke-width="2"/>
+<polygon points="960,205.84 909.6,205.84 909.6,217.11 949.2,234.014 949.2,290.362 934.8,307.266 934.8,335.44 985.2,335.44 985.2,307.266 970.8,290.362 970.8,234.014 1010.4,217.11 1010.4,205.84" fill="#9FB7C9" stroke="#303030" stroke-width="2"/>
+</g>
+<line x1="600" y1="90" x2="600" y2="640" stroke="#777" stroke-width="1" stroke-dasharray="10 6"/><g class="dimension" data-semantic-role="dimension"><line x1="150" y1="640" x2="1050" y2="640" stroke="#444" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="600" y="632" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222">deck width = 12.5 m</text></g>
+<g class="dimension" data-semantic-role="dimension"><line x1="240" y1="590" x2="420" y2="590" stroke="#444" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="330" y="582" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222">girder spacing = 2.5 m</text></g>
+</svg>

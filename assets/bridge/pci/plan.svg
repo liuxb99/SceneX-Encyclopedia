@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="PCI Girder Bridge — Plan">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#444"/></marker></defs>
+<rect width="1200" height="720" fill="#fff"/>
+<text x="40" y="44" font-family="sans-serif" font-size="26" font-weight="700">PCI Girder Bridge — Plan</text>
+<g id="deck" class="engineering-part deck" data-semantic-role="deck" data-label="deck slab">
+<rect x="120" y="169.444" width="1040" height="361.111" fill="#D9D9D9" stroke="#303030" stroke-width="2"/>
+</g>
+<g id="pci_girder" class="engineering-part pci_girder" data-semantic-role="pci_girder" data-label="5 longitudinal PCI girders">
+<line x1="120" y1="205.556" x2="1160" y2="205.556" stroke="#9FB7C9" stroke-width="5"/>
+<line x1="120" y1="277.778" x2="1160" y2="277.778" stroke="#9FB7C9" stroke-width="5"/>
+<line x1="120" y1="350" x2="1160" y2="350" stroke="#9FB7C9" stroke-width="5"/>
+<line x1="120" y1="422.222" x2="1160" y2="422.222" stroke="#9FB7C9" stroke-width="5"/>
+<line x1="120" y1="494.444" x2="1160" y2="494.444" stroke="#9FB7C9" stroke-width="5"/>
+</g>
+<g id="barrier" class="engineering-part barrier" data-semantic-role="barrier" data-label="edge barriers">
+<line x1="120" y1="176.667" x2="1160" y2="176.667" stroke="#C8C8C8" stroke-width="7"/>
+<line x1="120" y1="523.333" x2="1160" y2="523.333" stroke="#C8C8C8" stroke-width="7"/>
+</g>
+<g id="support_axis" class="engineering-part support_axis" data-semantic-role="support_axis" data-label="support axes">
+<line x1="120" y1="149.444" x2="120" y2="550.556" stroke="#666" stroke-width="1.5"/>
+<line x1="466.667" y1="149.444" x2="466.667" y2="550.556" stroke="#666" stroke-width="1.5"/>
+<line x1="813.333" y1="149.444" x2="813.333" y2="550.556" stroke="#666" stroke-width="1.5"/>
+<line x1="1160" y1="149.444" x2="1160" y2="550.556" stroke="#666" stroke-width="1.5"/>
+</g>
+<g class="dimension" data-semantic-role="dimension"><line x1="120" y1="595.556" x2="1160" y2="595.556" stroke="#444" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="640" y="587.556" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222">total length = 36 m</text></g>
+<g class="dimension" data-semantic-role="dimension"><line x1="65" y1="169.444" x2="65" y2="530.556" stroke="#444" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="51" y="350" text-anchor="middle" transform="rotate(-90 51 350)" font-family="sans-serif" font-size="14" fill="#222">deck width = 12.5 m</text></g>
+</svg>

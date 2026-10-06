@@ -1816,14 +1816,16 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/pci_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/pci_girder_bridge.assets.json",
-      "status": "READY",
+      "status": "PUBLISHED_PUBLIC",
       "class_version": "1.2.0",
       "ifc_predefined_type": "PCI_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 70,
       "unresolved_items": [],
-      "carries_bearing": true
+      "carries_bearing": true,
+      "view_count": 16,
+      "visual_qa_revision": "b4"
     },
     {
       "class_id": "bridge.prestressed_box",

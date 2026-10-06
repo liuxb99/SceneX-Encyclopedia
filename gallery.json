@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "authority_note": "All executable Golden Classes (bridge and road) are visible in the encyclopedia. READY means published visual assets exist; PUBLISHED_LOCAL means rendered and visually reviewed assets exist in the repository but are not uploaded to a public host; CLASS_READY means an executable Class exists and visual publication is pending; PARTIAL means a declared capability is still UNRESOLVED. Vehicle Golden Classes live under the existing Wikipedia Vehicles family; Taiwan road vehicles are a regional profile. Character Golden Classes live under the existing Wikipedia Characters family; geometry is bound only from traceable assets with explicit licence.",
   "visual_qa_revision": "excavator-v1",
-  "generated_from_commit": "76de925e",
+  "generated_from_commit": "3a3b2cff1fd355a7ef109543af7dbc613a077102",
   "bridge_class_count": 16,
   "entries": [
     {
@@ -1736,16 +1736,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/slab_bridge.py",
       "asset_manifest": "buildings_and_structures/slab_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SLAB",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 30,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.hollow_slab",
@@ -1756,16 +1754,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/hollow_slab_bridge.py",
       "asset_manifest": "buildings_and_structures/hollow_slab_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SLAB",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 33,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.t_beam",
@@ -1776,16 +1772,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/t_beam_bridge.py",
       "asset_manifest": "buildings_and_structures/t_beam_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "T_BEAM",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 39,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.prestressed_i",
@@ -1796,16 +1790,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/prestressed_i_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/prestressed_i_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "PRESTRESSED_I_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 40,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.pci",
@@ -1816,16 +1808,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/pci_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/pci_girder_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.2.0",
       "ifc_predefined_type": "PCI_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 70,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "b4"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.prestressed_box",
@@ -1836,16 +1826,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/prestressed_box_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/prestressed_box_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "PRESTRESSED_BOX_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 42,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.steel_i",
@@ -1856,16 +1844,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/steel_i_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/steel_i_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "STEEL_I_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 41,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.steel_box",
@@ -1876,16 +1862,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/steel_box_girder_bridge.py",
       "asset_manifest": "buildings_and_structures/steel_box_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "STEEL_BOX_GIRDER",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 53,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.arch",
@@ -1896,16 +1880,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/arch_bridge.py",
       "asset_manifest": "buildings_and_structures/arch_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "ARCH",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 12,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.truss",
@@ -1916,16 +1898,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/truss_bridge.py",
       "asset_manifest": "buildings_and_structures/truss_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "TRUSS",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 21,
       "unresolved_items": [],
-      "carries_bearing": true,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": true
     },
     {
       "class_id": "bridge.suspension",
@@ -1936,16 +1916,14 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/suspension_bridge.py",
       "asset_manifest": "buildings_and_structures/suspension_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "READY",
       "class_version": "1.0.0",
       "ifc_predefined_type": "SUSPENSION",
       "dual_tree_status": "PASS",
       "sensitivity_status": "PASS",
       "parameter_count": 12,
       "unresolved_items": [],
-      "carries_bearing": false,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": false
     },
     {
       "class_id": "bridge.cable_stayed",
@@ -1956,7 +1934,7 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/cable_stayed_bridge.py",
       "asset_manifest": "buildings_and_structures/cable_stayed_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "PUBLISHED_INCOMPLETE",
       "class_version": "1.0.0",
       "ifc_predefined_type": "CABLE_STAYED",
       "dual_tree_status": "PASS",
@@ -1965,9 +1943,7 @@
       "unresolved_items": [
         "foundation.tower_foundation"
       ],
-      "carries_bearing": false,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": false
     },
     {
       "class_id": "bridge.rigid_frame",
@@ -1978,7 +1954,7 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/rigid_frame_bridge.py",
       "asset_manifest": "buildings_and_structures/rigid_frame_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "PUBLISHED_INCOMPLETE",
       "class_version": "1.0.0",
       "ifc_predefined_type": "RIGID_FRAME",
       "dual_tree_status": "PASS",
@@ -1987,9 +1963,7 @@
       "unresolved_items": [
         "foundation.pile_or_pilecap"
       ],
-      "carries_bearing": false,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": false
     },
     {
       "class_id": "bridge.extradosed",
@@ -2041,7 +2015,7 @@
       "group_label_zh": "橋梁",
       "class_path": "buildings_and_structures/box_culvert_bridge.py",
       "asset_manifest": "buildings_and_structures/box_culvert_bridge.assets.json",
-      "status": "PUBLISHED_PUBLIC",
+      "status": "PUBLISHED_INCOMPLETE",
       "class_version": "1.0.0",
       "ifc_predefined_type": "CULVERT",
       "dual_tree_status": "PASS",
@@ -2050,9 +2024,7 @@
       "unresolved_items": [
         "foundation.ground_bearing"
       ],
-      "carries_bearing": false,
-      "view_count": 16,
-      "visual_qa_revision": "2026-10-06-oo-refresh"
+      "carries_bearing": false
     },
     {
       "class_id": "vehicle.tw.scooter",

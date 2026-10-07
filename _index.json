@@ -1,0 +1,23 @@
+{
+  "schema": "scenex.wikipedia.modelable-family-index/v1",
+  "policy": "First-level directories are direct modelable entity families; abstract ontology parents are omitted from filesystem.",
+  "version": "1.0.0",
+  "families": [
+    {"order":1,"path":"wikipedia/buildings_and_structures/","source_category":"Buildings and structures","label_zh":"建築與構造物"},
+    {"order":2,"path":"wikipedia/vehicles/","source_category":"Vehicles","label_zh":"交通工具"},
+    {"order":3,"path":"wikipedia/machines/","source_category":"Machines","label_zh":"機械"},
+    {"order":4,"path":"wikipedia/equipment/","source_category":"Equipment","label_zh":"設備"},
+    {"order":5,"path":"wikipedia/tools/","source_category":"Tools","label_zh":"工具"},
+    {"order":6,"path":"wikipedia/furniture/","source_category":"Furniture","label_zh":"家具"},
+    {"order":7,"path":"wikipedia/clothing/","source_category":"Clothing","label_zh":"服飾"},
+    {"order":8,"path":"wikipedia/materials/","source_category":"Materials","label_zh":"材料"},
+    {"order":9,"path":"wikipedia/rocks_and_minerals/","source_category":"Rocks and minerals","label_zh":"岩石與礦物"},
+    {"order":10,"path":"wikipedia/organisms/","source_category":"Organisms","label_zh":"生物"},
+    {"order":11,"path":"wikipedia/human_body/","source_category":"Human body","label_zh":"人體"},
+    {"order":12,"path":"wikipedia/geographical_features/","source_category":"Geographical features","label_zh":"地理實體"},
+    {"order":13,"path":"wikipedia/astronomical_objects/","source_category":"Astronomical objects","label_zh":"天體"},
+    {"order":14,"path":"wikipedia/archaeological_artifacts/","source_category":"Archaeological artifacts","label_zh":"考古器物"},
+    {"order":15,"path":"wikipedia/works_of_art/","source_category":"Works of art","label_zh":"藝術品"},
+    {"order":16,"path":"wikipedia/characters/","source_category":"Fictional characters","label_zh":"人物角色"}
+  ]
+}

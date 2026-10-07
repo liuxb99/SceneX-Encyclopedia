@@ -80,7 +80,6 @@ function groupedThumbs(views,current){
       +'</div></div>';
   }).join("");
 }
-let variantIndex=0;
 function selectVariant(i){variantIndex=i;view=0;render()}
 function keyValues(rows){return '<div class="kv">'+rows.map(([label,value])=>'<span class="muted">'+escapeText(label)+'</span><b>'+escapeText(value??"未提供")+'</b>').join("")+'</div>'}
 function provenanceLink(label,url){

@@ -2978,6 +2978,20 @@
       "view_count": 16,
       "runtime_gaps": [],
       "unresolved_items": []
+    },
+    {
+      "class_id": "character.research.quaternius_female_python_v2",
+      "label_zh": "Quaternius 女性 Python Class V2",
+      "label_en": "Quaternius Female Python Class V2",
+      "family": "characters",
+      "group": "research",
+      "group_label_zh": "研究成果 / Python Class Reconstruction",
+      "source_work": "Quaternius Animated Base Female",
+      "asset_manifest": "research_assets/quaternius_female_python_v2.assets.json",
+      "status": "PENDING_HUMAN_VISUAL_QA",
+      "research": true,
+      "golden": false,
+      "view_count": 16
     }
   ],
   "road_class_count": 50,

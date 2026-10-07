@@ -14,7 +14,7 @@ function hashEntry(){const id=new URLSearchParams(window.location.hash.slice(1))
 function isCharacterEntry(entry){return entry?.family==="characters"||(entry?.family==="human_body"&&String(entry.class_id||"").startsWith("character."))}
 async function boot(){const loaded=await Promise.all([loadJSON("_index.json"),loadJSON("gallery.json"),loadJSON("gallery_assets.json")]);idx=loaded[0];reg=loaded[1];galleryAssets=loaded[2];entries=reg.entries||[];renderFamilies();const target=hashEntry();const fam=target?.family||entries[0]?.family||idx.families[0]?.path.split("/")[1];selectFamily(fam,target?.class_id)}
 function familyMeta(id){return idx.families.find(x=>x.path==="wikipedia/"+id+"/")}
-function renderFamilies(){const ready=new Set(entries.map(e=>e.family));$("#families").innerHTML=idx.families.map(f=>{const id=f.path.split("/")[1];return '<button class="pill '+(ready.has(id)?"":"muted")+'" data-f="'+id+'">'+f.label_zh+'</button>'}).join("");document.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>selectFamily(b.dataset.f))}
+function renderFamilies(){const ready=new Set(entries.filter(e=>galleryAssets[e.class_id]).map(e=>e.family));$("#families").innerHTML=idx.families.map(f=>{const id=f.path.split("/")[1];return '<button class="pill '+(ready.has(id)?"":"muted")+'" data-f="'+id+'">'+f.label_zh+'</button>'}).join("");document.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>selectFamily(b.dataset.f))}
 function familyGroups(es,fam){
   const groups=new Map();
   for(const e of es){
@@ -28,7 +28,7 @@ function familyGroups(es,fam){
 function selectFamily(fam,requestedId){
   document.querySelectorAll("[data-f]").forEach(b=>b.classList.toggle("active",b.dataset.f===fam));
   const meta=familyMeta(fam);$("#familyTitle").textContent=meta?.label_zh||fam;
-  const es=entries.filter(e=>e.family===fam),groups=familyGroups(es,fam);
+  const es=entries.filter(e=>e.family===fam&&galleryAssets[e.class_id]),groups=familyGroups(es,fam);
   $("#groups").innerHTML=groups.length?groups.map(g=>'<div><div class="muted" style="margin:12px 0 5px">'+escapeText(g.label)+'</div>'+g.entries.map(e=>'<button class="pill" data-id="'+escapeText(e.class_id)+'">'+escapeText(e.label_zh)+'</button>').join("")+'</div>').join(""):'<div class="empty">尚無已發布建模成果</div>';
   document.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>selectEntry(b.dataset.id));
   if(es[0])selectEntry(es.find(e=>e.class_id===requestedId)?.class_id||es[0].class_id);else{selected=assets=null;render()}

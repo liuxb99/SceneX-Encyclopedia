@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0-backfill",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-10_0802",
+  "generated_at": "2026-10-11T07:58:00+08:00",
+  "original_report_generated_at": "2026-10-10T08:02:00+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-10-10T08:02:00+08:00",
+  "as_of_market_session": {
+    "US": "2026-10-09",
+    "Taiwan": "2026-10-08"
+  },
+  "model_version": "legacy-html-2026-10-10",
+  "calibration_status": "UNCALIBRATED",
+  "provenance": {
+    "type": "RETROSPECTIVE_METADATA_BACKFILL",
+    "source_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-10_0802.html",
+    "source_blob_sha": "f2cb0146c6a357cb140311ac1e3fba13385a13ad",
+    "disclaimer": "本 JSON 於 2026-10-11 依不可變 10/10 HTML 補建，並非 10/10 當時產生的原生 JSON；不得當作原始 point-in-time 結構化資料。"
+  },
+  "events": [],
+  "shocks": [],
+  "edges": [],
+  "propagation_paths": [],
+  "convergence": [],
+  "regime": "NOT_STRUCTURED_IN_LEGACY_REPORT",
+  "taiwan_exposure": {
+    "note": "請參閱原始 HTML；不追溯捏造結構化資料。"
+  },
+  "scores": {
+    "global": {
+      "value": 82,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "UNAVAILABLE",
+      "factor_contributions": [],
+      "assumptions": [
+        "原始 HTML 研究評分，缺少完整可重現權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT"
+    },
+    "taiwan": {
+      "value": 74,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "UNAVAILABLE",
+      "factor_contributions": [],
+      "assumptions": [
+        "原始 HTML 研究評分，缺少完整可重現權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT"
+    },
+    "energy": {
+      "value": 90,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "UNAVAILABLE",
+      "factor_contributions": [],
+      "assumptions": [
+        "原始 HTML 研究評分，缺少完整可重現權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT"
+    },
+    "rates": {
+      "value": 84,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "UNAVAILABLE",
+      "factor_contributions": [],
+      "assumptions": [
+        "原始 HTML 研究評分，缺少完整可重現權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT"
+    }
+  },
+  "news_risk": {
+    "candidate": "SEE_ORIGINAL_HTML",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "原始 HTML 有文字說明；未在補建時重跑規則"
+  },
+  "downgrade_conditions": [],
+  "sources": [
+    {
+      "id": "legacy-1",
+      "url": "https://apnews.com/article/5d0f953dbf96febb0690c1aef23fa8a9"
+    },
+    {
+      "id": "legacy-2",
+      "url": "https://uk.marketscreener.com/news/oil-falls-as-trump-comments-on-iran-talks-ease-supply-concerns-ce785ddfdf8af722"
+    },
+    {
+      "id": "legacy-3",
+      "url": "https://www.reuters.com/markets/us/us-10-year-treasury-yield-risks-hitting-6-first-time-since-2000-pimcos-ivascyn-2026-10-09/"
+    },
+    {
+      "id": "legacy-4",
+      "url": "https://www.sca.isr.umich.edu/"
+    },
+    {
+      "id": "legacy-5",
+      "url": "https://wwwc.twse.com.tw/zh/trading/holiday.html"
+    },
+    {
+      "id": "legacy-6",
+      "url": "https://www.taifex.com.tw/cht/11/announcement"
+    },
+    {
+      "id": "legacy-7",
+      "url": "https://pr.tsmc.com/chinese/news/3343"
+    },
+    {
+      "id": "legacy-8",
+      "url": "https://www.investing.com/indices/phlx-semiconductor-historical-data"
+    },
+    {
+      "id": "legacy-9",
+      "url": "https://stockanalysis.com/stocks/tsm/history/"
+    },
+    {
+      "id": "legacy-10",
+      "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-10-09/"
+    },
+    {
+      "id": "legacy-11",
+      "url": "https://www.reuters.com/business/autos-transportation/eu-says-it-agrees-with-china-halve-hybrid-vehicle-exports-eu-2026-10-09/"
+    },
+    {
+      "id": "legacy-12",
+      "url": "https://www.reuters.com/business/energy/us-gulf-producers-shut-more-oil-gas-isaias-nears-landfall-2026-10-09/"
+    }
+  ],
+  "limitations": [
+    "僅回填原始 HTML 明確可見的評分與來源",
+    "原始 HTML 不改動",
+    "不包含事後 outcome"
+  ]
+}

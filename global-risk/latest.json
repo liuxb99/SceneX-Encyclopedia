@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-11_0759",
+  "generated_at": "2026-10-11T07:59:00+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-10-11T07:59:00+08:00",
+  "as_of_market_session": {
+    "US": "2026-10-09",
+    "Taiwan": "2026-10-08",
+    "note": "10/09台灣休市；10/10-11週末"
+  },
+  "model_version": "global-risk-butterfly-research-0.3",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "10/10台灣國慶談話、北京回應；美國關切台灣東部海域中國船舶活動。所提民兵船目擊為8月事件。",
+      "interpretation": "週末台海風險溢價可能增加；無已證實封鎖。",
+      "source_ids": [
+        "R1",
+        "R2"
+      ],
+      "observed_at": "2026-10-11T07:59:00+08:00",
+      "confidence": 0.75
+    },
+    {
+      "event_id": "E2",
+      "fact": "10/09墨西哥灣海上原油約72%暫停生產；10/10颶風減弱。",
+      "interpretation": "能源供應風險邊際可能緩和，復產速度仍不明。",
+      "source_ids": [
+        "R4",
+        "R5"
+      ],
+      "observed_at": "2026-10-11T07:59:00+08:00",
+      "confidence": 0.75
+    },
+    {
+      "event_id": "E3",
+      "fact": "10/09 Brent 104.72美元、WTI 91.85；密西根消費信心46.3、一年期通膨預期4.7%。",
+      "interpretation": "能源通膨可能透過殖利率壓抑科技估值。",
+      "source_ids": [
+        "R3",
+        "R7"
+      ],
+      "observed_at": "2026-10-11T07:59:00+08:00",
+      "confidence": 0.75
+    },
+    {
+      "event_id": "E4",
+      "fact": "10/09 Nasdaq與S&P500均約+0.6%，SOXX -0.69%；台積電第三季營收約1.49兆元、年增約50%。",
+      "interpretation": "科技股反彈與半導體相對弱勢並存，營收強勁提供緩衝。",
+      "source_ids": [
+        "R6",
+        "R8",
+        "R9"
+      ],
+      "observed_at": "2026-10-11T07:59:00+08:00",
+      "confidence": 0.75
+    }
+  ],
+  "shocks": [
+    {
+      "node": "Taiwan geopolitical premium",
+      "direction": "up",
+      "magnitude": "qualitative",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "oil supply",
+      "direction": "up but easing",
+      "magnitude": "qualitative",
+      "evidence_event_ids": [
+        "E2",
+        "E3"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "Taiwan geopolitical premium",
+      "target": "foreign flows",
+      "direction": -1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "oil",
+      "target": "inflation",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "inflation",
+      "target": "yields",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "yields",
+      "target": "Nasdaq valuation",
+      "direction": -1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "Nasdaq valuation",
+      "target": "semiconductor sentiment",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "semiconductor sentiment",
+      "target": "TAIEX/MXF",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "days-to-weeks",
+      "decay": "not estimated",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "validation_status": "UNCALIBRATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "id": "P1",
+      "nodes": [
+        "台海週末訊息",
+        "風險溢價",
+        "外資避險",
+        "TAIEX/MXF開盤不確定性"
+      ],
+      "evidence_ids": [
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "id": "P2",
+      "nodes": [
+        "墨西哥灣停產+中東能源",
+        "油價",
+        "通膨預期",
+        "殖利率",
+        "NASDAQ/SOXX",
+        "台股"
+      ],
+      "evidence_ids": [
+        "E2"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "id": "P3",
+      "nodes": [
+        "台積電強勁營收",
+        "AI需求",
+        "半導體基本面支撐"
+      ],
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS"
+    }
+  ],
+  "convergence": [
+    {
+      "node": "Taiwan risk appetite",
+      "inputs": [
+        "strait",
+        "semiconductors",
+        "yields"
+      ],
+      "deduplication": "半導體與殖利率風險不重複相加"
+    },
+    {
+      "node": "inflation",
+      "inputs": [
+        "Middle East",
+        "Gulf storm"
+      ],
+      "deduplication": "共同油價路徑只計一次"
+    }
+  ],
+  "regime": "HIGH_ENERGY_HIGH_YIELD_WEEKEND_GEO",
+  "taiwan_exposure": {
+    "TAIEX": "週日無成交；週一待驗證",
+    "MXF": "週日無成交；不可推估開盤幅度",
+    "semiconductor": "TSMC營收強、SOXX相對弱",
+    "energy": "進口成本與航運保費風險",
+    "FX": "缺乏新台幣即時驗證資料"
+  },
+  "scores": {
+    "global": {
+      "value": 83,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "energy",
+          "points": 20
+        },
+        {
+          "factor": "rates",
+          "points": 19
+        },
+        {
+          "factor": "geopolitics",
+          "points": 25
+        },
+        {
+          "factor": "semiconductor",
+          "points": 11
+        },
+        {
+          "factor": "credit",
+          "points": 8
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "taiwan": {
+      "value": 80,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "strait",
+          "points": 28
+        },
+        {
+          "factor": "rates",
+          "points": 16
+        },
+        {
+          "factor": "energy",
+          "points": 12
+        },
+        {
+          "factor": "semiconductor",
+          "points": 14
+        },
+        {
+          "factor": "fx_flows",
+          "points": 10
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "energy": {
+      "value": 86,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "middle_east",
+          "points": 46
+        },
+        {
+          "factor": "gulf",
+          "points": 25
+        },
+        {
+          "factor": "refining",
+          "points": 15
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "rates": {
+      "value": 83,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "inflation",
+          "points": 39
+        },
+        {
+          "factor": "treasuries",
+          "points": 32
+        },
+        {
+          "factor": "debt",
+          "points": 12
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "geopolitical": {
+      "value": 88,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "strait",
+          "points": 45
+        },
+        {
+          "factor": "middle_east",
+          "points": 35
+        },
+        {
+          "factor": "trade",
+          "points": 8
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "semiconductor": {
+      "value": 68,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "price",
+          "points": 33
+        },
+        {
+          "factor": "rates",
+          "points": 27
+        },
+        {
+          "factor": "supply",
+          "points": 8
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "credit": {
+      "value": 62,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.1",
+      "factor_contributions": [
+        {
+          "factor": "funding",
+          "points": 35
+        },
+        {
+          "factor": "ai_debt",
+          "points": 27
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "assumptions": [
+        "主觀點數相加可重現，不代表經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "台海週末訊息+能源利率風險；非正式交易指令"
+  },
+  "downgrade_conditions": [
+    "台海無新增軍事或航運限制",
+    "墨西哥灣復產與油價回落",
+    "殖利率下降且SOXX改善",
+    "週一台幣、外資、TAIEX/MXF實際走勢確認"
+  ],
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Taiwan speech and Beijing response",
+      "url": "https://www.reuters.com/world/china/taiwan-cherishes-peace-will-not-give-up-its-freedom-president-says-2026-10-10/",
+      "published_at": "2026-10-10"
+    },
+    {
+      "id": "R2",
+      "title": "US State Department Taiwan east-coast vessels",
+      "url": "https://www.reuters.com/world/china/us-says-chinese-actions-off-taiwan-are-deeply-destabilising-2026-10-10/",
+      "published_at": "2026-10-10"
+    },
+    {
+      "id": "R3",
+      "title": "Reuters Brent oil Friday",
+      "url": "https://www.reuters.com/business/energy/oil-falls-trump-comments-iran-talks-ease-supply-concerns-2026-10-09/",
+      "published_at": "2026-10-09"
+    },
+    {
+      "id": "R4",
+      "title": "Reuters Gulf oil shut-in",
+      "url": "https://www.reuters.com/business/energy/us-gulf-producers-shut-more-oil-gas-isaias-nears-landfall-2026-10-09/",
+      "published_at": "2026-10-09"
+    },
+    {
+      "id": "R5",
+      "title": "Guardian Isaias weakening",
+      "url": "https://www.theguardian.com/world/2026/oct/10/isaias-weakens-to-post-tropical-cyclone",
+      "published_at": "2026-10-10"
+    },
+    {
+      "id": "R6",
+      "title": "AP US equities Friday",
+      "url": "https://apnews.com/article/dafbd0c4037ee10e2a9e305f3cfa8e70",
+      "published_at": "2026-10-09"
+    },
+    {
+      "id": "R7",
+      "title": "Reuters Michigan sentiment",
+      "url": "https://www.marketscreener.com/news/us-consumer-sentiment-deteriorates-further-in-october-ce785ddcd88af324",
+      "published_at": "2026-10-09"
+    },
+    {
+      "id": "R8",
+      "title": "Reuters TSMC Q3 revenue",
+      "url": "https://live.euronext.com/en/financial-news/tsmcs-third-quarter-revenue-surges-50-yy-beating-market-forecast",
+      "published_at": "2026-10-08"
+    },
+    {
+      "id": "R9",
+      "title": "Yahoo SOXX historical",
+      "url": "https://finance.yahoo.com/quote/SOXX/history/",
+      "published_at": "2026-10-10"
+    },
+    {
+      "id": "R10",
+      "title": "Reuters next week market themes",
+      "url": "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-10-09/",
+      "published_at": "2026-10-09"
+    }
+  ],
+  "limitations": [
+    "AI_JUDGMENT/UNCALIBRATED；分數非機率",
+    "週末無台灣市場新成交",
+    "無正式News Risk引擎裁決",
+    "傳導方向是待驗證假說，未估計統計權重"
+  ]
+}

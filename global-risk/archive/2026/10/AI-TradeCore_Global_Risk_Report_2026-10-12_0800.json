@@ -1,0 +1,628 @@
+{
+  "schema_version": "1.1",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-12_0800",
+  "generated_at": "2026-10-12T08:00:00+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-10-12T08:00:00+08:00",
+  "as_of_market_session": {
+    "US": "2026-10-09",
+    "Taiwan": "2026-10-08",
+    "oil_quote": "2026-10-11T23:04:00Z",
+    "note": "臺灣08:00盤前，10/12台股現貨尚未開盤"
+  },
+  "model_version": "global-risk-butterfly-research-0.4",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "沙烏地機場週末遇襲，部分攻擊由胡塞組織宣稱；對石油設施攻擊的宣稱尚未由業者確認。",
+      "interpretation": "波灣能源物流與保險成本可能升高；不可把未確認的石油設施損害當作事實。",
+      "source_ids": [
+        "R3"
+      ],
+      "source_url": "https://www.reuters.com/world/middle-east/yemens-houthis-renew-warning-over-saudi-airports-after-deadly-riyadh-attack-2026-10-11/",
+      "source_published_at": "2026-10-11T10:23:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E2",
+      "fact": "Reuters 10/11 23:04 UTC報價：Brent 105.48美元／桶、WTI 92.44美元／桶；週末兩艘油輪遇襲。",
+      "interpretation": "油價風險溢價可能傳導到通膨預期與科技估值；這不是08:00即時報價。",
+      "source_ids": [
+        "R1"
+      ],
+      "source_url": "https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/",
+      "source_published_at": "2026-10-11T23:26:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E3",
+      "fact": "伊朗表示美方對重新開放荷姆茲海峽的方案回應不足。",
+      "interpretation": "航運正常化談判仍不確定，無法推定已達成協議。",
+      "source_ids": [
+        "R2"
+      ],
+      "source_url": "https://www.reuters.com/world/middle-east/iran-says-us-response-its-proposal-reopen-hormuz-was-insufficient-2026-10-11/",
+      "source_published_at": "2026-10-11T17:07:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E4",
+      "fact": "美國墨西哥灣能源業者於颶風後開始復產準備。",
+      "interpretation": "有助部分緩和供應壓力，但復產速度與產量尚需確認。",
+      "source_ids": [
+        "R1"
+      ],
+      "source_url": "https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/",
+      "source_published_at": "2026-10-11T23:26:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E5",
+      "fact": "美國總統宣布俄烏能源停火；烏克蘭表示仍待細節，俄方未共同確認。",
+      "interpretation": "僅能列為降風險候選，不能視為正式生效停火。",
+      "source_ids": [
+        "R4"
+      ],
+      "source_url": "https://www.reuters.com/world/europe/ukraine-will-halt-strikes-refineries-if-russia-stops-energy-attacks-zelenskiy-2026-10-11/",
+      "source_published_at": "2026-10-11T09:47:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E6",
+      "fact": "IMF與世界銀行年會聚焦能源、通膨與債務；10/09美國10年債殖利率約5.29%，一年期通膨預期4.7%。",
+      "interpretation": "高油價、融資成本及科技股折現率可能共振。",
+      "source_ids": [
+        "R5",
+        "R6",
+        "R9"
+      ],
+      "source_url": "https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/",
+      "source_published_at": "2026-10-11T04:03:00Z",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E7",
+      "fact": "臺灣10/10政治談話與北京回應仍是背景；台積電第三季營收約新臺幣1.49兆元、年增約50%。",
+      "interpretation": "地緣政治風險溢價與半導體基本面支撐並存。",
+      "source_ids": [
+        "R7",
+        "R8"
+      ],
+      "source_url": "https://www.reuters.com/world/china/taiwan-cherishes-peace-will-not-give-up-its-freedom-president-says-2026-10-10/",
+      "source_published_at": "2026-10-10",
+      "observed_at": "2026-10-12T08:00:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "Middle East transport",
+      "direction": "up",
+      "magnitude": "qualitative",
+      "evidence_event_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    {
+      "node": "Gulf production",
+      "direction": "restoration_possible",
+      "magnitude": "qualitative",
+      "evidence_event_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "oil",
+      "target": "inflation",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "inflation",
+      "target": "yields",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "yields",
+      "target": "NASDAQ_SOX",
+      "direction": -1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "NASDAQ_SOX",
+      "target": "taiwan_equities",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "taiwan_geopolitics",
+      "target": "foreign_risk_appetite",
+      "direction": -1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "foreign_risk_appetite",
+      "target": "TAIEX_MXF",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "sovereign_debt",
+      "target": "funding_costs",
+      "direction": 1,
+      "weight": null,
+      "confidence": null,
+      "lag": "unestimated",
+      "decay": null,
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "id": "P1",
+      "nodes": [
+        "沙烏地／荷姆茲航運",
+        "油價",
+        "通膨",
+        "美債殖利率",
+        "NASDAQ/SOX",
+        "台股"
+      ],
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "id": "P2",
+      "nodes": [
+        "高主權債務",
+        "融資成本",
+        "全球資金流",
+        "台灣外資"
+      ],
+      "evidence_ids": [
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "id": "P3",
+      "nodes": [
+        "台海政治訊息",
+        "風險溢價",
+        "台幣／外資",
+        "TAIEX/MXF"
+      ],
+      "evidence_ids": [
+        "E7"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "id": "P4",
+      "nodes": [
+        "墨西哥灣復產與俄烏停火候選",
+        "能源供應緩和",
+        "油價下降條件"
+      ],
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "validation_status": "CONDITIONAL"
+    }
+  ],
+  "convergence": [
+    {
+      "node": "oil_inflation",
+      "inputs": [
+        "Saudi attacks",
+        "Hormuz talks",
+        "Gulf supply"
+      ],
+      "deduplication": "共同油價路徑只計一次"
+    },
+    {
+      "node": "Taiwan_risk",
+      "inputs": [
+        "global yields",
+        "semiconductor valuations",
+        "geopolitics"
+      ],
+      "deduplication": "殖利率與半導體估值避免重複計算"
+    }
+  ],
+  "regime": "HIGH_OIL_HIGH_YIELDS_TAIWAN_PREOPEN",
+  "taiwan_exposure": {
+    "TAIEX": "10/12 08:00尚未開盤，不推估漲跌幅",
+    "MXF": "需以實際期貨成交驗證",
+    "semiconductor": "台積電營收年增約50%，但估值仍受殖利率影響",
+    "energy": "進口能源成本與航運保險壓力",
+    "FX_foreign_flow": "10/12當日新台幣與外資資料尚未驗證"
+  },
+  "scores": {
+    "global": {
+      "value": 85,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "energy",
+          "points": 25
+        },
+        {
+          "factor": "rates",
+          "points": 20
+        },
+        {
+          "factor": "taiwan_geo",
+          "points": 15
+        },
+        {
+          "factor": "credit",
+          "points": 14
+        },
+        {
+          "factor": "semiconductor",
+          "points": 11
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "taiwan": {
+      "value": 82,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "strait",
+          "points": 22
+        },
+        {
+          "factor": "energy_import",
+          "points": 20
+        },
+        {
+          "factor": "rates_flow",
+          "points": 20
+        },
+        {
+          "factor": "semiconductor",
+          "points": 12
+        },
+        {
+          "factor": "preopen",
+          "points": 8
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "energy": {
+      "value": 92,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "hormuz",
+          "points": 34
+        },
+        {
+          "factor": "saudi",
+          "points": 29
+        },
+        {
+          "factor": "gulf",
+          "points": 13
+        },
+        {
+          "factor": "diesel",
+          "points": 16
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "rates": {
+      "value": 84,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "oil_inflation",
+          "points": 32
+        },
+        {
+          "factor": "term_premium",
+          "points": 29
+        },
+        {
+          "factor": "sovereign_debt",
+          "points": 23
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "geopolitical": {
+      "value": 94,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "saudi",
+          "points": 33
+        },
+        {
+          "factor": "iran",
+          "points": 32
+        },
+        {
+          "factor": "taiwan",
+          "points": 21
+        },
+        {
+          "factor": "ukraine",
+          "points": 8
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "semiconductor": {
+      "value": 70,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "rates",
+          "points": 27
+        },
+        {
+          "factor": "taiwan",
+          "points": 22
+        },
+        {
+          "factor": "sentiment",
+          "points": 15
+        },
+        {
+          "factor": "earnings_buffer",
+          "points": 6
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "credit": {
+      "value": 69,
+      "scale": [
+        0,
+        100
+      ],
+      "formula_version": "subjective_contribution_sum_v0.2",
+      "factor_contributions": [
+        {
+          "factor": "sovereign",
+          "points": 31
+        },
+        {
+          "factor": "emerging_market",
+          "points": 22
+        },
+        {
+          "factor": "corporate",
+          "points": 16
+        }
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "assumptions": [
+        "主觀因子點數相加可重算，但因子點數沒有經驗校準"
+      ],
+      "uncertainty": "HIGH"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "中東航運與能源風險升高、利率高檔；僅新多單風險研究候選，非交易指令",
+    "scope": "NEW_LONG_ENTRIES_ONLY"
+  },
+  "downgrade_conditions": [
+    "荷姆茲通行協議獲雙方確認且油輪攻擊下降",
+    "墨西哥灣復產得到可驗證的產量數據",
+    "Brent及美債殖利率同步下降",
+    "台幣、外資與台股期現貨未呈現共振下行",
+    "俄烏雙方確認並落實能源停火"
+  ],
+  "sources": [
+    {
+      "id": "R1",
+      "title": "Reuters：10/12 盤前油價與中東航運",
+      "url": "https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/",
+      "published_at": "2026-10-11T23:26:00Z"
+    },
+    {
+      "id": "R2",
+      "title": "Reuters：伊朗認為美方回應荷姆茲方案不足",
+      "url": "https://www.reuters.com/world/middle-east/iran-says-us-response-its-proposal-reopen-hormuz-was-insufficient-2026-10-11/",
+      "published_at": "2026-10-11T17:07:00Z"
+    },
+    {
+      "id": "R3",
+      "title": "Reuters：沙烏地機場遭襲",
+      "url": "https://www.reuters.com/world/middle-east/yemens-houthis-renew-warning-over-saudi-airports-after-deadly-riyadh-attack-2026-10-11/",
+      "published_at": "2026-10-11T10:23:00Z"
+    },
+    {
+      "id": "R4",
+      "title": "Reuters：俄烏能源停火尚待確認",
+      "url": "https://www.reuters.com/world/europe/ukraine-will-halt-strikes-refineries-if-russia-stops-energy-attacks-zelenskiy-2026-10-11/",
+      "published_at": "2026-10-11T09:47:00Z"
+    },
+    {
+      "id": "R5",
+      "title": "Reuters：IMF／世銀年會關注能源與債務",
+      "url": "https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/",
+      "published_at": "2026-10-11T04:03:00Z"
+    },
+    {
+      "id": "R6",
+      "title": "Reuters：美國10年期公債殖利率與風險",
+      "url": "https://www.reuters.com/markets/us/us-10-year-treasury-yield-risks-hitting-6-first-time-since-2000-pimcos-ivascyn-2026-10-09/",
+      "published_at": "2026-10-09T05:27:00Z"
+    },
+    {
+      "id": "R7",
+      "title": "Reuters：臺灣國慶談話及北京回應",
+      "url": "https://www.reuters.com/world/china/taiwan-cherishes-peace-will-not-give-up-its-freedom-president-says-2026-10-10/",
+      "published_at": "2026-10-10"
+    },
+    {
+      "id": "R8",
+      "title": "Reuters：台積電第三季營收",
+      "url": "https://www.reuters.com/world/asia-pacific/tsmcs-third-quarter-revenue-surges-50-yy-beating-market-forecast-2026-10-08/",
+      "published_at": "2026-10-08"
+    },
+    {
+      "id": "R9",
+      "title": "Reuters：美國消費信心與通膨預期",
+      "url": "https://www.reuters.com/business/us-consumer-sentiment-deteriorates-further-october-2026-10-09/",
+      "published_at": "2026-10-09"
+    },
+    {
+      "id": "R10",
+      "title": "臺灣證交所：開休市日期",
+      "url": "https://wwwc.twse.com.tw/zh/trading/holiday.html",
+      "published_at": null
+    }
+  ],
+  "limitations": [
+    "AI_JUDGMENT/UNCALIBRATED；分數不是下跌機率",
+    "臺灣08:00盤前，不能宣稱10/12台股已跌",
+    "10/12美債現貨休市，殖利率參照10/09",
+    "傳導邊權重、時間延遲未估計",
+    "News Risk規則引擎未執行，僅候選",
+    "油價使用07:04臺北時點報價，非08:00即時價"
+  ]
+}

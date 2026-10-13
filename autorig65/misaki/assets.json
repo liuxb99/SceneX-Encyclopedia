@@ -39,7 +39,9 @@
       "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881342/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part3.txt",
       "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881346/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part4.txt"
     ],
-    "encoding": "base64"
+    "encoding": "base64",
+    "compatibility_preview": "rigged.glb",
+    "preview_reason": "Legacy specular-glossiness and source coordinate frame"
   },
   "samba.glb": {
     "bytes": 29932460,

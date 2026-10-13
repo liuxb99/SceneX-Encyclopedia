@@ -653,8 +653,101 @@
   "supported_scope": "Recognized source profiles; unknown unrigged geometry explicitly rejected",
   "produced_at": "2026-10-13T17:13:51.462636+08:00",
   "guard_tests": {
-    "count": 8,
+    "count": 13,
     "result": "PASS"
   },
-  "landmark_limitations": "Measured core landmarks; fingers/toes estimated, not individually anatomy-verified"
+  "landmark_limitations": "Measured core landmarks; fingers/toes estimated, not individually anatomy-verified",
+  "website": {
+    "http": "PASS",
+    "resources": [
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "prefix_hex": "3c21646f6374797065206874"
+      },
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/acceptance.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "prefix_hex": "7b0a202022626f6e6573223a"
+      },
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/roundtrip.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "prefix_hex": "7b0a2020226f6b223a207472"
+      },
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/godot.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "prefix_hex": "7b0a202022616e696d617469"
+      },
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/assets.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "prefix_hex": "7b0a20202273616d62612e6d"
+      },
+      {
+        "url": "https://liuxb99.github.io/SceneX-Encyclopedia/autorig65/misaki/skeleton.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.mp4",
+        "status": 200,
+        "type": "video/mp4;codecs=avc1",
+        "prefix_hex": "000000206674797069736f6d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0001.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0111.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0219.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0329.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      },
+      {
+        "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882621/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0437.png",
+        "status": 200,
+        "type": "image/png",
+        "prefix_hex": "89504e470d0a1a0a0000000d"
+      }
+    ],
+    "browser_video_playback": "PASS",
+    "browser_model_animation_render": "PASS",
+    "browser_download": {
+      "download_path": "C:\\Users\\cyliu99\\Downloads\\samba (2).glb",
+      "sha256_match": true,
+      "bytes": 29932460
+    },
+    "actions": {
+      "site_commit": "54aad284f1a72f8dcc4368aea3229b7a7e6e69a5",
+      "pages_run": 38376575826,
+      "pages_result": "success",
+      "gallery_run": 38376576322,
+      "gallery_result": "success"
+    },
+    "browser_original_preview": "PASS_CANONICAL_PBR_COMPATIBILITY",
+    "checked_at": "2026-10-13T18:11:47.452213+08:00"
+  }
 }

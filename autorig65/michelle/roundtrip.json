@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "bones": 65,
+  "meshes": 1,
+  "unbound_vertices": 0,
+  "actions": [
+    "Animation"
+  ],
+  "frame_range": [
+    1.0,
+    438.0
+  ],
+  "deformation_fingerprints": [
+    19312.683610279953,
+    19887.815343990038,
+    19847.1965542708,
+    19431.085238014533,
+    19312.685484543057
+  ],
+  "images": [
+    {
+      "name": "Ch03_1001_Diffuse",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "Ch03_1001_Glossiness",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "Ch03_1001_Normal",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "Image",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    }
+  ]
+}

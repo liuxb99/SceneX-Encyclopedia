@@ -1,0 +1,47 @@
+{
+  "samba.mp4": {
+    "bytes": 601270,
+    "sha256": "62448598d9d8cc2a289263a8744f322a7dd38bbf18b067ed8bebea9aca3dbd1d",
+    "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/samba.mp4"
+  },
+  "golden_0001.png": {
+    "bytes": 408812,
+    "sha256": "b4cdcb7ec839e261ecdebafe8a31f21c091620a15861ae35278151041ddd63fe",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/golden_0001.png"
+  },
+  "golden_0111.png": {
+    "bytes": 406648,
+    "sha256": "b25c60002bc0aaa92a2a0b2f76864f996505a69c6a65d398887d0376e814ecef",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/golden_0111.png"
+  },
+  "golden_0219.png": {
+    "bytes": 405566,
+    "sha256": "21520543606fdbbb97ff0df3c2c083fff96f1b0d38d121cff7dce6b9ed70ebcd",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/golden_0219.png"
+  },
+  "golden_0329.png": {
+    "bytes": 408449,
+    "sha256": "432d26b00cc5c12b7bee5fa443836e3ad65b993d6cb2c1f2f99870a2326df256",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/golden_0329.png"
+  },
+  "golden_0437.png": {
+    "bytes": 409080,
+    "sha256": "36d77b78075dc818cb77f8305f814a3bdda878a84762ca820bf202006f87d1df",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/golden_0437.png"
+  },
+  "original.glb": {
+    "url": "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791880858/scenex/wikipedia/characters/autorig65/oda-20261013-v2/michelle/original.glb",
+    "bytes": 3276888,
+    "sha256": "7a87e15a99ccbc5e5877be66e1e4ecae0a581adcafa0cce1a5569f49909e968e"
+  },
+  "samba.glb": {
+    "bytes": 2227616,
+    "sha256": "6eed32b445cd4d109b7b9734d3613f0f56f3e0519bb9bc11c4c432ab138261ee",
+    "url": "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882623/scenex/wikipedia/characters/autorig65/oda-20261013-v5/michelle/samba.glb"
+  },
+  "rigged.glb": {
+    "url": "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791880864/scenex/wikipedia/characters/autorig65/oda-20261013-v2/michelle/rigged.glb",
+    "bytes": 1772916,
+    "sha256": "9ea70496627f9d6a57c931cab7d19026d03bb2d5d9d26e22cda5f3ffa3a6c076"
+  }
+}

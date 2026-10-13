@@ -38,9 +38,23 @@ def main():
         fail("main <script> block not found")
     script = match.group(1)
 
-    embedded_index = extract(script, "EMBEDDED_INDEX", "const EMBEDDED_REGISTRY=")
-    registry = extract(script, "EMBEDDED_REGISTRY", "const EMBEDDED_ASSETS=")
-    assets = extract(script, "EMBEDDED_ASSETS", "let idx")
+    if "const EMBEDDED_INDEX=" in script:
+        embedded_index = extract(script, "EMBEDDED_INDEX", "const EMBEDDED_REGISTRY=")
+        registry = extract(script, "EMBEDDED_REGISTRY", "const EMBEDDED_ASSETS=")
+        assets = extract(script, "EMBEDDED_ASSETS", "let idx")
+    else:
+        # Current viewer fetches the same authority JSON instead of embedding
+        # a second registry. Preserve readiness and JavaScript checks below.
+        directory = INDEX.parent
+        try:
+            embedded_index = json.loads((directory / "_index.json").read_text(encoding="utf-8"))
+            registry = json.loads(GALLERY.read_text(encoding="utf-8"))
+            assets = json.loads((directory / "gallery_assets.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            fail(f"cannot load static viewer JSON: {exc}")
+        for filename in ("_index.json", "gallery.json", "gallery_assets.json"):
+            if f'loadJSON("{filename}")' not in script:
+                fail(f"static viewer does not load {filename}")
     gallery = json.loads(GALLERY.read_text(encoding="utf-8"))
 
     if gallery != registry:

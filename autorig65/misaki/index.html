@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Misaki AutoRig65 Samba</title>
+<style>body{font:16px system-ui;background:#17202b;color:#eef;max-width:1100px;margin:auto;padding:24px}a{color:#7df}video,model-viewer{width:100%;height:500px;background:#263345}img{max-width:100%}section{margin:30px 0}button{padding:12px}.frames{display:flex;flex-wrap:wrap;gap:8px}</style>
+<script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+<h1>Misaki · AutoRig65 Samba</h1><p>2026-10-13（臺北） · ODA · 65 骨 · 真實蒙皮 · 18.25 秒</p>
+<p><a href="../">三人物成果</a> · <a href="../../">百科首頁</a></p>
+<section><h2>Samba 動畫影片</h2><video controls loop playsinline preload="metadata" poster="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0001.png" src="https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.mp4"></video><p><a href="https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.mp4">MP4 影片</a></p></section>
+<section><h2>互動動畫 GLB</h2><model-viewer id="animation" camera-controls autoplay shadow-intensity="1"></model-viewer><p id="animation-status">正在準備 GLB…</p><a data-download="samba.glb">GLB 載入後可下載</a></section>
+<section><h2>原始人物模型</h2><button id="load-original">載入原始人物</button><model-viewer id="original" camera-controls></model-viewer><p id="original-status">按鈕載入原始 GLB，保留原始材質貼圖。</p><a data-download="original.glb">原始 GLB 載入後可下載</a></section>
+<section><h2>第二套 65 骨與蒙皮</h2><img src="skeleton.png" alt="65 骨插入展示"><p><button id="load-rigged">準備插骨 GLB 下載</button></p><p id="rigged-status"></p><a data-download="rigged.glb">插骨 GLB 載入後可下載</a></section>
+<section><h2>五張 Golden Frames</h2><div class="frames"><a href="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0001.png"><img loading="lazy" width="210" src="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0001.png" alt="Frame 1"></a><a href="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0111.png"><img loading="lazy" width="210" src="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0111.png" alt="Frame 111"></a><a href="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0219.png"><img loading="lazy" width="210" src="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0219.png" alt="Frame 219"></a><a href="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0329.png"><img loading="lazy" width="210" src="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0329.png" alt="Frame 329"></a><a href="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882621/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0437.png"><img loading="lazy" width="210" src="https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882621/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0437.png" alt="Frame 437"></a></div></section>
+<section><h2>自動化验收</h2><p>65 骨拓撲、權重、438 幀有限數值、循環首末吻合、GLB 重載與全片影片解碼已執行。請以 JSON 各項結果為準。來源姿勢校正與手指定位仍有適用範圍限制；不宣稱任意無骨架人物全自動通過。</p><a href="acceptance.json">驗收 JSON</a> · <a href="roundtrip.json">GLB 重載 JSON</a> · <a href="godot.json">Godot 24 FPS 比對 JSON</a> · <a href="assets.json">素材與 SHA-256</a>
+<p>影片：Workbench 貼圖模式、12 FPS；動畫 GLB：24 FPS、438 幀。GLB 保留 PBR 材質、貼圖與靜態 Morph；未匯出未使用的 Morph 動作軌。</p>
+<p>公開來源為 ODA 既有模型；來源授權資料仍待逐項追溯，未自動標示再散布許可。</p><p><a href="https://github.com/liuxb99/SceneX/blob/master/wikipedia/characters/auto_rig65.py">共用 AutoRig65 Python Class</a> · <a href="https://github.com/liuxb99/SceneX/commit/3230c6b9ac96713d02cf83addf1ba752f21a2c43">3230c6b9ac96713d02cf83addf1ba752f21a2c43</a></p></section>
+<script type="module">
+const assets={"samba.mp4": {"bytes": 668438, "sha256": "94d70001618c88eef2b47c12eb763700ae54efa96eb634c5be89175c7bf98970", "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.mp4"}, "golden_0001.png": {"bytes": 409183, "sha256": "cfe5c9945e3683d9216d83f982bcdbe0d02dc8026652251a65ba94181fbca465", "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882616/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0001.png"}, "golden_0111.png": {"bytes": 416283, "sha256": "8ece6c7ec72feb3008bda3c994bbd5120b93c15814bc9802dadd463f7484d617", "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0111.png"}, "golden_0219.png": {"bytes": 419149, "sha256": "80566bd1853c3d504013da01667ae16843e390f21b789e49160ae83202a255f1", "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0219.png"}, "golden_0329.png": {"bytes": 411163, "sha256": "5333a7ac32b70d0b90188ec43dcc7c049deb0db66be6c0d88d2f9a92f159b39d", "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0329.png"}, "golden_0437.png": {"bytes": 409060, "sha256": "6f01fee892dab067c50d3baa49e6fb0bb6bf40bb644fe6dec335550822523237", "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882621/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/golden_0437.png"}, "original.glb": {"bytes": 29184276, "sha256": "9f5b8324ff95d9470a2543a0ddb8d09296288af28b9b60c9015437863bc1b6bd", "parts": ["https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881322/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part0.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881330/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part1.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881337/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part2.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881342/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part3.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881346/scenex/wikipedia/characters/autorig65/oda-20261013-v3/misaki/original.glb.part4.txt"], "encoding": "base64"}, "samba.glb": {"bytes": 29932460, "sha256": "8bf0c0f42561e7140b454d63efae5d3a140ebf1d388b2a5cab7f5c0499a1b462", "parts": ["https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882634/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.glb.part0.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882642/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.glb.part1.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882649/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.glb.part2.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882657/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.glb.part3.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882664/scenex/wikipedia/characters/autorig65/oda-20261013-v5/misaki/samba.glb.part4.txt"], "encoding": "base64"}, "rigged.glb": {"bytes": 29173028, "sha256": "035a8254b4e14f174364b59d893f9d558d57869d2365ec0d3ecec581418a74af", "parts": ["https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882051/scenex/wikipedia/characters/autorig65/oda-20261013-v4/misaki/rigged.glb.part0.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882058/scenex/wikipedia/characters/autorig65/oda-20261013-v4/misaki/rigged.glb.part1.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882065/scenex/wikipedia/characters/autorig65/oda-20261013-v4/misaki/rigged.glb.part2.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882074/scenex/wikipedia/characters/autorig65/oda-20261013-v4/misaki/rigged.glb.part3.txt", "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882079/scenex/wikipedia/characters/autorig65/oda-20261013-v4/misaki/rigged.glb.part4.txt"], "encoding": "base64"}};
+const cache=new Map();
+async function modelBlob(role){
+ if(cache.has(role))return cache.get(role);
+ const promise=(async()=>{
+  const item=assets[role];let chunks;
+  if(item.parts){
+   chunks=await Promise.all(item.parts.map(async url=>{
+    const r=await fetch(url);if(!r.ok)throw Error('HTTP '+r.status);
+    const text=await r.text();const data=atob(text.trim());
+    return Uint8Array.from(data,c=>c.charCodeAt(0));
+   }));
+  }else{
+   const r=await fetch(item.url);if(!r.ok)throw Error('HTTP '+r.status);
+   chunks=[new Uint8Array(await r.arrayBuffer())];
+  }
+  const data=new Uint8Array(chunks.reduce((n,c)=>n+c.byteLength,0));
+  let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.byteLength;}
+  if(data.byteLength!==item.bytes)throw Error('GLB bytes mismatch');
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data))).map(v=>v.toString(16).padStart(2,'0')).join('');
+  if(hash!==item.sha256)throw Error('GLB SHA-256 mismatch');
+  if(new DataView(data.buffer).getUint32(0,true)!==0x46546c67)throw Error('Invalid GLB');
+  return URL.createObjectURL(new Blob([data],{type:'model/gltf-binary'}));
+ })();cache.set(role,promise);return promise;
+}
+async function load(role,viewer,status){
+ const node=document.getElementById(status);
+ try{
+  node.textContent='正在載入並核對 GLB…';
+  const url=await modelBlob(role);
+  if(viewer)document.getElementById(viewer).src=url;
+  const link=document.querySelector('[data-download="'+role+'"]');
+  link.href=url;link.download=role;link.textContent='下載 '+role;
+  link.dataset.verified='true';node.textContent='GLB 位元組與 SHA-256 通過';
+ }catch(e){node.textContent='載入失敗：'+e.message;node.dataset.error='true';}
+}
+document.getElementById('load-original').addEventListener('click',()=>load('original.glb','original','original-status'));
+document.getElementById('load-rigged').addEventListener('click',()=>load('rigged.glb',null,'rigged-status'));
+load('samba.glb','animation','animation-status');
+</script></html>

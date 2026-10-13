@@ -10,12 +10,16 @@ import validate_gallery_publish as validator
 
 
 class PublicationContractTests(unittest.TestCase):
-    def validate(self, entries, assets):
+    def validate(self, entries, assets, dynamic=False):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             registry = {"entries": entries}
             html = ('<script>const EMBEDDED_INDEX={};\nconst EMBEDDED_REGISTRY='+
                     json.dumps(registry)+';\nconst EMBEDDED_ASSETS='+json.dumps(assets)+';\nlet idx=null;</script>')
+            if dynamic:
+                html = '<script>Promise.all([loadJSON("_index.json"),loadJSON("gallery.json"),loadJSON("gallery_assets.json")]);</script>'
+                (root/'_index.json').write_text('{"families":[]}',encoding='utf-8')
+                (root/'gallery_assets.json').write_text(json.dumps(assets),encoding='utf-8')
             (root/'index.html').write_text(html,encoding='utf-8')
             (root/'gallery.json').write_text(json.dumps(registry),encoding='utf-8')
             old = validator.INDEX,validator.GALLERY
@@ -50,6 +54,14 @@ class PublicationContractTests(unittest.TestCase):
     def test_ready_real_asset_payload_is_accepted(self):
         self.validate([{"class_id":"test.ready","status":"PUBLISHED_PUBLIC","asset_manifest":"test.json"}],
                       {"test.ready":{"class_id":"test.ready","assets":[{"role":"hero","secure_url":"https://example.invalid/test.png"}]}})
+
+    def test_current_static_json_viewer_is_accepted(self):
+        self.validate([{"class_id":"test.ready","status":"READY","asset_manifest":"test.json"}],
+                      {"test.ready":{"class_id":"test.ready","assets":[{"role":"hero"}]}},dynamic=True)
+
+    def test_static_viewer_still_rejects_missing_public_assets(self):
+        with self.assertRaises(SystemExit):
+            self.validate([{"class_id":"test.ready","status":"READY"}],{},dynamic=True)
 
 
 if __name__ == '__main__':

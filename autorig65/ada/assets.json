@@ -1,0 +1,66 @@
+{
+  "samba.mp4": {
+    "bytes": 721217,
+    "sha256": "73f94ea945a7e8e11d20cd0830643b78de3f473ff8e3c01dfa51a2bbbb53015b",
+    "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1791882614/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/samba.mp4"
+  },
+  "golden_0001.png": {
+    "bytes": 419478,
+    "sha256": "7b4e124ba690f06eaa552ec685326d914b22be6aecfcca371b64fd3bb5027771",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882617/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/golden_0001.png"
+  },
+  "golden_0111.png": {
+    "bytes": 419485,
+    "sha256": "4eb2c0229096aab62eece4c4975b55821e8880418e260bac724c97e218d70c44",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882618/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/golden_0111.png"
+  },
+  "golden_0219.png": {
+    "bytes": 424704,
+    "sha256": "58c2af431fbebe23ef0c219aa077a4f9e7562d7569b370ec506b531a0084ddae",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882619/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/golden_0219.png"
+  },
+  "golden_0329.png": {
+    "bytes": 424146,
+    "sha256": "6c119662e0360c71f2b7a8fbab9623afd9d67a5ee977ca23aa40fcaf2a7bc777",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882620/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/golden_0329.png"
+  },
+  "golden_0437.png": {
+    "bytes": 419479,
+    "sha256": "c9b610fade003973f91518bee2317f645ff54645d81270c66b1e9e6bee837f56",
+    "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1791882622/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/golden_0437.png"
+  },
+  "original.glb": {
+    "bytes": 27957516,
+    "sha256": "b0f701a1c32c25bd78240376ef9f7eed533153931d2188e08db480c84dd722cf",
+    "parts": [
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881267/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/original.glb.part0.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881276/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/original.glb.part1.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881282/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/original.glb.part2.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881287/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/original.glb.part3.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881291/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/original.glb.part4.txt"
+    ],
+    "encoding": "base64"
+  },
+  "samba.glb": {
+    "bytes": 21807648,
+    "sha256": "0a84f1ac602a860af4d221d0865a84589de1c249b541d688aeced8795ed54cbb",
+    "parts": [
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882633/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/samba.glb.part0.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882641/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/samba.glb.part1.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882649/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/samba.glb.part2.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791882654/scenex/wikipedia/characters/autorig65/oda-20261013-v5/ada/samba.glb.part3.txt"
+    ],
+    "encoding": "base64"
+  },
+  "rigged.glb": {
+    "bytes": 21048388,
+    "sha256": "ab116eb8a7926d7bb6f9ee84f80b73a38980546f6d1ccb42b619af2918439f0b",
+    "parts": [
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881332/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/rigged.glb.part0.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881343/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/rigged.glb.part1.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881350/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/rigged.glb.part2.txt",
+      "https://res.cloudinary.com/zsxeu0gu/raw/upload/v1791881354/scenex/wikipedia/characters/autorig65/oda-20261013-v3/ada/rigged.glb.part3.txt"
+    ],
+    "encoding": "base64"
+  }
+}

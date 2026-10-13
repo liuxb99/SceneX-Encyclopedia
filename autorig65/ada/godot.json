@@ -1,0 +1,35 @@
+{
+  "animation": "Animation",
+  "blender_godot_joint_max_error_m": 0.0000282485962088685,
+  "bones": 65,
+  "engine": "4.7-stable (official)",
+  "frame_errors": [
+    {
+      "bone": "mixamorig:RightToeBase",
+      "error_m": 0.0000266899314738112,
+      "frame": 1.0
+    },
+    {
+      "bone": "mixamorig:RightToeBase",
+      "error_m": 0.0000278020415862557,
+      "frame": 111.0
+    },
+    {
+      "bone": "mixamorig:RightToeBase",
+      "error_m": 0.0000282485962088685,
+      "frame": 219.0
+    },
+    {
+      "bone": "mixamorig:RightToeBase",
+      "error_m": 0.0000271820681518875,
+      "frame": 329.0
+    },
+    {
+      "bone": "mixamorig:RightToeBase",
+      "error_m": 0.0000269052306975937,
+      "frame": 438.0
+    }
+  ],
+  "ok": true,
+  "profile_bones": 56
+}

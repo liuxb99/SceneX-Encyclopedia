@@ -9,6 +9,12 @@
       "skin_binding": "NATIVE_WEIGHTS"
     }
   ],
+  "weight_fallback_vertices": 0,
+  "imported_originals_preserved": true,
+  "normalization": {
+    "scale": 1.0,
+    "policy": "NATIVE_METERS"
+  },
   "source_sha256": "7a87e15a99ccbc5e5877be66e1e4ecae0a581adcafa0cce1a5569f49909e968e",
   "materials_preserved": true,
   "images": [
@@ -38,6 +44,20 @@
       [
         512,
         512
+      ]
+    ],
+    [
+      "Render Result",
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "Viewer Node",
+      [
+        256,
+        256
       ]
     ]
   ],
@@ -103,84 +123,93 @@
       "Jaw"
     ],
     "root_policy": "Virtual object root; Hips retains native local translation",
-    "godot_runtime": "NOT RUN"
+    "godot_runtime": "PASS_4_7_24FPS"
+  },
+  "foot_contact": {
+    "policy": "LOWEST_WEIGHTED_FOOT_ON_FLOOR",
+    "floor_z": 0.0,
+    "frames": 438,
+    "before_min_z": -0.008745570667088032,
+    "before_max_z": 0.012688405811786652,
+    "max_correction_m": 0.012688405811786652,
+    "max_error_m": 2.4577531121394713e-09,
+    "result": "PASS"
   },
   "motion": {
-    "frames": 438,
-    "fps": 24,
-    "native_vertex_max_error_m": 8.965497587019994e-07,
-    "loop_vertex_max_error_m": 5.379014761135384e-07,
-    "max_vertex_step_m": 0.29605152813734364,
-    "loop_blend_frames": 24,
-    "finite_vertices_all_frames": true
+    "finite_all_438_frames": true,
+    "loop_error_m": 9.671990077275498e-07,
+    "max_vertex_step_m": 0.296369927616169,
+    "keyframe_geometry_fingerprints": [
+      18969.792591831832,
+      19541.968089600203,
+      19464.60316412823,
+      19046.797756772845,
+      18969.799709317926
+    ],
+    "visual_acceptance": "PENDING",
+    "retarget": "GLOBAL_REST_BASIS_MEASURED_LENGTHS",
+    "height_m": 1.614558815902754,
+    "max_step_over_height": 0.18356093608795454,
+    "step_gate_limit": 0.3,
+    "continuity_result": "PASS"
   },
-  "roundtrip": {
-    "ok": true,
+  "character": "michelle",
+  "roundtrip_result": "PASS",
+  "godot": {
+    "animation": "Animation",
+    "blender_godot_joint_max_error_m": 7.81765083956998e-06,
     "bones": 65,
-    "meshes": 1,
-    "unbound_vertices": 0,
-    "actions": [
-      "Animation"
-    ],
-    "frame_range": [
-      1.0,
-      438.0
-    ],
-    "deformation_fingerprints": [
-      19312.683610279953,
-      19887.815343990038,
-      19847.1965542708,
-      19431.085238014533,
-      19312.685484543057
-    ],
-    "images": [
+    "engine": "4.7-stable (official)",
+    "frame_errors": [
       {
-        "name": "Ch03_1001_Diffuse",
-        "size": [
-          512,
-          512
-        ],
-        "packed": true
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 7.47066997064394e-06,
+        "frame": 1.0
       },
       {
-        "name": "Ch03_1001_Glossiness",
-        "size": [
-          512,
-          512
-        ],
-        "packed": true
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 7.81765083956998e-06,
+        "frame": 111.0
       },
       {
-        "name": "Ch03_1001_Normal",
-        "size": [
-          512,
-          512
-        ],
-        "packed": true
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 7.45188071960001e-06,
+        "frame": 219.0
       },
       {
-        "name": "Image",
-        "size": [
-          512,
-          512
-        ],
-        "packed": true
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 7.19102854418452e-06,
+        "frame": 329.0
+      },
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 6.80211906001205e-06,
+        "frame": 438.0
       }
-    ]
+    ],
+    "ok": true,
+    "profile_bones": 56
   },
   "mp4": {
     "decode": "PASS",
     "duration_s": 18.25,
-    "frames": 219,
-    "fps": 12
+    "width": 640,
+    "height": 640,
+    "fps": 12,
+    "frames": 219
   },
-  "visual_qa": {
-    "inspected": [
-      "golden_0219.png"
-    ],
-    "status": "PARTIAL",
-    "full_motion_review": "PENDING"
+  "artifact_result": "PASS",
+  "full_acceptance": "INCOMPLETE",
+  "visual": {
+    "five_golden_frames": "INSPECTED",
+    "continuous_video": "PENDING",
+    "foot_contact": "PASS_LOWEST_WEIGHTED_FOOT",
+    "self_intersection": "NOT RUN"
   },
-  "publication": "PENDING",
-  "produced_at": "2026-10-13T16:17:17.786122+08:00"
+  "supported_scope": "Recognized source profiles; unknown unrigged geometry explicitly rejected",
+  "produced_at": "2026-10-13T17:13:51.462636+08:00",
+  "guard_tests": {
+    "count": 8,
+    "result": "PASS"
+  }
 }

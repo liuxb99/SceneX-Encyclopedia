@@ -1,0 +1,433 @@
+{
+  "bones": 65,
+  "topology_ok": true,
+  "meshes": [
+    {
+      "mesh": "0_AutoRig65",
+      "vertices": 4632,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "1_AutoRig65",
+      "vertices": 1762,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "2_AutoRig65",
+      "vertices": 10206,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "3_AutoRig65",
+      "vertices": 2973,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "4_AutoRig65",
+      "vertices": 3540,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "5_AutoRig65",
+      "vertices": 386,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "6_AutoRig65",
+      "vertices": 448,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "7_AutoRig65",
+      "vertices": 2030,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "8_AutoRig65",
+      "vertices": 18757,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "9_AutoRig65",
+      "vertices": 8885,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "10_AutoRig65",
+      "vertices": 7225,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "11_AutoRig65",
+      "vertices": 21494,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "12_AutoRig65",
+      "vertices": 1432,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "13_AutoRig65",
+      "vertices": 3906,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "14_AutoRig65",
+      "vertices": 3396,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    },
+    {
+      "mesh": "15_AutoRig65",
+      "vertices": 13646,
+      "unbound_vertices": 0,
+      "skin_binding": "SEMANTIC_SOURCE_WEIGHTS"
+    }
+  ],
+  "weight_fallback_vertices": 599,
+  "imported_originals_preserved": true,
+  "normalization": {
+    "scale": 0.31957635313921456,
+    "source_aabb_height": 5.319542523408927,
+    "reference_aabb_height": 1.7,
+    "policy": "UNIFORM_REFERENCE_SCALE_PRESERVE_PROPORTIONS"
+  },
+  "source_sha256": "b0f701a1c32c25bd78240376ef9f7eed533153931d2188e08db480c84dd722cf",
+  "materials_preserved": true,
+  "images": [
+    [
+      "Image_0",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_1",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_10",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_11",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_12",
+      [
+        512,
+        1024
+      ]
+    ],
+    [
+      "Image_13",
+      [
+        512,
+        1024
+      ]
+    ],
+    [
+      "Image_14",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_15",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_16",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_17",
+      [
+        512,
+        1024
+      ]
+    ],
+    [
+      "Image_18",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_19",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_2",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_20",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_21",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_3",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_4",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_5",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_6",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_7",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_8",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Image_9",
+      [
+        1024,
+        1024
+      ]
+    ],
+    [
+      "Render Result",
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "Viewer Node",
+      [
+        256,
+        256
+      ]
+    ]
+  ],
+  "godot56": {
+    "profile_bones": 56,
+    "mapped": {
+      "Hips": "mixamorig:Hips",
+      "Spine": "mixamorig:Spine",
+      "Chest": "mixamorig:Spine1",
+      "UpperChest": "mixamorig:Spine2",
+      "Neck": "mixamorig:Neck",
+      "Head": "mixamorig:Head",
+      "LeftShoulder": "mixamorig:LeftShoulder",
+      "LeftUpperArm": "mixamorig:LeftArm",
+      "LeftLowerArm": "mixamorig:LeftForeArm",
+      "LeftHand": "mixamorig:LeftHand",
+      "RightShoulder": "mixamorig:RightShoulder",
+      "RightUpperArm": "mixamorig:RightArm",
+      "RightLowerArm": "mixamorig:RightForeArm",
+      "RightHand": "mixamorig:RightHand",
+      "LeftUpperLeg": "mixamorig:LeftUpLeg",
+      "LeftLowerLeg": "mixamorig:LeftLeg",
+      "LeftFoot": "mixamorig:LeftFoot",
+      "LeftToes": "mixamorig:LeftToeBase",
+      "RightUpperLeg": "mixamorig:RightUpLeg",
+      "RightLowerLeg": "mixamorig:RightLeg",
+      "RightFoot": "mixamorig:RightFoot",
+      "RightToes": "mixamorig:RightToeBase",
+      "LeftThumbProximal": "mixamorig:LeftHandThumb2",
+      "LeftThumbDistal": "mixamorig:LeftHandThumb3",
+      "LeftIndexProximal": "mixamorig:LeftHandIndex1",
+      "LeftIndexIntermediate": "mixamorig:LeftHandIndex2",
+      "LeftIndexDistal": "mixamorig:LeftHandIndex3",
+      "LeftMiddleProximal": "mixamorig:LeftHandMiddle1",
+      "LeftMiddleIntermediate": "mixamorig:LeftHandMiddle2",
+      "LeftMiddleDistal": "mixamorig:LeftHandMiddle3",
+      "LeftRingProximal": "mixamorig:LeftHandRing1",
+      "LeftRingIntermediate": "mixamorig:LeftHandRing2",
+      "LeftRingDistal": "mixamorig:LeftHandRing3",
+      "LeftLittleProximal": "mixamorig:LeftHandPinky1",
+      "LeftLittleIntermediate": "mixamorig:LeftHandPinky2",
+      "LeftLittleDistal": "mixamorig:LeftHandPinky3",
+      "RightThumbProximal": "mixamorig:RightHandThumb2",
+      "RightThumbDistal": "mixamorig:RightHandThumb3",
+      "RightIndexProximal": "mixamorig:RightHandIndex1",
+      "RightIndexIntermediate": "mixamorig:RightHandIndex2",
+      "RightIndexDistal": "mixamorig:RightHandIndex3",
+      "RightMiddleProximal": "mixamorig:RightHandMiddle1",
+      "RightMiddleIntermediate": "mixamorig:RightHandMiddle2",
+      "RightMiddleDistal": "mixamorig:RightHandMiddle3",
+      "RightRingProximal": "mixamorig:RightHandRing1",
+      "RightRingIntermediate": "mixamorig:RightHandRing2",
+      "RightRingDistal": "mixamorig:RightHandRing3",
+      "RightLittleProximal": "mixamorig:RightHandPinky1",
+      "RightLittleIntermediate": "mixamorig:RightHandPinky2",
+      "RightLittleDistal": "mixamorig:RightHandPinky3",
+      "LeftThumbMetacarpal": "mixamorig:LeftHandThumb1",
+      "RightThumbMetacarpal": "mixamorig:RightHandThumb1"
+    },
+    "unmapped_optional": [
+      "LeftEye",
+      "RightEye",
+      "Jaw"
+    ],
+    "root_policy": "Virtual object root; Hips retains native local translation",
+    "godot_runtime": "PASS_4_7_24FPS"
+  },
+  "foot_contact": {
+    "policy": "LOWEST_WEIGHTED_FOOT_ON_FLOOR",
+    "floor_z": 0.0,
+    "frames": 438,
+    "before_min_z": -0.029789509251713753,
+    "before_max_z": 0.027970802038908005,
+    "max_correction_m": 0.029789509251713753,
+    "max_error_m": 9.746286444567431e-09,
+    "result": "PASS"
+  },
+  "motion": {
+    "finite_all_438_frames": true,
+    "loop_error_m": 1.2573613589840524e-06,
+    "max_vertex_step_m": 0.3095884567761584,
+    "keyframe_geometry_fingerprints": [
+      111416.39901484828,
+      118948.4595492501,
+      118269.48624615083,
+      108822.03523506626,
+      111416.42803120268
+    ],
+    "visual_acceptance": "PENDING",
+    "retarget": "GLOBAL_REST_BASIS_MEASURED_LENGTHS",
+    "height_m": 1.6609460105131362,
+    "max_step_over_height": 0.18639284770039788,
+    "step_gate_limit": 0.3,
+    "continuity_result": "PASS"
+  },
+  "character": "ada_wong_source",
+  "roundtrip_result": "PASS",
+  "godot": {
+    "animation": "Animation",
+    "blender_godot_joint_max_error_m": 2.82485962088685e-05,
+    "bones": 65,
+    "engine": "4.7-stable (official)",
+    "frame_errors": [
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 2.66899314738112e-05,
+        "frame": 1.0
+      },
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 2.78020415862557e-05,
+        "frame": 111.0
+      },
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 2.82485962088685e-05,
+        "frame": 219.0
+      },
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 2.71820681518875e-05,
+        "frame": 329.0
+      },
+      {
+        "bone": "mixamorig:RightToeBase",
+        "error_m": 2.69052306975937e-05,
+        "frame": 438.0
+      }
+    ],
+    "ok": true,
+    "profile_bones": 56
+  },
+  "mp4": {
+    "decode": "PASS",
+    "duration_s": 18.25,
+    "width": 640,
+    "height": 640,
+    "fps": 12,
+    "frames": 219
+  },
+  "artifact_result": "PASS",
+  "full_acceptance": "INCOMPLETE",
+  "visual": {
+    "five_golden_frames": "INSPECTED",
+    "continuous_video": "PENDING",
+    "foot_contact": "PASS_LOWEST_WEIGHTED_FOOT",
+    "self_intersection": "NOT RUN"
+  },
+  "supported_scope": "Recognized source profiles; unknown unrigged geometry explicitly rejected",
+  "produced_at": "2026-10-13T17:13:51.462636+08:00",
+  "guard_tests": {
+    "count": 8,
+    "result": "PASS"
+  }
+}

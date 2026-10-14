@@ -1,0 +1,659 @@
+{
+  "schema_version": "1.3",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-14_1132",
+  "generated_at": "2026-10-14T11:32:00+08:00",
+  "data_cutoff_at": "2026-10-14T11:32:00+08:00",
+  "timezone": "Asia/Taipei",
+  "as_of_market_session": {
+    "US": "2026-10-13 close",
+    "Taiwan": "2026-10-13 close",
+    "CPI": "NOT RELEASED",
+    "Taiwan_next": "2026-10-14 intraday; no independently verified live TAIEX quote",
+    "Asia": "2026-10-14 morning Reuters market report"
+  },
+  "model_version": "global-risk-butterfly-research-0.7",
+  "calibration_status": "UNCALIBRATED",
+  "assessment_method": "AI_JUDGMENT",
+  "events": [
+    {
+      "event_id": "E1",
+      "theme": "台股資金",
+      "fact": "10/13 TAIEX 48,341.31，-960.65 點（-1.95%）；外資賣超 1,653.42 億元。",
+      "interpretation": "外資流出可能提高台指期波動，但不代表隔日必跌。",
+      "source_url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B3%A3%E8%B6%85%E5%8F%B0%E8%82%A11984-46%E5%84%84%E5%85%83-%E5%A4%96%E8%B3%87%E5%96%AE%E6%97%A5%E8%B3%A3%E8%B6%85%E7%AC%AC3%E5%A4%A7-071103703.html",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E2",
+      "theme": "半導體",
+      "fact": "10/13 KOSPI 約 -5.5%；台積電 2,490 元（-1.97%）。",
+      "interpretation": "亞洲晶片競爭可能傳導至台灣估值。",
+      "source_url": "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E3",
+      "theme": "美股",
+      "fact": "10/13 S&P 500 7,805.45、Nasdaq 27,204.38，費半約 -0.23%。",
+      "interpretation": "大盤近乎持平掩蓋晶片相對弱勢。",
+      "source_url": "https://www.reuters.com/business/sp-500-futures-muted-investors-await-big-bank-earnings-chip-weakness-weighs-2026-10-13/",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E4",
+      "theme": "能源",
+      "fact": "10/13 Brent 105.69 美元（-0.9%）、WTI 94.14 美元（+0.4%）。",
+      "interpretation": "高油價仍帶來通膨尾部風險，但當日價格走勢分歧。",
+      "source_url": "https://www.reuters.com/business/energy/oil-ticks-lower-russia-diesel-supply-prospects-counter-gulf-supply-risks-2026-10-13/",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E5",
+      "theme": "利率",
+      "fact": "10/13 美國 10Y 殖利率約 5.219%，10/14 美國 CPI 截點時尚未公布。",
+      "interpretation": "高利率可能壓抑長久期科技估值。",
+      "source_url": "https://www.wsj.com/economy/central-banking/treasury-eurozone-yields-fall-as-markets-look-to-u-s-inflation-data-412d95a4",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E6",
+      "theme": "匯率",
+      "fact": "10/13 USD/TWD 收 32.085，新台幣貶值 0.19 元。",
+      "interpretation": "股匯同弱可能提高避險需求，並非已證實因果。",
+      "source_url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E5%96%AE%E6%97%A5%E8%B3%A3%E8%B6%851653%E5%84%84%E5%85%83%E5%89%B5%E5%8F%B2%E4%B8%8A%E7%AC%AC%E4%B8%89%E5%A4%A7-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%A8%98%E6%86%B6%E9%AB%94%E6%97%8F%E7%BE%A4%E6%88%90%E6%8F%90%E6%AC%BE%E9%87%8D%E5%BF%83-091744538.html",
+      "source_published_at": "2026-10-13",
+      "observed_at": "2026-10-14T07:55:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E7",
+      "theme": "10/14 亞洲市場盤中修復",
+      "fact": "Reuters 10/14 上午報導 MSCI 亞太除日本指數上漲約 0.5%，韓國 KOSPI 約上漲 1.8%，三星與 SK 海力士反彈超過 2%；數值是新聞報導當時的盤中狀態，非收盤。",
+      "interpretation": "前一日半導體急跌後出現局部反彈，降低立即單向追空的合理性；不代表台灣風險已解除。",
+      "source_ids": [
+        "R7"
+      ],
+      "source_url": "https://www.marketscreener.com/news/asia-shares-edge-up-as-chip-selloff-eases-us-cpi-awaited-ce785dd2d88ef12d",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-14T11:32:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E8",
+      "theme": "台灣官方成交量",
+      "fact": "TWSE 官方資料顯示 10/13 加權指數收 48,341.31 點，跌 960.65 點；全市場當日交易金額約新台幣 1.202 兆元（含多種交易類型）。",
+      "interpretation": "量能擴大與指數急跌共同顯示去風險交易強烈，但成交量本身不證明隔日趨勢。",
+      "source_ids": [
+        "R8"
+      ],
+      "source_url": "https://www.twse.com.tw/en/exchangeReport/FMTQIK?date=&response=html",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-14T11:32:00+08:00",
+      "confidence": "HIGH"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "ASIA_CHIPS",
+      "direction": "NEGATIVE",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E2",
+        "E3"
+      ]
+    },
+    {
+      "node": "OIL_INFLATION",
+      "direction": "POSITIVE_RISK",
+      "magnitude": "MEDIUM",
+      "evidence_event_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "中國記憶體競爭",
+      "target": "亞洲晶片股",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "亞洲晶片股",
+      "target": "SOX",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "SOX",
+      "target": "台積電",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "台積電",
+      "target": "TAIEX/MXF",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "外資賣超",
+      "target": "台幣貶值",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "台幣貶值",
+      "target": "避險需求",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "避險需求",
+      "target": "台指期波動",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "能源航運",
+      "target": "油價",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "油價",
+      "target": "通膨預期",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "通膨預期",
+      "target": "美債殖利率",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "美債殖利率",
+      "target": "AI估值",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "AI估值",
+      "target": "台灣半導體",
+      "direction": "HYPOTHESIS",
+      "weight": 0.6,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNCALIBRATED",
+      "evidence_ids": [
+        "E2",
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    }
+  ],
+  "propagation_paths": [
+    [
+      "中國記憶體競爭",
+      "亞洲晶片股",
+      "SOX",
+      "台積電",
+      "TAIEX/MXF"
+    ],
+    [
+      "外資賣超",
+      "台幣貶值",
+      "避險需求",
+      "台指期波動"
+    ],
+    [
+      "能源航運",
+      "油價",
+      "通膨預期",
+      "美債殖利率",
+      "AI估值",
+      "台灣半導體"
+    ]
+  ],
+  "convergence": {
+    "nodes": [
+      "AI估值",
+      "台灣半導體",
+      "外資流量"
+    ],
+    "analysis": "半導體與利率匯流在科技估值；外資及匯率匯流在台灣資金面。",
+    "double_counting_control": "台積電跌幅與外資賣超可能共享同一原因，不能當獨立機率累加。",
+    "confidence": "MEDIUM",
+    "parallel_paths": [
+      [
+        "中國記憶體競爭",
+        "亞洲晶片股",
+        "SOX",
+        "台積電",
+        "TAIEX/MXF"
+      ],
+      [
+        "外資賣超",
+        "台幣貶值",
+        "避險需求",
+        "台指期波動"
+      ],
+      [
+        "能源航運",
+        "油價",
+        "通膨預期",
+        "美債殖利率",
+        "AI估值",
+        "台灣半導體"
+      ]
+    ]
+  },
+  "regime": {
+    "label": "ASIA_SEMICONDUCTOR_RISK_OFF_WITH_INTRADAY_REBOUND",
+    "confidence": "MEDIUM",
+    "as_of": "2026-10-14T11:32:00+08:00"
+  },
+  "taiwan_exposure": {
+    "taiex": 48341.31,
+    "taiex_pct": -1.95,
+    "foreign_sell_twd_100m": 1653.42,
+    "tsmc": 2490,
+    "usd_twd": 32.085,
+    "mxf": "preopen; no live quote"
+  },
+  "scores": {
+    "global": {
+      "value": 82,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "semiconductor",
+          "weight": 0.26,
+          "subjective_severity": 90,
+          "weighted_points": 23.4
+        },
+        {
+          "factor": "energy",
+          "weight": 0.24,
+          "subjective_severity": 82,
+          "weighted_points": 19.68
+        },
+        {
+          "factor": "rates",
+          "weight": 0.2,
+          "subjective_severity": 77,
+          "weighted_points": 15.4
+        },
+        {
+          "factor": "geopolitical",
+          "weight": 0.2,
+          "subjective_severity": 85,
+          "weighted_points": 17
+        },
+        {
+          "factor": "credit",
+          "weight": 0.1,
+          "subjective_severity": 65,
+          "weighted_points": 6.5
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "taiwan": {
+      "value": 88,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "semiconductor",
+          "weight": 0.35,
+          "subjective_severity": 94,
+          "weighted_points": 32.9
+        },
+        {
+          "factor": "foreign_flow",
+          "weight": 0.25,
+          "subjective_severity": 96,
+          "weighted_points": 24
+        },
+        {
+          "factor": "energy",
+          "weight": 0.15,
+          "subjective_severity": 82,
+          "weighted_points": 12.3
+        },
+        {
+          "factor": "rates",
+          "weight": 0.15,
+          "subjective_severity": 75,
+          "weighted_points": 11.25
+        },
+        {
+          "factor": "geopolitical",
+          "weight": 0.1,
+          "subjective_severity": 75,
+          "weighted_points": 7.5
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "energy": {
+      "value": 82,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "oil_level",
+          "weight": 0.55,
+          "subjective_severity": 85,
+          "weighted_points": 46.75
+        },
+        {
+          "factor": "shipping",
+          "weight": 0.45,
+          "subjective_severity": 78,
+          "weighted_points": 35.1
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 77,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "yield",
+          "weight": 0.75,
+          "subjective_severity": 82,
+          "weighted_points": 61.5
+        },
+        {
+          "factor": "cpi_event",
+          "weight": 0.25,
+          "subjective_severity": 62,
+          "weighted_points": 15.5
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 65,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "bank_earnings",
+          "weight": 0.6,
+          "subjective_severity": 65,
+          "weighted_points": 39
+        },
+        {
+          "factor": "funding_cost",
+          "weight": 0.4,
+          "subjective_severity": 65,
+          "weighted_points": 26
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 85,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "shipping",
+          "weight": 0.7,
+          "subjective_severity": 88,
+          "weighted_points": 61.6
+        },
+        {
+          "factor": "regional",
+          "weight": 0.3,
+          "subjective_severity": 78,
+          "weighted_points": 23.4
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "semiconductor": {
+      "value": 90,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.1",
+      "formula": "round(sum(weight * subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "asia_chips",
+          "weight": 0.6,
+          "subjective_severity": 95,
+          "weighted_points": 57
+        },
+        {
+          "factor": "sox",
+          "weight": 0.4,
+          "subjective_severity": 83,
+          "weighted_points": 33.2
+        }
+      ],
+      "assumptions": "主觀嚴重度；非統計模型",
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE / AWAIT_DETERMINISTIC_ENGINE",
+    "deterministic_rule_applied": false,
+    "rule_version": "NOT_RUN",
+    "reason": "亞洲半導體賣壓、外資流出、CPI事件窗",
+    "scope": "new long entries only; preserve 60-minute strategy"
+  },
+  "downgrade_conditions": [
+    "外資及台指期資金流回穩，台積電止跌",
+    "SOX及韓國晶片股反彈",
+    "油價回落且航運實質改善",
+    "CPI低於預期且殖利率回落",
+    "信用利差未惡化"
+  ],
+  "sources": [
+    {
+      "source_id": "R1",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B3%A3%E8%B6%85%E5%8F%B0%E8%82%A11984-46%E5%84%84%E5%85%83-%E5%A4%96%E8%B3%87%E5%96%AE%E6%97%A5%E8%B3%A3%E8%B6%85%E7%AC%AC3%E5%A4%A7-071103703.html",
+      "title": "台股資金",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R2",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
+      "title": "半導體",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R3",
+      "url": "https://www.reuters.com/business/sp-500-futures-muted-investors-await-big-bank-earnings-chip-weakness-weighs-2026-10-13/",
+      "title": "美股",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R4",
+      "url": "https://www.reuters.com/business/energy/oil-ticks-lower-russia-diesel-supply-prospects-counter-gulf-supply-risks-2026-10-13/",
+      "title": "能源",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R5",
+      "url": "https://www.wsj.com/economy/central-banking/treasury-eurozone-yields-fall-as-markets-look-to-u-s-inflation-data-412d95a4",
+      "title": "利率",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R6",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E5%96%AE%E6%97%A5%E8%B3%A3%E8%B6%851653%E5%84%84%E5%85%83%E5%89%B5%E5%8F%B2%E4%B8%8A%E7%AC%AC%E4%B8%89%E5%A4%A7-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%A8%98%E6%86%B6%E9%AB%94%E6%97%8F%E7%BE%A4%E6%88%90%E6%8F%90%E6%AC%BE%E9%87%8D%E5%BF%83-091744538.html",
+      "title": "匯率",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R7",
+      "title": "Reuters：10/14 亞洲晶片股反彈與美國 CPI 前觀望",
+      "url": "https://www.marketscreener.com/news/asia-shares-edge-up-as-chip-selloff-eases-us-cpi-awaited-ce785dd2d88ef12d",
+      "published_at": "2026-10-14"
+    },
+    {
+      "source_id": "R8",
+      "title": "TWSE 官方：2026/10 每日市場交易統計",
+      "url": "https://www.twse.com.tw/en/exchangeReport/FMTQIK?date=&response=html",
+      "published_at": "2026-10-14"
+    },
+    {
+      "source_id": "R9",
+      "title": "中央社：10/13 台股下跌 960 點、外資賣超",
+      "url": "https://focustaiwan.tw/business/202610130017",
+      "published_at": "2026-10-13"
+    },
+    {
+      "source_id": "R10",
+      "title": "Reuters：AI 晶片投資風險重新定價",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-ai-selloff-analysis-pix-2026-10-13/",
+      "published_at": "2026-10-13"
+    }
+  ],
+  "limitations": [
+    "所有分數主觀未校準",
+    "未取得10/14台指期即時數據",
+    "截點後結果不得回填",
+    "10/14 上午亞洲盤中反彈不等於收盤；不得把盤中價格當作正式收盤。",
+    "此為 11:32 新版研究 snapshot，原 07:55 snapshot 永久保留。"
+  ],
+  "historical_archive_audit": {
+    "missing_original_json": [
+      "2026-10-08",
+      "2026-10-09"
+    ],
+    "policy": "do not reconstruct point-in-time originals retrospectively"
+  }
+}

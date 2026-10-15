@@ -1,0 +1,978 @@
+{
+  "schema": "scenex.autorig65.reviewed-video-publication.v1",
+  "revision": "glb-batch-20261016-v12",
+  "scope": "BATCH",
+  "completed_films": 17,
+  "expected_films": 27,
+  "records": [
+    {
+      "case_id": "model_04_taiji",
+      "source": "Mai Bikini.glb",
+      "source_sha256": "a5aecce8d5774c5e139a8136030c90fc1dab66e0c3337aa9ad7874eda17c27ee",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792041998/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/model_04_taiji-aea2a8b63e8f4ebb.mp4",
+        "bytes": 1053063,
+        "sha256": "aea2a8b63e8f4ebb18f5ed2f4ae5f624e6e66a0a0e70de20e4dfae3ab6b73265",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042002/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/golden_0001-cc1a2c14196f0ce7.png",
+          "bytes": 442629,
+          "sha256": "cc1a2c14196f0ce76e599e2bd3a161dfeef9c66da12743c1fddee9dc3662c012",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042004/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/golden_0315-db19eaf51d9dcdb1.png",
+          "bytes": 444547,
+          "sha256": "db19eaf51d9dcdb16e8b4139f6bb2b656d1f2623c5c97ccc0c3db38c5b7538f8",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042006/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/golden_0629-acd2c281cea3af1b.png",
+          "bytes": 446999,
+          "sha256": "acd2c281cea3af1b61645c1d832fe5ee8108348ab4cb3a8d3b8f3a9a809fe0de",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042007/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/golden_0943-b63648abae74f19a.png",
+          "bytes": 443470,
+          "sha256": "b63648abae74f19a9610a9397c367aaff28a32749f0596cbc36f23668efe98d9",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042009/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_taiji/golden_1256-c6fb385ceccaa871.png",
+          "bytes": 446519,
+          "sha256": "c6fb385ceccaa871c93c8af25d314e466dfac348b509128dd8c9d6dba9698af8",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_04_swan_lake",
+      "source": "Mai Bikini.glb",
+      "source_sha256": "a5aecce8d5774c5e139a8136030c90fc1dab66e0c3337aa9ad7874eda17c27ee",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042015/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/model_04_swan_lake-c4e5d1d324933de3.mp4",
+        "bytes": 5013982,
+        "sha256": "c4e5d1d324933de32a14e138135ffe1a69cce58f3b12213e74fceab52e7863f8",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042019/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/golden_0001-70876fa321daaedd.png",
+          "bytes": 436427,
+          "sha256": "70876fa321daaedd51e3f340b94988c988de03f07a8537002aadcb286f072267",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042021/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/golden_0856-e2a766af7b9d1f52.png",
+          "bytes": 438542,
+          "sha256": "e2a766af7b9d1f5201e219ecad1e76b54413b884d0e411a22dabb148380f46ae",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042023/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/golden_1710-eeff94e2976ad9fa.png",
+          "bytes": 436907,
+          "sha256": "eeff94e2976ad9fa97d17a1de359e9f07226b0db79fb0be9efbd18216043f9e6",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042024/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/golden_2565-f3043d396e8c864a.png",
+          "bytes": 435570,
+          "sha256": "f3043d396e8c864abd0ea6d390fee7647891246e0f5203fdf6974a7b0fad6449",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042026/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_swan_lake/golden_3420-92a42c33272e15a5.png",
+          "bytes": 437760,
+          "sha256": "92a42c33272e15a55c37c7b1edb93b14b6d7bc5dec2cea6459f622f70db06a88",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_04_samba_retarget",
+      "source": "Mai Bikini.glb",
+      "source_sha256": "a5aecce8d5774c5e139a8136030c90fc1dab66e0c3337aa9ad7874eda17c27ee",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042028/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/model_04_samba_retarget-e9fb79ad62377cbb.mp4",
+        "bytes": 912520,
+        "sha256": "e9fb79ad62377cbba3905c6a8d4df93bf7f30d407275b98716cd12175421b5d1",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042030/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/golden_0001-69d6cd0d5448e2a6.png",
+          "bytes": 442990,
+          "sha256": "69d6cd0d5448e2a68ad2da637bd918750e4a8cbcbe0f82d670888cae59bc9fd5",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042032/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/golden_0111-6b3e487b529b603b.png",
+          "bytes": 447914,
+          "sha256": "6b3e487b529b603bfebb9fef4c365ed3fea94f812d3409a1104cb37da8b123a0",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042034/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/golden_0219-07e9fb1e58e693c6.png",
+          "bytes": 449897,
+          "sha256": "07e9fb1e58e693c61067a680d3ac5567c9fa3a7d1b1f9de8a61932561d3503b2",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042036/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/golden_0329-278a92eaea6cb58e.png",
+          "bytes": 447864,
+          "sha256": "278a92eaea6cb58e14785003e059010c2e80149f6377461c17f8698c4638395b",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042037/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_04_samba_retarget/golden_0437-683d364a0606ca26.png",
+          "bytes": 443127,
+          "sha256": "683d364a0606ca260f80c7c62331a2bf2a75346616a2015337c2b29a5459a768",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_09_taiji",
+      "source": "Tsunade Bikini.glb",
+      "source_sha256": "1dd4013d34354068c23ee170834d610f4740ae7a034b3f2f65e50e3c54dbe575",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042040/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/model_09_taiji-1de1f300955677e3.mp4",
+        "bytes": 922465,
+        "sha256": "1de1f300955677e3bdd2c7f04e8a150b7e0da08591a294932d1caa0c5999908b",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042042/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/golden_0001-9bf51095e0a24542.png",
+          "bytes": 429648,
+          "sha256": "9bf51095e0a24542419cc17999fe3f0dc5d03de448f98e22635d23ff6628bc00",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042044/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/golden_0315-26a887965e6d722f.png",
+          "bytes": 431204,
+          "sha256": "26a887965e6d722f2ad2f6240cb1d67284c247ac181b5b8bcb91e67a69549a1d",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042046/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/golden_0629-271cc5476612987e.png",
+          "bytes": 432415,
+          "sha256": "271cc5476612987e611936dfe1f2c960f34f706690e40795fd5c9a051f6a89c7",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042048/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/golden_0943-1ca03280b7ea8128.png",
+          "bytes": 430766,
+          "sha256": "1ca03280b7ea8128bfd1c03c3e23ef4cbd10def6d4b5fa1794d6c872a20c04b1",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042049/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_taiji/golden_1256-9ccfc1c960abeba0.png",
+          "bytes": 433016,
+          "sha256": "9ccfc1c960abeba0cd2c55dcc3c4b95b6da4d674149d16a33ffdc058bcbe7e5a",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_09_swan_lake",
+      "source": "Tsunade Bikini.glb",
+      "source_sha256": "1dd4013d34354068c23ee170834d610f4740ae7a034b3f2f65e50e3c54dbe575",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042056/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/model_09_swan_lake-33673ffef08ad66e.mp4",
+        "bytes": 4114844,
+        "sha256": "33673ffef08ad66e7fa458329c8ae7e2416b621147d0e9c4ba039adea8dc7494",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042059/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/golden_0001-ec620c8a3beae2a5.png",
+          "bytes": 427458,
+          "sha256": "ec620c8a3beae2a5abaa0be8b16ec0ec1d43fbc6beb8b212cc94cc26a75b1700",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042061/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/golden_0856-2a54ae0e60617fca.png",
+          "bytes": 428449,
+          "sha256": "2a54ae0e60617fcab6aabcafa1628bb2d5f85a8d41bb61472d3fc7cfb086f633",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042063/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/golden_1710-eb030ceecd6efc27.png",
+          "bytes": 425227,
+          "sha256": "eb030ceecd6efc274445f6a8ac37d9753200777ac73dc1aac154d0d9dade11e1",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042064/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/golden_2565-959b759d8742afe2.png",
+          "bytes": 427080,
+          "sha256": "959b759d8742afe2877d0f31a14cb3e4b1297534576e1ad40480bb1a73df3879",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042066/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_swan_lake/golden_3420-151315ca589489bf.png",
+          "bytes": 427182,
+          "sha256": "151315ca589489bf09d8c0afdddddd0f5eca7e3dd22b8cab2d9d177dc8b59ecb",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_09_samba_retarget",
+      "source": "Tsunade Bikini.glb",
+      "source_sha256": "1dd4013d34354068c23ee170834d610f4740ae7a034b3f2f65e50e3c54dbe575",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042068/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/model_09_samba_retarget-4bd30a55a66305fa.mp4",
+        "bytes": 752851,
+        "sha256": "4bd30a55a66305fae756d3e168309f802e3b70af6428f7b000bb4f2222b73ea2",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042070/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/golden_0001-eb6ec2ac97775148.png",
+          "bytes": 430849,
+          "sha256": "eb6ec2ac97775148fa6e90f56cde9d688f99069ff014cda4516727798083518d",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042071/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/golden_0111-33f9ea059fae02a0.png",
+          "bytes": 434826,
+          "sha256": "33f9ea059fae02a00e6ff5c5943afbacbdd20a2c7b7fc74511a25fae76a0c353",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042073/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/golden_0219-ecd60d0c77a3305b.png",
+          "bytes": 434848,
+          "sha256": "ecd60d0c77a3305b18eef673eb2f4cfaf944e428d42ffdbdba1b2dfdbba0886c",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042075/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/golden_0329-285b10c4dcd7a82b.png",
+          "bytes": 433721,
+          "sha256": "285b10c4dcd7a82b50eb039c492a8a61aa75108a6b041620a6642817cce95848",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042076/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_09_samba_retarget/golden_0437-8397d096cd1964e7.png",
+          "bytes": 430614,
+          "sha256": "8397d096cd1964e749c2a9ea55271cbb810f6114b00eadf95a382a0403494669",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_06_samba_retarget",
+      "source": "model0.glb",
+      "source_sha256": "0ebb8363d7b2a43cb3b57109bd69aae94a33a4076975dea15c3443439f5ada36",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042079/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/model_06_samba_retarget-6fcca74a0c37e951.mp4",
+        "bytes": 929661,
+        "sha256": "6fcca74a0c37e951e69fc78e0d5abf9bf964b6d347a6d08b5500f56dec911aab",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042081/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/golden_0001-28b3fd668303f1f5.png",
+          "bytes": 446611,
+          "sha256": "28b3fd668303f1f547cfcd7a2995b09b906b0fa1a02e8bf5514044931152e6df",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042082/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/golden_0111-9cf62a5b3cdf60ac.png",
+          "bytes": 449923,
+          "sha256": "9cf62a5b3cdf60ac06c5d5924129211ca514d922714b815c2b86972812a9d2f6",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042084/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/golden_0219-af3478c86383959b.png",
+          "bytes": 453595,
+          "sha256": "af3478c86383959b97245fe35936601ba5efb1f045f56836cea0efb045fd9b2c",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042085/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/golden_0329-521ebaed41699dda.png",
+          "bytes": 451813,
+          "sha256": "521ebaed41699dda2ab077b8f752f6e0b99d6ee83b5ced306bc9042a5909ee07",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042087/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_samba_retarget/golden_0437-e9d168f865287793.png",
+          "bytes": 446652,
+          "sha256": "e9d168f8652877930cf135b2e2acae8ef2ff09a54148fd9004b17f9f9798deba",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_06_taiji",
+      "source": "model0.glb",
+      "source_sha256": "0ebb8363d7b2a43cb3b57109bd69aae94a33a4076975dea15c3443439f5ada36",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792042709/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/model_06_taiji-02513c84d67ff2e6.mp4",
+        "bytes": 1069497,
+        "sha256": "02513c84d67ff2e67613a903bd2ddba7f34e5343be0f0e179761deb73b8e13cd",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042712/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/golden_0001-1e1d095a1fbc84b8.png",
+          "bytes": 446597,
+          "sha256": "1e1d095a1fbc84b88bcbe19835208ef0f1db8ec1ed4fee0fb82823ee430db2f1",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042714/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/golden_0315-985a4dd73c41cadb.png",
+          "bytes": 447641,
+          "sha256": "985a4dd73c41cadb270d937e56451e53ab31c1a44b1295eaf5507ce20a2f0ac3",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042716/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/golden_0629-d0edaed2135840c5.png",
+          "bytes": 449589,
+          "sha256": "d0edaed2135840c5846b04d61da8454d0fff39437d5a7bed39c2cad10fa98833",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042718/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/golden_0943-642cfdfa547aa6e5.png",
+          "bytes": 446832,
+          "sha256": "642cfdfa547aa6e55a92820abfa7a4970e8426edf2745b8cf30bd451d75220c7",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792042720/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_taiji/golden_1256-33620de654fd2de5.png",
+          "bytes": 449582,
+          "sha256": "33620de654fd2de5453216213e592984424c400a7a102b7b5eaf71c776c730aa",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_06_swan_lake",
+      "source": "model0.glb",
+      "source_sha256": "0ebb8363d7b2a43cb3b57109bd69aae94a33a4076975dea15c3443439f5ada36",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792048933/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/model_06_swan_lake-bc8d0a6a778ab68f.mp4",
+        "bytes": 4997720,
+        "sha256": "bc8d0a6a778ab68f0c8d5b4c6cce29f1c57af045a8c8dc5fdcdaee2b5ace18cb",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048935/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/golden_0001-24de6ea250e05689.png",
+          "bytes": 436363,
+          "sha256": "24de6ea250e0568959a20ba857cbdacb257a218fc804831ede54ba8796693837",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048937/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/golden_0856-7a5559459d3006be.png",
+          "bytes": 435151,
+          "sha256": "7a5559459d3006beb4a3f6406ac1623dcbbd3dd4aea45693cca20dbe892d7fde",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048939/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/golden_1710-df00bb7bedd4711e.png",
+          "bytes": 438292,
+          "sha256": "df00bb7bedd4711ece6ebbdc47503e420b59e940018a4b480aaf9af1f3ea99ff",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048940/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/golden_2565-2d39689e8f214641.png",
+          "bytes": 435265,
+          "sha256": "2d39689e8f2146413558d2d947fba2cf2c0aa21430997fda6fd6603934473aac",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048942/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_06_swan_lake/golden_3420-971f0ea512f545a6.png",
+          "bytes": 437384,
+          "sha256": "971f0ea512f545a6e25529d3f08ba75c4fd6019161c9095e849c4c9a9b2efbbb",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_07_samba_retarget",
+      "source": "Rias sexy.glb",
+      "source_sha256": "91dced8ca2676b98ffccfda80590d84d5e97807c2281dda614a7b2a9b8b467df",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792072499/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/model_07_samba_retarget-dd908ba9870739c3.mp4",
+        "bytes": 945505,
+        "sha256": "dd908ba9870739c3fa5158b217d2ba2dbc3533275a78576833aa0be2bddb4505",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072501/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/golden_0001-0d12b669f59d8729.png",
+          "bytes": 445721,
+          "sha256": "0d12b669f59d87290feb9aa111ba284f1da7835b39486cb4f46a628ad1ee042f",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072504/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/golden_0111-dfebc36089097402.png",
+          "bytes": 441217,
+          "sha256": "dfebc360890974029e28476d29035719c9d46d63498ad9fad77001bf8f354ee6",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072506/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/golden_0219-b14d0ea2fb386df3.png",
+          "bytes": 444117,
+          "sha256": "b14d0ea2fb386df32fd84df8e206ed16d84e8b28f1379d383edee138d5c41a68",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072507/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/golden_0329-83affa75fab15e63.png",
+          "bytes": 444312,
+          "sha256": "83affa75fab15e63084da16906be49d82f207cbc996a0f3f76c30c4015aef5c7",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072509/scenex/wikipedia/characters/reviewed_films/20261015-v10/model_07_samba_retarget/golden_0437-ff2d2ec0f9219d74.png",
+          "bytes": 445755,
+          "sha256": "ff2d2ec0f9219d745190623d161e6d09e993612f3a31961ec7efbc7e34ee3bc9",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_07_taiji",
+      "source": "Rias sexy.glb",
+      "source_sha256": "91dced8ca2676b98ffccfda80590d84d5e97807c2281dda614a7b2a9b8b467df",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792048948/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/model_07_taiji-cf80f674a60bcda1.mp4",
+        "bytes": 1083930,
+        "sha256": "cf80f674a60bcda107e57b2b59c5890088f36865af23431fc113c94648e5e1de",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048950/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/golden_0001-1dcd171982ba58d2.png",
+          "bytes": 441762,
+          "sha256": "1dcd171982ba58d298d9c2bfc8bb9e85b6ef4205daa3fd1115034d031bb55f49",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048952/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/golden_0315-b20372a47839bbd1.png",
+          "bytes": 440466,
+          "sha256": "b20372a47839bbd15dac9175572c3598388951572d9feb8e5015ea7e52dfa0db",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048953/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/golden_0629-2ea86e105a96ef12.png",
+          "bytes": 439808,
+          "sha256": "2ea86e105a96ef12dad0d8a3838bdf497c94d3d4c54e7cc229d4a29da57a2e3b",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048955/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/golden_0943-3b5a0d523a3ea84e.png",
+          "bytes": 442824,
+          "sha256": "3b5a0d523a3ea84e91fb4e3de462967215acf94236702e3a0216a8b9e3663990",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048957/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_taiji/golden_1256-3bb2adfabb802a42.png",
+          "bytes": 441920,
+          "sha256": "3bb2adfabb802a428de0dd13ace90a3b14910c72be4206a7ee4e988c99602864",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_07_swan_lake",
+      "source": "Rias sexy.glb",
+      "source_sha256": "91dced8ca2676b98ffccfda80590d84d5e97807c2281dda614a7b2a9b8b467df",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792048965/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/model_07_swan_lake-d0155b877b931441.mp4",
+        "bytes": 4918670,
+        "sha256": "d0155b877b9314414c95761e36a2dea1a7707567cf14f7278c97ea5f5ea8dab4",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048968/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/golden_0001-8859f87e4067b711.png",
+          "bytes": 436820,
+          "sha256": "8859f87e4067b711bd1bc3ed9e2f8e732f54c6d3f60ae205071f6533c3add152",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048969/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/golden_0856-38e4644e783c21b3.png",
+          "bytes": 435163,
+          "sha256": "38e4644e783c21b344e82076fa3e44be7a2c11423f0d13a27ba6f6c98ee11f57",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048971/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/golden_1710-0a2e145aa51a9248.png",
+          "bytes": 431314,
+          "sha256": "0a2e145aa51a92484ae7e1447cad40317dccce305e456391242a961d52c87be0",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048973/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/golden_2565-11a985ee03d34911.png",
+          "bytes": 433644,
+          "sha256": "11a985ee03d34911e2c7e777fd45905d2b112eb4711866e82cbb5e66a5cd6463",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792048975/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_07_swan_lake/golden_3420-271fb145af5499c2.png",
+          "bytes": 429858,
+          "sha256": "271fb145af5499c219eb452c598411c0959e18ec372588fbc7b6f0bddc2f7f2b",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_02_runtime8_actual_voxel_taiji",
+      "source": "chunli high quality .glb",
+      "source_sha256": "c6188065e315b2951018c12df7dcc8fecca32286cdc2631df6a8dfa7b451cbd1",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792049788/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/model_02_runtime8_actual_voxel_taiji-1dfce8ee14e6db48.mp4",
+        "bytes": 1256899,
+        "sha256": "1dfce8ee14e6db480a04b6e3e77dc141d3e9a729aca32ab60a576516579f0ec1",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792049791/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/golden_0001-48144033d60b5e97.png",
+          "bytes": 454920,
+          "sha256": "48144033d60b5e97fde58317569a268d67582411d169d57a9d7d2d3fd65d32ea",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792049793/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/golden_0315-e8b45c2cac826669.png",
+          "bytes": 456015,
+          "sha256": "e8b45c2cac826669d3711371fc9090dc9718b79ce26152e8a39db4d92685500b",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792049795/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/golden_0629-fc94e48e76ae22a7.png",
+          "bytes": 456312,
+          "sha256": "fc94e48e76ae22a737bb023e437880a6b02d47b6e596a1ca2180631d59cf330f",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792049797/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/golden_0943-a2b91e6c16eea1d7.png",
+          "bytes": 454570,
+          "sha256": "a2b91e6c16eea1d7ffcd90350408231786110cbe2a5378685121b52c4f9d9b17",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792049799/scenex/wikipedia/characters/reviewed_films/reviewed-20261015-v1/model_02_runtime8_actual_voxel_taiji/golden_1256-89b4e78e03292436.png",
+          "bytes": 457942,
+          "sha256": "89b4e78e0329243613235ceb0016e4f7fcf60c435ae7ae3193c35084dcd0a420",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake",
+      "source": "chunli high quality .glb",
+      "source_sha256": "c6188065e315b2951018c12df7dcc8fecca32286cdc2631df6a8dfa7b451cbd1",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792070538/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake-99a8be2d99d73f77.mp4",
+        "bytes": 5849122,
+        "sha256": "99a8be2d99d73f7757dee168fbc06d096f2f3fe2510d0b2b68a25ad6b13b0595",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792070541/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/golden_0001-b853fdc86c4f97fe.png",
+          "bytes": 444545,
+          "sha256": "b853fdc86c4f97fe5f465cc61d9097c9d7aa05ebd173dfe4c4da01ff79788741",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792070543/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/golden_0856-c24639c189b28ba5.png",
+          "bytes": 443262,
+          "sha256": "c24639c189b28ba5072bed920f4add1d03b14a69637c814bfedd00ec04a3b84d",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792070545/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/golden_1710-b9097d06af63ee3a.png",
+          "bytes": 443765,
+          "sha256": "b9097d06af63ee3a2d344213fa94202ba55ec97df579cfd3214e663002e6a710",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792070547/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/golden_2565-19a5e8ed59ca876a.png",
+          "bytes": 445211,
+          "sha256": "19a5e8ed59ca876a162bb7049d0df8b70e95888f41a411ad5002c329c8f8f958",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792070549/scenex/wikipedia/characters/reviewed_films/20261015-v8/model_02_adaptive_measured_leg_diffusion_runtime8_swan_lake/golden_3420-8fa74d3816ed0f8d.png",
+          "bytes": 447989,
+          "sha256": "8fa74d3816ed0f8dc987f29eb6c6c7dde7b674786982e63aa7d2460c828acaae",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_02_verified_binding_samba_retarget",
+      "source": "chunli high quality .glb",
+      "source_sha256": "c6188065e315b2951018c12df7dcc8fecca32286cdc2631df6a8dfa7b451cbd1",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792071989/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/model_02_verified_binding_samba_retarget-322741b5409f04ac.mp4",
+        "bytes": 1119364,
+        "sha256": "322741b5409f04acbd0e46d8ddac790dedaecb4c68fc1b0176dc12c87d57d5d6",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792071992/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/golden_0001-97fdd09c84d4acd1.png",
+          "bytes": 455979,
+          "sha256": "97fdd09c84d4acd1e79fd332a922b2555d9ec0d613083f3b47bd7ab50c2caf94",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792071994/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/golden_0111-8a3fa6c006f51bf9.png",
+          "bytes": 460189,
+          "sha256": "8a3fa6c006f51bf92538f28f39eecece9ed5d343ad6e2ea7962f705df3cbafb2",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792071997/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/golden_0219-c5a142aa72674127.png",
+          "bytes": 459876,
+          "sha256": "c5a142aa726741270cac5cb49fcd29d7d2d6552c3aaa6fc6f6b64122ad08113e",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792071998/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/golden_0329-4c328d452bdddf91.png",
+          "bytes": 461468,
+          "sha256": "4c328d452bdddf91c2f080bd613a60c0d48ad54c20f08e5344ea8e1a358b67a2",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792072000/scenex/wikipedia/characters/reviewed_films/20261015-v9/model_02_verified_binding_samba_retarget/golden_0437-7fd150e86792297d.png",
+          "bytes": 455956,
+          "sha256": "7fd150e86792297d0886c51bd9360b3cd8865265572b2bc5da5027e33afda670",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_03_samba_retarget",
+      "source": "Hi3D_Stylized 3D Android 18 Dragon Ball Character_allparts_20260.glb",
+      "source_sha256": "c8614b60aca17274eb87f5b4f06f575226479e5724beb3547d5a6d6b1c710310",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792074676/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/model_03_samba_retarget-5e113593a949485e.mp4",
+        "bytes": 877045,
+        "sha256": "5e113593a949485e55f555c784948d709f0ee9fe8328b84f662e562f2ca9404e",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792074680/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/golden_0001-f92d3c46212a2dd1.png",
+          "bytes": 447086,
+          "sha256": "f92d3c46212a2dd178f68af2e1460c10d48724f8f2ed9f12fb5a2e0b3141168b",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792074682/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/golden_0111-ecef987448d2fcbf.png",
+          "bytes": 447765,
+          "sha256": "ecef987448d2fcbf147591ae1aa40759a549e5d49162b4b7bd6c7994d7ae5dac",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792074684/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/golden_0219-a68cefce50365e66.png",
+          "bytes": 451280,
+          "sha256": "a68cefce50365e66cde102c041986eafba910092dff50c591f408d09cbb7d827",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792074687/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/golden_0329-745b1567068993ff.png",
+          "bytes": 452899,
+          "sha256": "745b1567068993ff0ffb45a106588f93363698ba54bc84334b26f28adfaebe0c",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792074689/scenex/wikipedia/characters/reviewed_films/20261015-v11/model_03_samba_retarget/golden_0437-feffa4ada0db3563.png",
+          "bytes": 447065,
+          "sha256": "feffa4ada0db3563d20d69d4b19eb71fc32f5f7bcf43dcc87857539ba6395504",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "model_01_compiled_continuity_samba_retarget",
+      "source": "Blonde Hot Lady.glb",
+      "source_sha256": "5ded3f8d8368a1baf19f224f2a7cfd1ab1ee8400671438a1866c46662b7e78d2",
+      "motion": "samba_retarget",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792106910/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/model_01_compiled_continuity_samba_retarget-898045f8bef7c69a.mp4",
+        "bytes": 833602,
+        "sha256": "898045f8bef7c69a8e17be77075d050412c4393806f23096c4732b6ca08e461b",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792106913/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/golden_0001-981ad20c04c727cd.png",
+          "bytes": 445314,
+          "sha256": "981ad20c04c727cda95a2bc1427722214f75f13b9d11e702f00d7b6845e860a5",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792106914/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/golden_0111-708a591d440a91af.png",
+          "bytes": 447428,
+          "sha256": "708a591d440a91af692c1b995becf7942e76f7f95fe0a80165708aa7b8d8316e",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792106916/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/golden_0219-8a23313cf766ce83.png",
+          "bytes": 448540,
+          "sha256": "8a23313cf766ce8355806b36515a1fb89339ebeecceeb098510db5ce882c5241",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792106918/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/golden_0329-b8344ebc2578bcc4.png",
+          "bytes": 450384,
+          "sha256": "b8344ebc2578bcc4a99a1fa19eb65e13a14e477790004c791847bb1d2708adef",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792106919/scenex/wikipedia/characters/reviewed_films/glb-batch-20261016-v12/model_01_compiled_continuity_samba_retarget/golden_0437-ddd058d6b68a7573.png",
+          "bytes": 445130,
+          "sha256": "ddd058d6b68a757349d3eb006079c1174a486c8c515ee136549af7a342335a6c",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    }
+  ]
+}

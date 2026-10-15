@@ -1,0 +1,235 @@
+{
+  "schema": "scenex.autorig65.reviewed-video-publication.v1",
+  "revision": "references-20261016-v3",
+  "scope": "REFERENCE_CASES",
+  "publication_date_taipei": "2026-10-16",
+  "completed_films": 3,
+  "expected_films": 3,
+  "records": [
+    {
+      "case_id": "michelle_samba",
+      "source": "michelle.glb",
+      "source_sha256": "7a87e15a99ccbc5e5877be66e1e4ecae0a581adcafa0cce1a5569f49909e968e",
+      "motion": "samba",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-michelle_samba-e5b28131e8369090.mp4",
+        "bytes": 954054,
+        "sha256": "e5b28131e8369090940f5f79a67f8c05004c404f7e93a69afde6259b311b890c",
+        "provider": "GITHUB_RELEASE",
+        "repository": "liuxb99/SceneX-Encyclopedia",
+        "release_tag": "autorig65-reviewed-films-20261016",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-golden_0001-24351796f4df2a71.png",
+          "bytes": 448784,
+          "sha256": "24351796f4df2a711091963a966dc2b05a810c4b1cd259b75504605a5af9c4d4",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-golden_0111-a7acdc0e0c4c61df.png",
+          "bytes": 447321,
+          "sha256": "a7acdc0e0c4c61df21602af3d1fcb0e75e8295dba67b79194ba55faa349917f6",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-golden_0219-93e528965dcae2cb.png",
+          "bytes": 449759,
+          "sha256": "93e528965dcae2cbae30b8ff75096d50c3ca661fe9f1c585fca3941deea8854b",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-golden_0329-168d3443e1fa559f.png",
+          "bytes": 451021,
+          "sha256": "168d3443e1fa559f1173e110ce2bf1a76336f9af6cf59819615481473632aaf0",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/michelle_samba-golden_0437-28912c2b57a78c1b.png",
+          "bytes": 448929,
+          "sha256": "28912c2b57a78c1bef0dbb1b02cefd2806d7ba6f4c56738180e1233145bc7e8a",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "ada_taiji",
+      "source": "ada_wong_source.glb",
+      "source_sha256": "b0f701a1c32c25bd78240376ef9f7eed533153931d2188e08db480c84dd722cf",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-ada_taiji-ba08a7cb8b02e22f.mp4",
+        "bytes": 946965,
+        "sha256": "ba08a7cb8b02e22f0bc724e2731caacf71059990744d0b217d86674c09323b01",
+        "provider": "GITHUB_RELEASE",
+        "repository": "liuxb99/SceneX-Encyclopedia",
+        "release_tag": "autorig65-reviewed-films-20261016",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-golden_0001-b8b42ad6421ddf6e.png",
+          "bytes": 444337,
+          "sha256": "b8b42ad6421ddf6e61b65455f2ff2e26713bd660fa376a6dec329bb9d1a69043",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-golden_0315-651aed7c4c0f570b.png",
+          "bytes": 443380,
+          "sha256": "651aed7c4c0f570ba768ff4723eb525f6eb3abd68fdd5ea84d90034174fd83a9",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-golden_0629-61712929e578bae8.png",
+          "bytes": 446228,
+          "sha256": "61712929e578bae818b26bfefa0bdd2bfdb3a33bc31ac2e4a1117515070581e2",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-golden_0943-7045fa7620ebdd2b.png",
+          "bytes": 445372,
+          "sha256": "7045fa7620ebdd2b28d7ee7170937f8765a320bbe55cd899eda90266e41c0ad0",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/ada_taiji-golden_1256-1844dc42649d398f.png",
+          "bytes": 446065,
+          "sha256": "1844dc42649d398fbfef1b29144925a250fa24259ab0912ac2e7ff5582385901",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "misaki_swan_lake",
+      "source": "misaki_source.glb",
+      "source_sha256": "9f5b8324ff95d9470a2543a0ddb8d09296288af28b9b60c9015437863bc1b6bd",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-misaki_swan_lake-dc845e064cbc7fd5.mp4",
+        "bytes": 4357539,
+        "sha256": "dc845e064cbc7fd530a62158d29b935e82baf401e9475bfaa9b88d688d5047c4",
+        "provider": "GITHUB_RELEASE",
+        "repository": "liuxb99/SceneX-Encyclopedia",
+        "release_tag": "autorig65-reviewed-films-20261016",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-golden_0001-6822d96e9619d95e.png",
+          "bytes": 430967,
+          "sha256": "6822d96e9619d95e9a349aaab99685d0c4d94891e8439eaa0b2a4599b5a81e00",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-golden_0856-3fa1907c6f44c5fa.png",
+          "bytes": 431990,
+          "sha256": "3fa1907c6f44c5fa99da9b3e576d37f6b057edabb915ed81c17c0e46bbc83ce1",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-golden_1710-19435b051b6a4a85.png",
+          "bytes": 431278,
+          "sha256": "19435b051b6a4a855945faede13779aab7424db9b73e8af2a9c5b78949cd4b13",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-golden_2565-22939b8a703a55f0.png",
+          "bytes": 431147,
+          "sha256": "22939b8a703a55f000bc9b3ed7c6e999a599de387add40c0695c199362d05fea",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://github.com/liuxb99/SceneX-Encyclopedia/releases/download/autorig65-reviewed-films-20261016/misaki_swan_lake-golden_3420-5a0fcd6e03aac094.png",
+          "bytes": 431297,
+          "sha256": "5a0fcd6e03aac094d18ee4903aac86871df0a28fcd7d8f0c4691a91f169c358c",
+          "provider": "GITHUB_RELEASE",
+          "repository": "liuxb99/SceneX-Encyclopedia",
+          "release_tag": "autorig65-reviewed-films-20261016",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    }
+  ]
+}

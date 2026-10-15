@@ -1,0 +1,1427 @@
+{
+  "schema_version": "1.5",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0840",
+  "generated_at": "2026-10-15T08:40:00+08:00",
+  "data_cutoff_at": "2026-10-15T08:40:00+08:00",
+  "timezone": "Asia/Taipei",
+  "as_of_market_session": {
+    "US": "2026-10-14 close",
+    "Taiwan": "2026-10-14 close",
+    "Taiwan_next": "2026-10-15 PREOPEN",
+    "Oil": "2026-10-14 settlement",
+    "CPI": "2026-09 CPI released 2026-10-14",
+    "TSMC_Earnings": "NOT VERIFIED AT CUTOFF"
+  },
+  "model_version": "global-risk-butterfly-research-0.8-forecast-v0.6.1",
+  "calibration_status": "UNCALIBRATED",
+  "assessment_method": "AI_JUDGMENT",
+  "events": [
+    {
+      "event_id": "E1",
+      "theme": "美國9月 CPI 公布",
+      "fact": "10/14 BLS 公布9月CPI月增0.6%、年增3.7%（前月3.4%）；核心月增0.3%、年增2.6%；汽油月增9.1%。",
+      "interpretation": "通膨上升且核心物價略強，可能延長政策緊縮預期，對長久期科技資產與AI融資成本造成壓力。",
+      "source_ids": [
+        "R1"
+      ],
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "source_published_at": "2026-10-14 08:30 ET",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E2",
+      "theme": "美股與費半",
+      "fact": "10/14 S&P500收7,718.94（-1.11%）、Nasdaq收26,692.87（-1.88%）、Dow收51,621.48（-0.09%）；費半跌4.30%至11,684.38，連跌六日。",
+      "interpretation": "費半相對大盤更弱，可能對台灣半導體估值及供應鏈風險偏好形成負面訊號。",
+      "source_ids": [
+        "R2",
+        "R12"
+      ],
+      "source_url": "https://www.reuters.com/business/sp-500-dow-futures-rise-ahead-big-bank-results-cpi-data-2026-10-14/",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E3",
+      "theme": "台積電ADR與台指期夜盤",
+      "fact": "10/14美國盤台積電ADR收430美元（-3.40%）；10/15清晨台指期夜盤收47,945點（-853點）。",
+      "interpretation": "跨市場訊號偏空，但10/15現貨尚未開盤，夜盤不能替代當日現貨收盤。",
+      "source_ids": [
+        "R3",
+        "R12"
+      ],
+      "source_url": "https://money.udn.com/money/story/123398/9815591",
+      "source_published_at": "2026-10-15 07:05 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E4",
+      "theme": "台股前一交易日現貨",
+      "fact": "10/14 TAIEX收48,625.83點（+284.52點，約+0.59%），台積電收2,490元、平盤。",
+      "interpretation": "10/14現貨反彈與之後美股下跌構成跨時區落差；盤前須區分不同交易時段。",
+      "source_ids": [
+        "R3",
+        "R4"
+      ],
+      "source_url": "https://money.udn.com/money/story/123398/9815591",
+      "source_published_at": "2026-10-15 07:05 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E5",
+      "theme": "台灣外資流向",
+      "fact": "10/14外資賣超台股200.37億元、三大法人合計賣超153.97億元。",
+      "interpretation": "資金面尚未回穩，但資金流與股價可能共享同一風險原因，不可獨立機率相加。",
+      "source_ids": [
+        "R4"
+      ],
+      "source_url": "https://www.cna.com.tw/news/afe/202610140219.aspx",
+      "source_published_at": "2026-10-14 16:27 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E6",
+      "theme": "新台幣匯率",
+      "fact": "10/14 USD/TWD收32.073元，台幣升值1.2分；當日成交金額22.24億美元。",
+      "interpretation": "匯率收盤止貶不代表外資流出結束；美國CPI公布後美元走勢仍需觀察。",
+      "source_ids": [
+        "R5",
+        "R11"
+      ],
+      "source_url": "https://www.cna.com.tw/news/afe/202610140204.aspx",
+      "source_published_at": "2026-10-14 16:04 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E7",
+      "theme": "原油、地緣與航運",
+      "fact": "10/14 Brent收106.06美元（+0.35%）、WTI收95.09美元（+1.01%）；Reuters報導沙國能源設施與荷姆茲航運安全事件。",
+      "interpretation": "能源與運輸成本可能推高台灣進口成本；不可據此宣稱所有海運已中斷。",
+      "source_ids": [
+        "R6"
+      ],
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-climb-traders-weigh-saudi-supply-risk-russian-diesel-flow-2026-10-14/",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E8",
+      "theme": "美債殖利率與Fed預期",
+      "fact": "10/14 WSJ報導10年美債殖利率約5.270%，前日5.216%；Reuters稱Fed 10月升息交易隱含機率由22%上升至約37%。",
+      "interpretation": "殖利率及政策預期再定價，可能透過折現率和融資成本影響科技股；5.270%為報導時點，非獨立核驗收盤。",
+      "source_ids": [
+        "R7",
+        "R2"
+      ],
+      "source_url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-10-14-2026/card/treasury-yields-hold-below-recent-highs-U36fRPfXBajM3tdYVNNG",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E9",
+      "theme": "AI基建融資與信用",
+      "fact": "Reuters報導10/14 CoreWeave約跌15%、Oracle約跌8.8%，AI基建股票與融資成本受到關注。",
+      "interpretation": "高槓桿AI基建可能形成信用與估值回饋，但尚未核驗全市場信用利差，不能認定系統性危機。",
+      "source_ids": [
+        "R8",
+        "R2"
+      ],
+      "source_url": "https://www.reuters.com/business/red-hot-cpi-report-fuels-ai-rout-2026-10-14/",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E10",
+      "theme": "中國物價與供應鏈",
+      "fact": "Reuters報導中國9月PPI年增約5.0%、CPI年增約0.9%。",
+      "interpretation": "上游成本上升與終端需求偏弱可能同時影響亞洲製造業毛利，對台灣傳導程度尚未量化。",
+      "source_ids": [
+        "R9"
+      ],
+      "source_url": "https://www.reuters.com/world/asia-pacific/chinas-factory-gate-inflation-accelerates-september-2026-10-14/",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    },
+    {
+      "event_id": "E11",
+      "theme": "台積電財報事件窗",
+      "fact": "Reuters於10/14報導市場預期台積電第三季獲利創高；10/15 08:05本報未核驗正式公告。",
+      "interpretation": "正式財報與展望可能緩衝或加劇半導體估值重估；預測不是已實現獲利。",
+      "source_ids": [
+        "R10"
+      ],
+      "source_url": "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+      "source_published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00",
+      "confidence": "MEDIUM_HIGH"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "US_CPI",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "SOX",
+      "direction": "NEGATIVE",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E2",
+        "E3"
+      ]
+    },
+    {
+      "node": "ENERGY_SHIPPING",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E7"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "能源設施/航運安全",
+      "target": "油價與運輸成本",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "油價與運輸成本",
+      "target": "美國CPI",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "美國CPI",
+      "target": "Fed預期",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "Fed預期",
+      "target": "美債殖利率",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "美債殖利率",
+      "target": "AI估值",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "AI估值",
+      "target": "SOX/台積電ADR",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "SOX/台積電ADR",
+      "target": "TAIEX/MXF",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E7",
+        "E1",
+        "E8",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "CPI高於預期",
+      "target": "長債殖利率",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E8",
+        "E9",
+        "E2"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "長債殖利率",
+      "target": "AI基建融資成本",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E8",
+        "E9",
+        "E2"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "AI基建融資成本",
+      "target": "信用風險與估值",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E8",
+        "E9",
+        "E2"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "信用風險與估值",
+      "target": "半導體股",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E8",
+        "E9",
+        "E2"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "半導體股",
+      "target": "台灣電子權值",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E8",
+        "E9",
+        "E2"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "費半與台積電ADR下跌",
+      "target": "外資風險偏好",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "外資風險偏好",
+      "target": "台灣資金流",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "台灣資金流",
+      "target": "台幣與避險需求",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "台幣與避險需求",
+      "target": "台指期夜盤/現貨風險",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "中國PPI上升與內需溫和",
+      "target": "亞洲供應鏈成本",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E10"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "亞洲供應鏈成本",
+      "target": "台灣製造業利潤",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E10"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "台積電財報預期",
+      "target": "正式公告待核驗",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E11"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "正式公告待核驗",
+      "target": "半導體估值雙向變化",
+      "direction": "HYPOTHESIS",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E11"
+      ],
+      "validation_status": "UNVALIDATED"
+    }
+  ],
+  "propagation_paths": [
+    [
+      "能源設施/航運安全",
+      "油價與運輸成本",
+      "美國CPI",
+      "Fed預期",
+      "美債殖利率",
+      "AI估值",
+      "SOX/台積電ADR",
+      "TAIEX/MXF"
+    ],
+    [
+      "CPI高於預期",
+      "長債殖利率",
+      "AI基建融資成本",
+      "信用風險與估值",
+      "半導體股",
+      "台灣電子權值"
+    ],
+    [
+      "費半與台積電ADR下跌",
+      "外資風險偏好",
+      "台灣資金流",
+      "台幣與避險需求",
+      "台指期夜盤/現貨風險"
+    ],
+    [
+      "中國PPI上升與內需溫和",
+      "亞洲供應鏈成本",
+      "台灣製造業利潤"
+    ],
+    [
+      "台積電財報預期",
+      "正式公告待核驗",
+      "半導體估值雙向變化"
+    ]
+  ],
+  "convergence": {
+    "nodes": [
+      "US10Y",
+      "AI_funding",
+      "SOX",
+      "TAIEX/MXF"
+    ],
+    "analysis": "能源、CPI與Fed預期匯流在US10Y；高利率與AI融資壓力匯流在科技估值。SOX、ADR、台指夜盤可能同時反映同一風險因子。",
+    "double_counting_control": "同一CPI衝擊經由利率、SOX、ADR與台指期傳導，不能視為多個獨立機率；外資與匯率亦可能同源。",
+    "parallel_paths": [
+      [
+        "能源設施/航運安全",
+        "油價與運輸成本",
+        "美國CPI",
+        "Fed預期",
+        "美債殖利率",
+        "AI估值",
+        "SOX/台積電ADR",
+        "TAIEX/MXF"
+      ],
+      [
+        "CPI高於預期",
+        "長債殖利率",
+        "AI基建融資成本",
+        "信用風險與估值",
+        "半導體股",
+        "台灣電子權值"
+      ],
+      [
+        "費半與台積電ADR下跌",
+        "外資風險偏好",
+        "台灣資金流",
+        "台幣與避險需求",
+        "台指期夜盤/現貨風險"
+      ],
+      [
+        "中國PPI上升與內需溫和",
+        "亞洲供應鏈成本",
+        "台灣製造業利潤"
+      ],
+      [
+        "台積電財報預期",
+        "正式公告待核驗",
+        "半導體估值雙向變化"
+      ]
+    ],
+    "confidence": "MEDIUM"
+  },
+  "regime": {
+    "label": "POST_CPI_SEMICONDUCTOR_RISK_OFF",
+    "confidence": "MEDIUM",
+    "as_of": "2026-10-15T08:05:00+08:00",
+    "alternative": "TSMC_EARNINGS_BUFFER"
+  },
+  "taiwan_exposure": {
+    "taiex_close": 48625.83,
+    "taiex_change_points": 284.52,
+    "taiex_pct": 0.59,
+    "tsmc_twd": 2490,
+    "tsmc_adr_usd": 430,
+    "tsmc_adr_pct": -3.4,
+    "sox_close": 11684.38,
+    "sox_pct": -4.3,
+    "nasdaq_close": 26692.87,
+    "nasdaq_pct": -1.88,
+    "foreign_sell_twd_100m": 200.37,
+    "usd_twd": 32.073,
+    "mxf_night_close": 47945,
+    "mxf_night_change": -853,
+    "brent_usd_bbl": 106.06,
+    "wti_usd_bbl": 95.09,
+    "us10y_reported_pct": 5.27,
+    "china_ppi_yoy_pct": 5,
+    "taiwan_strait": "no new separately verified shock",
+    "today_spot": "PREOPEN"
+  },
+  "scores": {
+    "global": {
+      "value": 91,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "semiconductor",
+          "weight": 0.3,
+          "subjective_severity": 96,
+          "weighted_points": 28.8
+        },
+        {
+          "factor": "rates",
+          "weight": 0.25,
+          "subjective_severity": 91,
+          "weighted_points": 22.75
+        },
+        {
+          "factor": "energy",
+          "weight": 0.2,
+          "subjective_severity": 90,
+          "weighted_points": 18
+        },
+        {
+          "factor": "geopolitical",
+          "weight": 0.15,
+          "subjective_severity": 88,
+          "weighted_points": 13.2
+        },
+        {
+          "factor": "credit",
+          "weight": 0.1,
+          "subjective_severity": 80,
+          "weighted_points": 8
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "taiwan": {
+      "value": 93,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "semiconductor",
+          "weight": 0.38,
+          "subjective_severity": 96,
+          "weighted_points": 36.48
+        },
+        {
+          "factor": "foreign_flow",
+          "weight": 0.25,
+          "subjective_severity": 93,
+          "weighted_points": 23.25
+        },
+        {
+          "factor": "rates",
+          "weight": 0.17,
+          "subjective_severity": 91,
+          "weighted_points": 15.47
+        },
+        {
+          "factor": "energy",
+          "weight": 0.1,
+          "subjective_severity": 90,
+          "weighted_points": 9
+        },
+        {
+          "factor": "geopolitical",
+          "weight": 0.1,
+          "subjective_severity": 88,
+          "weighted_points": 8.8
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "energy": {
+      "value": 90,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "oil",
+          "weight": 0.5,
+          "subjective_severity": 92,
+          "weighted_points": 46
+        },
+        {
+          "factor": "shipping",
+          "weight": 0.5,
+          "subjective_severity": 88,
+          "weighted_points": 44
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 91,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "cpi",
+          "weight": 0.4,
+          "subjective_severity": 94,
+          "weighted_points": 37.6
+        },
+        {
+          "factor": "yield",
+          "weight": 0.35,
+          "subjective_severity": 90,
+          "weighted_points": 31.5
+        },
+        {
+          "factor": "fed",
+          "weight": 0.25,
+          "subjective_severity": 88,
+          "weighted_points": 22
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 80,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "ai_debt",
+          "weight": 0.4,
+          "subjective_severity": 88,
+          "weighted_points": 35.2
+        },
+        {
+          "factor": "banking",
+          "weight": 0.25,
+          "subjective_severity": 72,
+          "weighted_points": 18
+        },
+        {
+          "factor": "funding",
+          "weight": 0.35,
+          "subjective_severity": 76,
+          "weighted_points": 26.6
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 88,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "gulf",
+          "weight": 0.6,
+          "subjective_severity": 92,
+          "weighted_points": 55.2
+        },
+        {
+          "factor": "trade",
+          "weight": 0.4,
+          "subjective_severity": 82,
+          "weighted_points": 32.8
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "semiconductor": {
+      "value": 96,
+      "scale": "0-100 subjective severity, NOT probability",
+      "formula_version": "weighted-subjective-severity-v0.2",
+      "formula": "round(sum(weight*subjective_severity))",
+      "factor_contributions": [
+        {
+          "factor": "sox",
+          "weight": 0.45,
+          "subjective_severity": 97,
+          "weighted_points": 43.65
+        },
+        {
+          "factor": "adr",
+          "weight": 0.3,
+          "subjective_severity": 96,
+          "weighted_points": 28.8
+        },
+        {
+          "factor": "ai",
+          "weight": 0.25,
+          "subjective_severity": 93,
+          "weighted_points": 23.25
+        }
+      ],
+      "assumptions": "算式可重算，但因子嚴重度是主觀判斷，缺乏獨立可重現量測；相關事件可能同源。",
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE / AWAIT_DETERMINISTIC_ENGINE",
+    "deterministic_rule_applied": false,
+    "rule_version": "NOT_RUN",
+    "reason": "CPI 3.7%、SOX -4.30%、台積電ADR -3.40%、台指期夜盤 -853；現貨尚未開盤。",
+    "scope": "new long entries only; preserve 60-minute strategy"
+  },
+  "downgrade_conditions": [
+    "SOX與台積電ADR止跌，台灣現貨交易確認",
+    "美國10Y殖利率及升息預期回落",
+    "油價與荷姆茲航運安全改善",
+    "外資賣超縮小、台幣與台指夜盤回穩",
+    "台積電正式財報與展望優於預期，且市場反應正面",
+    "AI高槓桿融資信用利差未繼續惡化"
+  ],
+  "sources": [
+    {
+      "source_id": "R1",
+      "title": "BLS：2026年9月 CPI 正式公告",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "published_at": "2026-10-14 08:30 ET",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R2",
+      "title": "Reuters：10/14 美股與費半收盤",
+      "url": "https://www.reuters.com/business/sp-500-dow-futures-rise-ahead-big-bank-results-cpi-data-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R3",
+      "title": "經濟日報：10/15 07:05 台積電 ADR 與台指夜盤",
+      "url": "https://money.udn.com/money/story/123398/9815591",
+      "published_at": "2026-10-15 07:05 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R4",
+      "title": "中央社：10/14 台股與外資買賣超",
+      "url": "https://www.cna.com.tw/news/afe/202610140219.aspx",
+      "published_at": "2026-10-14 16:27 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R5",
+      "title": "中央社：10/14 新台幣匯率",
+      "url": "https://www.cna.com.tw/news/afe/202610140204.aspx",
+      "published_at": "2026-10-14 16:04 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R6",
+      "title": "Reuters：10/14 油價與荷姆茲海峽",
+      "url": "https://www.reuters.com/business/energy/oil-prices-climb-traders-weigh-saudi-supply-risk-russian-diesel-flow-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R7",
+      "title": "WSJ：10/14 美債殖利率",
+      "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-10-14-2026/card/treasury-yields-hold-below-recent-highs-U36fRPfXBajM3tdYVNNG",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R8",
+      "title": "Reuters：10/14 AI 基建與融資",
+      "url": "https://www.reuters.com/business/red-hot-cpi-report-fuels-ai-rout-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R9",
+      "title": "Reuters：10/14 中國 PPI 與 CPI",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-factory-gate-inflation-accelerates-september-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R10",
+      "title": "Reuters：10/14 台積電財報預期",
+      "url": "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R11",
+      "title": "Reuters：10/14 美元走勢",
+      "url": "https://www.reuters.com/world/asia-pacific/dollar-languishes-focus-turns-cpi-fed-speakers-2026-10-14/",
+      "published_at": "2026-10-14",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    },
+    {
+      "source_id": "R12",
+      "title": "FTNN：10/15 07:15 美股與夜盤盤前資料",
+      "url": "https://www.ftnn.com.tw/news/587365",
+      "published_at": "2026-10-15 07:15 +08:00",
+      "observed_at": "2026-10-15T08:05:00+08:00"
+    }
+  ],
+  "limitations": [
+    "AI_JUDGMENT / UNCALIBRATED：研究分數不是統計下跌機率，因子嚴重度無法獨立重現。",
+    "10/15 08:05台股現貨尚未開盤；台積電正式財報未核驗。",
+    "美債10Y 5.270%為報導時點，非獨立核驗官方收盤；DXY同時點未核驗。",
+    "傳導邊權重未知，滯後及衰減未經校準。",
+    "10/08與10/09原始JSON缺失，禁止事後補造；10/08公私HTML不同，保留原件。",
+    "事後T+1等outcome另存validation，不得回填本snapshot。",
+    "08:40 新版僅新增研究解讀與情境；未取得 08:05 後獨立驗證的新行情，所有數據仍以 08:05 snapshot 為來源截點。",
+    "情境信心等級不是機率；預測卡基準價未核驗者評估時必須依規則標記 INDETERMINATE。"
+  ],
+  "historical_archive_audit": {
+    "missing_original_json": [
+      "2026-10-08",
+      "2026-10-09"
+    ],
+    "different_html_blob": [
+      "2026-10-08"
+    ],
+    "policy": "preserve original snapshots"
+  },
+  "source_snapshot_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0805",
+  "new_data_verification": "No additional post-08:05 market quotes independently verified at 08:40; facts and score baselines are inherited from original 08:05 source snapshot",
+  "analyst_interpretation": {
+    "headline": "通膨與半導體雙重壓力推升台灣風險，但盤前訊號不能當成當日收盤結論。",
+    "key_drivers": [
+      {
+        "factor": "半導體",
+        "fact": "原 08:05 snapshot 記錄 10/14 費半回落與台指期夜盤下跌",
+        "interpretation": "科技股估值與台灣期貨可能出現同步去風險",
+        "assets": [
+          "SOX",
+          "TSMC",
+          "TAIEX",
+          "MXF"
+        ],
+        "source_ids": []
+      },
+      {
+        "factor": "通膨與利率",
+        "fact": "原 08:05 snapshot 記錄 9 月美國 CPI 及殖利率壓力",
+        "interpretation": "高利率可能壓縮長久期科技資產估值",
+        "assets": [
+          "UST10Y",
+          "Nasdaq",
+          "TSMC"
+        ],
+        "source_ids": [
+          "R1",
+          "R2",
+          "R12"
+        ]
+      },
+      {
+        "factor": "能源與地緣",
+        "fact": "原 08:05 snapshot 記錄油價與能源供應風險",
+        "interpretation": "能源進口成本與通膨預期可能形成二次傳導",
+        "assets": [
+          "Brent",
+          "USD/TWD",
+          "TAIEX"
+        ],
+        "source_ids": [
+          "R6"
+        ]
+      }
+    ],
+    "day_over_day": "相對 10/14 11:32 snapshot，全球主觀分數 82→91、台灣 88→93；評分模型版本不同，僅表示研究判斷更趨謹慎，不能視為校準後機率變化。",
+    "contradictory_signals": {
+      "risk_up": "費半回落、通膨與台指期夜盤疲弱",
+      "risk_easing": "亞洲市場此前曾出現半導體盤中反彈；若後續價格回穩，單向風險敘事可能失效"
+    },
+    "taiwan_focus": "台灣現貨 10/15 開盤及盤中數據未在本次 08:40 獨立驗證；關注台積電、外資、台幣、SOX 與 MXF，但不將研究預測當作交易指令。",
+    "assessment_method": "AI_JUDGMENT",
+    "calibration_status": "UNCALIBRATED"
+  },
+  "scenario_forecasts": [
+    {
+      "scenario_id": "BASE_1d",
+      "scenario_type": "BASE",
+      "horizon": "下一交易日",
+      "horizon_end": "2026-10-16T13:30:00+08:00",
+      "title": "震盪與重新定價",
+      "narrative": "半導體與利率壓力尚未消散，但市場可能出現技術性反彈",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "RANGE",
+      "observable_triggers": [
+        "SOX/TAIEX 維持高波動且未連續確認轉強"
+      ],
+      "invalidation_conditions": [
+        "股價及利率同步改善並持續數日"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1w",
+      "scenario_type": "BASE",
+      "horizon": "一週",
+      "horizon_end": "2026-10-22T13:30:00+08:00",
+      "title": "震盪與重新定價",
+      "narrative": "半導體與利率壓力尚未消散，但市場可能出現技術性反彈",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "RANGE",
+      "observable_triggers": [
+        "SOX/TAIEX 維持高波動且未連續確認轉強"
+      ],
+      "invalidation_conditions": [
+        "股價及利率同步改善並持續數日"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1m",
+      "scenario_type": "BASE",
+      "horizon": "一個月",
+      "horizon_end": "2026-11-16T13:30:00+08:00",
+      "title": "震盪與重新定價",
+      "narrative": "半導體與利率壓力尚未消散，但市場可能出現技術性反彈",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "RANGE",
+      "observable_triggers": [
+        "SOX/TAIEX 維持高波動且未連續確認轉強"
+      ],
+      "invalidation_conditions": [
+        "股價及利率同步改善並持續數日"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1d",
+      "scenario_type": "RISK_EASING",
+      "horizon": "下一交易日",
+      "horizon_end": "2026-10-16T13:30:00+08:00",
+      "title": "風險緩解",
+      "narrative": "半導體止跌、殖利率回落使科技估值壓力下降",
+      "causal_chain": [
+        "半導體止跌",
+        "資金風險偏好修復",
+        "台灣科技股回穩"
+      ],
+      "direction": "UP",
+      "observable_triggers": [
+        "SOX 回穩、台幣止貶、台積電領漲"
+      ],
+      "invalidation_conditions": [
+        "油價與美債殖利率同步再度急升"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1w",
+      "scenario_type": "RISK_EASING",
+      "horizon": "一週",
+      "horizon_end": "2026-10-22T13:30:00+08:00",
+      "title": "風險緩解",
+      "narrative": "半導體止跌、殖利率回落使科技估值壓力下降",
+      "causal_chain": [
+        "半導體止跌",
+        "資金風險偏好修復",
+        "台灣科技股回穩"
+      ],
+      "direction": "UP",
+      "observable_triggers": [
+        "SOX 回穩、台幣止貶、台積電領漲"
+      ],
+      "invalidation_conditions": [
+        "油價與美債殖利率同步再度急升"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1m",
+      "scenario_type": "RISK_EASING",
+      "horizon": "一個月",
+      "horizon_end": "2026-11-16T13:30:00+08:00",
+      "title": "風險緩解",
+      "narrative": "半導體止跌、殖利率回落使科技估值壓力下降",
+      "causal_chain": [
+        "半導體止跌",
+        "資金風險偏好修復",
+        "台灣科技股回穩"
+      ],
+      "direction": "UP",
+      "observable_triggers": [
+        "SOX 回穩、台幣止貶、台積電領漲"
+      ],
+      "invalidation_conditions": [
+        "油價與美債殖利率同步再度急升"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1d",
+      "scenario_type": "RISK_ESCALATION",
+      "horizon": "下一交易日",
+      "horizon_end": "2026-10-16T13:30:00+08:00",
+      "title": "風險惡化",
+      "narrative": "利率與能源風險疊加，資金持續撤離高估值資產",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "DOWN",
+      "observable_triggers": [
+        "SOX 再創近期低點、台幣走弱、外資持續賣超"
+      ],
+      "invalidation_conditions": [
+        "半導體與股匯同步回穩且風險事件緩和"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1w",
+      "scenario_type": "RISK_ESCALATION",
+      "horizon": "一週",
+      "horizon_end": "2026-10-22T13:30:00+08:00",
+      "title": "風險惡化",
+      "narrative": "利率與能源風險疊加，資金持續撤離高估值資產",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "DOWN",
+      "observable_triggers": [
+        "SOX 再創近期低點、台幣走弱、外資持續賣超"
+      ],
+      "invalidation_conditions": [
+        "半導體與股匯同步回穩且風險事件緩和"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1m",
+      "scenario_type": "RISK_ESCALATION",
+      "horizon": "一個月",
+      "horizon_end": "2026-11-16T13:30:00+08:00",
+      "title": "風險惡化",
+      "narrative": "利率與能源風險疊加，資金持續撤離高估值資產",
+      "causal_chain": [
+        "能源/通膨",
+        "美債利率",
+        "科技估值",
+        "台灣現貨及期貨"
+      ],
+      "direction": "DOWN",
+      "observable_triggers": [
+        "SOX 再創近期低點、台幣走弱、外資持續賣超"
+      ],
+      "invalidation_conditions": [
+        "半導體與股匯同步回穩且風險事件緩和"
+      ],
+      "affected_assets": [
+        "SOX",
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "UST10Y"
+      ],
+      "confidence": "LOW",
+      "source_ids": [],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    }
+  ],
+  "forecast_cards": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0840_F1",
+      "issued_at": "2026-10-15T08:40:00+08:00",
+      "data_cutoff_at": "2026-10-15T08:40:00+08:00",
+      "target_market": "TAIEX",
+      "target_metric": "TWSE weighted index close",
+      "horizon_end": "2026-10-16T13:30:00+08:00",
+      "direction_or_condition": "下一交易日收盤相較 10/15 正式收盤不呈現持續單向崩跌（待 10/15 基準確認）",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "根據 08:05 原始 snapshot 的半導體、通膨及能源衝擊提出可被反證的研究假說；不是交易指令。",
+      "causal_drivers": [
+        "semiconductor",
+        "rates",
+        "energy"
+      ],
+      "confirmation_signals": [
+        "下一交易日收盤相較 10/15 正式收盤不呈現持續單向崩跌（待 10/15 基準確認）"
+      ],
+      "invalidation_conditions": [
+        "實際官方行情不符合上述明確判準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": "TWSE 官方 10/15 與 10/16 收盤比較，無法取得任一基準則 INDETERMINATE",
+      "source_snapshot_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0805"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0840_F2",
+      "issued_at": "2026-10-15T08:40:00+08:00",
+      "data_cutoff_at": "2026-10-15T08:40:00+08:00",
+      "target_market": "SOX",
+      "target_metric": "Philadelphia Semiconductor Index daily close",
+      "horizon_end": "2026-10-22T16:00:00-04:00",
+      "direction_or_condition": "一週內維持高波動，未形成連續三個交易日收盤上漲的穩定修復",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "根據 08:05 原始 snapshot 的半導體、通膨及能源衝擊提出可被反證的研究假說；不是交易指令。",
+      "causal_drivers": [
+        "semiconductor",
+        "rates",
+        "energy"
+      ],
+      "confirmation_signals": [
+        "一週內維持高波動，未形成連續三個交易日收盤上漲的穩定修復"
+      ],
+      "invalidation_conditions": [
+        "實際官方行情不符合上述明確判準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": "以 Nasdaq 官方 SOX 逐日收盤，期間有無連續三個交易日上漲判 HIT/MISS",
+      "source_snapshot_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0805"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0840_F3",
+      "issued_at": "2026-10-15T08:40:00+08:00",
+      "data_cutoff_at": "2026-10-15T08:40:00+08:00",
+      "target_market": "Brent",
+      "target_metric": "ICE Brent front-month settlement",
+      "horizon_end": "2026-11-16T17:00:00+00:00",
+      "direction_or_condition": "未來一個月能源供應風險仍可能維持高波動",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "根據 08:05 原始 snapshot 的半導體、通膨及能源衝擊提出可被反證的研究假說；不是交易指令。",
+      "causal_drivers": [
+        "semiconductor",
+        "rates",
+        "energy"
+      ],
+      "confirmation_signals": [
+        "未來一個月能源供應風險仍可能維持高波動"
+      ],
+      "invalidation_conditions": [
+        "實際官方行情不符合上述明確判準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": "ICE 或可信公開結算數據，先訂義高波動為期間最高與最低結算價差占首日結算價至少 5%，否則 MISS",
+      "source_snapshot_id": "AI-TradeCore_Global_Risk_Report_2026-10-15_0805"
+    }
+  ],
+  "forecast_history": {
+    "status": "NOT_YET_CALIBRATED",
+    "sample_size": 0,
+    "hit_rate": null,
+    "notes": "本次首次加入 forecast_cards，尚無到期且已驗證的預測結果；後續 append-only evaluation 不回填 snapshot"
+  }
+}

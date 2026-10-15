@@ -1,0 +1,180 @@
+{
+  "schema": "scenex.autorig65.reviewed-video-publication.v1",
+  "revision": "reference-20261015-v1",
+  "scope": "REFERENCE_CASES",
+  "completed_films": 3,
+  "expected_films": 3,
+  "records": [
+    {
+      "case_id": "michelle_samba",
+      "source": "michelle.glb",
+      "source_sha256": "7a87e15a99ccbc5e5877be66e1e4ecae0a581adcafa0cce1a5569f49909e968e",
+      "motion": "samba",
+      "frames": 438,
+      "fps": 24,
+      "duration_s": 18.25,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792046487/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/michelle_samba-e5b28131e8369090.mp4",
+        "bytes": 954054,
+        "sha256": "e5b28131e8369090940f5f79a67f8c05004c404f7e93a69afde6259b311b890c",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046489/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/golden_0001-24351796f4df2a71.png",
+          "bytes": 448784,
+          "sha256": "24351796f4df2a711091963a966dc2b05a810c4b1cd259b75504605a5af9c4d4",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 111,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046491/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/golden_0111-a7acdc0e0c4c61df.png",
+          "bytes": 447321,
+          "sha256": "a7acdc0e0c4c61df21602af3d1fcb0e75e8295dba67b79194ba55faa349917f6",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 219,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046492/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/golden_0219-93e528965dcae2cb.png",
+          "bytes": 449759,
+          "sha256": "93e528965dcae2cbae30b8ff75096d50c3ca661fe9f1c585fca3941deea8854b",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 329,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046494/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/golden_0329-168d3443e1fa559f.png",
+          "bytes": 451021,
+          "sha256": "168d3443e1fa559f1173e110ce2bf1a76336f9af6cf59819615481473632aaf0",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 437,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046496/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/michelle_samba/golden_0437-28912c2b57a78c1b.png",
+          "bytes": 448929,
+          "sha256": "28912c2b57a78c1bef0dbb1b02cefd2806d7ba6f4c56738180e1233145bc7e8a",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "ada_taiji",
+      "source": "ada_wong_source.glb",
+      "source_sha256": "b0f701a1c32c25bd78240376ef9f7eed533153931d2188e08db480c84dd722cf",
+      "motion": "taiji",
+      "frames": 1256,
+      "fps": 50,
+      "duration_s": 25.12,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792046498/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/ada_taiji-ba08a7cb8b02e22f.mp4",
+        "bytes": 946965,
+        "sha256": "ba08a7cb8b02e22f0bc724e2731caacf71059990744d0b217d86674c09323b01",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046500/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/golden_0001-b8b42ad6421ddf6e.png",
+          "bytes": 444337,
+          "sha256": "b8b42ad6421ddf6e61b65455f2ff2e26713bd660fa376a6dec329bb9d1a69043",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 315,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046501/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/golden_0315-651aed7c4c0f570b.png",
+          "bytes": 443380,
+          "sha256": "651aed7c4c0f570ba768ff4723eb525f6eb3abd68fdd5ea84d90034174fd83a9",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 629,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046503/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/golden_0629-61712929e578bae8.png",
+          "bytes": 446228,
+          "sha256": "61712929e578bae818b26bfefa0bdd2bfdb3a33bc31ac2e4a1117515070581e2",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 943,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046504/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/golden_0943-7045fa7620ebdd2b.png",
+          "bytes": 445372,
+          "sha256": "7045fa7620ebdd2b28d7ee7170937f8765a320bbe55cd899eda90266e41c0ad0",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1256,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046506/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/ada_taiji/golden_1256-1844dc42649d398f.png",
+          "bytes": 446065,
+          "sha256": "1844dc42649d398fbfef1b29144925a250fa24259ab0912ac2e7ff5582385901",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    },
+    {
+      "case_id": "misaki_swan_lake",
+      "source": "misaki_source.glb",
+      "source_sha256": "9f5b8324ff95d9470a2543a0ddb8d09296288af28b9b60c9015437863bc1b6bd",
+      "motion": "swan_lake",
+      "frames": 3420,
+      "fps": 30,
+      "duration_s": 114.0,
+      "TECHNICAL_PASS": true,
+      "VISUAL_PASS": true,
+      "visual_reviewer": "AI_ASSISTANT_VISUAL_INSPECTION",
+      "human_signoff": "NOT_CLAIMED",
+      "license_review": "NOT_ASSERTED_BY_UPLOAD",
+      "video": {
+        "url": "https://res.cloudinary.com/zsxeu0gu/video/upload/v1792046512/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/misaki_swan_lake-0b0bf76f3562d6ce.mp4",
+        "bytes": 4362275,
+        "sha256": "0b0bf76f3562d6ce27e230e36ce1e295e98b9e423b643016d718964930c6835d",
+        "remote_original_sha256_verified": true
+      },
+      "goldens": [
+        {
+          "frame": 1,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046514/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/golden_0001-e10488e41d56874a.png",
+          "bytes": 430791,
+          "sha256": "e10488e41d56874a43789ee0bcea53b9f4bf5ddee4c044d7039f0e93c93170c1",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 856,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046515/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/golden_0856-83cfb6c2ea6f422c.png",
+          "bytes": 432049,
+          "sha256": "83cfb6c2ea6f422caa15d634914e340b67f33ffa9692af3ff7815556b4e9992c",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 1710,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046517/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/golden_1710-005d1a07d6f9a323.png",
+          "bytes": 431291,
+          "sha256": "005d1a07d6f9a323aff4c2f032f6d777b74455f674f4a9183b0f4a6ea5d0d2ad",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 2565,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046519/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/golden_2565-a7a0547a03cc9d6f.png",
+          "bytes": 431053,
+          "sha256": "a7a0547a03cc9d6f527b113fc6a62376e0eed47001067aaf1c0c5f282358ec39",
+          "remote_original_sha256_verified": true
+        },
+        {
+          "frame": 3420,
+          "url": "https://res.cloudinary.com/zsxeu0gu/image/upload/v1792046520/scenex/wikipedia/characters/reviewed_films/reference-20261015-v1/misaki_swan_lake/golden_3420-4367e429979e40c1.png",
+          "bytes": 431285,
+          "sha256": "4367e429979e40c1de440dfae3506fa3bc89f0e58d5547128b33c2c81e0fbbe4",
+          "remote_original_sha256_verified": true
+        }
+      ]
+    }
+  ]
+}

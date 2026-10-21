@@ -1,0 +1,1495 @@
+{
+  "schema_version": "1.6",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-21_0803",
+  "generated_at": "2026-10-21T08:03:41+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-10-21T08:03:41+08:00",
+  "as_of_market_session": "US 2026-10-20 close / Taiwan 2026-10-20 close / Taiwan 2026-10-21 pre-open",
+  "model_version": "global-risk-butterfly-v0.6.1-research-20261021",
+  "skill_version": "0.6.1",
+  "calibration_status": "UNCALIBRATED",
+  "assessment_method": "AI_JUDGMENT",
+  "events": [
+    {
+      "event_id": "E01",
+      "topic": "台股資金面",
+      "fact": "10/20 台股加權指數收 46,292.93 點，下跌 529.15 點（-1.13%），成交金額 7,586.84 億元。",
+      "interpretation": "現貨走弱及成交活躍提示資金調節風險；不等於 10/21 必然續跌。",
+      "source_ids": [
+        "S01"
+      ],
+      "source_url": "https://www.cna.com.tw/news/afe/202610200151.aspx",
+      "source_published_at": "2026-10-20T13:59:00+08:00",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "HIGH",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E02",
+      "topic": "外資與匯率",
+      "fact": "10/20 外資賣超約 795.4 億元，本周兩個交易日合計賣超約 1,562 億元；新台幣約 32.61 僅為新聞盤中參考值。",
+      "interpretation": "外資流出與台幣偏弱可能形成反饋；台幣正式收盤值未核驗。",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E6%9C%AC%E5%91%A82%E5%A4%A9%E5%B7%B2%E8%B3%A3%E8%B6%851562%E5%84%84-%E5%8F%B0%E8%82%A1%E4%B8%8B%E8%B7%8C529-15%E9%BB%9E-%E6%94%B646292%E9%BB%9E-%E5%8D%97%E4%BA%9E%E7%A7%91%E8%B7%8C%E7%A0%B4%E5%8D%8A%E5%B9%B4%E7%B7%9A-082000941.html",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "MEDIUM",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E03",
+      "topic": "美股輪動",
+      "fact": "10/20 S&P 500 收 7,712.57（約漲 0.3%）、道瓊收 52,495.88（約漲 1%）、Nasdaq 收 26,424.82（微跌）。",
+      "interpretation": "美股價值／防禦類股相對科技股較強，AI 估值與融資疑慮尚未消失。",
+      "source_ids": [
+        "S03"
+      ],
+      "source_url": "https://apnews.com/article/0a5ea168499c6ae617c49e10bf48f9c6",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "HIGH",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E04",
+      "topic": "能源與地緣",
+      "fact": "10/20 Reuters 報導 Brent 期貨回落至約 108.79 美元／桶，盤中一度接近 112；伊朗與巴基斯坦接觸釋出外交緩和訊號。",
+      "interpretation": "能源供應風險仍在，但外交進展可壓低短期風險溢價。",
+      "source_ids": [
+        "S04"
+      ],
+      "source_url": "https://www.reuters.com/business/energy/oil-eases-markets-assess-potential-waiver-russian-energy-middle-east-supply-2026-10-20/",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "MEDIUM",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E05",
+      "topic": "Fed 利率",
+      "fact": "Reuters 10/16–20 調查 100 位經濟學家，94 位預期 Fed 10 月維持 3.75%–4.00% 利率區間；受訪者預期 12 月升息。",
+      "interpretation": "利率高檔與再升息預期可能提高科技資本支出折現及信用融資壓力。",
+      "source_ids": [
+        "S05"
+      ],
+      "source_url": "https://www.reuters.com/business/fed-skip-october-raise-rates-again-december-nearly-all-economists-say-2026-10-20/",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "HIGH",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E06",
+      "topic": "記憶體供應鏈",
+      "fact": "Reuters 10/20 報導美光桃園廠工會預告 10/22 舉行一日罷工；目前尚未發生，產線影響未知。",
+      "interpretation": "預告罷工構成供應鏈事件風險，但不能當作已停工。",
+      "source_ids": [
+        "S06"
+      ],
+      "source_url": "https://www.reuters.com/business/world-at-work/micron-union-taiwan-launch-strike-bonus-dispute-escalates-2026-10-20/",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "HIGH",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E07",
+      "topic": "美債與美元",
+      "fact": "Reuters 10/20 全球市場報導美國 10 年期公債殖利率盤中約 5.096%，油價與美債殖利率從高點回落。",
+      "interpretation": "殖利率回落有助緩和估值壓力，尚不足以消除通膨及利率風險。",
+      "source_ids": [
+        "S07"
+      ],
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-20/",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "MEDIUM",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    },
+    {
+      "event_id": "E08",
+      "topic": "歐洲信用",
+      "fact": "Reuters 10/20 報導法國 10 年期公債殖利率約 4.88%，法德利差約 150 基點。",
+      "interpretation": "主權利差與政局風險可能經全球信用及融資成本向亞洲傳遞。",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://www.reuters.com/markets/us/french-bond-yields-near-24-year-high-new-protests-loom-2026-10-20/",
+      "source_published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00",
+      "confidence": "HIGH",
+      "fact_status": "SOURCE_REPORTED",
+      "interpretation_status": "AI_JUDGMENT"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "TAIWAN_FOREIGN_OUTFLOW",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E01",
+        "E02"
+      ]
+    },
+    {
+      "node": "ENERGY_SUPPLY",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E04"
+      ]
+    },
+    {
+      "node": "FED_RATE_PRESSURE",
+      "direction": "RISK_UP",
+      "magnitude": "MEDIUM",
+      "evidence_event_ids": [
+        "E05",
+        "E07"
+      ]
+    },
+    {
+      "node": "MICRON_LABOR_EVENT",
+      "direction": "RISK_UP",
+      "magnitude": "LOW_TO_MEDIUM",
+      "evidence_event_ids": [
+        "E06"
+      ]
+    },
+    {
+      "node": "ENERGY_DIPLOMACY",
+      "direction": "RISK_DOWN",
+      "magnitude": "MEDIUM",
+      "evidence_event_ids": [
+        "E04"
+      ]
+    },
+    {
+      "node": "US_DEFENSIVE_ROTATION",
+      "direction": "MIXED",
+      "magnitude": "MEDIUM",
+      "evidence_event_ids": [
+        "E03"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "能源供應風險",
+      "target": "通膨預期",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E04"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "通膨預期",
+      "target": "Fed利率預期",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E04",
+        "E05"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Fed利率預期",
+      "target": "美債殖利率",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E05",
+        "E07"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "美債殖利率",
+      "target": "AI融資成本",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E05",
+        "E07"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "AI融資成本",
+      "target": "NASDAQ/SOX估值",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E03",
+        "E05"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "NASDAQ/SOX估值",
+      "target": "台灣半導體",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E03"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "台灣半導體",
+      "target": "TAIEX/MXF",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E01",
+        "E03"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "外資賣超",
+      "target": "台幣壓力",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E02"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "台幣壓力",
+      "target": "台股波動",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E01",
+        "E02"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "美光勞資事件",
+      "target": "記憶體供應鏈",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E06"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "記憶體供應鏈",
+      "target": "台灣半導體",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E06"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "能源外交緩和",
+      "target": "能源供應風險",
+      "direction": "RISK_DOWN",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E04"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "法國主權利差",
+      "target": "全球信用利差",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E08"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "全球信用利差",
+      "target": "AI融資成本",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": null,
+      "evidence_ids": [
+        "E05",
+        "E08"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "path_id": "P1",
+      "nodes": [
+        "能源供應風險",
+        "通膨預期",
+        "Fed利率預期",
+        "美債殖利率",
+        "AI融資成本",
+        "NASDAQ/SOX估值",
+        "台灣半導體",
+        "TAIEX/MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "QUALITATIVE",
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_MONTHS",
+      "decay": "NOT_ESTIMATED",
+      "regime": "ENERGY_INFLATION_TAIWAN_OUTFLOW",
+      "evidence_event_ids": [
+        "E04",
+        "E05",
+        "E07",
+        "E03",
+        "E01"
+      ]
+    },
+    {
+      "path_id": "P2",
+      "nodes": [
+        "外資賣超",
+        "台幣壓力",
+        "台股波動",
+        "TAIEX/MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "QUALITATIVE",
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_MONTHS",
+      "decay": "NOT_ESTIMATED",
+      "regime": "ENERGY_INFLATION_TAIWAN_OUTFLOW",
+      "evidence_event_ids": [
+        "E01",
+        "E02"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "美光勞資事件",
+        "記憶體供應鏈",
+        "台灣半導體",
+        "TAIEX/MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "QUALITATIVE",
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_MONTHS",
+      "decay": "NOT_ESTIMATED",
+      "regime": "ENERGY_INFLATION_TAIWAN_OUTFLOW",
+      "evidence_event_ids": [
+        "E06"
+      ]
+    },
+    {
+      "path_id": "P4",
+      "nodes": [
+        "能源外交緩和",
+        "能源風險溢價下降",
+        "通膨預期降溫",
+        "美債殖利率回落"
+      ],
+      "direction": "RISK_DOWN",
+      "strength": "QUALITATIVE",
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_MONTHS",
+      "decay": "NOT_ESTIMATED",
+      "regime": "ENERGY_INFLATION_TAIWAN_OUTFLOW",
+      "evidence_event_ids": [
+        "E04",
+        "E07"
+      ]
+    },
+    {
+      "path_id": "P5",
+      "nodes": [
+        "法國主權利差",
+        "全球信用利差",
+        "AI融資成本",
+        "NASDAQ/SOX估值"
+      ],
+      "direction": "RISK_UP",
+      "strength": "QUALITATIVE",
+      "confidence": "LOW_TO_MEDIUM",
+      "lag": "DAYS_TO_MONTHS",
+      "decay": "NOT_ESTIMATED",
+      "regime": "ENERGY_INFLATION_TAIWAN_OUTFLOW",
+      "evidence_event_ids": [
+        "E08",
+        "E05"
+      ]
+    }
+  ],
+  "convergence": [
+    {
+      "node": "AI_FINANCING_COST",
+      "input_paths": [
+        "P1",
+        "P5"
+      ],
+      "deduplication": "利率、通膨與信用來源有重疊，定性去重不加總主觀權重"
+    },
+    {
+      "node": "TAIEX_MXF",
+      "input_paths": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "deduplication": "科技估值與外資流向可能相關，不把同一衝擊重複計分"
+    }
+  ],
+  "regime": {
+    "name": "ENERGY_INFLATION_PLUS_TAIWAN_OUTFLOW",
+    "confidence": "MEDIUM"
+  },
+  "taiwan_exposure": {
+    "taiex_last_close": 46292.93,
+    "taiex_close_date": "2026-10-20",
+    "foreign_net_sell_twd_100m_approx": 795.4,
+    "usd_twd_indicative_approx": 32.61,
+    "usd_twd_official_close": "NOT_VERIFIED",
+    "tsmc_last_close": "NOT_VERIFIED",
+    "tsmc_adr_last_close": "NOT_VERIFIED",
+    "sox_last_close": "NOT_VERIFIED",
+    "mxf_night": "NOT_VERIFIED",
+    "us10y_intraday_percent_approx": 5.096,
+    "brent_futures_usd_per_bbl_approx": 108.79,
+    "energy_import": "ELEVATED",
+    "shipping": "ELEVATED",
+    "china_asia": "MIXED_NOT_VERIFIED",
+    "taiwan_strait": "NO_NEW_VERIFIED_EVENT",
+    "micron_strike": "ANNOUNCED_FOR_2026-10-22_NOT_OCCURRED"
+  },
+  "scores": {
+    "global": {
+      "value": 84,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "energy",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "rates",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "credit",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "defensive_rotation",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "taiwan": {
+      "value": 91,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "foreign_outflow",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "semiconductor",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "rates",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "FX",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "energy": {
+      "value": 87,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "supply_risk",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "diplomacy_relief",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "rates": {
+      "value": 86,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "Fed_higher_for_longer",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "yield_easing",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "credit": {
+      "value": 86,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "French_spreads",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "AI_capex_financing",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "geopolitical": {
+      "value": 89,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "Middle_East",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "diplomacy",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    },
+    "semiconductor": {
+      "value": 88,
+      "scale": "0–100 subjective research score, NOT a probability",
+      "formula_version": "NO_EXECUTABLE_FORMULA_v0.6.1",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "AI_valuation",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "Micron_labor",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        },
+        {
+          "factor": "foreign_flow",
+          "subjective_points": null,
+          "qualitative_direction": "RISK_UP_OR_MITIGATING",
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "E05",
+            "E06",
+            "E07",
+            "E08"
+          ]
+        }
+      ],
+      "assumptions": [
+        "主觀因子判讀，無可重現數值公式",
+        "因子相關且可能重疊，已定性去重",
+        "未做歷史校準，不是機率"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "MEDIUM"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE_PENDING_RULE_ENGINE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "台灣外資流出、能源與利率風險匯流；不是正式 BLOCK，不取代 60 分鐘主策略"
+  },
+  "downgrade_conditions": [
+    {
+      "condition": "外資轉為連續買超、台幣轉穩",
+      "action": "台灣資金風險降級候選",
+      "evidence_required": "TWSE/央行"
+    },
+    {
+      "condition": "Brent 持續回落且航運保險風險下降",
+      "action": "能源風險降級候選",
+      "evidence_required": "ICE/Reuters/航運"
+    },
+    {
+      "condition": "Fed 指引轉鴿、通膨與美債殖利率回落",
+      "action": "利率風險降級候選",
+      "evidence_required": "Fed/US Treasury"
+    },
+    {
+      "condition": "10/22 美光工會取消罷工或勞資和解",
+      "action": "記憶體供應鏈風險降級候選",
+      "evidence_required": "Reuters/工會/公司"
+    },
+    {
+      "condition": "NASDAQ/SOX 持續轉強且信用利差收斂",
+      "action": "科技估值風險降級候選",
+      "evidence_required": "交易所/債市"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "中央社",
+      "title": "台股跌529.15點",
+      "url": "https://www.cna.com.tw/news/afe/202610200151.aspx",
+      "published_at": "2026-10-20T13:59:00+08:00",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S02",
+      "publisher": "Yahoo股市",
+      "title": "外資本周2天已賣超1562億",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E6%9C%AC%E5%91%A82%E5%A4%A9%E5%B7%B2%E8%B3%A3%E8%B6%851562%E5%84%84-%E5%8F%B0%E8%82%A1%E4%B8%8B%E8%B7%8C529-15%E9%BB%9E-%E6%94%B646292%E9%BB%9E-%E5%8D%97%E4%BA%9E%E7%A7%91%E8%B7%8C%E7%A0%B4%E5%8D%8A%E5%B9%B4%E7%B7%9A-082000941.html",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S03",
+      "publisher": "Associated Press",
+      "title": "How major US stock indexes fared Tuesday 10/20/2026",
+      "url": "https://apnews.com/article/0a5ea168499c6ae617c49e10bf48f9c6",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S04",
+      "publisher": "Reuters",
+      "title": "Brent falls as Iran president discusses mediation",
+      "url": "https://www.reuters.com/business/energy/oil-eases-markets-assess-potential-waiver-russian-energy-middle-east-supply-2026-10-20/",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S05",
+      "publisher": "Reuters",
+      "title": "Fed to skip October but raise rates in December, economist poll",
+      "url": "https://www.reuters.com/business/fed-skip-october-raise-rates-again-december-nearly-all-economists-say-2026-10-20/",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S06",
+      "publisher": "Reuters",
+      "title": "Micron union in Taiwan plans one-day strike",
+      "url": "https://www.reuters.com/business/world-at-work/micron-union-taiwan-launch-strike-bonus-dispute-escalates-2026-10-20/",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S07",
+      "publisher": "Reuters",
+      "title": "Stocks mostly rise as oil and US yields ease",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-20/",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    },
+    {
+      "id": "S08",
+      "publisher": "Reuters",
+      "title": "French bond yields near 24-year high",
+      "url": "https://www.reuters.com/markets/us/french-bond-yields-near-24-year-high-new-protests-loom-2026-10-20/",
+      "published_at": "2026-10-20",
+      "observed_at": "2026-10-21T08:03:41+08:00"
+    }
+  ],
+  "analyst_interpretation": {
+    "one_sentence_conclusion": "截至 10/21 08:03，台股資金面弱勢與能源／利率壓力匯流，美股非科技類股相對強勢及油價回落是緩和訊號。",
+    "three_key_drivers": [
+      {
+        "fact": "10/20 台股加權指數收 46,292.93 點，下跌 529.15 點（-1.13%），成交金額 7,586.84 億元。",
+        "interpretation": "現貨走弱及成交活躍提示資金調節風險；不等於 10/21 必然續跌。",
+        "source_ids": [
+          "S01"
+        ],
+        "affected_assets": [
+          "TAIEX",
+          "MXF"
+        ]
+      },
+      {
+        "fact": "10/20 Reuters 報導 Brent 期貨回落至約 108.79 美元／桶，盤中一度接近 112；伊朗與巴基斯坦接觸釋出外交緩和訊號。",
+        "interpretation": "能源供應風險仍在，但外交進展可壓低短期風險溢價。",
+        "source_ids": [
+          "S04"
+        ],
+        "affected_assets": [
+          "Brent",
+          "US10Y"
+        ]
+      },
+      {
+        "fact": "Reuters 10/16–20 調查 100 位經濟學家，94 位預期 Fed 10 月維持 3.75%–4.00% 利率區間；受訪者預期 12 月升息。",
+        "interpretation": "利率高檔與再升息預期可能提高科技資本支出折現及信用融資壓力。",
+        "source_ids": [
+          "S05"
+        ],
+        "affected_assets": [
+          "NASDAQ",
+          "SOX",
+          "TSMC"
+        ]
+      }
+    ],
+    "previous_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-20_0803",
+    "previous_scores": {
+      "global": 85,
+      "taiwan": 89,
+      "energy": 91,
+      "rates": 84,
+      "credit": 86,
+      "geopolitical": 90,
+      "semiconductor": 82
+    },
+    "comparison_note": "同屬 AI_JUDGMENT/UNCALIBRATED，分數變化不能解讀為機率變化。",
+    "contradictory_signals": {
+      "risk_up": "10/20 台股跌 529.15 點、外資大幅賣超",
+      "risk_down": "10/20 美國道瓊及標普上漲、Brent 從盤中高點回落"
+    },
+    "taiwan_mxf_observation": "台股收盤已核驗；外資與台幣採二手報導；SOX、台積電與微台指夜盤精確數據未核驗。"
+  },
+  "scenario_forecasts": [
+    {
+      "scenario_id": "BASE_1D",
+      "scenario_family": "BASE",
+      "horizon": "1D",
+      "horizon_end": "2026-10-21",
+      "narrative": "台股外資賣壓與美股產業輪動並存，震盪風險偏高",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "外資未回補",
+        "油價高位震盪"
+      ],
+      "invalidation_conditions": [
+        "外資轉買且 SOX 持續轉強"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "RANGE",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1W",
+      "scenario_family": "BASE",
+      "horizon": "1W",
+      "horizon_end": "2026-10-28",
+      "narrative": "台股外資賣壓與美股產業輪動並存，震盪風險偏高",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "外資未回補",
+        "油價高位震盪"
+      ],
+      "invalidation_conditions": [
+        "外資轉買且 SOX 持續轉強"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "RANGE",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1M",
+      "scenario_family": "BASE",
+      "horizon": "1M",
+      "horizon_end": "2026-11-21",
+      "narrative": "台股外資賣壓與美股產業輪動並存，震盪風險偏高",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "外資未回補",
+        "油價高位震盪"
+      ],
+      "invalidation_conditions": [
+        "外資轉買且 SOX 持續轉強"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "RANGE",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1D",
+      "scenario_family": "RISK_EASING",
+      "horizon": "1D",
+      "horizon_end": "2026-10-21",
+      "narrative": "外交緩和、殖利率回落與外資回流帶動反彈",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 回落",
+        "台幣轉穩",
+        "SOX 轉強"
+      ],
+      "invalidation_conditions": [
+        "中東供應中斷再起"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "UP",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1W",
+      "scenario_family": "RISK_EASING",
+      "horizon": "1W",
+      "horizon_end": "2026-10-28",
+      "narrative": "外交緩和、殖利率回落與外資回流帶動反彈",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 回落",
+        "台幣轉穩",
+        "SOX 轉強"
+      ],
+      "invalidation_conditions": [
+        "中東供應中斷再起"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "UP",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_EASING_1M",
+      "scenario_family": "RISK_EASING",
+      "horizon": "1M",
+      "horizon_end": "2026-11-21",
+      "narrative": "外交緩和、殖利率回落與外資回流帶動反彈",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 回落",
+        "台幣轉穩",
+        "SOX 轉強"
+      ],
+      "invalidation_conditions": [
+        "中東供應中斷再起"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "UP",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1D",
+      "scenario_family": "RISK_ESCALATION",
+      "horizon": "1D",
+      "horizon_end": "2026-10-21",
+      "narrative": "能源、利率及記憶體供應鏈風險同時惡化",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 再創高",
+        "美債殖利率上升",
+        "罷工影響擴大"
+      ],
+      "invalidation_conditions": [
+        "外交緩和且勞資達成協議"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "DOWN",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1W",
+      "scenario_family": "RISK_ESCALATION",
+      "horizon": "1W",
+      "horizon_end": "2026-10-28",
+      "narrative": "能源、利率及記憶體供應鏈風險同時惡化",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 再創高",
+        "美債殖利率上升",
+        "罷工影響擴大"
+      ],
+      "invalidation_conditions": [
+        "外交緩和且勞資達成協議"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "DOWN",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1M",
+      "scenario_family": "RISK_ESCALATION",
+      "horizon": "1M",
+      "horizon_end": "2026-11-21",
+      "narrative": "能源、利率及記憶體供應鏈風險同時惡化",
+      "causal_chain": "多事件→匯流→全球風險偏好→台灣曝險",
+      "observable_triggers": [
+        "Brent 再創高",
+        "美債殖利率上升",
+        "罷工影響擴大"
+      ],
+      "invalidation_conditions": [
+        "外交緩和且勞資達成協議"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent"
+      ],
+      "direction": "DOWN",
+      "confidence": "LOW_TO_MEDIUM",
+      "source_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    }
+  ],
+  "forecast_cards": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-21_0803_F01",
+      "issued_at": "2026-10-21T08:03:41+08:00",
+      "data_cutoff_at": "2026-10-21T08:03:41+08:00",
+      "target_market": "TAIEX",
+      "target_metric": "2026-10-21 close below 2026-10-20 close",
+      "horizon_end": "2026-10-21T13:35:00+08:00",
+      "direction_or_condition": "close < 46292.93",
+      "baseline_value": 46292.93,
+      "baseline_timestamp": "2026-10-20T13:35:00+08:00",
+      "baseline_source_id": "S01",
+      "baseline_verification": "VERIFIED",
+      "thesis": "台股外資賣壓可能延續",
+      "causal_drivers": [
+        "E01",
+        "E02"
+      ],
+      "confirmation_signals": [
+        "外資續賣",
+        "台幣偏弱"
+      ],
+      "invalidation_conditions": [
+        "外資轉買",
+        "股市強勢反彈"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-10-21T13:35:00+08:00",
+        "source": "TWSE/CNA",
+        "hit_if": "official close < 46292.93",
+        "miss_if": "official close >= 46292.93",
+        "indeterminate_if": "official close unavailable"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-21_0803_F02",
+      "issued_at": "2026-10-21T08:03:41+08:00",
+      "data_cutoff_at": "2026-10-21T08:03:41+08:00",
+      "target_market": "TAIWAN_SEMICONDUCTOR",
+      "target_metric": "Micron Taoyuan union one-day strike occurs on Oct22",
+      "horizon_end": "2026-10-22T23:59:00+08:00",
+      "direction_or_condition": "one-day strike occurs as announced",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": "S06",
+      "baseline_verification": "FUTURE_EVENT",
+      "thesis": "勞資談判若未達成協議，預告行動可能實施",
+      "causal_drivers": [
+        "E06"
+      ],
+      "confirmation_signals": [
+        "工會重申行動"
+      ],
+      "invalidation_conditions": [
+        "勞資和解"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-10-23T09:00:00+08:00",
+        "source": "Reuters/union/company",
+        "hit_if": "credible confirmation strike occurred Oct22",
+        "miss_if": "credible confirmation canceled",
+        "indeterminate_if": "no reliable confirmation"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-21_0803_F03",
+      "issued_at": "2026-10-21T08:03:41+08:00",
+      "data_cutoff_at": "2026-10-21T08:03:41+08:00",
+      "target_market": "ENERGY",
+      "target_metric": "Brent matching futures settlement",
+      "horizon_end": "2026-10-21T23:59:00Z",
+      "direction_or_condition": "settlement <= 108.79 USD/bbl",
+      "baseline_value": 108.79,
+      "baseline_timestamp": "2026-10-20",
+      "baseline_source_id": "S04",
+      "baseline_verification": "CONTRACT_MATCH_REQUIRED",
+      "thesis": "外交緩和可能抑制能源風險溢價",
+      "causal_drivers": [
+        "E04"
+      ],
+      "confirmation_signals": [
+        "談判進展",
+        "航運改善"
+      ],
+      "invalidation_conditions": [
+        "新供應中斷"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-10-22T08:00:00+08:00",
+        "source": "Reuters/ICE Brent same contract",
+        "hit_if": "same-contract settlement <= 108.79",
+        "miss_if": "same-contract settlement > 108.79",
+        "indeterminate_if": "contract mismatch or no settlement"
+      }
+    }
+  ],
+  "forecast_performance": {
+    "status": "NOT_CALIBRATED",
+    "note": "預測 outcome 僅獨立附加檔保存，不回填原始 snapshot"
+  },
+  "limitations": [
+    "評分主觀、未校準、無可重現公式，非下跌機率",
+    "10/21 台股尚未開盤",
+    "美光 10/22 罷工僅為預告",
+    "SOX/TSMC/MXF/台幣正式收盤尚未核驗",
+    "Brent 合約與不同新聞截點可能不一致"
+  ]
+}

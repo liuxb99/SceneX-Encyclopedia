@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "forecast-evaluation-2026-10-24_0800",
+  "generated_at": "2026-10-24T08:00:46+08:00",
+  "calibration_status": "UNCALIBRATED",
+  "method": "APPEND_ONLY_OUTCOME_RESEARCH",
+  "entries": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800_F01",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-22_0800.json",
+      "original_horizon_end": "2026-10-22T13:35:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-22T13:35:00+08:00",
+        "source": "TWSE official close",
+        "hit_if": "close >= 46887.77",
+        "miss_if": "close < 46887.77",
+        "indeterminate_if": "官方收盤不可得或未開市"
+      },
+      "resolved_at": "2026-10-24T08:00:46+08:00",
+      "observed_at": "2026-10-22T13:35:00+08:00",
+      "observed_value": 46041.43,
+      "outcome_source": "https://www.twse.com.tw/en/indices/taiex/mi-5min-hist.html",
+      "result": "MISS",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.1",
+      "reason": "TWSE官方10/22收46,041.43，低於原卡判準46,887.77。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-22_0800.json",
+      "original_horizon_end": "2026-10-23T04:15:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-23T04:15:00+08:00",
+        "source": "Nasdaq/PHLX official SOX daily closes",
+        "hit_if": "SOX close 10/22 >= close 10/21",
+        "miss_if": "SOX close 10/22 < close 10/21",
+        "indeterminate_if": "任一官方收盤不可得"
+      },
+      "resolved_at": "2026-10-24T08:00:46+08:00",
+      "observed_at": "2026-10-23T04:15:00+08:00",
+      "observed_value": {
+        "sox_20261021": 11505.56,
+        "sox_20261022": 10731.98
+      },
+      "outcome_source": "https://indexes.nasdaq.com/Index/History/SOX",
+      "result": "MISS",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.1",
+      "reason": "Nasdaq/PHLX 10/22低於10/21，原卡要求10/22 >= 10/21。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-22_0800",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-22_0800.json",
+      "original_horizon_end": "2026-10-23T06:00:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-23T06:00:00+08:00",
+        "source": "ICE official Brent settlement, contract identity must match",
+        "hit_if": "front-month settlement >= 105 USD/bbl",
+        "miss_if": "front-month settlement < 105 USD/bbl",
+        "indeterminate_if": "官方結算或合約身份無法確認"
+      },
+      "resolved_at": "2026-10-24T08:00:46+08:00",
+      "observed_at": "2026-10-23T06:00:00+08:00",
+      "observed_value": {
+        "reuters_brent_settlement_20261022": 113.17
+      },
+      "outcome_source": "https://www.reuters.com/business/energy/oil-rises-us-orders-diplomats-leave-saudi-arabia-amid-escalating-tensions-2026-10-22/",
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.1",
+      "reason": "Reuters報價超過105，但未核實原判準要求的ICE官方front-month合約身份。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-23_0803_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-23_0803",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-23_0803.json",
+      "original_horizon_end": "2026-10-24T04:15:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-24T04:15:00+08:00",
+        "source": "Nasdaq/PHLX official SOX closes",
+        "hit_if": "close(10/23)<=close(10/22)",
+        "miss_if": "close(10/23)>close(10/22)",
+        "indeterminate_if": "任一官方收盤不可得"
+      },
+      "resolved_at": "2026-10-24T08:00:46+08:00",
+      "observed_at": "2026-10-24T04:15:00+08:00",
+      "observed_value": {
+        "reuters_sox_pct_20261023": 0.4,
+        "sox_20261022": 10731.98
+      },
+      "outcome_source": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-23/",
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.1",
+      "reason": "Reuters報導SOX約+0.4%傾向MISS，但Nasdaq動態頁面不同擷取版本對10/23點位不一致；未完成官方最終收盤雙點核對，依原規則暫列INDETERMINATE。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-23_0803_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-23_0803",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-23_0803.json",
+      "original_horizon_end": "2026-10-24T06:00:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-24T06:00:00+08:00",
+        "source": "ICE Brent official front-month settlement with explicit contract",
+        "hit_if": "settlement>=110",
+        "miss_if": "settlement<110",
+        "indeterminate_if": "官方結算或合約月份不可得"
+      },
+      "resolved_at": "2026-10-24T08:00:46+08:00",
+      "observed_at": "2026-10-24T06:00:00+08:00",
+      "observed_value": {
+        "reuters_brent_settlement_20261023": 116.72
+      },
+      "outcome_source": "https://www.reuters.com/business/energy/oil-little-changed-supply-concern-lingers-amid-houthi-attacks-saudi-arabia-2026-10-23/",
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.1",
+      "reason": "Reuters報價超過110，但原卡要求ICE官方front-month明確合約；合約月份未核實，不能判HIT。"
+    }
+  ],
+  "limitations": [
+    "原始forecast_cards不可修改",
+    "SOX 10/23不同動態官方頁面顯示不一致，暫不強判",
+    "ICE Brent合約識別不足時維持INDETERMINATE",
+    "樣本不足，不計算校準命中率"
+  ]
+}

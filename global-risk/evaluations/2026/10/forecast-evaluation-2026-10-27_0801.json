@@ -1,0 +1,189 @@
+{
+  "schema_version": "global-risk-evaluation-v0.2",
+  "evaluation_id": "forecast-evaluation-2026-10-27_0801",
+  "generated_at": "2026-10-27T08:04:21.521+08:00",
+  "calibration_status": "UNCALIBRATED",
+  "method": "APPEND_ONLY_ORIGINAL_RULE_NO_LOOKAHEAD",
+  "entries": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-24_0800_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-24_0800",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-24_0800.json",
+      "original_horizon_end": "2026-10-27T04:15:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T04:15:00+08:00",
+        "source": "Nasdaq/PHLX official SOX closing values 2026-10-23 and 2026-10-26",
+        "hit_if": "close(10/26) > close(10/23)",
+        "miss_if": "close(10/26) <= close(10/23)",
+        "indeterminate_if": "任一官方收盤不可得"
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T04:15:00+08:00",
+      "observed_value": {
+        "reported_change_pct": 2.8,
+        "prior_official_close": 10779.46,
+        "final_official_close": null
+      },
+      "outcome_source": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://indexes.nasdaq.com/Index/History/SOX"
+      ],
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "Reuters稱10/26 SOX收漲2.8%（方向符合HIT），但Nasdaq動態頁面未穩定提供10/26最終官方收盤點數，原判準要求雙日官方收盤，故不強判。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-24_0800_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-24_0800",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-24_0800.json",
+      "original_horizon_end": "2026-10-27T06:00:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T06:00:00+08:00",
+        "source": "ICE Brent front-month official settlement 2026-10-26 with explicit contract identification",
+        "hit_if": "settlement >= 115",
+        "miss_if": "settlement < 115",
+        "indeterminate_if": "ICE官方結算或front-month合約月份不可得"
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T06:00:00+08:00",
+      "observed_value": {
+        "contract": "ICE Brent December 2026",
+        "settlement_usd_bbl": 115.81
+      },
+      "outcome_source": [
+        "https://www.wsj.com/finance/commodities-futures/oil-declines-on-likely-technical-correction-ad4be59e",
+        "https://commoditypriceapi.com/tools/brentoil-fut-dec26/prices"
+      ],
+      "result": "HIT",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "10/26十二月Brent結算115.81美元，達原判準front-month >=115；WSJ明列12月合約，10/23合約資料核對同月份。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-25_0804_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-25_0804",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-25_0804.json",
+      "original_horizon_end": "2026-10-27T04:15:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T04:15:00+08:00",
+        "outcome_source": "Nasdaq PHLX Semiconductor Sector Index official historical closes",
+        "method": "Use verified 10/23 baseline and 10/26 close: lower => HIT; equal/higher => MISS; missing authoritative baseline or close => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T04:15:00+08:00",
+      "observed_value": {
+        "reported_change_pct": 2.8,
+        "prior_official_close": 10779.46,
+        "final_official_close": null
+      },
+      "outcome_source": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://indexes.nasdaq.com/Index/History/SOX"
+      ],
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "Reuters報導10/26 SOX收漲2.8%，方向傾向MISS，但原判準要求Nasdaq官方兩日收盤；動態頁未取得穩定10/26最終點數。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-25_0804_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-25_0804",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-25_0804.json",
+      "original_horizon_end": "2026-10-27T06:00:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T06:00:00+08:00",
+        "outcome_source": "ICE Brent front-month settlement (verify exact contract identity before scoring)",
+        "method": "Only if same contract / comparable continuous series verified: >116.72 => HIT, <=116.72 => MISS; contract ambiguity => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T06:00:00+08:00",
+      "observed_value": {
+        "contract": "ICE Brent December 2026",
+        "baseline_settlement_usd_bbl": 116.72,
+        "settlement_usd_bbl": 115.81
+      },
+      "outcome_source": [
+        "https://www.wsj.com/finance/commodities-futures/oil-declines-on-likely-technical-correction-ad4be59e",
+        "https://commoditypriceapi.com/tools/brentoil-fut-dec26/prices"
+      ],
+      "result": "MISS",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "同一12月Brent合約10/26結算115.81，不符合原卡 >116.72，判MISS。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-26_0809_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-26_0809",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-26_0809.json",
+      "original_horizon_end": "2026-10-27T06:00:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T06:00:00+08:00",
+        "outcome_source": "ICE Brent front-month contract official settlement, contract identifier must be reconciled with Reuters Oct23 benchmark",
+        "method": "same contract and settlement <116.72 => HIT; >=116.72 => MISS; contract identity or settlement not verified => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T06:00:00+08:00",
+      "observed_value": {
+        "contract": "ICE Brent December 2026",
+        "baseline_settlement_usd_bbl": 116.72,
+        "settlement_usd_bbl": 115.81
+      },
+      "outcome_source": [
+        "https://www.wsj.com/finance/commodities-futures/oil-declines-on-likely-technical-correction-ad4be59e",
+        "https://commoditypriceapi.com/tools/brentoil-fut-dec26/prices"
+      ],
+      "result": "HIT",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "同一12月Brent合約10/26結算115.81，符合原卡 <116.72，判HIT。"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-26_0809_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-26_0809",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-26_0809.json",
+      "original_horizon_end": "2026-10-27T04:15:00+08:00",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T04:15:00+08:00",
+        "outcome_source": "Nasdaq PHLX Semiconductor Sector official closes for Oct23 and Oct26",
+        "method": "Oct26 close < Oct23 close => HIT; otherwise MISS; either close missing => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "resolved_at": "2026-10-27T08:04:21.521+08:00",
+      "observed_at": "2026-10-27T04:15:00+08:00",
+      "observed_value": {
+        "reported_change_pct": 2.8,
+        "prior_official_close": 10779.46,
+        "final_official_close": null
+      },
+      "outcome_source": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://indexes.nasdaq.com/Index/History/SOX"
+      ],
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-forecast-evaluation-v0.2",
+      "reason": "Reuters報導10/26 SOX收漲2.8%，方向傾向MISS，但原判準要求兩日官方收盤點數，動態頁擷取未固定最終數值，故不強判。"
+    }
+  ],
+  "limitations": [
+    "所有評估獨立於原始snapshot，不改原forecast_cards",
+    "Brent 12月合約以WSJ明列結算及合約月份交叉核對；10/23十二月合約來源為CommodityPriceAPI",
+    "SOX官方動態歷史頁擷取不穩定，未能固定雙日官方收盤數值，故維持INDETERMINATE",
+    "10/27台股預測卡截至08:00尚未到期，不提前評估",
+    "少量樣本不計算命中率或Brier校準"
+  ]
+}

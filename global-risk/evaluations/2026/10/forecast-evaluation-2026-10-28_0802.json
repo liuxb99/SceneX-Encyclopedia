@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "forecast-evaluation-2026-10-28_0802",
+  "generated_at": "2026-10-28T08:02:19+08:00",
+  "timezone": "Asia/Taipei",
+  "evaluation_version": "global-risk-evaluation-v0.1",
+  "calibration_status": "UNCALIBRATED",
+  "source_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801",
+  "immutable_originals": true,
+  "outcomes": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801_F01",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-27_0801.json",
+      "resolved_at": "2026-10-28T08:02:19+08:00",
+      "observed_value": 46096.23,
+      "observation_details": "TAIEX 10/27 close 46096.23 vs 10/22 baseline 46041.43; absolute return 0.1190% <1%",
+      "outcome_source": "https://www.cna.com.tw/news/afe/202610270263.aspx",
+      "result": "MISS",
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-27T13:35:00+08:00",
+        "outcome_source": "TWSE official daily close",
+        "method": "official Oct27 TAIEX close: abs(close/46041.43-1)>=0.01 => HIT, otherwise MISS; missing/changed session => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-27_0801.json",
+      "resolved_at": "2026-10-28T08:02:19+08:00",
+      "observed_value": null,
+      "observation_details": "Third-party SOX Oct27 +3.6%, but official Nasdaq final close pair not reliably verified; cannot satisfy official-only rule",
+      "outcome_source": "https://indexes.nasdaq.com/Index/History/SOX",
+      "result": "INDETERMINATE",
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-28T04:15:00+08:00",
+        "outcome_source": "PHLX/Nasdaq official index closes",
+        "method": "Compare exchange-verified SOX closes Oct27 and Oct26: greater => HIT, equal/lower => MISS, missing either => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "limitations": [
+        "Official final SOX closes not independently verified; third-party 3.6% is not substituted."
+      ]
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-27_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-27_0801.json",
+      "resolved_at": "2026-10-28T08:02:19+08:00",
+      "observed_value": 113.88,
+      "observation_details": "WSJ confirms December Brent futures Oct27 settlement 113.88, <=115.81",
+      "outcome_source": "https://www.wsj.com/world/middle-east/oil-prices-fall-as-traders-assess-iran-diplomacy-saudi-attacks-95bb0210",
+      "result": "HIT",
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-28T06:00:00+08:00",
+        "outcome_source": "ICE/WSJ/Reuters December Brent settlement",
+        "method": "Verify same December Brent contract settlement Oct27 <=115.81 => HIT, >115.81 => MISS; contract/settlement unavailable => INDETERMINATE",
+        "result_values": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      },
+      "limitations": []
+    }
+  ],
+  "summary": {
+    "HIT": 1,
+    "MISS": 1,
+    "INDETERMINATE": 1
+  },
+  "limitations": [
+    "Outcome stored separately; no original forecast cards or original snapshots modified.",
+    "No statistical calibration or hit-rate claims with this small sample."
+  ]
+}

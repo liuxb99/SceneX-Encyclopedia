@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "forecast-evaluation-2026-10-29_0808",
+  "generated_at": "2026-10-29T08:08:06+08:00",
+  "timezone": "Asia/Taipei",
+  "evaluation_version": "global-risk-evaluation-v0.1",
+  "calibration_status": "UNCALIBRATED",
+  "source_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801",
+  "immutable_originals": true,
+  "outcomes": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801_F01",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-28_0801.json",
+      "resolved_at": "2026-10-29T08:08:06+08:00",
+      "result": "HIT",
+      "observed_value": 657.67,
+      "observation_details": "TWSE官方115/10/28加權指數最高47,060.46、最低46,402.79；日內差657.67點，占10/27基準46,096.23的1.4267%，>=1%。",
+      "outcome_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=json&date=20261028",
+      "limitations": [],
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-28T13:35:00+08:00",
+        "outcome_source": "TWSE official daily high and low",
+        "method": "(Oct28 high-low)/46096.23 >=0.01 => HIT; otherwise MISS; no official data => INDETERMINATE"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-28_0801.json",
+      "resolved_at": "2026-10-29T08:08:06+08:00",
+      "result": "INDETERMINATE",
+      "observed_value": null,
+      "observation_details": "Reuters報10/28 SOX約+1.8%，第三方收11,684.0，較10/27 11,482.5上升；但原始規則限定Nasdaq PHLX官方兩日最終收盤，尚未取得官方配對，故不以次級資料判HIT。",
+      "outcome_source": "https://www.reuters.com/world/asia-pacific/nasdaq-futures-rise-sk-hynix-boosts-chips-before-fed-decision-earnings-2026-10-28/",
+      "limitations": [
+        "Official final close pair not verified"
+      ],
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-29T04:15:00+08:00",
+        "outcome_source": "Nasdaq PHLX official final closes",
+        "method": "Compare official Oct28 vs Oct27: higher HIT, otherwise MISS; missing either INDETERMINATE"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-28_0801",
+      "original_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-28_0801.json",
+      "resolved_at": "2026-10-29T08:08:06+08:00",
+      "result": "INDETERMINATE",
+      "observed_value": null,
+      "observation_details": "Reuters報Brent 10/28結算115.32美元，高於10/27報113.88美元；但原始規則要求ICE/Reuters同一12月交割月份結算，來源未明確核實交割月份，故不以通用Brent報價代替。",
+      "outcome_source": "https://www.reuters.com/world/asia-pacific/oil-prices-rise-after-attack-saudi-arabian-refinery-reignites-supply-concerns-2026-10-28/",
+      "limitations": [
+        "Same December contract month settlement not independently verified"
+      ],
+      "evaluation_version": "global-risk-evaluation-v0.1",
+      "original_resolution_rule": {
+        "observation_at": "2026-10-29T06:00:00+08:00",
+        "outcome_source": "ICE/Reuters December Brent futures settlement",
+        "method": "Oct28 Dec Brent settlement <=113.88 HIT, otherwise MISS; wrong contract/missing INDETERMINATE"
+      }
+    }
+  ],
+  "summary": {
+    "HIT": 1,
+    "MISS": 0,
+    "INDETERMINATE": 2
+  },
+  "limitations": [
+    "Original forecast snapshot not modified",
+    "HIT F01 verified with TWSE official via DirectWork MAC 2026-10-29 08:07:43; request_id 6795dc93-36a4-49d3-b6ce-fbca5056a003",
+    "Insufficient sample for calibrated hit-rate, Brier score, or model claims"
+  ]
+}

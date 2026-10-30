@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "evaluation_version": "forecast-eval-v0.1",
+  "evaluation_id": "forecast-evaluation-2026-10-30_0805",
+  "generated_at": "2026-10-30T08:05:20+08:00",
+  "data_cutoff_at": "2026-10-30T08:05:20+08:00",
+  "timezone": "Asia/Taipei",
+  "source_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-29_0804",
+  "source_private_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-29_0804.json",
+  "source_public_url": "https://liuxb99.github.io/SceneX-Encyclopedia/global-risk/archive/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-29_0804.json",
+  "calibration_status": "UNCALIBRATED",
+  "results": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-29_0804_F01",
+      "resolved_at": "2026-10-30T08:05:20+08:00",
+      "result": "HIT",
+      "observed_value": {
+        "date": "2026-10-29",
+        "taiex_high": 47015.45,
+        "taiex_low": 46055.07,
+        "baseline": 47035.58,
+        "range_points": 960.38,
+        "range_pct": 2.0418
+      },
+      "outcome_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261022&response=html",
+      "resolution_rule_preserved": "(2026-10-29 high-low)/47035.58 >=0.01 => HIT; otherwise MISS; if official data unavailable => INDETERMINATE",
+      "notes": "TWSE official daily high/low. 960.38/47035.58=2.0418%."
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-29_0804_F02",
+      "resolved_at": "2026-10-30T08:05:20+08:00",
+      "result": "MISS",
+      "observed_value": {
+        "date": "2026-10-29",
+        "sox_close": 11517.63,
+        "previous_close": 11684,
+        "change_pct": -1.42
+      },
+      "outcome_source": "https://indexes.nasdaqomx.com/index/Overview/SOX",
+      "resolution_rule_preserved": "Official SOX Oct29 > Oct28 => HIT; else MISS; official final close missing => INDETERMINATE",
+      "notes": "Nasdaq official 10/29 SOX 11517.63 below 10/28 11684."
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-29_0804_F03",
+      "resolved_at": "2026-10-30T08:05:20+08:00",
+      "result": "INDETERMINATE",
+      "observed_value": null,
+      "outcome_source": "https://www.reuters.com/business/energy/us-oil-prices-fall-investors-gauge-risks-mideast-supply-2026-10-29/",
+      "resolution_rule_preserved": "For same ICE Brent delivery-month Oct29 >= Oct28 => HIT; lower MISS; if contract month cannot be established => INDETERMINATE",
+      "notes": "Reuters close reports Brent 114.88 on Oct29, but identical delivery-month settlements not independently verified."
+    }
+  ],
+  "limitations": [
+    "Original forecast_cards not modified",
+    "3 resolved cards only; no statistical calibration",
+    "No hindsight revisions to original thresholds"
+  ]
+}

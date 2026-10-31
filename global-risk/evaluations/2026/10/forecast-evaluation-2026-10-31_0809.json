@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "evaluation_id": "forecast-evaluation-2026-10-31_0809",
+  "evaluation_version": "forecast-eval-v0.6.1",
+  "resolved_at": "2026-10-31T08:09:06+08:00",
+  "source_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-30_0801",
+  "source_report_path": "reports/global-risk/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-30_0801.json",
+  "source_report_url": "https://liuxb99.github.io/SceneX-Encyclopedia/global-risk/archive/2026/10/AI-TradeCore_Global_Risk_Report_2026-10-30_0801.json",
+  "calibration_status": "UNCALIBRATED",
+  "evaluations": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-30_0801_F01",
+      "original_horizon_end": "2026-10-30T13:35:00+08:00",
+      "original_resolution_rule": "(10/30 high-low)/46368.33 >= 0.01 => HIT; else MISS; official OHLC unavailable => INDETERMINATE",
+      "result": "INDETERMINATE",
+      "reason": "CNA reports high 46139.79 and low 44726.26, suggesting a range above 1%, but direct TWSE official OHLC for the required rule was not independently obtained at evaluation cutoff; original rule requires INDETERMINATE if official unavailable.",
+      "secondary_observation": {
+        "high": 46139.79,
+        "low": 44726.26,
+        "baseline": 46368.33,
+        "observed_range_ratio": 0.030484815821488476,
+        "source_url": "https://tw.news.yahoo.com/台股大跌1156-5點-055705822.html",
+        "status": "SECONDARY_NOT_RULE_AUTHORITY"
+      },
+      "official_observation": null,
+      "outcome_source": "TWSE official OHLC pending verification"
+    }
+  ],
+  "not_yet_due": [
+    "AI-TradeCore_Global_Risk_Report_2026-10-30_0801_F02",
+    "AI-TradeCore_Global_Risk_Report_2026-10-30_0801_F03"
+  ],
+  "integrity": "Evaluation is append-only and does not modify original snapshot or original resolution rules."
+}

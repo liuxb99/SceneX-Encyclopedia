@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "history-audit-2026-10-31_0811",
+  "audited_at": "2026-10-31T08:11:06+08:00",
+  "latest_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0809",
+  "status": "CURRENT_REPORT_COMPLETE_HISTORICAL_PARTIAL",
+  "current_daily_report_status": "COMPLETE_7_GIT_5_PAGES",
+  "latest_navigation": "PASS_ABSOLUTE_LINKS",
+  "immutable_original": "2026-10-31_0805 preserved, navigation defect recorded, no overwrite",
+  "unresolved_history": [
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-08_1036",
+      "issue": "PRIVATE_PUBLIC_HTML_SHA_MISMATCH_AND_ORIGINAL_JSON_MISSING",
+      "action": "DO_NOT_OVERWRITE; locate original JSON"
+    },
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-09_0806",
+      "issue": "ORIGINAL_JSON_MISSING",
+      "action": "DO_NOT_RECONSTRUCT_AFTER_CUTOFF"
+    }
+  ],
+  "current_commits": {
+    "P1": "90f897eda04b6ca6cfcc67a347edf7f5b20b1e84",
+    "P2": "0213be124222ce247745bc7985835fd8f3869b53",
+    "P3": "9145008e9595356e88a1013a460f5fa653c07eae",
+    "P4": "04edae32f38f7b6bb41b2726a083ad4ae5d293c1",
+    "P5": "d0d9d60a61d6be19604d88b6abe7379f3387dfb9",
+    "P6": "8dd2d5064607f9bf71feb9e640c1e310bdca6583",
+    "P7": "dfd53cde0b1c46e175749084230da890a0cd4132"
+  },
+  "blob_shas": {
+    "html": "4fcff15d6c35abf93feb2b26be0c26ad84f27454",
+    "json": "0a211f5c60c1349f10ffa82907d45be745514153",
+    "index": "c5551cbfed78569aa2e6b4a71fadc09b455775ad"
+  },
+  "pages_validation": {
+    "archive_html": "PASS",
+    "archive_json": "PASS_JSON_PARSE",
+    "archive_index": "PASS_HTML_AND_JSON_LINKS",
+    "latest_html": "PASS_ABSOLUTE_ARCHIVE_LINK",
+    "latest_json": "PASS_JSON_PARSE",
+    "status": "5/5"
+  },
+  "integrity_policy": "No immutable history overwritten; no future outcome added to original snapshot."
+}

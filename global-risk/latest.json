@@ -1,11 +1,11 @@
 {
   "schema_version": "1.1",
-  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805",
-  "generated_at": "2026-10-31T08:05:40+08:00",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0809",
+  "generated_at": "2026-10-31T08:09:33+08:00",
   "timezone": "Asia/Taipei",
-  "data_cutoff_at": "2026-10-31T08:05:40+08:00",
+  "data_cutoff_at": "2026-10-31T08:09:33+08:00",
   "as_of_market_session": "2026-10-30_US_CLOSE / 2026-10-30_TW_CLOSE / 2026-10-31_SATURDAY_NO_TW_SESSION",
-  "model_version": "global-risk-butterfly-v0.6.1-research-20261031",
+  "model_version": "global-risk-butterfly-v0.6.1-research-20261031-r2",
   "skill_version": "0.6.1",
   "calibration_status": "UNCALIBRATED",
   "assessment_method": "AI_JUDGMENT",
@@ -20,7 +20,7 @@
       ],
       "source_url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -33,7 +33,7 @@
       ],
       "source_url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -46,7 +46,7 @@
       ],
       "source_url": "https://tw.news.yahoo.com/台股收盤重挫1156點-台積電跌45元收2370元-103700810.html",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM"
     },
     {
@@ -58,7 +58,7 @@
       ],
       "source_url": "https://toalpha.tw/market/institutional",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM"
     },
     {
@@ -70,7 +70,7 @@
       ],
       "source_url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-houthis-attack-saudi-arabia-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -83,7 +83,7 @@
       ],
       "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
       "source_published_at": "2026-10-28",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -95,7 +95,7 @@
       ],
       "source_url": "https://www.wsj.com/finance/jgb-yields-fall-ahead-of-boj-rate-decision-d2f3d90f",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -107,7 +107,7 @@
       ],
       "source_url": "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29/",
       "source_published_at": "2026-10-29",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -120,7 +120,7 @@
       ],
       "source_url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-slumps-3-tech-stocks-tumble-ai-worries-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -132,7 +132,7 @@
       ],
       "source_url": "https://www.reuters.com/business/energy/china-set-lose-lng-import-crown-japan-weak-demand-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     },
     {
@@ -144,7 +144,7 @@
       ],
       "source_url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/",
       "source_published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00",
+      "observed_at": "2026-10-31T08:09:33+08:00",
       "confidence": "MEDIUM_TO_HIGH"
     }
   ],
@@ -817,7 +817,7 @@
     "若新增能源設施受損、航運中斷或油價續漲，維持/上調地緣能源風險"
   ],
   "analyst_interpretation": {
-    "one_sentence": "截至10/31 08:05，台股10/30重挫與美股隔夜費半-7.20%形成週一價格發現壓力，荷姆茲供應威脅推升油價；美債避險買盤及美國GDP韌性為反向緩衝。",
+    "one_sentence": "截至10/31 08:09，台股10/30重挫與美股隔夜費半-7.20%形成週一價格發現壓力，荷姆茲供應威脅推升油價；美債避險買盤及美國GDP韌性為反向緩衝。",
     "key_drivers": [
       {
         "fact": "10/30 費城半導體指數收10,688.8，單日 -7.20%。",
@@ -1212,7 +1212,7 @@
   ],
   "forecast_cards": [
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F01",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0809_F01",
       "target_market": "TAIEX",
       "target_metric": "NOV02_INTRADAY_RANGE_GE_1_PERCENT",
       "horizon_end": "2026-11-02T13:35:00+08:00",
@@ -1226,8 +1226,8 @@
         "outcome_source": "TWSE official 2026/11/02 high/low",
         "method": "(official high-official low)/45211.83 >= 0.01 => HIT, else MISS; official high/low unavailable => INDETERMINATE"
       },
-      "issued_at": "2026-10-31T08:05:40+08:00",
-      "data_cutoff_at": "2026-10-31T08:05:40+08:00",
+      "issued_at": "2026-10-31T08:09:33+08:00",
+      "data_cutoff_at": "2026-10-31T08:09:33+08:00",
       "thesis": "研究性可反證條件，不構成交易訊號",
       "causal_drivers": [
         "E01",
@@ -1243,10 +1243,11 @@
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
+      "calibration_status": "UNCALIBRATED",
+      "supersedes_forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F01"
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F02",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0809_F02",
       "target_market": "PHLX_SOX",
       "target_metric": "NOV02_CLOSE_BELOW_OCT30_CLOSE",
       "horizon_end": "2026-11-03T05:30:00+08:00",
@@ -1260,8 +1261,8 @@
         "outcome_source": "Nasdaq/PHLX official historical close",
         "method": "official 11/02 SOX close < official 10/30 SOX close => HIT; otherwise MISS; official data unavailable => INDETERMINATE"
       },
-      "issued_at": "2026-10-31T08:05:40+08:00",
-      "data_cutoff_at": "2026-10-31T08:05:40+08:00",
+      "issued_at": "2026-10-31T08:09:33+08:00",
+      "data_cutoff_at": "2026-10-31T08:09:33+08:00",
       "thesis": "研究性可反證條件，不構成交易訊號",
       "causal_drivers": [
         "E01",
@@ -1276,10 +1277,11 @@
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
+      "calibration_status": "UNCALIBRATED",
+      "supersedes_forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F02"
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F03",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0809_F03",
       "target_market": "US10Y",
       "target_metric": "NOV02_US10Y_CLOSE_LE_OCT30",
       "horizon_end": "2026-11-03T07:00:00+08:00",
@@ -1293,8 +1295,8 @@
         "outcome_source": "US Treasury Daily Treasury Par Yield Curve Rates",
         "method": "official 11/02 10Y <= official 10/30 10Y => HIT, else MISS; official comparison unavailable => INDETERMINATE"
       },
-      "issued_at": "2026-10-31T08:05:40+08:00",
-      "data_cutoff_at": "2026-10-31T08:05:40+08:00",
+      "issued_at": "2026-10-31T08:09:33+08:00",
+      "data_cutoff_at": "2026-10-31T08:09:33+08:00",
       "thesis": "研究性可反證條件，不構成交易訊號",
       "causal_drivers": [
         "E06",
@@ -1309,7 +1311,8 @@
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
+      "calibration_status": "UNCALIBRATED",
+      "supersedes_forecast_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805_F03"
     }
   ],
   "forecast_performance": {
@@ -1322,98 +1325,98 @@
       "title": "Reuters：10/30 美股收盤與 AI 現金流壓力",
       "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S02",
       "title": "Reuters：10/30 12月Brent結算與荷姆茲供應威脅",
       "url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-houthis-attack-saudi-arabia-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S03",
       "title": "壹蘋新聞：10/30 台股收盤",
       "url": "https://tw.news.yahoo.com/台股收盤重挫1156點-台積電跌45元收2370元-103700810.html",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S04",
       "title": "ToAlpha：10/30 三大法人及台股收盤",
       "url": "https://toalpha.tw/market/institutional",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S05",
       "title": "Federal Reserve：10/28 FOMC聲明",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
       "published_at": "2026-10-28",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S06",
       "title": "ECB：10/29 貨幣政策決定",
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.mt.html",
       "published_at": "2026-10-29",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S07",
       "title": "Reuters：10/29 美國第三季GDP與PCE",
       "url": "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29/",
       "published_at": "2026-10-29",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S08",
       "title": "Reuters：10/30 日本日經科技股賣壓",
       "url": "https://www.reuters.com/world/asia-pacific/japans-nikkei-slumps-3-tech-stocks-tumble-ai-worries-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S09",
       "title": "Reuters：10/30 中國LNG需求疲弱",
       "url": "https://www.reuters.com/business/energy/china-set-lose-lng-import-crown-japan-weak-demand-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S10",
       "title": "Investing.com：10/30 費半歷史收盤",
       "url": "https://ca.investing.com/indices/phlx-semiconductor-historical-data",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S11",
       "title": "WSJ：10/30 美國公債殖利率月末",
       "url": "https://www.wsj.com/finance/jgb-yields-fall-ahead-of-boj-rate-decision-d2f3d90f",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S12",
       "title": "Reuters：10/30 Intel下跌與信用壓力",
       "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S13",
       "title": "AP：10/30 美股指數收盤",
       "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     },
     {
       "id": "S14",
       "title": "Reuters：10/30 日銀ETF出售節奏",
       "url": "https://www.reuters.com/world/asia-pacific/boj-sets-etf-sale-pace-860-billion-yen-year-2026-10-30/",
       "published_at": "2026-10-30",
-      "observed_at": "2026-10-31T08:05:40+08:00"
+      "observed_at": "2026-10-31T08:09:33+08:00"
     }
   ],
   "limitations": [
@@ -1424,5 +1427,9 @@
     "MXF夜盤、TSMC ADR精確收盤與官方USD/TWD未核驗",
     "部分來源為二手報導，市場數字依資料截點及發布時間",
     "已知10/08、10/09原始JSON缺失及10/08 HTML私有/公開SHA衝突，未修改舊snapshot"
-  ]
+  ],
+  "revision_kind": "NEW_IMMUTABLE_SNAPSHOT_LINK_CORRECTION",
+  "supersedes_report_id": "AI-TradeCore_Global_Risk_Report_2026-10-31_0805",
+  "research_continuity": "10/30 US and TW closes are last available trading sessions at 10/31 08:09; no new Saturday TW session; source facts rechecked, no additional market session claimed",
+  "forecast_lineage": "Same 11/02 forward hypotheses as AI-TradeCore_Global_Risk_Report_2026-10-31_0805; evaluation must de-duplicate superseded forecasts."
 }

@@ -1,0 +1,1486 @@
+{
+  "schema_version": "global-risk-butterfly.snapshot.v0.6.2",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+  "generated_at": "2026-11-02T07:56:16+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-11-02T07:56:16+08:00",
+  "as_of_market_session": "2026-10-30 US and Taiwan official last completed sessions; 2026-11-02 07:03 Asia early oil observation; Taiwan 11/02 pre-open",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261102",
+  "skill_version": "0.6.2",
+  "calibration_status": "UNCALIBRATED",
+  "assessment_method": "AI_JUDGMENT",
+  "events": [
+    {
+      "event_id": "E01",
+      "fact": "OPEC+七國11/01正式宣布12月維持9月所需產量目標；下次會議11/29。",
+      "interpretation": "目標不變是政策穩定訊號，但出口瓶頸使實際供應不必然增加。",
+      "source_url": "https://www.opec.org/pr-detail/620-1-november-2026.html",
+      "source_id": "S01",
+      "source_published_at": "2026-11-01",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E02",
+      "fact": "伊朗革命衛隊海軍透過伊朗官媒聲稱荷姆茲兩艘油輪觸雷爆炸；Reuters報導此聲明，尚未取得獨立船舶事故核驗。",
+      "interpretation": "若證實航道安全進一步惡化，保費與繞航成本可能上升；目前不將聲稱等同已證實事故。",
+      "source_url": "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-exploded-after-hitting-mines-hormuz-2026-11-01/",
+      "source_id": "S02",
+      "source_published_at": "2026-11-01",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "LOW"
+    },
+    {
+      "event_id": "E03",
+      "fact": "Reuters報導11/01 23:03 GMT（臺北11/02 07:03）Brent期貨111.92美元、較前一報價跌1.33%，WTI 102.34美元、跌1.71%；市場關注卡達斡旋。",
+      "interpretation": "能源價格短線下行是緩衝訊號，與海峽安全疑慮形成矛盾；並非航運風險解除。",
+      "source_url": "https://www.reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/",
+      "source_id": "S03",
+      "source_published_at": "2026-11-01",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E04",
+      "fact": "10/30 Nasdaq -2.86%、S&P500 -1.82%、SOX -7.20%；Intel -28.6%，AI資本支出回報疑慮拖累科技。",
+      "interpretation": "半導體估值與風險偏好仍是台灣11/02開盤主要外部傳導。",
+      "source_url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "source_id": "S04",
+      "source_published_at": "2026-10-30",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E05",
+      "fact": "10/30台股收45,211.83、跌1,156.50點（-2.49%）；外資及陸資淨賣超1,124.67億元。",
+      "interpretation": "現貨賣壓已實現；不能以10/30資料推定11/02盤中走勢或外資當日流向。",
+      "source_url": "https://www.cna.com.tw/news/afe/202610300294.aspx",
+      "source_id": "S05",
+      "source_published_at": "2026-10-30",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E06",
+      "fact": "中國官方10月製造業PMI 49.3，低於9月50.1；新出口訂單亦低於50。",
+      "interpretation": "中國需求疲弱可能加重亞洲出口與循環產業壓力，但也可能抑制能源需求。",
+      "source_url": "https://www.marketscreener.com/news/china-s-october-factory-activity-contracts-at-fastest-pace-in-3-months-pmi-survey-shows-ce785fd8d981f322",
+      "source_id": "S06",
+      "source_published_at": "2026-10-31",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E07",
+      "fact": "Fed 10/28維持政策利率3.75%–4.00%，兩位官員主張升息。",
+      "interpretation": "油價與通膨仍限制貨幣寬鬆；但美債避險買盤對成長股估值提供部分緩衝。",
+      "source_url": "https://www.reuters.com/business/fed-likely-go-into-wait-and-see-mode-rates-2026-10-28/",
+      "source_id": "S07",
+      "source_published_at": "2026-10-28",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E08",
+      "fact": "美國10年期公債殖利率10/30約4.928%，10月累計下降約0.364個百分點。",
+      "interpretation": "利率下行未必是風險解除，也可能反映科技股避險需求。",
+      "source_url": "https://www.wsj.com/finance/jgb-yields-fall-ahead-of-boj-rate-decision-d2f3d90f",
+      "source_id": "S09",
+      "source_published_at": "2026-10-30",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E09",
+      "fact": "台灣央行10/30美元兌新台幣收盤32.478，10/29為32.492。",
+      "interpretation": "新台幣單日略升與外資股票賣超並存，不能單用股市流向推論匯率方向。",
+      "source_url": "https://www.cbc.gov.tw/en/lp-700-2-1-40.html",
+      "source_id": "S08",
+      "source_published_at": "2026-10-30",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E10",
+      "fact": "卡達斡旋的美伊間接接觸仍在進行；公開報導顯示解除制裁、航道開放條件未達成協議。",
+      "interpretation": "談判成功可能壓低能源風險溢價，破局則可能重啟供應衝擊。",
+      "source_url": "https://www.theguardian.com/world/2026/nov/01/negotiators-braced-for-worst-over-us-iran-talks-to-reopen-strait-of-hormuz",
+      "source_id": "S10",
+      "source_published_at": "2026-11-01",
+      "observed_at": "2026-11-02T07:56:16+08:00",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "HORMUZ_SHIPPING",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH_QUALITATIVE",
+      "evidence_event_ids": [
+        "E02",
+        "E10"
+      ]
+    },
+    {
+      "node": "OPEC_POLICY_STABILITY",
+      "direction": "RISK_DOWN",
+      "magnitude": "MEDIUM_QUALITATIVE",
+      "evidence_event_ids": [
+        "E01"
+      ]
+    },
+    {
+      "node": "OIL_MARKET_PRICE",
+      "direction": "RISK_DOWN_SHORT_TERM",
+      "magnitude": "MEDIUM_QUALITATIVE",
+      "evidence_event_ids": [
+        "E03"
+      ]
+    },
+    {
+      "node": "AI_CAPEX_VALUATION",
+      "direction": "RISK_UP",
+      "magnitude": "VERY_HIGH_QUALITATIVE",
+      "evidence_event_ids": [
+        "E04"
+      ]
+    },
+    {
+      "node": "TAIWAN_FOREIGN_FLOW",
+      "direction": "RISK_UP",
+      "magnitude": "HIGH_QUALITATIVE",
+      "evidence_event_ids": [
+        "E05"
+      ]
+    },
+    {
+      "node": "CHINA_DEMAND",
+      "direction": "RISK_UP",
+      "magnitude": "MEDIUM_QUALITATIVE",
+      "evidence_event_ids": [
+        "E06"
+      ]
+    },
+    {
+      "node": "FED_POLICY_RESTRICTION",
+      "direction": "RISK_UP",
+      "magnitude": "MEDIUM_QUALITATIVE",
+      "evidence_event_ids": [
+        "E07"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "HORMUZ_SHIPPING",
+      "target": "ENERGY_INSURANCE",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "DAYS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E02",
+        "E10"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "ENERGY_INSURANCE",
+      "target": "IMPORT_ENERGY_COST",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E02"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "IMPORT_ENERGY_COST",
+      "target": "TAIWAN_MARGIN",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E02",
+        "E03"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "OPEC_POLICY_STABILITY",
+      "target": "OIL_PRICE_VOLATILITY",
+      "direction": "RISK_DOWN",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "DAYS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E01"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "IRAN_QATAR_TALKS",
+      "target": "OIL_MARKET_PRICE",
+      "direction": "RISK_DOWN",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "HOURS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E03",
+        "E10"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "OIL_MARKET_PRICE",
+      "target": "INFLATION_EXPECTATIONS",
+      "direction": "RISK_DOWN",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "DAYS_TO_WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E03"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "AI_CAPEX_VALUATION",
+      "target": "SOX",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "HIGH",
+      "lag": "SAME_SESSION",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E04"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "SOX",
+      "target": "TAIWAN_SEMICONDUCTOR",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "NEXT_SESSION",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E04",
+        "E05"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "TAIWAN_SEMICONDUCTOR",
+      "target": "TAIEX_MXF",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "NEXT_SESSION",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E05"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "CHINA_DEMAND",
+      "target": "ASIA_EXPORTS",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E06"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "ASIA_EXPORTS",
+      "target": "TAIWAN_CYCLICALS",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E06"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "FED_POLICY_RESTRICTION",
+      "target": "GROWTH_MULTIPLES",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "WEEKS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E07"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "TREASURY_SAFE_HAVEN",
+      "target": "GROWTH_MULTIPLES",
+      "direction": "RISK_DOWN",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "DAYS",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E08"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    },
+    {
+      "source": "TAIWAN_FOREIGN_FLOW",
+      "target": "TAIEX_MXF",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "HIGH",
+      "lag": "SAME_SESSION",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E05"
+      ],
+      "validation_status": "AI_HYPOTHESIS_UNCALIBRATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "id": "P01",
+      "name": "AI現金流疑慮→半導體→台股",
+      "chain": [
+        "AI_CAPEX_VALUATION",
+        "SOX",
+        "TAIWAN_SEMICONDUCTOR",
+        "TAIEX_MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "VERY_HIGH",
+      "confidence": "MEDIUM",
+      "lag": "0-2 sessions",
+      "decay": "UNESTIMATED",
+      "regime": "TECH_DE_RATING",
+      "evidence_ids": [
+        "E04",
+        "E05"
+      ],
+      "note": "10/30美股與台股價格反應屬同一估值衝擊，不獨立重複計分。"
+    },
+    {
+      "id": "P02",
+      "name": "荷姆茲安全→保費→台灣能源成本",
+      "chain": [
+        "HORMUZ_SHIPPING",
+        "ENERGY_INSURANCE",
+        "IMPORT_ENERGY_COST",
+        "TAIWAN_MARGIN",
+        "TAIEX_MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "HIGH",
+      "confidence": "LOW",
+      "lag": "days to weeks",
+      "decay": "UNESTIMATED",
+      "regime": "GEOPOLITICAL_TAIL",
+      "evidence_ids": [
+        "E02",
+        "E03",
+        "E10"
+      ],
+      "note": "油輪事故僅為伊朗方面聲稱；油價短線下跌構成反證。"
+    },
+    {
+      "id": "P03",
+      "name": "中國PMI→亞洲需求→台灣出口",
+      "chain": [
+        "CHINA_DEMAND",
+        "ASIA_EXPORTS",
+        "TAIWAN_CYCLICALS",
+        "TAIEX_MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "MEDIUM",
+      "confidence": "MEDIUM",
+      "lag": "weeks",
+      "decay": "UNESTIMATED",
+      "regime": "GROWTH_SLOWDOWN",
+      "evidence_ids": [
+        "E06"
+      ],
+      "note": "同時可能降低原物料需求，形成對沖。"
+    },
+    {
+      "id": "P04",
+      "name": "OPEC與談判→油價回落→通膨緩衝",
+      "chain": [
+        "OPEC_POLICY_STABILITY",
+        "IRAN_QATAR_TALKS",
+        "OIL_MARKET_PRICE",
+        "INFLATION_EXPECTATIONS",
+        "GROWTH_MULTIPLES"
+      ],
+      "direction": "RISK_DOWN",
+      "strength": "MEDIUM",
+      "confidence": "MEDIUM",
+      "lag": "hours to weeks",
+      "decay": "UNESTIMATED",
+      "regime": "DIPLOMATIC_BUFFER",
+      "evidence_ids": [
+        "E01",
+        "E03",
+        "E10"
+      ],
+      "note": "實際供給受航運制約，政策目標不等於實際產量。"
+    }
+  ],
+  "convergence": [
+    {
+      "node": "TAIEX_MXF",
+      "drivers": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "direction": "RISK_UP",
+      "confidence": "MEDIUM",
+      "double_count_guard": "SOX與台股價格反應視為AI估值衝擊的同一鏈；不重複計分"
+    },
+    {
+      "node": "OIL_PRICE_VOLATILITY",
+      "drivers": [
+        "P02",
+        "P04"
+      ],
+      "direction": "TWO_SIDED",
+      "confidence": "MEDIUM",
+      "double_count_guard": "油輪聲稱與外交談判各自有不同證據；不把新聞聲稱視為已證實供應損失"
+    },
+    {
+      "node": "GROWTH_MULTIPLES",
+      "drivers": [
+        "P01",
+        "P04"
+      ],
+      "direction": "RISK_UP_WITH_RATE_BUFFER",
+      "confidence": "MEDIUM",
+      "double_count_guard": "利率下行可能反映避險，不能當作獨立利多"
+    }
+  ],
+  "regime": {
+    "primary": "TECH_DE_RATING_WITH_GEOPOLITICAL_TAIL",
+    "secondary": "ENERGY_DIPLOMACY_BUFFER",
+    "evidence_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E10"
+    ]
+  },
+  "taiwan_exposure": {
+    "taiex": "10/30 close 45,211.83 (-2.49%); 11/02 pre-open",
+    "mxf": "NOT_VERIFIED 11/02 night futures",
+    "tsmc": "11/02 real-time NOT_VERIFIED; global semiconductor valuation shock",
+    "tsm_adr": "11/02 real-time NOT_VERIFIED",
+    "sox": "10/30 -7.20%",
+    "us_yields": "10/30 10Y ~4.928%",
+    "usd_twd": "CBC 10/30 USD/TWD 32.478",
+    "foreign_flow": "10/30 net sell NT$112.467bn",
+    "china_asia": "October China manufacturing PMI 49.3",
+    "energy_import_cost": "High exposure; early 11/02 Brent 111.92 lower on talks",
+    "shipping": "Hormuz disruption persists; tanker incident only Iranian claim",
+    "taiwan_strait": "No new independently verified Taiwan Strait escalation in current source set",
+    "assessment": "11/02 opening price discovery risk; no current Taiwan session price is asserted"
+  },
+  "scores": {
+    "global": {
+      "value": 95,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "AI科技估值重估",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "荷姆茲尾部",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "中國需求轉弱",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Fed政策限制",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "油價回落與OPEC持平緩衝",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "taiwan": {
+      "value": 98,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "SOX -7.20%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "10/30台股 -2.49%與外資淨賣超",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "能源進口與航運",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "中國需求",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台指/現貨11/02開盤未知",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "energy": {
+      "value": 95,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "海峽安全聲稱尚未獨立核驗",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Brent早盤回落至111.92",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "OPEC+ 12月目標持平",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "卡達斡旋",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "實際油輪流量缺口",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "semiconductor": {
+      "value": 99,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "SOX -7.20%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Intel -28.6%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "AI資本支出回收疑慮",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台灣科技股價格發現",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "缺乏新交易日反證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "rates": {
+      "value": 79,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "Fed持平但升息異議",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "10Y殖利率4.928%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "油價通膨尾部",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "避險債券需求",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "credit": {
+      "value": 87,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "科技企業自由現金流與資本支出壓力",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "高估值重新定價",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "缺乏完整信用利差",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "尚無系統性危機官方證據",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    },
+    "geopolitical": {
+      "value": 97,
+      "scale": "0-100 EXPERIMENTAL research severity, NOT probability",
+      "formula_version": "QUALITATIVE_FACTOR_MAP_v0.2_NO_EXECUTABLE_FORMULA",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "reproducibility": "NOT_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "伊朗油輪觸雷聲稱",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "荷姆茲航道限制",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "卡達談判未達協議",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "OPEC政策穩定但供應受阻",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀研究分數：沒有可執行加權公式或歷史校準，不是市場下跌概率",
+        "同一 underlying shock、價格反應與媒體報導不重複加總",
+        "美股與台股沿用10/30收盤；11/02台灣現貨尚未開盤",
+        "部分船舶事故、信用利差、台指夜盤與航運流量未獨立核驗"
+      ],
+      "uncertainty": "HIGH"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": "NOT_RUN",
+    "reason": "AI科技估值壓力、前交易日外資賣超、荷姆茲尾部不確定；但油價回落與OPEC政策緩衝。候選並非自動交易指令。",
+    "decision": "CANDIDATE_ONLY",
+    "conditions_to_relax": [
+      "SOX止跌",
+      "台灣官方交易數據穩定",
+      "航運與油價風險下降"
+    ]
+  },
+  "downgrade_conditions": [
+    {
+      "condition": "官方或第三方航運追蹤確認荷姆茲通行量恢復且油輪事故無新增獨立證實",
+      "effect": "GEOPOLITICAL / ENERGY DOWN"
+    },
+    {
+      "condition": "Brent期貨多個交易日回落且運費/保費同步改善",
+      "effect": "ENERGY / TAIWAN IMPORT COST DOWN"
+    },
+    {
+      "condition": "SOX連續止跌並伴隨科技企業現金流指引改善",
+      "effect": "SEMICONDUCTOR / GLOBAL DOWN"
+    },
+    {
+      "condition": "台股外資連續回補且官方TAIEX波動與成交穩定",
+      "effect": "TAIWAN DOWN"
+    },
+    {
+      "condition": "Fed通膨與債券市場顯示利率壓力可控",
+      "effect": "RATES DOWN"
+    },
+    {
+      "condition": "若海峽事故獲獨立證實、油價與信用利差同升",
+      "effect": "UPGRADE TAIL RISK / RETAIN BLOCK CANDIDATE"
+    }
+  ],
+  "analyst_interpretation": {
+    "one_sentence": "截至2026/11/02 07:56（台北），科技估值重估與荷姆茲航運尾部風險仍高，但OPEC持平及油價早盤回落提供明確緩衝；台股開盤前不預測已發生的行情。",
+    "three_key_drivers": [
+      {
+        "fact": "10/30 SOX -7.20%、Nasdaq -2.86%",
+        "interpretation": "AI投資回報疑慮與估值調整傳至台灣半導體",
+        "affected_assets": [
+          "SOX",
+          "TAIEX",
+          "MXF"
+        ],
+        "source_ids": [
+          "S04"
+        ]
+      },
+      {
+        "fact": "11/01 OPEC正式維持12月產量目標；11/02 07:03 Brent 111.92跌1.33%",
+        "interpretation": "政策穩定與談判壓低油價，但航運供應不確定未消失",
+        "affected_assets": [
+          "Brent",
+          "USD",
+          "TAIEX"
+        ],
+        "source_ids": [
+          "S01",
+          "S03"
+        ]
+      },
+      {
+        "fact": "10/30台股45,211.83、外資賣超1,124.67億元",
+        "interpretation": "11/02復市風險以價格發現與資金流為核心，不把10/30流向當成今天數據",
+        "affected_assets": [
+          "TAIEX",
+          "MXF",
+          "TSMC"
+        ],
+        "source_ids": [
+          "S05"
+        ]
+      }
+    ],
+    "previous_day_comparison": {
+      "previous_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-01_0803",
+      "scores_previous": {
+        "global": 95,
+        "taiwan": 98,
+        "energy": 96,
+        "semiconductor": 99,
+        "rates": 80,
+        "credit": 87,
+        "geopolitical": 97
+      },
+      "scores_current": {
+        "global": 95,
+        "taiwan": 98,
+        "energy": 95,
+        "semiconductor": 99,
+        "rates": 79,
+        "credit": 87,
+        "geopolitical": 97
+      },
+      "comparison_note": "相同定性公式版本但未校準，變化只是分析師評估；今日能源與利率緩衝略增、科技及台灣曝險仍高。"
+    },
+    "contradictory_signals": {
+      "risk_up": [
+        "伊朗方面聲稱兩油輪觸雷（尚未獨立驗證）",
+        "10/30 SOX重挫與台股外資賣超"
+      ],
+      "risk_easing": [
+        "OPEC官方12月目標持平",
+        "11/02亞洲早盤Brent下跌",
+        "10/30美債10Y殖利率回落"
+      ]
+    },
+    "taiwan_mxf_observation": {
+      "taiex": "10/30收45211.83，11/02 07:56未開盤",
+      "mxf": "本輪未取得可核驗夜盤官方結算；NOT_VERIFIED",
+      "foreign_flow": "10/30淨賣超1124.67億元，11/02尚未公布",
+      "usd_twd": "10/30央行32.478；11/02即時未核驗",
+      "tsmc": "未核驗11/02即時台積電價格；不得沿用前日當作新行情",
+      "sox": "10/30 -7.20%（Reuters）",
+      "energy": "11/02 07:03 Brent 111.92美元（Reuters盤中非結算）",
+      "rates": "10/30美債10Y約4.928%（非11/02即時）"
+    }
+  },
+  "scenario_forecasts": [
+    {
+      "scenario_id": "BASE_1D",
+      "scenario_type": "BASE",
+      "horizon": "1 trading day",
+      "horizon_end": "2026-11-02T13:35:00+08:00",
+      "narrative": "高波動與科技估值修正延續，油價短線回落帶來緩衝；方向不確定。",
+      "causal_chain": [
+        "AI_CAPEX_VALUATION",
+        "SOX",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "科技股震盪但未出現新系統性信用事件",
+        "能源報價仍呈雙向波動"
+      ],
+      "invalidation_conditions": [
+        "官方航運恢復或金融流動性急劇惡化"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "RANGE_VOLATILE",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1W",
+      "scenario_type": "BASE",
+      "horizon": "1 week",
+      "horizon_end": "2026-11-06T13:35:00+08:00",
+      "narrative": "高波動與科技估值修正延續，油價短線回落帶來緩衝；方向不確定。",
+      "causal_chain": [
+        "AI_CAPEX_VALUATION",
+        "SOX",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "科技股震盪但未出現新系統性信用事件",
+        "能源報價仍呈雙向波動"
+      ],
+      "invalidation_conditions": [
+        "官方航運恢復或金融流動性急劇惡化"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "RANGE_VOLATILE",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BASE_1M",
+      "scenario_type": "BASE",
+      "horizon": "1 month",
+      "horizon_end": "2026-12-02T13:35:00+08:00",
+      "narrative": "高波動與科技估值修正延續，油價短線回落帶來緩衝；方向不確定。",
+      "causal_chain": [
+        "AI_CAPEX_VALUATION",
+        "SOX",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "科技股震盪但未出現新系統性信用事件",
+        "能源報價仍呈雙向波動"
+      ],
+      "invalidation_conditions": [
+        "官方航運恢復或金融流動性急劇惡化"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "RANGE_VOLATILE",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BULL_RISK_EASING_1D",
+      "scenario_type": "BULL_RISK_EASING",
+      "horizon": "1 trading day",
+      "horizon_end": "2026-11-02T13:35:00+08:00",
+      "narrative": "外交取得可核實航道進展、能源價格下降、半導體跌勢收斂。",
+      "causal_chain": [
+        "IRAN_QATAR_TALKS",
+        "OIL_MARKET_PRICE",
+        "GROWTH_MULTIPLES",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "荷姆茲通行量有第三方改善證據",
+        "SOX反彈並有台股外資回補"
+      ],
+      "invalidation_conditions": [
+        "再傳確認之航運事故或科技企業下修財測"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "UP_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BULL_RISK_EASING_1W",
+      "scenario_type": "BULL_RISK_EASING",
+      "horizon": "1 week",
+      "horizon_end": "2026-11-06T13:35:00+08:00",
+      "narrative": "外交取得可核實航道進展、能源價格下降、半導體跌勢收斂。",
+      "causal_chain": [
+        "IRAN_QATAR_TALKS",
+        "OIL_MARKET_PRICE",
+        "GROWTH_MULTIPLES",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "荷姆茲通行量有第三方改善證據",
+        "SOX反彈並有台股外資回補"
+      ],
+      "invalidation_conditions": [
+        "再傳確認之航運事故或科技企業下修財測"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "UP_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BULL_RISK_EASING_1M",
+      "scenario_type": "BULL_RISK_EASING",
+      "horizon": "1 month",
+      "horizon_end": "2026-12-02T13:35:00+08:00",
+      "narrative": "外交取得可核實航道進展、能源價格下降、半導體跌勢收斂。",
+      "causal_chain": [
+        "IRAN_QATAR_TALKS",
+        "OIL_MARKET_PRICE",
+        "GROWTH_MULTIPLES",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "荷姆茲通行量有第三方改善證據",
+        "SOX反彈並有台股外資回補"
+      ],
+      "invalidation_conditions": [
+        "再傳確認之航運事故或科技企業下修財測"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "UP_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BEAR_RISK_ESCALATION_1D",
+      "scenario_type": "BEAR_RISK_ESCALATION",
+      "horizon": "1 trading day",
+      "horizon_end": "2026-11-02T13:35:00+08:00",
+      "narrative": "航運衝突升級或科技信用壓力擴散，引發股債匯跨市場同步避險。",
+      "causal_chain": [
+        "HORMUZ_SHIPPING",
+        "IMPORT_ENERGY_COST",
+        "AI_CAPEX_VALUATION",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "船舶事故獨立核驗並伴隨運價/油價反彈",
+        "SOX續跌且台股外資賣壓擴大"
+      ],
+      "invalidation_conditions": [
+        "談判達成可核驗協議且科技價格穩定"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "DOWN_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BEAR_RISK_ESCALATION_1W",
+      "scenario_type": "BEAR_RISK_ESCALATION",
+      "horizon": "1 week",
+      "horizon_end": "2026-11-06T13:35:00+08:00",
+      "narrative": "航運衝突升級或科技信用壓力擴散，引發股債匯跨市場同步避險。",
+      "causal_chain": [
+        "HORMUZ_SHIPPING",
+        "IMPORT_ENERGY_COST",
+        "AI_CAPEX_VALUATION",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "船舶事故獨立核驗並伴隨運價/油價反彈",
+        "SOX續跌且台股外資賣壓擴大"
+      ],
+      "invalidation_conditions": [
+        "談判達成可核驗協議且科技價格穩定"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "DOWN_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    },
+    {
+      "scenario_id": "BEAR_RISK_ESCALATION_1M",
+      "scenario_type": "BEAR_RISK_ESCALATION",
+      "horizon": "1 month",
+      "horizon_end": "2026-12-02T13:35:00+08:00",
+      "narrative": "航運衝突升級或科技信用壓力擴散，引發股債匯跨市場同步避險。",
+      "causal_chain": [
+        "HORMUZ_SHIPPING",
+        "IMPORT_ENERGY_COST",
+        "AI_CAPEX_VALUATION",
+        "TAIEX_MXF"
+      ],
+      "observable_triggers": [
+        "船舶事故獨立核驗並伴隨運價/油價反彈",
+        "SOX續跌且台股外資賣壓擴大"
+      ],
+      "invalidation_conditions": [
+        "談判達成可核驗協議且科技價格穩定"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "SOX",
+        "Brent",
+        "USD/TWD"
+      ],
+      "direction": "DOWN_IF_TRIGGERED",
+      "confidence": "LOW",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "probability": null
+    }
+  ],
+  "forecast_cards": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F01",
+      "issued_at": "2026-11-02T07:56:16+08:00",
+      "data_cutoff_at": "2026-11-02T07:56:16+08:00",
+      "target_market": "TAIEX",
+      "target_metric": "NOV02_OFFICIAL_INTRADAY_RANGE_GE_1PCT",
+      "horizon_end": "2026-11-02T13:35:00+08:00",
+      "direction_or_condition": "(official daily high-low)/45211.83 >= 0.01",
+      "baseline_value": 45211.83,
+      "baseline_timestamp": "2026-10-30T13:30:00+08:00",
+      "baseline_source_id": "S05",
+      "baseline_status": "VERIFIED_RELIABLE_SECONDARY",
+      "thesis": "高波動研究條件，不預言方向",
+      "causal_drivers": [
+        "E04",
+        "E05",
+        "E02"
+      ],
+      "confirmation_signals": [
+        "11/02官方高低差至少451.1183點"
+      ],
+      "invalidation_conditions": [
+        "11/02官方高低差小於451.1183點"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-11-02T13:35:00+08:00",
+        "outcome_source": "TWSE official 2026-11-02 TAIEX OHLC",
+        "method": "(high-low)/45211.83 >= 0.01 => HIT; else MISS; official OHLC unavailable => INDETERMINATE"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F02",
+      "issued_at": "2026-11-02T07:56:16+08:00",
+      "data_cutoff_at": "2026-11-02T07:56:16+08:00",
+      "target_market": "SOX",
+      "target_metric": "NOV02_US_SESSION_SOX_CLOSE_NEGATIVE",
+      "horizon_end": "2026-11-03T05:30:00+08:00",
+      "direction_or_condition": "SOX 2026-11-02 US regular session close < 2026-10-30 regular session close",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": "S04",
+      "baseline_status": "NOT_VERIFIED_EXACT_BASELINE",
+      "thesis": "半導體去風險可能延續；10/30已跌7.20%但無法確認精確指數基準點位",
+      "causal_drivers": [
+        "E04"
+      ],
+      "confirmation_signals": [
+        "11/02 SOX official close lower than 10/30"
+      ],
+      "invalidation_conditions": [
+        "11/02 SOX official close at/above 10/30"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-11-03T05:30:00+08:00",
+        "outcome_source": "Nasdaq/PHLX official SOX index closing levels for 2026-10-30 and 2026-11-02",
+        "method": "both official closes available and Nov02<Oct30 => HIT; >= => MISS; otherwise INDETERMINATE"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F03",
+      "issued_at": "2026-11-02T07:56:16+08:00",
+      "data_cutoff_at": "2026-11-02T07:56:16+08:00",
+      "target_market": "BRENT",
+      "target_metric": "NOV02_BRENT_SETTLEMENT_ABOVE_115_USD",
+      "horizon_end": "2026-11-03T05:30:00+08:00",
+      "direction_or_condition": "ICE Brent front-month 2026-11-02 official settlement > USD115/bbl",
+      "baseline_value": 111.92,
+      "baseline_timestamp": "2026-11-02T07:03:00+08:00",
+      "baseline_source_id": "S03",
+      "baseline_status": "VERIFIED_REUTERS_INTRADAY_NOT_SETTLEMENT",
+      "thesis": "海峽事故聲稱與外交談判使能源方向雙向，測試油價反彈門檻",
+      "causal_drivers": [
+        "E01",
+        "E02",
+        "E03",
+        "E10"
+      ],
+      "confirmation_signals": [
+        "Brent front-month官方結算 >115"
+      ],
+      "invalidation_conditions": [
+        "Brent front-month官方結算 <=115"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_at": "2026-11-03T05:30:00+08:00",
+        "outcome_source": "ICE official front-month Brent futures Nov 2 settlement, verify contract month",
+        "method": "settlement >115 => HIT; <=115 => MISS; no authoritative settlement or contract ambiguity => INDETERMINATE"
+      }
+    }
+  ],
+  "forecast_performance": {
+    "status": "UNCALIBRATED",
+    "note": "到期預測的 outcome 僅可寫入獨立 append-only evaluation；本 snapshot 不含事後結果。"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "OPEC official: seven countries maintain December 2026 production targets",
+      "url": "https://www.opec.org/pr-detail/620-1-november-2026.html",
+      "published_at": "2026-11-01",
+      "quality": "OFFICIAL"
+    },
+    {
+      "id": "S02",
+      "title": "Reuters: Iran IRGC Navy claims two tankers struck mines in Hormuz",
+      "url": "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-exploded-after-hitting-mines-hormuz-2026-11-01/",
+      "published_at": "2026-11-01",
+      "quality": "REUTERS_REPORTED_CLAIM_NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "id": "S03",
+      "title": "Reuters: oil down in early Asian trading on Iran/Qatar talks, 23:03 GMT Nov 1",
+      "url": "https://www.reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/",
+      "published_at": "2026-11-01",
+      "quality": "REUTERS"
+    },
+    {
+      "id": "S04",
+      "title": "Reuters: Nasdaq -2.86%, SOX -7.20% on Oct 30 tech selloff",
+      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "published_at": "2026-10-30",
+      "quality": "REUTERS"
+    },
+    {
+      "id": "S05",
+      "title": "CNA: TAIEX 45,211.83, foreign net sell NT$112.467bn on Oct 30",
+      "url": "https://www.cna.com.tw/news/afe/202610300294.aspx",
+      "published_at": "2026-10-30",
+      "quality": "CNA_TAIWAN"
+    },
+    {
+      "id": "S06",
+      "title": "Reuters: China October manufacturing PMI 49.3 vs 50.1 September",
+      "url": "https://www.marketscreener.com/news/china-s-october-factory-activity-contracts-at-fastest-pace-in-3-months-pmi-survey-shows-ce785fd8d981f322",
+      "published_at": "2026-10-31",
+      "quality": "REUTERS_SYNDICATED"
+    },
+    {
+      "id": "S07",
+      "title": "Reuters: Fed held policy target 3.75%-4.00% Oct 28",
+      "url": "https://www.reuters.com/business/fed-likely-go-into-wait-and-see-mode-rates-2026-10-28/",
+      "published_at": "2026-10-28",
+      "quality": "REUTERS"
+    },
+    {
+      "id": "S08",
+      "title": "Taiwan Central Bank official USD/TWD close 32.478 on Oct 30",
+      "url": "https://www.cbc.gov.tw/en/lp-700-2-1-40.html",
+      "published_at": "2026-10-30",
+      "quality": "OFFICIAL"
+    },
+    {
+      "id": "S09",
+      "title": "WSJ: US 10-year Treasury yield 4.928% Oct 30",
+      "url": "https://www.wsj.com/finance/jgb-yields-fall-ahead-of-boj-rate-decision-d2f3d90f",
+      "published_at": "2026-10-30",
+      "quality": "FINANCIAL_PRESS"
+    },
+    {
+      "id": "S10",
+      "title": "Guardian: Qatar-mediated US-Iran talks on Hormuz, terms not agreed",
+      "url": "https://www.theguardian.com/world/2026/nov/01/negotiators-braced-for-worst-over-us-iran-talks-to-reopen-strait-of-hormuz",
+      "published_at": "2026-11-01",
+      "quality": "REPORTED_DIPLOMACY"
+    },
+    {
+      "id": "S11",
+      "title": "Reuters: OPEC+ December target hold, output remains below target due to conflict",
+      "url": "https://www.reuters.com/business/energy/opec-set-keep-oil-output-targets-steady-sources-say-2026-11-01/",
+      "published_at": "2026-11-01",
+      "quality": "REUTERS"
+    },
+    {
+      "id": "S12",
+      "title": "Reuters: Intel warning sparks chip rout",
+      "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/",
+      "published_at": "2026-10-30",
+      "quality": "REUTERS"
+    }
+  ],
+  "limitations": [
+    "截至台北2026-11-02 07:56，台灣現貨尚未開盤，不使用事後行情",
+    "伊朗油輪觸雷僅為一方聲稱，缺獨立驗證",
+    "部分來源僅有日期無精確刊登時刻；source_published_at以日為精度",
+    "無完整SOX官方精確基準、MXF夜盤、信用利差、船舶流量即時驗證",
+    "評分為AI_JUDGMENT/UNCALIBRATED，沒有可重現的權重與校準，非概率",
+    "歷史10/08、10/09原始JSON未找到，不事後補造；另行稽核"
+  ],
+  "revision_kind": "NEW_DAILY_SNAPSHOT",
+  "supersedes_report_id": null,
+  "research_continuity": {
+    "prior_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-01_0803",
+    "new_facts": [
+      "OPEC+ 11/01正式決議",
+      "伊朗方面11/01兩油輪聲稱",
+      "11/02 07:03 Brent下跌的盤中行情"
+    ],
+    "unchanged_market_session": "US/TW 2026-10-30"
+  },
+  "forecast_lineage": {
+    "kind": "NEW_FORECASTS",
+    "dedupe_group": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756"
+  }
+}

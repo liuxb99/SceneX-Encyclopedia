@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "history-audit-2026-11-02_0802",
+  "audited_at": "2026-11-02T08:02:14+08:00",
+  "latest_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+  "status": "CURRENT_REPORT_COMPLETE_HISTORICAL_PARTIAL",
+  "current_daily_report_status": "COMPLETE_7_GIT_5_PAGES",
+  "historical_check_method": "GitHub fetch_file private/public original HTML and JSON; verified 10/08 and 10/09 missing JSON; compared original HTML Git blob SHA",
+  "unresolved_history": [
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-08_1036",
+      "private_html_blob": "531c7868a51ed76f67b10ef37a8c6155c42800ec",
+      "public_html_blob": "3ad06ef6623e9270b99ae159a36c2625a38438a8",
+      "private_json": "MISSING",
+      "public_json": "MISSING",
+      "action": "DO_NOT_OVERWRITE; no original point-in-time JSON available; do not reconstruct using later events"
+    },
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-09_0806",
+      "private_html_blob": "1fab92dd89b8ad7e31570ff6f672fb9f83a1dc10",
+      "public_html_blob": "1fab92dd89b8ad7e31570ff6f672fb9f83a1dc10",
+      "private_json": "MISSING",
+      "public_json": "MISSING",
+      "action": "DO_NOT_RECONSTRUCT_AFTER_CUTOFF; preserve original HTML"
+    }
+  ],
+  "current_commits": {
+    "P1": "9cb9d604f4bead0a2f6e878ea79ce9e9b14d4d48",
+    "P2": "2235f0794a18b2d0b06e2776cebfd8e986bbad2a",
+    "P3": "79a9429b86bf45b32af65f389427fa80014df7ed",
+    "P4": "a8a70193da38accc72f990171fbbaeedbed3c990",
+    "P5": "cd02b2946fd8d62f32834ab5bdda7323d95f49fc",
+    "P6": "d2ea0e4e279d5160f3d026319a7ea2d6d008d5c9",
+    "P7": "172522b44ebb7589a81dbeb5744003e1ddc12398"
+  },
+  "blob_shas": {
+    "html": "fb58c6b3aa8c7b9ab528d99a618ceacfb032cddc",
+    "json": "ff61b59c3b7206c84b53ab6375bd41f6c557b560",
+    "index": "52496f3fa837f9969e04f6fd61e51d20e76f1459"
+  },
+  "pages_validation": {
+    "archive_html": "PASS",
+    "archive_json": "PASS_JSON_PARSE",
+    "archive_index": "PASS_LINK",
+    "latest_html": "PASS",
+    "latest_json": "PASS_JSON_PARSE",
+    "status": "5/5",
+    "verified_at": "2026-11-02T08:02:14+08:00"
+  },
+  "research_cutoff": "2026-11-02T07:56:16+08:00",
+  "integrity_policy": "All immutable snapshots preserved; original 10/08 and 10/09 JSON not backfilled; no post-cutoff outcome inserted into snapshots."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "history-audit-2026-11-03_0804",
+  "audited_at": "2026-11-03T08:04:03.431+08:00",
+  "latest_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-03_0801",
+  "status": "CURRENT_REPORT_COMPLETE_HISTORICAL_PARTIAL",
+  "current_daily_report_status": "COMPLETE_7_GIT_5_PAGES",
+  "historical_check_method": "GitHub fetch_file original private/public HTML+JSON; exact blob SHA and explicit 404 for 10/08,10/09 JSON",
+  "unresolved_history": [
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-08_1036",
+      "private_html_blob": "531c7868a51ed76f67b10ef37a8c6155c42800ec",
+      "public_html_blob": "3ad06ef6623e9270b99ae159a36c2625a38438a8",
+      "private_json": "MISSING_404",
+      "public_json": "MISSING_404",
+      "action": "DO_NOT_OVERWRITE; no original point-in-time JSON; cannot reconstruct using later data"
+    },
+    {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-10-09_0806",
+      "private_html_blob": "1fab92dd89b8ad7e31570ff6f672fb9f83a1dc10",
+      "public_html_blob": "1fab92dd89b8ad7e31570ff6f672fb9f83a1dc10",
+      "private_json": "MISSING_404",
+      "public_json": "MISSING_404",
+      "action": "DO_NOT_RECONSTRUCT_AFTER_CUTOFF; preserve original HTML"
+    }
+  ],
+  "current_commits": {
+    "P1": "196cb9bd19d0e9c70b6e06839d28e1f753e20275",
+    "P2": "a2903d7b07819b3ebe115605848d734b98f1f371",
+    "P3": "2409eb4a1c615279dc0e5c9a2aee6c2ef27903c4",
+    "P4": "cf2aa8be34df4017e68e76592276381c22fb71f6",
+    "P5": "f3c15777cb410cbf6d1896703850eb2b24fdbeec",
+    "P6": "d5774c9d293f05b9955700eefbe7c141d5ebbc33",
+    "P7": "7b4ac5bce90abbbcb0be229e88505ba1697bf653"
+  },
+  "blob_shas": {
+    "html": "52195020702f9b0be4a4a0450d22157f12b68c6e",
+    "json": "c33a1253c7e03777ce7c9ae5a0ac9aadec7490c9",
+    "index": "b1f8478523571d1f0008cf67fcb8d48b7d92d0fc"
+  },
+  "pages_validation": {
+    "archive_html": "PASS",
+    "archive_json": "PASS_JSON_PARSE",
+    "archive_index": "PASS_LINK",
+    "latest_html": "PASS",
+    "latest_json": "PASS_JSON_PARSE",
+    "status": "5/5",
+    "verified_at": "2026-11-03T08:04:03.431+08:00"
+  },
+  "forecast_evaluation": {
+    "id": "forecast-evaluation-2026-11-03_0803",
+    "result": "HIT 1 / MISS 0 / INDETERMINATE 2",
+    "private_commit": "70740839a228ebac230a539616211827fbd554d1",
+    "public_commit": "a970baaefb46b7161874de2e1f6422e7232cf113",
+    "calibration_status": "UNCALIBRATED"
+  },
+  "research_cutoff": "2026-11-03T08:01:00.713+08:00",
+  "integrity_policy": "Immutable HTML/JSON preserved; missing 10/08 and 10/09 originals not reconstructed; no post-cutoff outcome written to snapshots."
+}

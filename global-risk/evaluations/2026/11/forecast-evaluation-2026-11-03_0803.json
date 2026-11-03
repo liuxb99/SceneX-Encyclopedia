@@ -1,0 +1,59 @@
+{
+  "schema_version": "global-risk-butterfly.forecast-evaluation.v1",
+  "evaluation_id": "forecast-evaluation-2026-11-03_0803",
+  "evaluated_at": "2026-11-03T08:03:18.054+08:00",
+  "evaluation_version": "1.0",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-03_0801",
+  "source_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+  "immutability": "APPEND_ONLY_NO_SNAPSHOT_MODIFICATION",
+  "results": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F01",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+      "original_snapshot_path": "reports/global-risk/2026/11/AI-TradeCore_Global_Risk_Report_2026-11-02_0756.json",
+      "resolved_at": "2026-11-03T08:03:18.054+08:00",
+      "observed_value": {
+        "high": 45156.17,
+        "low": 44399.1,
+        "range": 757.07,
+        "range_over_baseline": 0.01674495369906504
+      },
+      "outcome_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=json&date=20261102",
+      "result": "HIT",
+      "resolution_rule_applied": "(official high-low)/45211.83 >= 0.01",
+      "evaluation_version": "1.0",
+      "source_quality": "TWSE_OFFICIAL"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F02",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+      "original_snapshot_path": "reports/global-risk/2026/11/AI-TradeCore_Global_Risk_Report_2026-11-02_0756.json",
+      "resolved_at": "2026-11-03T08:03:18.054+08:00",
+      "observed_value": null,
+      "outcome_source": "https://www.nasdaq.com/market-activity/index/sox",
+      "result": "INDETERMINATE",
+      "resolution_rule_applied": "requires Nasdaq/PHLX official SOX Nov02 and Oct30 closing levels; not obtained",
+      "evaluation_version": "1.0",
+      "source_quality": "NOT_VERIFIED"
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756_F03",
+      "original_report_id": "AI-TradeCore_Global_Risk_Report_2026-11-02_0756",
+      "original_snapshot_path": "reports/global-risk/2026/11/AI-TradeCore_Global_Risk_Report_2026-11-02_0756.json",
+      "resolved_at": "2026-11-03T08:03:18.054+08:00",
+      "observed_value": null,
+      "outcome_source": "https://www.reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/",
+      "result": "INDETERMINATE",
+      "resolution_rule_applied": "ICE official front-month Brent futures Nov02 settlement and contract month required; Reuters 104.77 secondary not sufficient",
+      "evaluation_version": "1.0",
+      "source_quality": "SECONDARY_NOT_OFFICIAL"
+    }
+  ],
+  "summary": {
+    "hit": 1,
+    "miss": 0,
+    "indeterminate": 2,
+    "calibration_status": "UNCALIBRATED",
+    "note": "one verified outcome is insufficient for statistical calibration"
+  }
+}

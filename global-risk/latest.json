@@ -1,108 +1,113 @@
 {
   "schema_version": "1.1",
-  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-05_0802",
-  "generated_at": "2026-11-05T08:02:44+08:00",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-06_0810",
+  "generated_at": "2026-11-06T08:10:00+08:00",
   "timezone": "Asia/Taipei",
-  "data_cutoff_at": "2026-11-05T08:02:44+08:00",
-  "as_of_market_session": "US and Taiwan 2026-11-04 close; Taiwan 2026-11-05 pre-open",
-  "model_version": "global-risk-butterfly-v0.6.2-research-20261105",
+  "data_cutoff_at": "2026-11-06T08:10:00+08:00",
+  "as_of_market_session": "US/TW 2026-11-05 close, TW 11-06 pre-open",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261106",
   "skill_version": "0.6.2",
   "calibration_status": "UNCALIBRATED",
   "assessment_method": "AI_JUDGMENT",
   "events": [
     {
-      "event_id": "E01",
-      "fact": "美股11/04 Dow +3.03%、S&P500 +1.58%、Nasdaq +1.44%；美國10年債殖利率約4.88%。",
-      "interpretation": "選舉後政策不確定性下降，股債同步反彈，但AI監管仍有風險。",
-      "source_id": "S01",
-      "source_url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/",
-      "source_published_at": "2026-11-04",
-      "observed_at": "2026-11-05T08:02:44+08:00",
+      "event_id": "E1",
+      "fact": "Nasdaq -5.52%、S&P 500 -4.36%、Dow -3.44%，AI監管及資料中心擴張疑慮引發賣壓",
+      "interpretation": "科技估值壓力傳至台灣半導體",
+      "source_id": "S1",
+      "source_url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "source_published_at": "2026-11-05",
+      "observed_at": "2026-11-06T08:10:00+08:00",
       "confidence": "MEDIUM"
     },
     {
-      "event_id": "E02",
-      "fact": "Brent 11/04結算94.62美元，跌約8.7%。",
-      "interpretation": "能源通膨風險緩解，但航運恢復尚未證實。",
-      "source_id": "S01",
-      "source_url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/",
-      "source_published_at": "2026-11-04",
-      "observed_at": "2026-11-05T08:02:44+08:00",
+      "event_id": "E2",
+      "fact": "台股11/05收41,574.72點，跌1,374.19點(-3.20%)",
+      "interpretation": "台指短線波動及槓桿風險提高",
+      "source_id": "S2",
+      "source_url": "https://focustaiwan.tw/business/202611050014",
+      "source_published_at": "2026-11-05",
+      "observed_at": "2026-11-06T08:10:00+08:00",
       "confidence": "MEDIUM"
     },
     {
-      "event_id": "E03",
-      "fact": "台股11/04收42948.91點，跌358.63點；外資賣超1498.99億元；新台幣收32.821。",
-      "interpretation": "全球反彈與台灣資金撤離分歧，台灣風險仍高。",
-      "source_id": "S02",
-      "source_url": "https://www.cna.com.tw/news/afe/202611040268.aspx",
-      "source_published_at": "2026-11-04",
-      "observed_at": "2026-11-05T08:02:44+08:00",
+      "event_id": "E3",
+      "fact": "Brent 11/05結算98.29美元，漲3.88%；油輪事件令航運風險再起",
+      "interpretation": "油價上升可能推高能源輸入成本與通膨風險",
+      "source_id": "S3",
+      "source_url": "https://www.reuters.com/business/energy/oil-falls-fourth-day-expectations-lower-risk-iran-war-escalation-2026-11-05/",
+      "source_published_at": "2026-11-05",
+      "observed_at": "2026-11-06T08:10:00+08:00",
       "confidence": "MEDIUM"
     },
     {
-      "event_id": "E04",
-      "fact": "中國股票回購再貸款申請逾2000億元人民幣，相關利率降至1%。",
-      "interpretation": "政策支撐亞洲情緒，但未證明企業獲利復甦。",
-      "source_id": "S03",
-      "source_url": "https://www.reuters.com/world/asia-pacific/china-stock-re-lending-applications-hit-nearly-30-billion-2026-11-04/",
-      "source_published_at": "2026-11-04",
-      "observed_at": "2026-11-05T08:02:44+08:00",
-      "confidence": "MEDIUM"
-    },
-    {
-      "event_id": "E05",
-      "fact": "歐股STOXX600上漲1.82%，科技類股下跌約0.2%。",
-      "interpretation": "AI監管擔憂仍壓制科技相對表現。",
-      "source_id": "S04",
-      "source_url": "https://www.reuters.com/business/europe-set-open-lower-democratic-sweep-fuels-ai-regulation-fears-2026-11-04/",
-      "source_published_at": "2026-11-04",
-      "observed_at": "2026-11-05T08:02:44+08:00",
+      "event_id": "E4",
+      "fact": "11/05美元與美債殖利率回落，金價升至逾兩週高點",
+      "interpretation": "利率下降或緩和估值壓力，避險需求仍高",
+      "source_id": "S4",
+      "source_url": "https://www.reuters.com/world/india/gold-hits-two-week-high-dollar-treasury-yields-ease-after-us-midterm-elections-2026-11-05/",
+      "source_published_at": "2026-11-05",
+      "observed_at": "2026-11-06T08:10:00+08:00",
       "confidence": "MEDIUM"
     }
   ],
   "shocks": [
     {
-      "node": "TAIWAN_FOREIGN_FLOW",
+      "node": "AI_SEMICONDUCTOR",
       "direction": "risk_up",
       "magnitude": "HIGH",
       "evidence_event_ids": [
-        "E03"
+        "E1",
+        "E2"
       ]
     },
     {
-      "node": "ENERGY_INFLATION",
-      "direction": "risk_down",
-      "magnitude": "HIGH",
+      "node": "OIL_SHIPPING",
+      "direction": "risk_up",
+      "magnitude": "MEDIUM",
       "evidence_event_ids": [
-        "E02"
+        "E3"
       ]
     }
   ],
   "edges": [
     {
-      "source": "BRENT",
-      "target": "INFLATION",
-      "direction": "risk_down",
+      "source": "AI_REGULATION",
+      "target": "NASDAQ_SOX",
+      "direction": "risk_up",
       "weight": null,
       "confidence": "MEDIUM",
       "lag": "days",
       "decay": "UNKNOWN",
       "evidence_ids": [
-        "E02"
+        "E1"
       ],
       "validation_status": "UNCALIBRATED"
     },
     {
-      "source": "FOREIGN_SELLING",
-      "target": "TWD_AND_TAIEX_VOLATILITY",
+      "source": "NASDAQ_SOX",
+      "target": "TAIWAN_SEMICONDUCTOR",
       "direction": "risk_up",
       "weight": null,
-      "confidence": "HIGH",
-      "lag": "same day",
+      "confidence": "MEDIUM",
+      "lag": "next session",
       "decay": "UNKNOWN",
       "evidence_ids": [
-        "E03"
+        "E1",
+        "E2"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "BRENT",
+      "target": "INFLATION",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
       ],
       "validation_status": "UNCALIBRATED"
     }
@@ -110,219 +115,216 @@
   "propagation_paths": [
     {
       "nodes": [
-        "BRENT_DOWN",
-        "INFLATION_DOWN",
-        "YIELDS_DOWN",
-        "TECH_VALUATION_RELIEF"
+        "AI_REGULATION",
+        "NASDAQ_SOX",
+        "TAIWAN_SEMICONDUCTOR",
+        "TAIEX_MXF"
       ],
-      "direction": "risk_down",
+      "direction": "risk_up",
       "confidence": "MEDIUM"
     },
     {
       "nodes": [
-        "FOREIGN_SELLING",
-        "TWD_WEAKNESS",
-        "TAIEX_VOLATILITY",
-        "MXF_NEWS_RISK"
+        "HORMUZ_SHIPPING",
+        "BRENT",
+        "INFLATION",
+        "YIELDS",
+        "TECH_VALUATION"
       ],
       "direction": "risk_up",
-      "confidence": "HIGH"
+      "confidence": "LOW"
     }
   ],
   "convergence": [
     {
       "node": "TAIWAN_VOLATILITY",
       "inputs": [
-        "FOREIGN_FLOW",
-        "TWD",
-        "AI_POLICY"
+        "TECH_SELL_OFF",
+        "LOCAL_SELLING",
+        "ENERGY"
       ],
-      "deduplication": "股匯資金可能同一來源，不重複計分"
+      "interpretation": "多衝擊可能匯流，但避免重複計入AI共同因子"
     }
   ],
-  "regime": "GLOBAL_RELIEF_TAIWAN_STRESS",
+  "regime": "RISK_OFF",
   "taiwan_exposure": {
-    "taiex": 42948.91,
-    "foreign_net_sell_twd_100m": 1498.99,
-    "usd_twd": 32.821,
-    "tsmc_adr": "NOT_VERIFIED",
-    "sox": "NOT_VERIFIED",
-    "mxf": "NOT_VERIFIED",
-    "energy_import": "Brent lower",
-    "taiwan_strait": "NO_NEW_VERIFIED_CHANGE",
-    "interpretation": "美股反彈未扭轉台灣外資撤離"
+    "taiex": "41574.72 (-3.20%)",
+    "mxf": "未核驗夜盤",
+    "tsmc_adr": "未核驗",
+    "nasdaq": "-5.52%",
+    "sox": "精確值未核驗",
+    "us_yields": "方向回落，精確值未核驗",
+    "usd_twd": "未核驗",
+    "foreign_flow": "11/05官方淨額未核驗",
+    "china_asia": "本次未核驗新指標",
+    "energy_import": "Brent反彈增加輸入成本風險",
+    "shipping": "荷姆茲油輪事件",
+    "taiwan_strait": "無新增核實事件"
   },
   "scores": {
     "global": {
-      "value": 77,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
+      "value": 93,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
       "factor_contributions": [
         {
-          "factor": "台灣外資流量",
-          "weight": null
+          "factor": "美股科技暴跌",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "油價與殖利率",
-          "weight": null
+          "factor": "台股重挫",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "AI監管與地緣風險",
-          "weight": null
+          "factor": "油價反彈",
+          "weight": null,
+          "contribution": null
         }
       ],
       "assumptions": [
-        "定性判斷、權重未校準"
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
       ],
       "uncertainty": "HIGH",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
     },
     "taiwan": {
-      "value": 96,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
+      "value": 99,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
       "factor_contributions": [
         {
-          "factor": "台灣外資流量",
-          "weight": null
+          "factor": "台股-3.20%",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "油價與殖利率",
-          "weight": null
+          "factor": "Nasdaq-5.52%",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "AI監管與地緣風險",
-          "weight": null
+          "factor": "半導體集中",
+          "weight": null,
+          "contribution": null
         }
       ],
       "assumptions": [
-        "定性判斷、權重未校準"
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
       ],
       "uncertainty": "HIGH",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
     },
     "energy": {
-      "value": 69,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
+      "value": 83,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
       "factor_contributions": [
         {
-          "factor": "台灣外資流量",
-          "weight": null
+          "factor": "Brent+3.88%",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "油價與殖利率",
-          "weight": null
-        },
-        {
-          "factor": "AI監管與地緣風險",
-          "weight": null
+          "factor": "油輪事件",
+          "weight": null,
+          "contribution": null
         }
       ],
       "assumptions": [
-        "定性判斷、權重未校準"
-      ],
-      "uncertainty": "HIGH",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    "rates": {
-      "value": 72,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
-      "factor_contributions": [
-        {
-          "factor": "台灣外資流量",
-          "weight": null
-        },
-        {
-          "factor": "油價與殖利率",
-          "weight": null
-        },
-        {
-          "factor": "AI監管與地緣風險",
-          "weight": null
-        }
-      ],
-      "assumptions": [
-        "定性判斷、權重未校準"
-      ],
-      "uncertainty": "HIGH",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    "credit": {
-      "value": 82,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
-      "factor_contributions": [
-        {
-          "factor": "台灣外資流量",
-          "weight": null
-        },
-        {
-          "factor": "油價與殖利率",
-          "weight": null
-        },
-        {
-          "factor": "AI監管與地緣風險",
-          "weight": null
-        }
-      ],
-      "assumptions": [
-        "定性判斷、權重未校準"
-      ],
-      "uncertainty": "HIGH",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    "geopolitical": {
-      "value": 85,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
-      "factor_contributions": [
-        {
-          "factor": "台灣外資流量",
-          "weight": null
-        },
-        {
-          "factor": "油價與殖利率",
-          "weight": null
-        },
-        {
-          "factor": "AI監管與地緣風險",
-          "weight": null
-        }
-      ],
-      "assumptions": [
-        "定性判斷、權重未校準"
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
       ],
       "uncertainty": "HIGH",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
     },
     "semiconductor": {
-      "value": 94,
-      "scale": "0-100 research severity",
-      "formula_version": "qualitative-v0.6.2-NON_EXECUTABLE",
+      "value": 99,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
       "factor_contributions": [
         {
-          "factor": "台灣外資流量",
-          "weight": null
+          "factor": "AI監管",
+          "weight": null,
+          "contribution": null
         },
         {
-          "factor": "油價與殖利率",
-          "weight": null
-        },
-        {
-          "factor": "AI監管與地緣風險",
-          "weight": null
+          "factor": "科技股拋售",
+          "weight": null,
+          "contribution": null
         }
       ],
       "assumptions": [
-        "定性判斷、權重未校準"
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 73,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "殖利率回落",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "就業數據待公布",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 85,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "科技企業融資疑慮",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 91,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "荷姆茲航運不確定",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "主觀嚴重度，不是概率",
+        "尚無可重現評分公式"
       ],
       "uncertainty": "HIGH",
       "assessment_method": "AI_JUDGMENT",
@@ -332,51 +334,84 @@
   "news_risk": {
     "candidate": "BLOCK_CANDIDATE",
     "deterministic_rule_applied": false,
-    "rule_version": "NOT_RUN",
-    "reason": "台股資金賣壓與匯率壓力；不取代60分策略"
+    "rule_version": null,
+    "reason": "僅新多單風險提示，不取代60分CCI/RSI/MA策略"
   },
   "downgrade_conditions": [
-    "外資轉為連續淨買超，且新台幣止貶",
-    "費半及台積電ADR同步回穩，台股開盤確認",
-    "荷姆茲航運恢復取得獨立證據",
-    "AI監管規則明朗且信用利差未擴大"
+    "NASDAQ/SOX止跌",
+    "官方外資賣超收斂",
+    "Brent回落及航運安全確認",
+    "台指波動下降"
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "published_at": "2026-11-05"
+    },
+    {
+      "source_id": "S2",
+      "publisher": "CNA",
+      "url": "https://focustaiwan.tw/business/202611050014",
+      "published_at": "2026-11-05"
+    },
+    {
+      "source_id": "S3",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/energy/oil-falls-fourth-day-expectations-lower-risk-iran-war-escalation-2026-11-05/",
+      "published_at": "2026-11-05"
+    },
+    {
+      "source_id": "S4",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/world/india/gold-hits-two-week-high-dollar-treasury-yields-ease-after-us-midterm-elections-2026-11-05/",
+      "published_at": "2026-11-05"
+    }
+  ],
+  "limitations": [
+    "未核驗數據不可當作事實",
+    "評分無法重現、未校準",
+    "非交易指令"
   ],
   "analyst_interpretation": {
-    "one_line": "全球風險緩解、台灣資金壓力仍高",
-    "three_drivers": [
-      "美股股債反彈",
-      "Brent暴跌",
-      "台股外資大賣"
+    "headline": "科技股重挫與能源航運風險共振，台灣半導體曝險升高",
+    "key_drivers": [
+      "Nasdaq -5.52%",
+      "TAIEX -3.20%",
+      "Brent +3.88%"
     ],
-    "previous_day_comparison": "Global 91→77, Taiwan 99→96；主觀分數不可視為機率",
+    "prior_comparison": {
+      "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-05_0802",
+      "global_before": 77,
+      "taiwan_before": 96,
+      "global_now": 93,
+      "taiwan_now": 99,
+      "warning": "主觀分數不代表概率"
+    },
     "contradictory_signals": [
-      "美股反彈",
-      "台股外資賣超"
+      "科技股大跌",
+      "美元與殖利率回落"
     ],
-    "taiwan_mxf": "台股與匯率已核驗；MXF夜盤、SOX與ADR未核驗"
+    "taiwan_mxf_observation": "現貨已核驗，夜盤/外資/匯率精確數據未核驗"
   },
   "scenario_forecasts": [
     {
       "scenario_id": "BASE_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "全球反彈但台灣資金賣壓延續",
+      "narrative": "科技與能源風險並存，高波動",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -386,8 +421,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -395,24 +431,19 @@
     {
       "scenario_id": "BASE_1_week",
       "horizon": "1 week",
-      "narrative": "全球反彈但台灣資金賣壓延續",
+      "narrative": "科技與能源風險並存，高波動",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -422,8 +453,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -431,24 +463,19 @@
     {
       "scenario_id": "BASE_1_month",
       "horizon": "1 month",
-      "narrative": "全球反彈但台灣資金賣壓延續",
+      "narrative": "科技與能源風險並存，高波動",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -458,8 +485,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -467,24 +495,19 @@
     {
       "scenario_id": "RISK_EASING_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "能源與資金改善推動修復",
+      "narrative": "科技止跌、能源回落、台股資金流改善",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -494,8 +517,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -503,24 +527,19 @@
     {
       "scenario_id": "RISK_EASING_1_week",
       "horizon": "1 week",
-      "narrative": "能源與資金改善推動修復",
+      "narrative": "科技止跌、能源回落、台股資金流改善",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -530,8 +549,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -539,24 +559,19 @@
     {
       "scenario_id": "RISK_EASING_1_month",
       "horizon": "1 month",
-      "narrative": "能源與資金改善推動修復",
+      "narrative": "科技止跌、能源回落、台股資金流改善",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -566,8 +581,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -575,24 +591,19 @@
     {
       "scenario_id": "RISK_ESCALATION_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "AI監管及外資撤離擴散",
+      "narrative": "科技續跌與油價續漲形成共振",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -602,8 +613,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -611,24 +623,19 @@
     {
       "scenario_id": "RISK_ESCALATION_1_week",
       "horizon": "1 week",
-      "narrative": "AI監管及外資撤離擴散",
+      "narrative": "科技續跌與油價續漲形成共振",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -638,8 +645,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -647,24 +655,19 @@
     {
       "scenario_id": "RISK_ESCALATION_1_month",
       "horizon": "1 month",
-      "narrative": "AI監管及外資撤離擴散",
+      "narrative": "科技續跌與油價續漲形成共振",
       "causal_chain": [
-        "energy",
-        "yields",
-        "capital_flow",
-        "Taiwan"
+        "全球風險情緒",
+        "半導體",
+        "台股"
       ],
       "observable_triggers": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "Nasdaq/SOX收盤",
+        "台股外資淨額",
+        "Brent結算"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "行情反向且有持續性"
       ],
       "affected_assets": [
         "TAIEX",
@@ -674,8 +677,9 @@
       ],
       "confidence": "LOW",
       "source_ids": [
-        "S01",
-        "S02"
+        "S1",
+        "S2",
+        "S3"
       ],
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED"
@@ -683,164 +687,100 @@
   ],
   "forecast_cards": [
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-05_0802-F1",
-      "issued_at": "2026-11-05T08:02:44+08:00",
-      "data_cutoff_at": "2026-11-05T08:02:44+08:00",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-06_0810-F1",
+      "issued_at": "2026-11-06T08:10:00+08:00",
+      "data_cutoff_at": "2026-11-06T08:10:00+08:00",
       "target_market": "TAIEX",
-      "target_metric": "closing level/direction",
-      "horizon_end": "2026-11-05T13:30:00+08:00",
-      "direction_or_condition": "高波動候選",
-      "baseline_value": 42948.91,
-      "baseline_timestamp": "2026-11-04",
-      "baseline_source_id": "S02",
-      "baseline_status": "SECONDARY_REPORTED",
-      "thesis": "方向觀察，未設量化閾值",
+      "target_metric": "next session close / volatility",
+      "horizon_end": "2026-11-06T13:30:00+08:00",
+      "direction_or_condition": "DOWN",
+      "baseline_value": 41574.72,
+      "baseline_timestamp": "2026-11-05 close",
+      "baseline_source_id": "S2",
+      "baseline_status": "SOURCE_REPORTED",
+      "thesis": "全球風險升高",
       "causal_drivers": [
-        "capital flow",
-        "rates",
-        "policy"
+        "科技股重估",
+        "能源航運"
       ],
       "confirmation_signals": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "官方收盤"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "風險收斂"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "source": "S02",
-        "observation": "到期後官方收盤/結算",
-        "rule": "未有事前明確閾值，應判INDETERMINATE；不得事後補訂",
-        "results": [
-          "HIT",
-          "MISS",
-          "INDETERMINATE"
-        ]
+        "observation_at": "2026-11-06T13:30:00+08:00",
+        "source": "TWSE official close",
+        "method": "HIT if next official close < 41574.72; MISS otherwise"
       }
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-05_0802-F2",
-      "issued_at": "2026-11-05T08:02:44+08:00",
-      "data_cutoff_at": "2026-11-05T08:02:44+08:00",
-      "target_market": "SOX",
-      "target_metric": "closing level/direction",
-      "horizon_end": "2026-11-05T16:00:00-05:00",
-      "direction_or_condition": "科技監管壓力候選",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-06_0810-F2",
+      "issued_at": "2026-11-06T08:10:00+08:00",
+      "data_cutoff_at": "2026-11-06T08:10:00+08:00",
+      "target_market": "NASDAQ",
+      "target_metric": "next session close / volatility",
+      "horizon_end": "2026-11-07T05:00:00+08:00",
+      "direction_or_condition": "VOLATILE",
       "baseline_value": null,
-      "baseline_timestamp": null,
-      "baseline_source_id": "S01",
+      "baseline_timestamp": "2026-11-05 close",
+      "baseline_source_id": "S1",
       "baseline_status": "NOT_VERIFIED",
-      "thesis": "方向觀察，未設量化閾值",
+      "thesis": "全球風險升高",
       "causal_drivers": [
-        "capital flow",
-        "rates",
-        "policy"
+        "科技股重估",
+        "能源航運"
       ],
       "confirmation_signals": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "官方收盤"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "風險收斂"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "source": "S01",
-        "observation": "到期後官方收盤/結算",
-        "rule": "未有事前明確閾值，應判INDETERMINATE；不得事後補訂",
-        "results": [
-          "HIT",
-          "MISS",
-          "INDETERMINATE"
-        ]
+        "observation_at": "2026-11-07T05:00:00+08:00",
+        "source": "Nasdaq official close",
+        "method": "INDETERMINATE: no ex-ante numeric volatility threshold"
       }
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-05_0802-F3",
-      "issued_at": "2026-11-05T08:02:44+08:00",
-      "data_cutoff_at": "2026-11-05T08:02:44+08:00",
-      "target_market": "Brent",
-      "target_metric": "closing level/direction",
-      "horizon_end": "2026-11-05T23:59:00+00:00",
-      "direction_or_condition": "能源風險溢價回落候選",
-      "baseline_value": 94.62,
-      "baseline_timestamp": "2026-11-04",
-      "baseline_source_id": "S01",
-      "baseline_status": "SECONDARY_REPORTED",
-      "thesis": "方向觀察，未設量化閾值",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-06_0810-F3",
+      "issued_at": "2026-11-06T08:10:00+08:00",
+      "data_cutoff_at": "2026-11-06T08:10:00+08:00",
+      "target_market": "BRENT",
+      "target_metric": "next session close / volatility",
+      "horizon_end": "2026-11-07T06:00:00+08:00",
+      "direction_or_condition": "VOLATILE",
+      "baseline_value": 98.29,
+      "baseline_timestamp": "2026-11-05 close",
+      "baseline_source_id": "S3",
+      "baseline_status": "SOURCE_REPORTED",
+      "thesis": "全球風險升高",
       "causal_drivers": [
-        "capital flow",
-        "rates",
-        "policy"
+        "科技股重估",
+        "能源航運"
       ],
       "confirmation_signals": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "官方收盤"
       ],
       "invalidation_conditions": [
-        "外資轉為連續淨買超，且新台幣止貶",
-        "費半及台積電ADR同步回穩，台股開盤確認",
-        "荷姆茲航運恢復取得獨立證據",
-        "AI監管規則明朗且信用利差未擴大"
+        "風險收斂"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "source": "S01",
-        "observation": "到期後官方收盤/結算",
-        "rule": "未有事前明確閾值，應判INDETERMINATE；不得事後補訂",
-        "results": [
-          "HIT",
-          "MISS",
-          "INDETERMINATE"
-        ]
+        "observation_at": "2026-11-07T06:00:00+08:00",
+        "source": "ICE Brent settlement",
+        "method": "INDETERMINATE: no ex-ante numeric volatility threshold"
       }
     }
-  ],
-  "sources": [
-    {
-      "source_id": "S01",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/",
-      "published_at": "2026-11-04"
-    },
-    {
-      "source_id": "S02",
-      "url": "https://www.cna.com.tw/news/afe/202611040268.aspx",
-      "published_at": "2026-11-04"
-    },
-    {
-      "source_id": "S03",
-      "url": "https://www.reuters.com/world/asia-pacific/china-stock-re-lending-applications-hit-nearly-30-billion-2026-11-04/",
-      "published_at": "2026-11-04"
-    },
-    {
-      "source_id": "S04",
-      "url": "https://www.reuters.com/business/europe-set-open-lower-democratic-sweep-fuels-ai-regulation-fears-2026-11-04/",
-      "published_at": "2026-11-04"
-    }
-  ],
-  "limitations": [
-    "分數為AI_JUDGMENT/UNCALIBRATED，不可重現",
-    "SOX/ADR/MXF與最新央行政策未核驗",
-    "10/08、10/09原始JSON缺失不可補造",
-    "不構成交易指令"
   ]
 }

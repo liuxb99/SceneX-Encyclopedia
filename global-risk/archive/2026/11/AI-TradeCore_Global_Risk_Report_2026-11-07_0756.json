@@ -1,0 +1,438 @@
+{
+  "schema_version": "0.6.2",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-07_0756",
+  "generated_at": "2026-11-07T07:56:00+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-11-07T07:56:00+08:00",
+  "as_of_market_session": "2026-11-06 US/TW closes; Saturday Taiwan closed",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261107",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "11/06 Nasdaq +1.1%、SOX +4.2%，但 Nasdaq 週跌3.4%；美國10月非農新增16.5萬人、失業率4.1%。",
+      "interpretation": "美股短線反彈不能單獨證明科技去槓桿結束",
+      "source_url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E2",
+      "fact": "台股11/06收39,701.64，跌1,873.08點；盤中最多跌3,737.67點，震盪2,598.78點。",
+      "interpretation": "台股高波動及外資賣壓增加下週開盤流動性風險",
+      "source_url": "https://www.cna.com.tw/news/afe/202611060172.aspx",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E3",
+      "fact": "Brent 1月期貨11/06結算98.32美元，+0.03%；週跌幅約17%。",
+      "interpretation": "油價週跌降低部分通膨壓力，但地緣供應風險未完全消失",
+      "source_url": "https://www.reuters.com/business/energy/oil-set-sharp-weekly-drop-middle-east-supply-concerns-provide-floor-2026-11-06/",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E4",
+      "fact": "國安基金11/06決議授權視情況動用資金；金管會宣布11/09起收緊借券賣出與融券保證金。",
+      "interpretation": "政策介入可能緩解流動性衝擊，亦可能增加價格發現扭曲",
+      "source_url": "https://www.businessinsider.tw/article/9324",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E5",
+      "fact": "能源、食品價格與融資成本使滯脹擔憂延續。",
+      "interpretation": "高利率及能源成本共同壓抑成長估值",
+      "source_url": "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E6",
+      "fact": "外資11/06賣超約911.88億元、三大法人合計賣超約1140億元。",
+      "interpretation": "資金流與科技估值衝擊匯流於台股",
+      "source_url": "https://news.cnyes.com/news/id/6650107",
+      "source_published_at": "2026-11-06",
+      "observed_at": "2026-11-07T07:56:00+08:00",
+      "confidence": "HIGH"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "TAIWAN_LIQUIDITY",
+      "direction": "risk_up",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E2",
+        "E6"
+      ]
+    },
+    {
+      "node": "TECH_RISK_APPETITE",
+      "direction": "mixed",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "ENERGY_INFLATION",
+      "direction": "risk_down",
+      "magnitude": "MEDIUM",
+      "evidence_event_ids": [
+        "E3"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "US_TECH_REPRICING",
+      "target": "TAIWAN_SEMICONDUCTOR",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next session",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "FOREIGN_SELLING",
+      "target": "TAIEX_MXF",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "HIGH",
+      "lag": "same/next session",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E6"
+      ],
+      "validation_status": "UNCALIBRATED"
+    },
+    {
+      "source": "BRENT_DROP",
+      "target": "INFLATION_PRESSURE",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "UNCALIBRATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "nodes": [
+        "US_AI_VALUATION",
+        "NASDAQ_SOX",
+        "TSMC_SUPPLY_CHAIN",
+        "TAIEX_MXF",
+        "NEWS_RISK_CANDIDATE"
+      ],
+      "direction": "risk_up",
+      "confidence": "MEDIUM"
+    },
+    {
+      "nodes": [
+        "FOREIGN_SELLING",
+        "TAIWAN_LIQUIDITY",
+        "TAIEX_MXF"
+      ],
+      "direction": "risk_up",
+      "confidence": "HIGH"
+    },
+    {
+      "nodes": [
+        "BRENT_WEEKLY_DECLINE",
+        "INFLATION",
+        "YIELDS",
+        "TECH_VALUATION"
+      ],
+      "direction": "risk_down",
+      "confidence": "LOW"
+    }
+  ],
+  "convergence": [
+    {
+      "node": "TAIWAN_EQUITY_VOLATILITY",
+      "inputs": [
+        "AI_REPRICING",
+        "FOREIGN_SELLING",
+        "POLICY_INTERVENTION"
+      ],
+      "interpretation": "同一科技風險因子不重複加分；政策穩市和美股反彈構成反向力量"
+    }
+  ],
+  "regime": "HIGH_VOLATILITY_MIXED_RECOVERY",
+  "taiwan_exposure": {
+    "taiex": "2026-11-06 39701.64 (-4.51%)",
+    "mxf": "盤中觸及跌停，收盤未獨立核驗",
+    "tsmc_adr": "未獨立核驗",
+    "nasdaq": "2026-11-06 +1.1%, weekly -3.4%",
+    "sox": "2026-11-06 +4.2%",
+    "us_yields": "未獨立核驗",
+    "usd_twd": "未獨立核驗",
+    "foreign_flow": "2026-11-06 -911.88 億元 (媒體轉述)",
+    "china_asia": "亞洲科技股受拋售衝擊，精確指數未核驗",
+    "energy_import": "Brent週跌緩解輸入成本，但高波動",
+    "shipping": "中東航運風險尚存",
+    "taiwan_strait": "未核驗新增事件"
+  },
+  "scores": {
+    "global": {
+      "value": 88,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "科技估值與週線下跌",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台股流動性壓力",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "能源週跌緩衝",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "taiwan": {
+      "value": 98,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "台股-4.51%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "外資賣超911.88億元",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "國安基金政策介入",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "energy": {
+      "value": 72,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "Brent週跌約17%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "荷姆茲供應風險",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "semiconductor": {
+      "value": 91,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "SOX單日+4.2%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Nasdaq週跌3.4%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台灣權值股急跌",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 78,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "美國就業數據",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "滯脹風險",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 85,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "融資條件",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "AI資本支出估值",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 87,
+      "scale": "0-100",
+      "formula_version": "qualitative-v0.6.2-NON_REPRODUCIBLE",
+      "factor_contributions": [
+        {
+          "factor": "中東能源航運不確定性",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "以截至資料截點可得的已報導資料評估嚴重度",
+        "不同事件的共同因子不重複加總",
+        "分數非下跌機率，無可重現數學權重"
+      ],
+      "uncertainty": "HIGH",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "台股急跌與外資流出，僅作新多單風險候選；不取代CCI/RSI/MA120策略"
+  },
+  "downgrade_conditions": [
+    "台股下個交易日跌幅與振幅收斂",
+    "外資賣超顯著縮小或轉買",
+    "SOX反彈延續且Nasdaq週線止跌",
+    "油價與航運風險穩定",
+    "政策干預效果由實際成交與流動性確認"
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
+      "published_at": "2026-11-06"
+    },
+    {
+      "source_id": "S2",
+      "publisher": "CNA",
+      "url": "https://www.cna.com.tw/news/afe/202611060172.aspx",
+      "published_at": "2026-11-06"
+    },
+    {
+      "source_id": "S3",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/energy/oil-set-sharp-weekly-drop-middle-east-supply-concerns-provide-floor-2026-11-06/",
+      "published_at": "2026-11-06"
+    },
+    {
+      "source_id": "S4",
+      "publisher": "Business Insider Taiwan",
+      "url": "https://www.businessinsider.tw/article/9324",
+      "published_at": "2026-11-06"
+    },
+    {
+      "source_id": "S5",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/",
+      "published_at": "2026-11-06"
+    },
+    {
+      "source_id": "S6",
+      "publisher": "Cnyes",
+      "url": "https://news.cnyes.com/news/id/6650107",
+      "published_at": "2026-11-06"
+    }
+  ],
+  "limitations": [
+    "週六台灣休市，未把11/06數據當作11/07交易",
+    "無獨立官方數據的指標明確標記未核驗",
+    "主觀研究評分尚不可重現，不是概率或交易建議",
+    "美股與台股的反向訊號使下週方向不確定"
+  ]
+}

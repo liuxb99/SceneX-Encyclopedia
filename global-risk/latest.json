@@ -1,51 +1,77 @@
 {
   "schema_version": "0.6.2",
-  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-10_0804",
-  "generated_at": "2026-11-10T08:04:29+08:00",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-11_0758",
+  "generated_at": "2026-11-11T07:58:16+08:00",
   "timezone": "Asia/Taipei",
-  "data_cutoff_at": "2026-11-10T08:04:29+08:00",
-  "as_of_market_session": "Taiwan 2026-11-09 close; US 2026-11-06 verified close; 2026-11-09 news",
-  "model_version": "global-risk-butterfly-v0.6.2-research-20261110",
+  "data_cutoff_at": "2026-11-11T07:58:16+08:00",
+  "as_of_market_session": "Taiwan 2026-11-10 close; US 2026-11-10 close reported; oil 2026-11-10 settlement",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261111",
   "calibration_status": "UNCALIBRATED",
   "events": [
     {
       "event_id": "E1",
-      "fact": "11/09台股收41,661.70點，上漲1,960.06點（4.94%），但外資現貨賣超900.56億元，三大法人賣超945.26億元；外資期貨空單約10.17萬口。",
-      "interpretation": "價格反彈與外資現貨/期貨部位背離，反彈的持續性尚待確認。",
-      "source_url": "https://news.cnyes.com/news/id/6653512",
-      "source_published_at": "2026-11-09T17:07:00+08:00",
-      "observed_at": "2026-11-10T08:04:29+08:00",
-      "confidence": "MEDIUM"
+      "fact": "11/10台股收42711.92、上漲1050.22點，外資賣超341.16億元；連續9個交易日賣超。",
+      "interpretation": "價格反彈但外資持續減碼，流動性與追價持續性待驗證。",
+      "source_url": "https://www.cna.com.tw/news/afe/202611100353.aspx",
+      "source_published_at": "2026-11-10T21:59:00+08:00",
+      "observed_at": "2026-11-11T07:58:16+08:00",
+      "confidence": "HIGH"
     },
     {
       "event_id": "E2",
-      "fact": "11/09新台幣收32.882兌1美元，較前日貶值0.114元。",
-      "interpretation": "匯率走弱與外資賣超並存，台灣資金流壓力尚未解除；兩者不可直接視為單一因果。",
-      "source_url": "https://news.cnyes.com/news/id/6653645",
-      "source_published_at": "2026-11-09T18:50:00+08:00",
-      "observed_at": "2026-11-10T08:04:29+08:00",
-      "confidence": "MEDIUM"
+      "fact": "11/10新台幣收32.865兌美元，盤中一度32.97。",
+      "interpretation": "匯率盤中壓力與股價反彈並存，外資匯出風險未完全解除。",
+      "source_url": "https://money.udn.com/money/story/5612/9869973",
+      "source_published_at": "2026-11-10T18:45:28+08:00",
+      "observed_at": "2026-11-11T07:58:16+08:00",
+      "confidence": "HIGH"
     },
     {
       "event_id": "E3",
-      "fact": "Reuters 11/09報導，油價因美國對伊朗進一步攻擊的預期降低而下跌。",
-      "interpretation": "能源價格下行有助緩解通膨與殖利率壓力，但中東航運尾部風險仍在。",
-      "source_url": "https://www.reuters.com/business/energy/oil-falls-open-trump-says-fresh-iran-attacks-unlikely-2026-11-08/",
-      "source_published_at": "2026-11-09",
-      "observed_at": "2026-11-10T08:04:29+08:00",
+      "fact": "Reuters報導11/10美股收低，通膨數據及Fed官員言論加重利率擔憂。",
+      "interpretation": "利率重新定價可能壓抑科技股估值並傳導至台灣。",
+      "source_url": "https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/",
+      "source_published_at": "2026-11-10",
+      "observed_at": "2026-11-11T07:58:16+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E4",
-      "fact": "11/06 Nasdaq上漲1.1%、費半上漲4.2%，但Nasdaq全週仍下跌3.4%。",
-      "interpretation": "科技股跌深反彈不等於估值重估結束，11/09美股完整收盤尚未在本次來源中獨立核實。",
-      "source_url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
-      "source_published_at": "2026-11-06",
-      "observed_at": "2026-11-10T08:04:29+08:00",
-      "confidence": "HIGH"
+      "fact": "Reuters報導11/10 Brent結算91.49美元、下跌1.2%，WTI 86.04美元、下跌0.9%。",
+      "interpretation": "能源價格緩和有助進口成本，但不能抵銷所有利率壓力。",
+      "source_url": "https://www.reuters.com/business/energy/oil-falls-trump-downplays-prospect-escalation-with-iran-2026-11-10/",
+      "source_published_at": "2026-11-10",
+      "observed_at": "2026-11-11T07:58:16+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E5",
+      "fact": "Reuters報導荷姆茲海峽油輪與中東能源設施近日仍遭襲擊。",
+      "interpretation": "油價回落與實體航運尾部風險並存，能源風險不可歸零。",
+      "source_url": "https://www.reuters.com/business/energy/tankers-continue-burn-middle-east-despite-hopes-de-escalation-2026-11-10/",
+      "source_published_at": "2026-11-10",
+      "observed_at": "2026-11-11T07:58:16+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E6",
+      "fact": "Reuters報導11/09 Nasdaq上漲2.74%、S&P 500上漲2.35%。",
+      "interpretation": "前日科技股反彈與隔日利率壓力形成方向反轉。",
+      "source_url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+      "source_published_at": "2026-11-09",
+      "observed_at": "2026-11-11T07:58:16+08:00",
+      "confidence": "MEDIUM"
     }
   ],
   "shocks": [
+    {
+      "node": "US_RATES",
+      "direction": "RISK_UP",
+      "magnitude": null,
+      "evidence_event_ids": [
+        "E3"
+      ]
+    },
     {
       "node": "TW_FOREIGN_FLOW",
       "direction": "RISK_UP",
@@ -56,45 +82,23 @@
       ]
     },
     {
-      "node": "ENERGY_INFLATION",
-      "direction": "RISK_DOWN",
-      "magnitude": null,
-      "evidence_event_ids": [
-        "E3"
-      ]
-    },
-    {
-      "node": "SEMICONDUCTOR_SENTIMENT",
+      "node": "ENERGY",
       "direction": "MIXED",
       "magnitude": null,
       "evidence_event_ids": [
         "E4",
-        "E1"
+        "E5"
       ]
     }
   ],
   "edges": [
     {
-      "source": "TW_FOREIGN_FLOW",
-      "target": "USD_TWD",
-      "direction": "POTENTIAL_DEPRECIATION",
+      "source": "US_RATES",
+      "target": "SEMICONDUCTOR_VALUATION",
+      "direction": "RISK_UP",
       "weight": null,
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "lag": "0-5d",
-      "decay": "UNKNOWN",
-      "evidence_ids": [
-        "E1",
-        "E2"
-      ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "ENERGY_INFLATION",
-      "target": "US_YIELDS",
-      "direction": "POTENTIAL_DOWN",
-      "weight": null,
-      "confidence": "LOW",
-      "lag": "days-weeks",
       "decay": "UNKNOWN",
       "evidence_ids": [
         "E3"
@@ -102,7 +106,7 @@
       "validation_status": "HYPOTHESIS"
     },
     {
-      "source": "SEMICONDUCTOR_SENTIMENT",
+      "source": "TW_FOREIGN_FLOW",
       "target": "TAIEX_MXF",
       "direction": "VOLATILITY_UP",
       "weight": null,
@@ -111,239 +115,63 @@
       "decay": "UNKNOWN",
       "evidence_ids": [
         "E1",
-        "E4"
+        "E2"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "ENERGY",
+      "target": "INFLATION_EXPECTATIONS",
+      "direction": "MIXED",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E4",
+        "E5"
       ],
       "validation_status": "HYPOTHESIS"
     }
   ],
   "propagation_paths": [
-    "Oil decline → inflation expectations ease → possible bond yield relief → growth valuations → SOX → TAIEX/MXF (hypothesis)",
-    "Taiwan equity rebound + foreign net selling + futures shorts → positioning divergence → FX and liquidity sensitivity → TAIEX/MXF volatility (hypothesis)"
+    "US inflation/Fed comments → rates concern → tech valuation pressure → SOX/TSMC ADR → Taiwan semiconductor → TAIEX/MXF (hypothesis)",
+    "Taiwan equity rebound + foreign selling + intraday TWD weakness → liquidity divergence → MXF/TAIEX volatility (hypothesis)",
+    "Brent falls + tanker attacks persist → inflation relief versus supply tail risk → yields and risk appetite → Taiwan energy importers/technology (hypothesis)"
   ],
   "convergence": {
     "nodes": [
+      "US yields",
       "risk appetite",
+      "foreign flow",
       "USD/TWD",
-      "SOX",
-      "foreign flow"
+      "SOX"
     ],
-    "interpretation": "能源緩和與科技股反彈可能支持風險偏好，但台灣外資與匯率訊號相反；未將相同資金流重複計分。"
+    "interpretation": "利率與資金流在科技估值匯流；能源的利多與航運的利空不能互相抵銷或重複計數。"
   },
-  "regime": "HIGH_VOLATILITY_MIXED_SIGNAL",
+  "regime": "HIGH_VOLATILITY_RATE_REPRICING",
   "taiwan_exposure": {
-    "taiex": "11/09強反彈，但外資賣超",
-    "mxf": "觀察期貨淨部位及基差，尚未驗證逐筆官方資料",
-    "tsmc_adr": "未核實11/09 ADR收盤",
-    "sox": "11/06反彈，11/09收盤未核實",
-    "usd_twd": "11/09 32.882",
-    "foreign_flow": "11/09外資賣超900.56億元",
-    "energy": "油價下跌有助進口成本，但未核實最新結算",
-    "china_asia": "區域反彈分化，無當日官方一致口徑",
-    "taiwan_strait": "本次無新增可核實事件",
-    "shipping": "中東航運風險尚未解除"
+    "taiex": "11/10收42711.92，+1050.22",
+    "mxf": "期貨基差與夜盤尚未取得官方最終核驗",
+    "tsmc_adr": "11/10 ADR精確收盤未核驗",
+    "sox": "11/10精確費半收盤未核驗",
+    "usd_twd": "11/10收32.865，盤中低點新台幣32.97兌美元",
+    "foreign_flow": "外資11/10賣超341.16億元",
+    "energy": "Brent 91.49美元；航運攻擊未解除",
+    "china_asia": "未取得11/10同口徑官方全面行情",
+    "shipping": "荷姆茲油輪襲擊持續",
+    "taiwan_strait": "未核實新增事件"
   },
   "scores": {
     "global": {
-      "value": 82,
-      "scale": "0-100 research severity",
+      "value": 84,
+      "scale": "0-100 subjective research severity",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "科技估值波動",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "能源緩和",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "政策不確定性",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "taiwan": {
-      "value": 94,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "現貨外資賣超",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "期貨空單高位",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "匯率走弱",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "政策支撐反彈",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "energy": {
-      "value": 65,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "油價回落",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "中東航運未完全解除",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "rates": {
-      "value": 76,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "油價通膨預期",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "Fed利率路徑未核實",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "credit": {
-      "value": 83,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "科技投資融資疑慮",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "缺乏最新信用利差",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "geopolitical": {
-      "value": 81,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "中東談判訊號",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "未確認航運全面恢復",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        }
-      ],
-      "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
-      ],
-      "uncertainty": "HIGH",
-      "confidence": "LOW",
-      "reproducible": false
-    },
-    "semiconductor": {
-      "value": 88,
-      "scale": "0-100 research severity",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "formula_version": "none-subjective-v0.6.2",
-      "factor_contributions": [
-        {
-          "factor": "SOX反彈",
-          "weight": null,
-          "contribution": null,
-          "quantified": false
-        },
-        {
-          "factor": "AI估值風險",
+          "factor": "美國利率重新定價",
           "weight": null,
           "contribution": null,
           "quantified": false
@@ -353,11 +181,209 @@
           "weight": null,
           "contribution": null,
           "quantified": false
+        },
+        {
+          "factor": "能源價格回落",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "中東實體航運風險",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
         }
       ],
       "assumptions": [
-        "各因子非獨立，避免重複加總",
-        "缺乏經校準之歷史分布及可重現權重"
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "taiwan": {
+      "value": 92,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "台股反彈",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "外資連九賣",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "新台幣盤中貶壓",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "美股科技估值",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "energy": {
+      "value": 72,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "Brent下跌",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "油輪及能源設施襲擊",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "rates": {
+      "value": 85,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "美國通膨與Fed言論",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "油價緩和",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "credit": {
+      "value": 82,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "利率上行風險",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "信用利差未核驗",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "geopolitical": {
+      "value": 86,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "中東航運攻擊",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "美伊緩和預期",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
+      ],
+      "uncertainty": "HIGH",
+      "confidence": "LOW",
+      "reproducible": false
+    },
+    "semiconductor": {
+      "value": 91,
+      "scale": "0-100 subjective research severity",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "11/09科技反彈",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "11/10利率壓力",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        },
+        {
+          "factor": "台灣外資減碼",
+          "weight": null,
+          "contribution": null,
+          "quantified": false
+        }
+      ],
+      "assumptions": [
+        "因子互相關聯，不加總為概率",
+        "無可重現權重或歷史校準"
       ],
       "uncertainty": "HIGH",
       "confidence": "LOW",
@@ -368,52 +394,254 @@
     "candidate": "BLOCK_CANDIDATE",
     "deterministic_rule_applied": false,
     "rule_version": "NOT_EXECUTED",
-    "reason": "高波動、外資現貨賣超與期貨空單，僅為新多單風險候選，不取代60分鐘策略"
+    "reason": "利率重新定價、台灣外資連賣與匯率波動；不取代60分鐘交易策略"
   },
   "downgrade_conditions": [
-    "連續數日外資賣超收斂且期貨空單下降",
-    "USD/TWD回穩並有官方收盤確認",
-    "SOX連續交易日穩定且台股成交結構改善",
-    "中東航運保險及供應恢復獲獨立核實"
+    "美國利率預期回穩且科技股連續交易日穩定",
+    "台灣外資賣超收斂與新台幣收盤穩定",
+    "中東油輪攻擊停止且航運保險與運量有獨立確認"
+  ],
+  "analyst_interpretation": "11/10台股延續政策支撐反彈，但外資連九賣與盤中匯率貶壓顯示反彈尚非全面資金回流；同時美國利率擔憂再起。油價下行與航運攻擊並存，應以高波動、跨市場背離觀察。",
+  "scenario_forecasts": [
+    {
+      "horizon": "1d",
+      "scenario": "bull",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "外資賣壓收斂與美債利率回穩",
+      "taiwan_impact": "反彈延續但需量價驗證",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1d",
+      "scenario": "base",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "科技股震盪與外資流出延續",
+      "taiwan_impact": "高波動區間整理",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1d",
+      "scenario": "bear",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "美債利率急升或航運衝擊再擴大",
+      "taiwan_impact": "半導體與台指承壓",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1w",
+      "scenario": "bull",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "外資賣壓收斂與美債利率回穩",
+      "taiwan_impact": "反彈延續但需量價驗證",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1w",
+      "scenario": "base",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "科技股震盪與外資流出延續",
+      "taiwan_impact": "高波動區間整理",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1w",
+      "scenario": "bear",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "美債利率急升或航運衝擊再擴大",
+      "taiwan_impact": "半導體與台指承壓",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1m",
+      "scenario": "bull",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "外資賣壓收斂與美債利率回穩",
+      "taiwan_impact": "反彈延續但需量價驗證",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1m",
+      "scenario": "base",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "科技股震盪與外資流出延續",
+      "taiwan_impact": "高波動區間整理",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    },
+    {
+      "horizon": "1m",
+      "scenario": "bear",
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "trigger": "美債利率急升或航運衝擊再擴大",
+      "taiwan_impact": "半導體與台指承壓",
+      "invalidation": "跨市場訊號與觸發條件不一致時失效"
+    }
+  ],
+  "forecast_cards": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-11_0758_TW",
+      "issued_at": "2026-11-11T07:58:16+08:00",
+      "data_cutoff_at": "2026-11-11T07:58:16+08:00",
+      "target_market": "TAIEX",
+      "target_metric": "11/11台股收盤相對11/10收盤42711.92之漲跌方向",
+      "horizon_end": "2026-11-11T23:59:59+08:00",
+      "direction_or_condition": "觀察11/11收盤是否低於42711.92",
+      "baseline_value": 42711.92,
+      "baseline_timestamp": "2026-11-10",
+      "baseline_source_id": "S1",
+      "baseline_status": "REPORTED",
+      "thesis": "風險方向性研究假說，並非交易指令",
+      "causal_drivers": [
+        "利率與資金流",
+        "能源地緣風險"
+      ],
+      "confirmation_signals": [
+        "官方市場結算與跨市場確認"
+      ],
+      "invalidation_conditions": [
+        "方向反轉或無法核實基準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "source": "交易所官方收盤或Reuters可核實結算",
+        "observation_at": "目標日交易結束",
+        "hit": "符合direction_or_condition",
+        "miss": "已核實且不符合",
+        "indeterminate": "缺基準或缺官方結算時不得判定"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-11_0758_SOX",
+      "issued_at": "2026-11-11T07:58:16+08:00",
+      "data_cutoff_at": "2026-11-11T07:58:16+08:00",
+      "target_market": "PHLX Semiconductor Index",
+      "target_metric": "11/11費半收盤是否較11/10收盤下跌",
+      "horizon_end": "2026-11-11T23:59:59+08:00",
+      "direction_or_condition": "觀察11/11相對11/10官方收盤變動",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "風險方向性研究假說，並非交易指令",
+      "causal_drivers": [
+        "利率與資金流",
+        "能源地緣風險"
+      ],
+      "confirmation_signals": [
+        "官方市場結算與跨市場確認"
+      ],
+      "invalidation_conditions": [
+        "方向反轉或無法核實基準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "source": "交易所官方收盤或Reuters可核實結算",
+        "observation_at": "目標日交易結束",
+        "hit": "符合direction_or_condition",
+        "miss": "已核實且不符合",
+        "indeterminate": "缺基準或缺官方結算時不得判定"
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-11_0758_OIL",
+      "issued_at": "2026-11-11T07:58:16+08:00",
+      "data_cutoff_at": "2026-11-11T07:58:16+08:00",
+      "target_market": "Brent futures",
+      "target_metric": "11/13 Brent結算是否高於11/10 91.49美元",
+      "horizon_end": "2026-11-13T23:59:59+08:00",
+      "direction_or_condition": "觀察11/13結算是否高於91.49",
+      "baseline_value": 91.49,
+      "baseline_timestamp": "2026-11-10",
+      "baseline_source_id": "S4",
+      "baseline_status": "REPORTED",
+      "thesis": "風險方向性研究假說，並非交易指令",
+      "causal_drivers": [
+        "利率與資金流",
+        "能源地緣風險"
+      ],
+      "confirmation_signals": [
+        "官方市場結算與跨市場確認"
+      ],
+      "invalidation_conditions": [
+        "方向反轉或無法核實基準"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "source": "交易所官方收盤或Reuters可核實結算",
+        "observation_at": "目標日交易結束",
+        "hit": "符合direction_or_condition",
+        "miss": "已核實且不符合",
+        "indeterminate": "缺基準或缺官方結算時不得判定"
+      }
+    }
   ],
   "sources": [
     {
       "id": "S1",
-      "url": "https://news.cnyes.com/news/id/6653512",
-      "title": "11/09 台股及外資期貨部位",
-      "published": "2026-11-09T17:07:00+08:00"
+      "url": "https://www.cna.com.tw/news/afe/202611100353.aspx",
+      "title": "11/10台股收42711.92、上漲1050.22點，外資賣超341.16億元；連續9個交易日",
+      "published": "2026-11-10T21:59:00+08:00"
     },
     {
       "id": "S2",
-      "url": "https://news.cnyes.com/news/id/6653645",
-      "title": "11/09 新台幣匯率",
-      "published": "2026-11-09T18:50:00+08:00"
+      "url": "https://money.udn.com/money/story/5612/9869973",
+      "title": "11/10新台幣收32.865兌美元，盤中一度32.97。",
+      "published": "2026-11-10T18:45:28+08:00"
     },
     {
       "id": "S3",
-      "url": "https://www.reuters.com/business/energy/oil-falls-open-trump-says-fresh-iran-attacks-unlikely-2026-11-08/",
-      "title": "11/09 原油因伊朗局勢緩和下跌",
-      "published": "2026-11-09"
+      "url": "https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/",
+      "title": "Reuters報導11/10美股收低，通膨數據及Fed官員言論加重利率擔憂。",
+      "published": "2026-11-10"
     },
     {
       "id": "S4",
-      "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
-      "title": "11/06 Nasdaq及半導體反彈",
-      "published": "2026-11-06"
+      "url": "https://www.reuters.com/business/energy/oil-falls-trump-downplays-prospect-escalation-with-iran-2026-11-10/",
+      "title": "Reuters報導11/10 Brent結算91.49美元、下跌1.2%，WTI 86.04美元",
+      "published": "2026-11-10"
     },
     {
       "id": "S5",
-      "url": "https://www.reuters.com/business/tsx-futures-climb-softer-oil-eases-inflation-worries-us-inflation-data-awaited-2026-11-09/",
-      "title": "11/09 油價與通膨預期",
+      "url": "https://www.reuters.com/business/energy/tankers-continue-burn-middle-east-despite-hopes-de-escalation-2026-11-10/",
+      "title": "Reuters報導荷姆茲海峽油輪與中東能源設施近日仍遭襲擊。",
+      "published": "2026-11-10"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+      "title": "Reuters報導11/09 Nasdaq上漲2.74%、S&P 500上漲2.35%。",
       "published": "2026-11-09"
     }
   ],
   "limitations": [
-    "主觀研究分數尚不可重現，非下跌機率",
-    "未獨立核實11/09美股完整收盤及最新美債殖利率、信用利差",
-    "來源發布時間部分僅精確至日期",
-    "未執行deterministic News Risk rule engine",
-    "不將事後outcome寫入本snapshot"
+    "分數主觀不可重現，不是市場下跌機率",
+    "11/10美股精確指數、SOX與ADR收盤未獨立核驗",
+    "最新美債殖利率、信用利差、DXY未取得可信數值",
+    "未執行 deterministic News Risk 規則引擎",
+    "歷史缺漏不得事後補造原始snapshot"
   ],
   "publication_status": "RESEARCH_SNAPSHOT"
 }

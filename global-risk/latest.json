@@ -1,470 +1,618 @@
 {
   "schema_version": "0.6.2",
-  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-12_0800",
-  "generated_at": "2026-11-12T08:00:00+08:00",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-13_0800",
+  "generated_at": "2026-11-13T08:00:51+08:00",
   "timezone": "Asia/Taipei",
-  "data_cutoff_at": "2026-11-12T08:00:00+08:00",
-  "as_of_market_session": "Taiwan 2026-11-11 close; US 2026-11-11 close as reported; no 11/12 Taiwan intraday",
-  "model_version": "global-risk-butterfly-v0.6.2-research-20261112",
+  "data_cutoff_at": "2026-11-13T08:00:51+08:00",
+  "as_of_market_session": "Taiwan 2026-11-12 close; US 2026-11-12 Reuters report; 2026-11-13 Taiwan session not yet open",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261113",
   "calibration_status": "UNCALIBRATED",
   "events": [
     {
       "event_id": "E1",
-      "fact": "台股11/11收44,257.15，上漲1,545.23點；外資仍賣超7.66億元，連十賣",
-      "interpretation": "科技反彈與境外資金撤出形成背離",
-      "source_url": "https://money.udn.com/money/story/5607/9872013",
-      "source_published_at": "2026-11-11T15:19:06+08:00",
-      "observed_at": "2026-11-12T08:00:00+08:00",
+      "fact": "台股11/12收43,091.87，跌1,165.28點（2.63%）；外資及陸資賣超約6.85億元",
+      "interpretation": "反彈後再度大幅震盪，台灣風險溢價仍高",
+      "source_url": "https://more-news.tw/766975/",
+      "source_published_at": "2026-11-12",
+      "observed_at": "2026-11-13T08:00:51+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E2",
-      "fact": "11/11新台幣兌美元收32.860，較前日微升0.005",
-      "interpretation": "匯率暫穩但不等於外資回流",
-      "source_url": "https://money.udn.com/money/story/5616/9872162",
-      "source_published_at": "2026-11-11T16:12:35+08:00",
-      "observed_at": "2026-11-12T08:00:00+08:00",
+      "fact": "Reuters 11/12報導美國10年期公債殖利率升至5.066%，美元觸19個月高點",
+      "interpretation": "高利率與強美元同時壓縮高估值科技股與亞洲資金風險承受力",
+      "source_url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "source_published_at": "2026-11-12",
+      "observed_at": "2026-11-13T08:00:51+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E3",
-      "fact": "Reuters報導11/11美股因CoreWeave結果緩解AI支出擔憂而收高",
-      "interpretation": "AI需求預期有助半導體風險偏好",
-      "source_url": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
-      "source_published_at": "2026-11-11",
-      "observed_at": "2026-11-12T08:00:00+08:00",
+      "fact": "Reuters 11/12報導 Nvidia CEO 辭任、Nvidia 股價跌約4%，AMD與Broadcom上漲",
+      "interpretation": "AI供應鏈出現公司治理衝擊與產業內輪動，不能等同AI需求全面崩潰",
+      "source_url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "source_published_at": "2026-11-12",
+      "observed_at": "2026-11-13T08:00:51+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E4",
-      "fact": "Reuters報導10月美國通膨高於預期，市場重新評估Fed升息路徑",
-      "interpretation": "殖利率及美元上行可能壓抑科技估值",
-      "source_url": "https://www.reuters.com/business/view-hot-october-inflation-report-rattles-markets-2026-11-10/",
-      "source_published_at": "2026-11-10",
-      "observed_at": "2026-11-12T08:00:00+08:00",
+      "fact": "Reuters 11/12報導Brent約93.82美元、美國原油約86.81美元，美伊談判不確定性仍在",
+      "interpretation": "能源輸入成本與通膨預期可能延長高利率壓力",
+      "source_url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "source_published_at": "2026-11-12",
+      "observed_at": "2026-11-13T08:00:51+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E5",
-      "fact": "Reuters 11/11評論指出美伊停火前景可能緩和債市油價衝擊，惟Fed風險仍存",
-      "interpretation": "能源緩和與利率壓力相互抵銷",
-      "source_url": "https://www.reuters.com/commentary/reuters-open-interest/bond-storm-2026-may-be-passing-fed-gusts-linger-2026-11-11/",
-      "source_published_at": "2026-11-11",
-      "observed_at": "2026-11-12T08:00:00+08:00",
-      "confidence": "MEDIUM"
-    },
-    {
-      "event_id": "E6",
-      "fact": "台積電董事會核准投資Anthropic及OpenAI各5億美元，11/11台股台積電收2395元",
-      "interpretation": "AI產業鏈投資支持情緒但集中曝險上升",
-      "source_url": "https://www.taiwannews.com.tw/zh/news/6474750",
-      "source_published_at": "2026-11-11T17:21:00+08:00",
-      "observed_at": "2026-11-12T08:00:00+08:00",
+      "fact": "Reuters 11/10報導Fed官員Waller支持12月至少升息一碼",
+      "interpretation": "貨幣政策偏鷹提高長端利率與美元風險",
+      "source_url": "https://www.reuters.com/business/feds-waller-plans-support-least-quarter-point-rate-hike-december-2026-11-10/",
+      "source_published_at": "2026-11-10",
+      "observed_at": "2026-11-13T08:00:51+08:00",
       "confidence": "MEDIUM"
     }
   ],
   "shocks": [
     {
-      "node": "US rates",
+      "node": "rates/USD",
       "direction": "UP",
-      "magnitude": null,
+      "magnitude": "HIGH qualitative",
       "evidence_event_ids": [
-        "E4"
+        "E2",
+        "E5"
       ]
     },
     {
-      "node": "Taiwan foreign flows",
-      "direction": "OUTFLOW",
-      "magnitude": -7.66,
+      "node": "AI leadership",
+      "direction": "RISK_UP",
+      "magnitude": "MEDIUM qualitative",
       "evidence_event_ids": [
-        "E1"
+        "E3"
+      ]
+    },
+    {
+      "node": "oil",
+      "direction": "UP",
+      "magnitude": "MEDIUM qualitative",
+      "evidence_event_ids": [
+        "E4"
       ]
     }
   ],
   "edges": [
     {
-      "source": "US inflation",
-      "target": "Fed repricing",
-      "direction": "UP",
+      "source": "Fed hawkishness",
+      "target": "US10Y yield",
+      "direction": "RISK_UP",
       "weight": null,
       "confidence": "MEDIUM",
       "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
+      "decay": "UNKNOWN",
       "evidence_ids": [
-        "E4"
+        "E2",
+        "E5"
       ],
-      "validation_status": "HYPOTHESIS"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "Fed repricing",
-      "target": "US yields",
-      "direction": "UP",
+      "source": "US10Y yield",
+      "target": "USD",
+      "direction": "RISK_UP",
       "weight": null,
       "confidence": "MEDIUM",
       "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E5"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "USD",
+      "target": "Asia foreign flow",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E5"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Asia foreign flow",
+      "target": "TAIEX/MXF",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "days-weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E2",
+        "E5"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Nvidia leadership shock",
+      "target": "AI equity repricing",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "AI equity repricing",
+      "target": "SOX/TSMC sentiment",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "SOX/TSMC sentiment",
+      "target": "Taiwan semiconductor",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Taiwan semiconductor",
+      "target": "TAIEX/MXF",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "hours-days",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Iran negotiation uncertainty",
+      "target": "Brent",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
       "evidence_ids": [
         "E4"
       ],
-      "validation_status": "HYPOTHESIS"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Brent",
+      "target": "inflation expectations",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "inflation expectations",
+      "target": "US yields",
+      "direction": "RISK_UP",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
       "source": "US yields",
-      "target": "NASDAQ/SOX valuation",
-      "direction": "DOWN",
+      "target": "Taiwan import cost",
+      "direction": "RISK_UP",
       "weight": null,
       "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
+      "lag": "weeks",
+      "decay": "UNKNOWN",
       "evidence_ids": [
         "E4"
       ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "AI demand confidence",
-      "target": "NASDAQ/SOX valuation",
-      "direction": "UP",
-      "weight": null,
-      "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
-      "evidence_ids": [
-        "E3"
-      ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "NASDAQ/SOX valuation",
-      "target": "Taiwan semiconductor",
-      "direction": "MIXED",
-      "weight": null,
-      "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
-      "evidence_ids": [
-        "E3"
-      ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "foreign selling",
-      "target": "TWD liquidity",
-      "direction": "DOWN",
-      "weight": null,
-      "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
-      "evidence_ids": [
-        "E1"
-      ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "Iran de-escalation",
-      "target": "oil risk premium",
-      "direction": "DOWN",
-      "weight": null,
-      "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
-      "evidence_ids": [
-        "E5"
-      ],
-      "validation_status": "HYPOTHESIS"
-    },
-    {
-      "source": "oil risk premium",
-      "target": "inflation pressure",
-      "direction": "DOWN",
-      "weight": null,
-      "confidence": "MEDIUM",
-      "lag": "days-weeks",
-      "decay": "UNQUANTIFIED",
-      "evidence_ids": [
-        "E5"
-      ],
-      "validation_status": "HYPOTHESIS"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     }
   ],
   "propagation_paths": [
     {
-      "path": "CPI→Fed→US yields→SOX→TSMC→TAIEX/MXF",
+      "path_id": "P1",
+      "nodes": [
+        "Fed hawkishness",
+        "US10Y yield",
+        "USD",
+        "Asia foreign flow",
+        "TAIEX/MXF"
+      ],
       "direction": "RISK_UP",
+      "strength": "HIGH",
       "confidence": "MEDIUM",
+      "decay": "UNKNOWN",
+      "lag": "days-weeks",
+      "regime": "inflation and restrictive rates",
       "evidence_ids": [
-        "E4",
-        "E6"
-      ]
-    },
-    {
-      "path": "CoreWeave→AI demand→SOX→TSMC→TAIEX/MXF",
-      "direction": "RISK_DOWN",
-      "confidence": "MEDIUM",
-      "evidence_ids": [
-        "E3",
-        "E6"
-      ]
-    },
-    {
-      "path": "Iran diplomacy→oil→inflation→yields→Taiwan import costs",
-      "direction": "RISK_DOWN",
-      "confidence": "LOW",
-      "evidence_ids": [
+        "E2",
         "E5"
+      ]
+    },
+    {
+      "path_id": "P2",
+      "nodes": [
+        "Nvidia leadership shock",
+        "AI equity repricing",
+        "SOX/TSMC sentiment",
+        "Taiwan semiconductor",
+        "TAIEX/MXF"
+      ],
+      "direction": "RISK_UP",
+      "strength": "MEDIUM",
+      "confidence": "LOW",
+      "decay": "UNKNOWN",
+      "lag": "hours-days",
+      "regime": "company-specific shock",
+      "evidence_ids": [
+        "E3"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "Iran negotiation uncertainty",
+        "Brent",
+        "inflation expectations",
+        "US yields",
+        "Taiwan import cost"
+      ],
+      "direction": "RISK_UP",
+      "strength": "MEDIUM",
+      "confidence": "MEDIUM",
+      "decay": "UNKNOWN",
+      "lag": "weeks",
+      "regime": "geopolitical inflation",
+      "evidence_ids": [
+        "E4"
       ]
     }
   ],
   "convergence": {
     "nodes": [
       "US yields",
-      "NASDAQ/SOX",
-      "foreign flow"
+      "USD",
+      "AI equity sentiment",
+      "Taiwan foreign flows"
     ],
-    "analysis": "Rate repricing and AI-demand optimism converge with opposite signs at SOX; foreign selling remains a separate Taiwan liquidity channel",
-    "double_counting_control": "US inflation and Fed repricing counted as one underlying driver"
+    "double_counting_warning": "rates and USD share underlying inflation/Fed shock"
   },
-  "regime": "HIGH_VOLATILITY_RECOVERY",
+  "regime": "inflationary geopolitical uncertainty and technology governance repricing",
   "taiwan_exposure": {
-    "TAIEX": "44257.15 11/11 close",
-    "MXF": "11/12 latest unverified",
-    "TSMC": "2395 11/11 close, secondary report",
-    "TSMC_ADR": "unverified",
-    "SOX": "latest precise close unverified",
-    "US_yields": "directional only, exact yield unverified",
-    "USD_TWD": "32.860 11/11 close",
-    "foreign_flow": "-7.66 億元 11/11",
-    "China_Asia": "regional tech recovery; exact benchmarks unverified",
-    "energy_import": "potential easing, supply route uncertainty",
-    "shipping": "Hormuz uncertainty",
-    "Taiwan_Strait": "no verified new shock"
+    "TAIEX": "11/12 close 43091.87; volatile",
+    "MXF": "night session not independently verified",
+    "TSMC_ADR": "not independently verified",
+    "SOX": "not independently verified",
+    "US_yields": "10Y 5.066% Reuters report",
+    "USD_TWD": "latest verified rate unavailable",
+    "foreign_flow": "11/12 reported net foreign sell 6.85bn TWD? source says 6.85 億元, approximately NT$685m",
+    "China_Asia": "chip access restriction concern",
+    "energy": "imported oil inflation sensitivity",
+    "shipping": "Iran shipping uncertainty",
+    "Taiwan_Strait": "no new independently verified event"
   },
   "scores": {
     "global": {
-      "value": 81,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 86,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "US inflation/Fed repricing",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "AI rebound",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "energy de-escalation",
-          "weight": null,
-          "contribution": null
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "taiwan": {
-      "value": 85,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 94,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "foreign selling",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "TAIEX rebound",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "FX stability",
-          "weight": null,
-          "contribution": null
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "energy": {
-      "value": 68,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 78,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "Iran shipping uncertainty",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "oil de-escalation",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
+        },
+        {
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "rates": {
-      "value": 87,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 91,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "hot CPI",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "Fed path",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
+        },
+        {
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "credit": {
-      "value": 79,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 82,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "AI capex funding",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "yield sensitivity",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
+        },
+        {
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "geopolitical": {
-      "value": 82,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 88,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "Iran truce uncertainty",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "shipping",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
+        },
+        {
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     },
     "semiconductor": {
-      "value": 83,
-      "scale": "0-100 experimental severity",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 93,
+      "scale": "0-100 research severity",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "CoreWeave demand",
-          "weight": null,
-          "contribution": null
+          "factor": "rates and USD",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "TSMC investment",
-          "weight": null,
-          "contribution": null
+          "factor": "Taiwan equity volatility and AI governance",
+          "qualitative_weight": "HIGH"
         },
         {
-          "factor": "rate duration",
-          "weight": null,
-          "contribution": null
+          "factor": "energy and geopolitical tension",
+          "qualitative_weight": "MEDIUM"
         }
       ],
       "assumptions": [
-        "No validated numerical weighting; subjective non-reproducible score"
+        "公開報導的市場數據於資料截點已可取得",
+        "各項因素並非獨立，未加總成可重現權重"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH; 主觀研究評分，尚不可重現",
+      "calibration_status": "UNCALIBRATED"
     }
   },
   "news_risk": {
-    "candidate": "ALLOW_OR_BLOCK_REVIEW",
+    "candidate": "BLOCK 候選／待規則引擎裁決",
     "deterministic_rule_applied": false,
     "rule_version": null,
-    "reason": "High volatility and foreign-flow divergence; not a trading order"
+    "reason": "高殖利率與科技股治理衝擊疊加台股波動；不替代60分主策略"
   },
   "downgrade_conditions": [
-    "Foreign selling turns to sustained buying",
-    "US yields stabilize",
-    "SOX strength persists without rising USD",
-    "Hormuz shipping incidents abate"
+    "US10Y sustained retreat from reported 5.066%",
+    "Brent retreats and shipping risks ease",
+    "Taiwan foreign flows stabilize and market volatility contracts",
+    "Nvidia leadership uncertainty resolves"
+  ],
+  "sources": [
+    {
+      "id": "E1",
+      "url": "https://more-news.tw/766975/",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "E2",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "E3",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "E4",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "E5",
+      "url": "https://www.reuters.com/business/feds-waller-plans-support-least-quarter-point-rate-hike-december-2026-11-10/",
+      "published_at": "2026-11-10"
+    }
+  ],
+  "limitations": [
+    "All scores AI_JUDGMENT / UNCALIBRATED; no statistical probability",
+    "Reuters US session report may not represent final official exchange close; contradictory secondary US closing figures excluded",
+    "No verified current USD/TWD, SOX or MXF night session",
+    "Some reported facts use secondary Taiwan news rather than official TWSE release"
   ],
   "analyst_interpretation": {
-    "one_sentence": "截至11/12 08:00，AI需求反彈與美國利率再定價相互抵銷，台灣外資連賣仍是主要脆弱點。",
-    "key_drivers": [
-      "Taiwan price/flow divergence",
-      "US CPI/Fed repricing",
-      "AI spending confidence"
+    "one_sentence": "截至11/13 08:00，利率、美元與AI治理衝擊疊加，台灣市場反彈後仍面臨高波動。",
+    "three_drivers": [
+      {
+        "fact": "台股11/12收43,091.87，跌1,165.28點（2.63%）；外資及陸資賣超約6.85億元",
+        "interpretation": "反彈後再度大幅震盪，台灣風險溢價仍高",
+        "source_id": "E1"
+      },
+      {
+        "fact": "Reuters 11/12報導美國10年期公債殖利率升至5.066%，美元觸19個月高點",
+        "interpretation": "高利率與強美元同時壓縮高估值科技股與亞洲資金風險承受力",
+        "source_id": "E2"
+      },
+      {
+        "fact": "Reuters 11/12報導 Nvidia CEO 辭任、Nvidia 股價跌約4%，AMD與Broadcom上漲",
+        "interpretation": "AI供應鏈出現公司治理衝擊與產業內輪動，不能等同AI需求全面崩潰",
+        "source_id": "E3"
+      }
     ],
-    "previous_day_comparison": "11/11 global 84→81; Taiwan 92→85 (subjective scores not probabilities)",
+    "previous_day": {
+      "global": 81,
+      "taiwan": 85,
+      "comparison": "11/12主觀研究分數；同版本但未校準，變化不代表概率"
+    },
     "contradictory_signals": [
-      "TAIEX +3.62%",
-      "Foreign net selling tenth day"
+      "風險升高：US10Y上升與台股回落",
+      "風險緩和：AMD與Broadcom上漲，非全面科技需求崩潰"
     ],
-    "taiwan_mxf_observation": "TAIEX and TWD confirmed previous session; MXF live, SOX exact close, TSMC ADR and US yields exact quotes unverified"
+    "taiwan_mxf_observation": "TAIEX收盤已核驗二手來源；MXF夜盤、TSMC ADR、SOX與匯率未核驗，不產生交易指令"
   },
   "scenario_forecasts": [
     {
-      "scenario_id": "BASE",
+      "scenario_id": "BASE_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "Tech rebound and rate concerns coexist",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "利率與AI個股衝擊使台股維持高波動",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -472,26 +620,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "BASE",
+      "scenario_id": "BASE_1_week",
       "horizon": "1 week",
-      "narrative": "Tech rebound and rate concerns coexist",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "利率與AI個股衝擊使台股維持高波動",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -499,26 +653,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "BASE",
+      "scenario_id": "BASE_1_month",
       "horizon": "1 month",
-      "narrative": "Tech rebound and rate concerns coexist",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "利率與AI個股衝擊使台股維持高波動",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -526,26 +686,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_EASING",
+      "scenario_id": "BULL_RISK_EASING_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "Foreign selling eases while yields stabilize",
-      "causal_chain": "AI demand→SOX→Taiwan",
+      "narrative": "美元與殖利率回落、科技股分化改善",
+      "causal_chain": [
+        "lower yields",
+        "stronger risk appetite",
+        "Taiwan recovery"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y declines",
+        "foreign selling eases"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -553,26 +719,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_EASING",
+      "scenario_id": "BULL_RISK_EASING_1_week",
       "horizon": "1 week",
-      "narrative": "Foreign selling eases while yields stabilize",
-      "causal_chain": "AI demand→SOX→Taiwan",
+      "narrative": "美元與殖利率回落、科技股分化改善",
+      "causal_chain": [
+        "lower yields",
+        "stronger risk appetite",
+        "Taiwan recovery"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y declines",
+        "foreign selling eases"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -580,26 +752,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_EASING",
+      "scenario_id": "BULL_RISK_EASING_1_month",
       "horizon": "1 month",
-      "narrative": "Foreign selling eases while yields stabilize",
-      "causal_chain": "AI demand→SOX→Taiwan",
+      "narrative": "美元與殖利率回落、科技股分化改善",
+      "causal_chain": [
+        "lower yields",
+        "stronger risk appetite",
+        "Taiwan recovery"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y declines",
+        "foreign selling eases"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -607,26 +785,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_ESCALATION",
+      "scenario_id": "BEAR_RISK_ESCALATION_1_trading_day",
       "horizon": "1 trading day",
-      "narrative": "Yields rise and foreign outflows resume",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "能源與殖利率同步上升，台股外資壓力加劇",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -634,26 +818,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_ESCALATION",
+      "scenario_id": "BEAR_RISK_ESCALATION_1_week",
       "horizon": "1 week",
-      "narrative": "Yields rise and foreign outflows resume",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "能源與殖利率同步上升，台股外資壓力加劇",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -661,26 +851,32 @@
       "calibration_status": "UNCALIBRATED"
     },
     {
-      "scenario_id": "RISK_ESCALATION",
+      "scenario_id": "BEAR_RISK_ESCALATION_1_month",
       "horizon": "1 month",
-      "narrative": "Yields rise and foreign outflows resume",
-      "causal_chain": "inflation→rates→SOX→Taiwan",
+      "narrative": "能源與殖利率同步上升，台股外資壓力加劇",
+      "causal_chain": [
+        "rates/AI/geopolitics",
+        "risk appetite",
+        "Taiwan equities"
+      ],
       "observable_triggers": [
-        "US Treasury yields",
-        "SOX",
-        "TWSE foreign net flow"
+        "US10Y remains elevated",
+        "Taiwan volume and flows diverge"
       ],
       "invalidation_conditions": [
-        "Opposite sustained market and flow confirmation"
+        "opposite trend in US yields and Taiwan foreign flows"
       ],
       "affected_assets": [
         "TAIEX",
         "MXF",
-        "TSMC"
+        "TSMC",
+        "SOX",
+        "USD/TWD"
       ],
       "confidence": "LOW",
       "source_ids": [
         "E1",
+        "E2",
         "E3",
         "E4"
       ],
@@ -690,141 +886,110 @@
   ],
   "forecast_cards": [
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-12_0800-F1",
-      "issued_at": "2026-11-12T08:00:00+08:00",
-      "data_cutoff_at": "2026-11-12T08:00:00+08:00",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-13_0800_F1",
+      "issued_at": "2026-11-13T08:00:51+08:00",
+      "data_cutoff_at": "2026-11-13T08:00:51+08:00",
       "target_market": "TAIEX",
-      "target_metric": "daily close",
-      "horizon_end": "2026-11-12T13:30:00+08:00",
-      "direction_or_condition": "Watch whether 11/12 close remains above 11/11 close",
-      "baseline_value": 44257.15,
-      "baseline_timestamp": "2026-11-11T13:30:00+08:00",
+      "target_metric": "TAIEX next close",
+      "horizon_end": "2026-11-13T13:30:00+08:00",
+      "direction_or_condition": "Next official TAIEX close below 2026-11-12 close",
+      "baseline_value": "43091.87",
+      "baseline_timestamp": "2026-11-12",
       "baseline_source_id": "E1",
-      "baseline_status": "VERIFIED_SECONDARY",
-      "thesis": "Cross-asset risk transmission remains conditional",
+      "baseline_verification": "SECONDARY_REPORTED",
+      "thesis": "risk pressure remains elevated",
       "causal_drivers": [
         "rates",
-        "AI demand",
-        "foreign flows"
+        "geopolitics",
+        "AI repricing"
       ],
       "confirmation_signals": [
-        "official closing prices"
+        "independent official settlement confirms condition"
       ],
       "invalidation_conditions": [
-        "opposite price move"
+        "opposite verified close"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "observation_time": "2026-11-12T13:30:00+08:00",
-        "source": "TWSE for TAIEX; official exchange settlement for SOX/Brent",
-        "rule": "Compare official close/settlement with official previous session; HIT if condition true, MISS if false, INDETERMINATE if either value unavailable"
+        "observation_time": "2026-11-13T13:30:00+08:00",
+        "source": "TWSE official close for TAIEX; Nasdaq official SOX closing index; ICE Brent settlement for Brent",
+        "hit": "condition true using verified closing/settlement data",
+        "miss": "condition false using verified data",
+        "indeterminate": "missing baseline, missing official data, or market closure"
       }
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-12_0800-F2",
-      "issued_at": "2026-11-12T08:00:00+08:00",
-      "data_cutoff_at": "2026-11-12T08:00:00+08:00",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-13_0800_F2",
+      "issued_at": "2026-11-13T08:00:51+08:00",
+      "data_cutoff_at": "2026-11-13T08:00:51+08:00",
       "target_market": "SOX",
-      "target_metric": "daily close",
-      "horizon_end": "2026-11-12T17:00:00-05:00",
-      "direction_or_condition": "Check whether 11/12 SOX close exceeds 11/11 close",
+      "target_metric": "SOX next US close",
+      "horizon_end": "2026-11-14T05:00:00+08:00",
+      "direction_or_condition": "Next SOX close lower than preceding SOX close",
       "baseline_value": null,
       "baseline_timestamp": null,
       "baseline_source_id": "E3",
-      "baseline_status": "NOT_VERIFIED",
-      "thesis": "Cross-asset risk transmission remains conditional",
+      "baseline_verification": "NOT_VERIFIED",
+      "thesis": "risk pressure remains elevated",
       "causal_drivers": [
         "rates",
-        "AI demand",
-        "foreign flows"
+        "geopolitics",
+        "AI repricing"
       ],
       "confirmation_signals": [
-        "official closing prices"
+        "independent official settlement confirms condition"
       ],
       "invalidation_conditions": [
-        "opposite price move"
+        "opposite verified close"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "observation_time": "2026-11-12T17:00:00-05:00",
-        "source": "TWSE for TAIEX; official exchange settlement for SOX/Brent",
-        "rule": "Compare official close/settlement with official previous session; HIT if condition true, MISS if false, INDETERMINATE if either value unavailable"
+        "observation_time": "2026-11-14T05:00:00+08:00",
+        "source": "TWSE official close for TAIEX; Nasdaq official SOX closing index; ICE Brent settlement for Brent",
+        "hit": "condition true using verified closing/settlement data",
+        "miss": "condition false using verified data",
+        "indeterminate": "missing baseline, missing official data, or market closure"
       }
     },
     {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-12_0800-F3",
-      "issued_at": "2026-11-12T08:00:00+08:00",
-      "data_cutoff_at": "2026-11-12T08:00:00+08:00",
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-13_0800_F3",
+      "issued_at": "2026-11-13T08:00:51+08:00",
+      "data_cutoff_at": "2026-11-13T08:00:51+08:00",
       "target_market": "Brent",
-      "target_metric": "settlement",
-      "horizon_end": "2026-11-12T23:59:00-05:00",
-      "direction_or_condition": "Check whether Brent 11/12 settlement exceeds 11/11 settlement",
-      "baseline_value": null,
-      "baseline_timestamp": null,
-      "baseline_source_id": "E5",
-      "baseline_status": "NOT_VERIFIED",
-      "thesis": "Cross-asset risk transmission remains conditional",
+      "target_metric": "Brent next settlement",
+      "horizon_end": "2026-11-14T08:00:00+08:00",
+      "direction_or_condition": "Next Brent settlement above baseline",
+      "baseline_value": 93.82,
+      "baseline_timestamp": "2026-11-12",
+      "baseline_source_id": "E4",
+      "baseline_verification": "SECONDARY_REPORTED",
+      "thesis": "risk pressure remains elevated",
       "causal_drivers": [
         "rates",
-        "AI demand",
-        "foreign flows"
+        "geopolitics",
+        "AI repricing"
       ],
       "confirmation_signals": [
-        "official closing prices"
+        "independent official settlement confirms condition"
       ],
       "invalidation_conditions": [
-        "opposite price move"
+        "opposite verified close"
       ],
       "confidence": "LOW",
       "assessment_method": "AI_JUDGMENT",
       "calibration_status": "UNCALIBRATED",
       "resolution_rule": {
-        "observation_time": "2026-11-12T23:59:00-05:00",
-        "source": "TWSE for TAIEX; official exchange settlement for SOX/Brent",
-        "rule": "Compare official close/settlement with official previous session; HIT if condition true, MISS if false, INDETERMINATE if either value unavailable"
+        "observation_time": "2026-11-14T08:00:00+08:00",
+        "source": "TWSE official close for TAIEX; Nasdaq official SOX closing index; ICE Brent settlement for Brent",
+        "hit": "condition true using verified closing/settlement data",
+        "miss": "condition false using verified data",
+        "indeterminate": "missing baseline, missing official data, or market closure"
       }
     }
   ],
-  "sources": [
-    {
-      "id": "E1",
-      "url": "https://money.udn.com/money/story/5607/9872013",
-      "published_at": "2026-11-11T15:19:06+08:00"
-    },
-    {
-      "id": "E2",
-      "url": "https://money.udn.com/money/story/5616/9872162",
-      "published_at": "2026-11-11T16:12:35+08:00"
-    },
-    {
-      "id": "E3",
-      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
-      "published_at": "2026-11-11"
-    },
-    {
-      "id": "E4",
-      "url": "https://www.reuters.com/business/view-hot-october-inflation-report-rattles-markets-2026-11-10/",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "E5",
-      "url": "https://www.reuters.com/commentary/reuters-open-interest/bond-storm-2026-may-be-passing-fed-gusts-linger-2026-11-11/",
-      "published_at": "2026-11-11"
-    },
-    {
-      "id": "E6",
-      "url": "https://www.taiwannews.com.tw/zh/news/6474750",
-      "published_at": "2026-11-11T17:21:00+08:00"
-    }
-  ],
-  "limitations": [
-    "Scores AI_JUDGMENT / UNCALIBRATED; non-reproducible",
-    "No live 11/12 Taiwan trading quotes at cutoff",
-    "Some cross-asset closes and yields not independently verified",
-    "Not investment advice"
-  ]
+  "forecast_history_status": "UNCALIBRATED; historical evaluation pending"
 }

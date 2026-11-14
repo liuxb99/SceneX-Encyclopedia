@@ -1,0 +1,1014 @@
+{
+  "schema_version": "0.6.2",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-14_0801",
+  "generated_at": "2026-11-14T08:01:15+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-11-14T08:01:15+08:00",
+  "as_of_market_session": "Taiwan Friday 2026-11-13 close; US Friday 2026-11-13 close; Saturday no new TAIEX session",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261114",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "11/13 Nasdaq -1.40%、S&P 500 -0.84%、費半約 -4%；美元指數觸103.35、19個月高點",
+      "interpretation": "科技股賣壓與強美元可能共同壓抑台灣科技估值與資金流",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
+      "source_published_at": "2026-11-13",
+      "observed_at": "2026-11-14T08:01:15+08:00",
+      "confidence": "MEDIUM",
+      "source_id": "S1"
+    },
+    {
+      "event_id": "E2",
+      "fact": "11/13 台股收43,675.12點，漲583.25點；外資買超288.37億元；新台幣收32.838元、升值5.1分",
+      "interpretation": "台股現貨與匯市短線改善，但美國盤後半導體跌勢可能造成下一交易日再定價",
+      "source_url": "https://tw.news.yahoo.com/%E5%A4%96%E8%B3%87%E7%B5%82%E7%B5%90%E9%80%A311%E8%B3%A3-%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%8D%875-1%E5%88%86%E6%94%B632-838%E5%85%83-084548763.html",
+      "source_published_at": "2026-11-13",
+      "observed_at": "2026-11-14T08:01:15+08:00",
+      "confidence": "MEDIUM",
+      "source_id": "S2"
+    },
+    {
+      "event_id": "E3",
+      "fact": "Reuters報導美國10月生產者物價年增6.5%，市場關注Fed升息路徑",
+      "interpretation": "通膨與短端殖利率壓力可能透過折現率壓抑高估值資產",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
+      "source_published_at": "2026-11-13",
+      "observed_at": "2026-11-14T08:01:15+08:00",
+      "confidence": "MEDIUM",
+      "source_id": "S1"
+    },
+    {
+      "event_id": "E4",
+      "fact": "Reuters報導油價週線走低，市場對伊朗直接衝突的擔憂減輕",
+      "interpretation": "能源成本緩和可部分抵銷通膨壓力，但航運與地緣風險未歸零",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
+      "source_published_at": "2026-11-13",
+      "observed_at": "2026-11-14T08:01:15+08:00",
+      "confidence": "MEDIUM",
+      "source_id": "S1"
+    },
+    {
+      "event_id": "E5",
+      "fact": "Goldman Sachs預期2027年企業獲利增速放緩，AI資料中心資本支出成長可能趨緩",
+      "interpretation": "AI需求長線仍有支持，但資本支出增速放緩可能影響台灣供應鏈估值",
+      "source_url": "https://www.reuters.com/business/goldman-sachs-sees-sp-500-rising-8700-next-year-despite-slower-earnings-growth-2026-11-13/",
+      "source_published_at": "2026-11-13",
+      "observed_at": "2026-11-14T08:01:15+08:00",
+      "confidence": "MEDIUM",
+      "source_id": "S3"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "SOX",
+      "direction": "DOWN",
+      "magnitude": "-4% approx",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "USD",
+      "direction": "UP",
+      "magnitude": "DXY 103.35 intraday",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "US PPI inflation",
+      "target": "Fed repricing",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "Fed repricing",
+      "target": "US yields and USD",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "US yields and USD",
+      "target": "NASDAQ/SOX valuation",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "NASDAQ/SOX valuation",
+      "target": "Taiwan semiconductor",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "Taiwan semiconductor",
+      "target": "TAIEX/MXF",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "US chip sector selloff",
+      "target": "AI capex expectation",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1 month",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "AI capex expectation",
+      "target": "TSMC/ADR and supply chain",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1 month",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "TSMC/ADR and supply chain",
+      "target": "foreign flow",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1 month",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "foreign flow",
+      "target": "TAIEX/MXF",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1 month",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "Oil easing",
+      "target": "imported inflation relief",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "weeks",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "imported inflation relief",
+      "target": "rates pressure relief",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "weeks",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    },
+    {
+      "source": "rates pressure relief",
+      "target": "Taiwan input costs",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "weeks",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "UNVALIDATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "path_id": "P1",
+      "nodes": [
+        "US PPI inflation",
+        "Fed repricing",
+        "US yields and USD",
+        "NASDAQ/SOX valuation",
+        "Taiwan semiconductor",
+        "TAIEX/MXF"
+      ],
+      "direction": "risk_up",
+      "confidence": "MEDIUM",
+      "lag": "1-5 trading days",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E3"
+      ]
+    },
+    {
+      "path_id": "P2",
+      "nodes": [
+        "US chip sector selloff",
+        "AI capex expectation",
+        "TSMC/ADR and supply chain",
+        "foreign flow",
+        "TAIEX/MXF"
+      ],
+      "direction": "risk_up",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1 month",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E1",
+        "E5"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "Oil easing",
+        "imported inflation relief",
+        "rates pressure relief",
+        "Taiwan input costs"
+      ],
+      "direction": "risk_down",
+      "confidence": "LOW",
+      "lag": "weeks",
+      "decay": "uncalibrated",
+      "evidence_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "convergence": {
+    "nodes": [
+      "US yields",
+      "USD",
+      "SOX",
+      "Taiwan foreign flow"
+    ],
+    "description": "Inflation repricing and AI sector concerns converge on SOX/valuation; avoid double-counting shared tech shock",
+    "evidence_ids": [
+      "E1",
+      "E3",
+      "E5"
+    ]
+  },
+  "regime": "High volatility; rate-sensitive tech repricing",
+  "taiwan_exposure": {
+    "taiex_close": 43675.12,
+    "foreign_net_buy_twd_100m": 288.37,
+    "usd_twd_close": 32.838,
+    "tsmc_adr": "NOT_VERIFIED",
+    "mxf_night": "NOT_VERIFIED",
+    "us_yields": "Direction supported, exact closing level not independently verified",
+    "taiwan_strait": "No new verified escalation",
+    "transmission": "SOX selloff and dollar/rates pressure vs Taiwan foreign inflow and TWD appreciation"
+  },
+  "scores": {
+    "global": {
+      "value": 87,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "taiwan": {
+      "value": 92,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "energy": {
+      "value": 67,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "rates": {
+      "value": 92,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "credit": {
+      "value": 82,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "geopolitical": {
+      "value": 82,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    },
+    "semiconductor": {
+      "value": 96,
+      "scale": "0-100 experimental research score",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "US technology selloff",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "inflation/rates and USD",
+          "direction": "risk_up",
+          "qualitative": "HIGH"
+        },
+        {
+          "factor": "Taiwan foreign inflow and FX",
+          "direction": "risk_down",
+          "qualitative": "MEDIUM"
+        },
+        {
+          "factor": "oil easing",
+          "direction": "risk_down",
+          "qualitative": "LOW"
+        }
+      ],
+      "assumptions": [
+        "Qualitative factors are not additive and no numerical weights are calibrated",
+        "Friday US market close follows Friday Taiwan close"
+      ],
+      "uncertainty": "HIGH; subjective research score not mathematically reproducible"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "SOX decline and rate-sensitive tech volatility; deterministic rule engine not run; no trade instruction"
+  },
+  "downgrade_conditions": [
+    "SOX stabilizes across sessions",
+    "USD and US yields retreat",
+    "Taiwan foreign inflow persists",
+    "No fresh shipping/energy disruption"
+  ],
+  "analyst_interpretation": {
+    "one_sentence": "截至11/14 08:01台北時間，台股周五反彈與美國周五半導體重挫形成跨市場背離。",
+    "key_drivers": [
+      "SOX -4%",
+      "USD and US PPI",
+      "Taiwan foreign buying and TWD appreciation"
+    ],
+    "previous_day_comparison": "11/13 subjective scores global 86 Taiwan 94; today global 87 Taiwan 92; uncalibrated values not probabilities",
+    "contradictory_signals": [
+      "US semiconductor selloff",
+      "Taiwan foreign net buying"
+    ],
+    "taiwan_mxf_observation": "TAIEX close and foreign flow verified from secondary news; MXF night and TSMC ADR not verified; no trading instruction"
+  },
+  "scenario_forecasts": [
+    {
+      "scenario_id": "BASE_1_trading_day",
+      "horizon": "1 trading day",
+      "narrative": "高波動盤整，台股資金回流與美國科技修正相互拉鋸",
+      "causal_chain": [
+        "US chip sector selloff",
+        "AI capex expectation",
+        "TSMC/ADR and supply chain",
+        "foreign flow",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "foreign flow vs SOX divergence"
+      ],
+      "invalidation_conditions": [
+        "sustained one-sided foreign flow"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "BASE_1_week",
+      "horizon": "1 week",
+      "narrative": "高波動盤整，台股資金回流與美國科技修正相互拉鋸",
+      "causal_chain": [
+        "US chip sector selloff",
+        "AI capex expectation",
+        "TSMC/ADR and supply chain",
+        "foreign flow",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "foreign flow vs SOX divergence"
+      ],
+      "invalidation_conditions": [
+        "sustained one-sided foreign flow"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "BASE_1_month",
+      "horizon": "1 month",
+      "narrative": "高波動盤整，台股資金回流與美國科技修正相互拉鋸",
+      "causal_chain": [
+        "US chip sector selloff",
+        "AI capex expectation",
+        "TSMC/ADR and supply chain",
+        "foreign flow",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "foreign flow vs SOX divergence"
+      ],
+      "invalidation_conditions": [
+        "sustained one-sided foreign flow"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_EASING_1_trading_day",
+      "horizon": "1 trading day",
+      "narrative": "若費半止跌且美元回落，台灣外資回流可延續",
+      "causal_chain": [
+        "Oil easing",
+        "imported inflation relief",
+        "rates pressure relief",
+        "Taiwan input costs"
+      ],
+      "observable_triggers": [
+        "SOX rebound and USD easing"
+      ],
+      "invalidation_conditions": [
+        "SOX new lows"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_EASING_1_week",
+      "horizon": "1 week",
+      "narrative": "若費半止跌且美元回落，台灣外資回流可延續",
+      "causal_chain": [
+        "Oil easing",
+        "imported inflation relief",
+        "rates pressure relief",
+        "Taiwan input costs"
+      ],
+      "observable_triggers": [
+        "SOX rebound and USD easing"
+      ],
+      "invalidation_conditions": [
+        "SOX new lows"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_EASING_1_month",
+      "horizon": "1 month",
+      "narrative": "若費半止跌且美元回落，台灣外資回流可延續",
+      "causal_chain": [
+        "Oil easing",
+        "imported inflation relief",
+        "rates pressure relief",
+        "Taiwan input costs"
+      ],
+      "observable_triggers": [
+        "SOX rebound and USD easing"
+      ],
+      "invalidation_conditions": [
+        "SOX new lows"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1_trading_day",
+      "horizon": "1 trading day",
+      "narrative": "若美債殖利率與美元續升且費半再跌，台股估值與外資承壓",
+      "causal_chain": [
+        "US PPI inflation",
+        "Fed repricing",
+        "US yields and USD",
+        "NASDAQ/SOX valuation",
+        "Taiwan semiconductor",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "SOX further decline and USD/yields rise"
+      ],
+      "invalidation_conditions": [
+        "yields/USD retreat and SOX rebound"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1_week",
+      "horizon": "1 week",
+      "narrative": "若美債殖利率與美元續升且費半再跌，台股估值與外資承壓",
+      "causal_chain": [
+        "US PPI inflation",
+        "Fed repricing",
+        "US yields and USD",
+        "NASDAQ/SOX valuation",
+        "Taiwan semiconductor",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "SOX further decline and USD/yields rise"
+      ],
+      "invalidation_conditions": [
+        "yields/USD retreat and SOX rebound"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario_id": "RISK_ESCALATION_1_month",
+      "horizon": "1 month",
+      "narrative": "若美債殖利率與美元續升且費半再跌，台股估值與外資承壓",
+      "causal_chain": [
+        "US PPI inflation",
+        "Fed repricing",
+        "US yields and USD",
+        "NASDAQ/SOX valuation",
+        "Taiwan semiconductor",
+        "TAIEX/MXF"
+      ],
+      "observable_triggers": [
+        "SOX further decline and USD/yields rise"
+      ],
+      "invalidation_conditions": [
+        "yields/USD retreat and SOX rebound"
+      ],
+      "affected_assets": [
+        "TAIEX",
+        "MXF",
+        "TSMC",
+        "SOX"
+      ],
+      "confidence": "LOW",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED"
+    }
+  ],
+  "forecast_cards": [
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-14_0801_F1",
+      "issued_at": "2026-11-14T08:01:15+08:00",
+      "data_cutoff_at": "2026-11-14T08:01:15+08:00",
+      "target_market": "TAIEX",
+      "target_metric": "TAIEX close",
+      "horizon_end": "2026-11-16T13:30:00+08:00",
+      "direction_or_condition": "DOWN_OR_VOLATILE",
+      "baseline_value": 43675.12,
+      "baseline_timestamp": "2026-11-13T13:30:00+08:00",
+      "baseline_source_id": "S2",
+      "baseline_status": "VERIFIED_FROM_NEWS",
+      "thesis": "US chip selloff may pressure next Taiwan session despite Friday foreign inflow",
+      "causal_drivers": [
+        "E1",
+        "E2"
+      ],
+      "confirmation_signals": [
+        "Independent official close/settlement"
+      ],
+      "invalidation_conditions": [
+        "Contrary official market direction"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_time": "2026-11-16T13:30:00+08:00",
+        "source": "Official exchange or authoritative settlement source",
+        "method": "Compare official close to frozen baseline; DOWN_OR_VOLATILE requires close below baseline or absolute daily return >=2%; otherwise MISS",
+        "possible_results": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-14_0801_F2",
+      "issued_at": "2026-11-14T08:01:15+08:00",
+      "data_cutoff_at": "2026-11-14T08:01:15+08:00",
+      "target_market": "SOX",
+      "target_metric": "SOX close",
+      "horizon_end": "2026-11-20T16:00:00-05:00",
+      "direction_or_condition": "BELOW_BASELINE_OR_INDETERMINATE",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "Semiconductor volatility may persist under rates repricing",
+      "causal_drivers": [
+        "E1",
+        "E2"
+      ],
+      "confirmation_signals": [
+        "Independent official close/settlement"
+      ],
+      "invalidation_conditions": [
+        "Contrary official market direction"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_time": "2026-11-20T16:00:00-05:00",
+        "source": "Official exchange or authoritative settlement source",
+        "method": "INDETERMINATE unless original baseline can be independently verified as of issuance; do not invent baseline",
+        "possible_results": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      }
+    },
+    {
+      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-14_0801_F3",
+      "issued_at": "2026-11-14T08:01:15+08:00",
+      "data_cutoff_at": "2026-11-14T08:01:15+08:00",
+      "target_market": "Brent",
+      "target_metric": "Brent settlement",
+      "horizon_end": "2026-11-20T17:00:00-05:00",
+      "direction_or_condition": "RANGE_OR_LOWER",
+      "baseline_value": null,
+      "baseline_timestamp": null,
+      "baseline_source_id": null,
+      "baseline_status": "NOT_VERIFIED",
+      "thesis": "Reduced geopolitical oil premium may cap energy prices",
+      "causal_drivers": [
+        "E4",
+        "E2"
+      ],
+      "confirmation_signals": [
+        "Independent official close/settlement"
+      ],
+      "invalidation_conditions": [
+        "Contrary official market direction"
+      ],
+      "confidence": "LOW",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "resolution_rule": {
+        "observation_time": "2026-11-20T17:00:00-05:00",
+        "source": "Official exchange or authoritative settlement source",
+        "method": "INDETERMINATE unless original baseline can be independently verified as of issuance; do not invent baseline",
+        "possible_results": [
+          "HIT",
+          "MISS",
+          "INDETERMINATE"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
+      "published_at": "2026-11-13",
+      "title": "Reuters global markets November 13"
+    },
+    {
+      "id": "S2",
+      "url": "https://tw.news.yahoo.com/%E5%A4%96%E8%B3%87%E7%B5%82%E7%B5%90%E9%80%A311%E8%B3%A3-%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%8D%875-1%E5%88%86%E6%94%B632-838%E5%85%83-084548763.html",
+      "published_at": "2026-11-13",
+      "title": "NOWNEWS 台股外資及匯市"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.reuters.com/business/goldman-sachs-sees-sp-500-rising-8700-next-year-despite-slower-earnings-growth-2026-11-13/",
+      "published_at": "2026-11-13",
+      "title": "Reuters Goldman Sachs outlook"
+    }
+  ],
+  "limitations": [
+    "Research only, no deterministic risk engine run",
+    "Scores AI_JUDGMENT/UNCALIBRATED; numerical factor attribution not reproducible",
+    "Market news publication times not individually verified beyond source date",
+    "No Saturday Taiwan cash session",
+    "10/08 and 10/09 original JSON missing; no retrospective reconstruction"
+  ]
+}

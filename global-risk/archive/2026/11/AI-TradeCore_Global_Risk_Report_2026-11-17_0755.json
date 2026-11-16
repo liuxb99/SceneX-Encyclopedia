@@ -1,0 +1,594 @@
+{
+  "schema_version": "0.6.2",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-17_0755",
+  "generated_at": "2026-11-17T07:55:49+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-11-17T07:55:49+08:00",
+  "as_of_market_session": "US 2026-11-16 close; Taiwan 2026-11-16 close approximate from Reuters; 2026-11-17 Taiwan cash market not open",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261117",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "Reuters報導11/16美股Nasdaq跌2.49%、S&P 500跌1.92%、費半跌5.3%。",
+      "interpretation": "AI與半導體股的賣壓可能傳導至台灣供應鏈及期貨夜盤。",
+      "source_id": "S1",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E2",
+      "fact": "Reuters報導11/16台灣股市約跌6%、南韓股市約跌3.6%。",
+      "interpretation": "亞洲半導體市場出現共同風險偏好下降；不得把同一AI衝擊重複計分。",
+      "source_id": "S1",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E3",
+      "fact": "Reuters報導11/16 Brent約92.20美元、WTI約85.38美元，油價回落。",
+      "interpretation": "能源成本壓力可能緩和，但不能據此推斷地緣風險已解除。",
+      "source_id": "S1",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E4",
+      "fact": "AP報導11/16美國10年期公債殖利率約5.13%，市場關注聯準會利率走向。",
+      "interpretation": "高利率環境可能加重高估值科技股折現壓力。",
+      "source_id": "S3",
+      "source_url": "https://apnews.com/article/35786b8f539ec95f16ae0500f71cfcc7",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E5",
+      "fact": "CNA報導11/16台股開盤43,512.42點，下跌162.7點；這是開盤數據，非收盤。",
+      "interpretation": "應避免以開盤點位代替收盤，台灣收盤變動採Reuters約值。",
+      "source_id": "S4",
+      "source_url": "https://focustaiwan.tw/business/202611160001",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E6",
+      "fact": "Reuters報導Nvidia在11/16下跌約4.1%，市場關注其財報及AI晶片政策。",
+      "interpretation": "Nvidia展望可能成為全球AI資本支出預期的重新定價催化劑。",
+      "source_id": "S2",
+      "source_url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+      "source_published_at": "2026-11-16",
+      "observed_at": "2026-11-17T07:55:49+08:00",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "SOX",
+      "direction": "down",
+      "magnitude": "-5.3%",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "Taiwan equity",
+      "direction": "down",
+      "magnitude": "approximately -6%",
+      "evidence_event_ids": [
+        "E2"
+      ]
+    },
+    {
+      "node": "Brent",
+      "direction": "down",
+      "magnitude": "approximately -3.8%",
+      "evidence_event_ids": [
+        "E3"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "AI晶片政策與Nvidia不確定性",
+      "target": "SOX/Nasdaq賣壓",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "SOX/Nasdaq賣壓",
+      "target": "亞洲半導體風險偏好",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "亞洲半導體風險偏好",
+      "target": "TSMC/供應鏈",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "TSMC/供應鏈",
+      "target": "TAIEX/MXF",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "TAIEX/MXF",
+      "target": "News Risk候選",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "高美債殖利率",
+      "target": "美元與資金成本",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "數日到數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E4",
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "美元與資金成本",
+      "target": "成長股估值",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "數日到數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E4",
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "成長股估值",
+      "target": "外資配置",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "數日到數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E4",
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "外資配置",
+      "target": "台灣科技股",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "數日到數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E4",
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "油價回落",
+      "target": "能源輸入成本",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "能源輸入成本",
+      "target": "通膨預期",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "通膨預期",
+      "target": "殖利率壓力可能緩和",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS"
+    },
+    {
+      "source": "殖利率壓力可能緩和",
+      "target": "台灣企業成本",
+      "direction": "risk_down",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "數週",
+      "decay": "UNESTIMATED",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "path_id": "P1",
+      "nodes": [
+        "AI晶片政策與Nvidia不確定性",
+        "SOX/Nasdaq賣壓",
+        "亞洲半導體風險偏好",
+        "TSMC/供應鏈",
+        "TAIEX/MXF",
+        "News Risk候選"
+      ],
+      "direction": "risk_up",
+      "confidence": "MEDIUM",
+      "lag": "1-5交易日",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E6"
+      ]
+    },
+    {
+      "path_id": "P2",
+      "nodes": [
+        "高美債殖利率",
+        "美元與資金成本",
+        "成長股估值",
+        "外資配置",
+        "台灣科技股"
+      ],
+      "direction": "risk_up",
+      "confidence": "MEDIUM",
+      "lag": "數日到數週",
+      "evidence_ids": [
+        "E4",
+        "E1"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "油價回落",
+        "能源輸入成本",
+        "通膨預期",
+        "殖利率壓力可能緩和",
+        "台灣企業成本"
+      ],
+      "direction": "risk_down",
+      "confidence": "LOW",
+      "lag": "數週",
+      "evidence_ids": [
+        "E3"
+      ]
+    }
+  ],
+  "convergence": {
+    "nodes": [
+      "AI capex expectations",
+      "semiconductor valuation",
+      "risk appetite",
+      "foreign flow"
+    ],
+    "note": "Nvidia, SOX and Taiwan selloff partly share the same underlying shock; avoid double counting."
+  },
+  "regime": "AI/semiconductor risk-off; high yields; easing oil",
+  "taiwan_exposure": {
+    "TSMC_ADR": "not independently verified",
+    "SOX": "-5.3% US Nov 16",
+    "TAIEX": "approximately -6% Nov 16 Reuters; exact TWSE close not independently verified",
+    "MXF": "not independently verified",
+    "USD_TWD": "not independently verified",
+    "foreign_flow": "not independently verified",
+    "energy": "Brent lower; import cost potential relief",
+    "shipping": "Middle East risk remains, no independent daily incident verification",
+    "China_Asia": "KOSPI approximately -3.6%",
+    "Taiwan_Strait": "no independently verified new incident"
+  },
+  "scores": {
+    "global": {
+      "value": 91,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "美股廣泛下跌",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "半導體同步賣壓",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "高利率",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "taiwan": {
+      "value": 97,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "台股約跌6%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "費半跌5.3%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台灣半導體集中度",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "energy": {
+      "value": 68,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "油價回落",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "航運供應尾部風險",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "rates": {
+      "value": 88,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "10年期殖利率約5.13%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Fed政策不確定性",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "credit": {
+      "value": 75,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "高利率融資成本",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "缺乏當日信用利差驗證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "geopolitical": {
+      "value": 82,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "晶片政策限制",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "中東供應未完全解除",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    },
+    "semiconductor": {
+      "value": 99,
+      "scale": "0-100 research severity; not probability",
+      "formula_version": "none-subjective-v0.6.2",
+      "assessment_method": "AI_JUDGMENT",
+      "calibration_status": "UNCALIBRATED",
+      "factor_contributions": [
+        {
+          "factor": "SOX -5.3%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "Nvidia -4.1%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "亞洲晶片股同步下跌",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "因子不具可重現統計權重",
+        "同一AI事件不可重複計數"
+      ],
+      "uncertainty": "HIGH; 未以歷史樣本校準"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "AI/semiconductor correlated selloff; subject to deterministic rule engine; not an order"
+  },
+  "downgrade_conditions": [
+    "SOX與台灣半導體股止跌且成交結構改善",
+    "Nvidia財報與展望未顯示AI需求惡化",
+    "美元與美債殖利率回落且外資賣壓收斂",
+    "油價回落持續且航運供應未再中斷"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+      "date": "2026-11-16",
+      "title": "Reuters global markets Nov 16"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+      "date": "2026-11-16",
+      "title": "Reuters Wall Street Nov 16"
+    },
+    {
+      "id": "S3",
+      "url": "https://apnews.com/article/35786b8f539ec95f16ae0500f71cfcc7",
+      "date": "2026-11-16",
+      "title": "AP Wall Street Nov 16"
+    },
+    {
+      "id": "S4",
+      "url": "https://focustaiwan.tw/business/202611160001",
+      "date": "2026-11-16",
+      "title": "CNA Taiwan opening Nov 16"
+    },
+    {
+      "id": "S5",
+      "url": "https://www.businessinsider.com/nvidia-stock-jensen-huang-earnings-kospi-tsmc-asia-ai-trade-2026-11",
+      "date": "2026-11-16",
+      "title": "Business Insider Asia chips Nov 16"
+    }
+  ],
+  "limitations": [
+    "分數為AI_JUDGMENT / UNCALIBRATED，非機率",
+    "未核對台灣11/16官方精確收盤、外資、USD/TWD與MXF夜盤",
+    "無當日信用利差與TSMC ADR獨立數據",
+    "本報告不包含任何事後outcome"
+  ]
+}

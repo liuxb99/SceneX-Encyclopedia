@@ -1,265 +1,306 @@
 {
   "schema_version": "0.6.2",
-  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-20_0759",
-  "generated_at": "2026-11-20T07:59:27+08:00",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-21_0755",
+  "generated_at": "2026-11-21T07:55:29+08:00",
   "timezone": "Asia/Taipei",
-  "data_cutoff_at": "2026-11-20T07:59:27+08:00",
-  "as_of_market_session": "Taiwan and US 2026-11-19 close; Taiwan 2026-11-20 not yet open",
-  "model_version": "global-risk-butterfly-v0.6.2-research-20261120",
+  "data_cutoff_at": "2026-11-21T07:55:29+08:00",
+  "as_of_market_session": "Taiwan 2026-11-20 cash close; US 2026-11-20 close; weekend 2026-11-21 no Taiwan cash session",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261121",
   "calibration_status": "UNCALIBRATED",
   "events": [
     {
       "event_id": "E1",
-      "fact": "台股11/19收38426.89，跌1768.02點，外資賣超243.12億元，三大法人合計賣超461.03億元",
-      "interpretation": "跌勢與流動性壓力匯流",
-      "source_url": "https://www.cna.com.tw/news/afe/202611190200.aspx",
-      "source_published_at": "2026-11-19T15:07:00+08:00",
-      "observed_at": "2026-11-20T07:59:27+08:00",
-      "confidence": "MEDIUM"
+      "fact": "11/20 Nasdaq -5.28%, S&P 500 -3.70%, US semiconductor stocks -10.7%; US10Y yield 4.948%, down 10.43bp.",
+      "interpretation": "AI估值修正與避險買債並行；利率下降未能即時抵銷科技股賣壓。",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "HIGH"
     },
     {
       "event_id": "E2",
-      "fact": "11/19新台幣收32.942，盤中曾跌破33；報導指Fed會議紀錄偏鷹",
-      "interpretation": "美元利率壓力可能傳至台股估值",
-      "source_url": "https://money.udn.com/money/story/5616/9889552",
-      "source_published_at": "2026-11-19T17:45:38+08:00",
-      "observed_at": "2026-11-20T07:59:27+08:00",
-      "confidence": "MEDIUM"
+      "fact": "11/20台股收36033.29，跌2393.60點；三大法人賣超522.46億元，外資及陸資賣超94.13億元。",
+      "interpretation": "台灣現貨賣壓與美國隔夜半導體跌勢匯流，下一交易日仍可能出現波動與流動性壓力。",
+      "source_url": "https://money.udn.com/money/story/5612/9891471",
+      "source_published_at": "2026-11-20T15:22:05+08:00",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "HIGH"
     },
     {
       "event_id": "E3",
-      "fact": "Anthropic 11/19 IPO首日收97.17美元，高於83美元發行價；Nasdaq跌約2.3%",
-      "interpretation": "AI個股熱度與科技股整體下跌形成矛盾訊號",
-      "source_url": "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
-      "source_published_at": "2026-11-19",
-      "observed_at": "2026-11-20T07:59:27+08:00",
+      "fact": "Reuters指出AI相關科技股資金流出並輪動至美債及價值股，市場關注通膨與Fed升息風險。",
+      "interpretation": "資金輪動不等於全面信用危機，須區分估值重定價與信用傳染。",
+      "source_url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
       "confidence": "MEDIUM"
     },
     {
       "event_id": "E4",
-      "fact": "Reuters分析AI基建資本支出與估值風險",
-      "interpretation": "科技供應鏈預期可能進一步調整",
-      "source_url": "https://www.reuters.com/commentary/breakingviews/anthropics-2-trln-ipo-may-be-last-hurrah-2026-11-19/",
-      "source_published_at": "2026-11-19",
-      "observed_at": "2026-11-20T07:59:27+08:00",
+      "fact": "Reuters報導中東供應安全憂慮推動油價上漲；黃金下跌，美債殖利率下行。",
+      "interpretation": "能源供給風險與避險流動性需求同時存在，可能使通膨與風險資產走勢分歧。",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
       "confidence": "MEDIUM"
     }
   ],
   "shocks": [
     {
-      "node": "TAIEX",
-      "direction": "DOWN",
-      "magnitude": "-4.40%",
+      "node": "NASDAQ/SOX",
+      "direction": "negative",
+      "magnitude": "HIGH",
       "evidence_event_ids": [
         "E1"
+      ]
+    },
+    {
+      "node": "TAIEX/foreign_flow",
+      "direction": "negative",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E2"
+      ]
+    },
+    {
+      "node": "US10Y",
+      "direction": "down",
+      "magnitude": "10.43bp",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "energy_supply",
+      "direction": "risk_up",
+      "magnitude": "UNQUANTIFIED",
+      "evidence_event_ids": [
+        "E4"
       ]
     }
   ],
   "edges": [
     {
-      "source": "Fed偏鷹",
-      "target": "美元與殖利率",
-      "direction": "RISK_UP",
+      "source": "AI valuation shock",
+      "target": "NASDAQ/SOX",
+      "direction": "risk_up",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
       "decay": "conditional",
       "evidence_ids": [
         "E1",
         "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "美元與殖利率",
-      "target": "NASDAQ/SOX估值",
-      "direction": "RISK_UP",
+      "source": "NASDAQ/SOX",
+      "target": "TSMC ADR/supply chain",
+      "direction": "risk_up",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
       "decay": "conditional",
       "evidence_ids": [
         "E1",
         "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "NASDAQ/SOX估值",
-      "target": "台積電",
-      "direction": "RISK_UP",
-      "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
-      "decay": "conditional",
-      "evidence_ids": [
-        "E1",
-        "E2",
-        "E3"
-      ],
-      "validation_status": "UNVALIDATED"
-    },
-    {
-      "source": "台積電",
+      "source": "TSMC ADR/supply chain",
       "target": "TAIEX/MXF",
-      "direction": "RISK_UP",
+      "direction": "risk_up",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
       "decay": "conditional",
       "evidence_ids": [
         "E1",
         "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "AI資本開支與估值",
-      "target": "科技股調整",
-      "direction": "RISK_UP",
+      "source": "TAIEX/MXF",
+      "target": "News Risk Candidate",
+      "direction": "risk_up",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
       "decay": "conditional",
       "evidence_ids": [
         "E1",
         "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "科技股調整",
-      "target": "亞洲半導體",
-      "direction": "RISK_UP",
+      "source": "Fed rate hike concerns",
+      "target": "discount rate",
+      "direction": "risk_up",
       "weight": null,
       "confidence": "LOW",
-      "lag": "1d-1w",
+      "lag": "1d-1m",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "亞洲半導體",
-      "target": "台灣外資流向",
-      "direction": "RISK_UP",
+      "source": "discount rate",
+      "target": "growth valuation",
+      "direction": "risk_up",
       "weight": null,
       "confidence": "LOW",
-      "lag": "1d-1w",
+      "lag": "1d-1m",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "台灣外資流向",
-      "target": "TAIEX/MXF",
-      "direction": "RISK_UP",
+      "source": "growth valuation",
+      "target": "global equity flows",
+      "direction": "risk_up",
       "weight": null,
       "confidence": "LOW",
-      "lag": "1d-1w",
+      "lag": "1d-1m",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "台股急跌",
-      "target": "穩市措施",
-      "direction": "RISK_DOWN_POSSIBLE",
+      "source": "global equity flows",
+      "target": "Taiwan",
+      "direction": "risk_up",
       "weight": null,
       "confidence": "LOW",
-      "lag": "1d-1w",
+      "lag": "1d-1m",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
         "E3"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "穩市措施",
-      "target": "短線賣壓可能減輕",
-      "direction": "RISK_DOWN_POSSIBLE",
+      "source": "equity liquidation",
+      "target": "Treasury safe-haven demand",
+      "direction": "risk_down_partial",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
-        "E3"
+        "E1"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     },
     {
-      "source": "短線賣壓可能減輕",
-      "target": "波動回落",
-      "direction": "RISK_DOWN_POSSIBLE",
+      "source": "Treasury safe-haven demand",
+      "target": "US10Y decline",
+      "direction": "risk_down_partial",
       "weight": null,
-      "confidence": "LOW",
-      "lag": "1d-1w",
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
       "decay": "conditional",
       "evidence_ids": [
-        "E1",
-        "E2",
-        "E3"
+        "E1"
       ],
-      "validation_status": "UNVALIDATED"
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "US10Y decline",
+      "target": "partial valuation relief",
+      "direction": "risk_down_partial",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Middle East supply concerns",
+      "target": "oil",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "oil",
+      "target": "inflation expectations",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "inflation expectations",
+      "target": "rates/earnings margins",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "rates/earnings margins",
+      "target": "Taiwan energy import costs",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
     }
   ],
   "propagation_paths": [
     {
-      "path_id": "P0",
-      "chain": [
-        "Fed偏鷹",
-        "美元與殖利率",
-        "NASDAQ/SOX估值",
-        "台積電",
-        "TAIEX/MXF"
-      ],
-      "direction": "RISK_UP",
-      "strength": "MEDIUM",
-      "confidence": "LOW",
-      "decay": "conditional",
-      "lag": "1d-1w",
-      "regime": "risk_off",
-      "evidence_ids": [
-        "E1",
-        "E2",
-        "E3"
-      ]
-    },
-    {
       "path_id": "P1",
-      "chain": [
-        "AI資本開支與估值",
-        "科技股調整",
-        "亞洲半導體",
-        "台灣外資流向",
-        "TAIEX/MXF"
+      "nodes": [
+        "AI valuation shock",
+        "NASDAQ/SOX",
+        "TSMC ADR/supply chain",
+        "TAIEX/MXF",
+        "News Risk Candidate"
       ],
-      "direction": "RISK_UP",
-      "strength": "MEDIUM",
-      "confidence": "LOW",
+      "direction": "risk_up",
+      "strength": "HIGH",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
       "decay": "conditional",
-      "lag": "1d-1w",
-      "regime": "risk_off",
-      "evidence_ids": [
+      "regime": "risk-off",
+      "evidence_event_ids": [
         "E1",
         "E2",
         "E3"
@@ -267,656 +308,328 @@
     },
     {
       "path_id": "P2",
-      "chain": [
-        "台股急跌",
-        "穩市措施",
-        "短線賣壓可能減輕",
-        "波動回落"
+      "nodes": [
+        "Fed rate hike concerns",
+        "discount rate",
+        "growth valuation",
+        "global equity flows",
+        "Taiwan"
       ],
-      "direction": "RISK_DOWN_POSSIBLE",
+      "direction": "risk_up",
       "strength": "MEDIUM",
       "confidence": "LOW",
+      "lag": "1d-1m",
       "decay": "conditional",
-      "lag": "1d-1w",
-      "regime": "risk_off",
-      "evidence_ids": [
-        "E1",
-        "E2",
+      "regime": "inflation-sensitive",
+      "evidence_event_ids": [
         "E3"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "equity liquidation",
+        "Treasury safe-haven demand",
+        "US10Y decline",
+        "partial valuation relief"
+      ],
+      "direction": "risk_down_partial",
+      "strength": "MEDIUM",
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "regime": "risk-off",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "path_id": "P4",
+      "nodes": [
+        "Middle East supply concerns",
+        "oil",
+        "inflation expectations",
+        "rates/earnings margins",
+        "Taiwan energy import costs"
+      ],
+      "direction": "risk_up",
+      "strength": "MEDIUM",
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "regime": "supply shock",
+      "evidence_event_ids": [
+        "E4"
       ]
     }
   ],
   "convergence": {
     "nodes": [
-      "USD/rates",
-      "AI valuation",
+      "semiconductor valuation",
+      "risk appetite",
       "Taiwan foreign flows"
     ],
-    "description": "利率預期與AI估值重估匯流，避免同源重複計分"
+    "drivers": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "deduplication": "AI valuation shock and equity liquidation counted as overlapping drivers; do not sum independently"
   },
-  "regime": "risk_off",
+  "regime": "GLOBAL_RISK_OFF_WITH_BOND_SAFE_HAVEN",
   "taiwan_exposure": {
-    "TAIEX": "38426.89",
-    "MXF": "NOT_VERIFIED",
-    "TSMC_ADR": "NOT_VERIFIED",
-    "NASDAQ_SOX": "Nasdaq approx -2.3%; SOX exact NOT_VERIFIED",
-    "US_yields": "NOT_VERIFIED",
-    "USD_TWD": "32.942",
-    "foreign_flow": "-243.12億TWD",
-    "energy_import_cost": "NOT_VERIFIED",
-    "shipping": "NOT_VERIFIED",
-    "taiwan_strait": "NOT_VERIFIED"
+    "taiex_close": 36033.29,
+    "taiex_change": -2393.6,
+    "institutional_net_sell_twd_100m": 522.46,
+    "foreign_net_sell_twd_100m": 94.13,
+    "tsmc_adr": "NOT_VERIFIED",
+    "sox_exact_close": "NOT_VERIFIED",
+    "us10y_pct": 4.948,
+    "usd_twd": "NOT_VERIFIED",
+    "mxf_night": "NOT_VERIFIED",
+    "china_asia": "Regional tech selling reported; exact regional closes not verified",
+    "energy_import": "Oil upside supply risk",
+    "shipping": "Middle East disruptions risk, no Taiwan-specific freight measure",
+    "taiwan_strait": "No independently verified new incident this cutoff"
   },
   "scores": {
     "global": {
-      "value": 89,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 94,
+      "scale": "0-100 experimental research score, not probability",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "科技股估值、美元與風險偏好",
+          "factor": "AI科技股急跌",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "全球股市風險偏好",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "債券避險",
           "weight": null,
           "contribution": null
         }
       ],
       "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
     },
     "taiwan": {
-      "value": 97,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 99,
+      "scale": "0-100 experimental research score, not probability",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "台股-4.4%與外資賣超",
+          "factor": "台股單日跌幅",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "法人賣超",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "美國半導體跌勢",
           "weight": null,
           "contribution": null
         }
       ],
       "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
       ],
-      "uncertainty": "HIGH"
-    },
-    "rates": {
-      "value": 92,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "factor_contributions": [
-        {
-          "factor": "Fed偏鷹",
-          "weight": null,
-          "contribution": null
-        }
-      ],
-      "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
-      ],
-      "uncertainty": "HIGH"
-    },
-    "energy": {
-      "value": 65,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "factor_contributions": [
-        {
-          "factor": "科技股估值、美元與風險偏好",
-          "weight": null,
-          "contribution": null
-        }
-      ],
-      "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
-      ],
-      "uncertainty": "HIGH"
-    },
-    "credit": {
-      "value": 83,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "factor_contributions": [
-        {
-          "factor": "科技股估值、美元與風險偏好",
-          "weight": null,
-          "contribution": null
-        }
-      ],
-      "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
-      ],
-      "uncertainty": "HIGH"
-    },
-    "geopolitical": {
-      "value": 85,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "factor_contributions": [
-        {
-          "factor": "科技股估值、美元與風險偏好",
-          "weight": null,
-          "contribution": null
-        }
-      ],
-      "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
-      ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
     },
     "semiconductor": {
-      "value": 98,
-      "scale": "0-100 research",
-      "formula_version": "none-subjective-v0.6.2",
+      "value": 99,
+      "scale": "0-100 experimental research score, not probability",
       "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
+      "formula_version": "none-subjective-v0.6.2",
       "factor_contributions": [
         {
-          "factor": "Nasdaq下跌與AI估值",
+          "factor": "美國晶片股-10.7%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "AI資本支出疑慮",
           "weight": null,
           "contribution": null
         }
       ],
       "assumptions": [
-        "主觀研究評分，尚不可重現",
-        "不代表下跌機率"
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
       ],
-      "uncertainty": "HIGH"
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 88,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "Fed升息預期",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "美債避險買盤",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "energy": {
+      "value": 78,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "中東供應風險",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "油價波動",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 82,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "風險偏好下降",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "信用利差未驗證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 87,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "中東衝突",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台海當日增量未驗證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
     }
   },
   "news_risk": {
     "candidate": "BLOCK_CANDIDATE",
     "deterministic_rule_applied": false,
     "rule_version": null,
-    "reason": "台股急跌、美元壓力與科技股修正；非正式交易指令"
+    "reason": "Extreme Taiwan and US semiconductor declines; candidate only, not order-blocking instruction"
   },
   "downgrade_conditions": [
-    "SOX止跌",
-    "外資轉買或賣超縮減",
-    "USD/TWD與美債殖利率回穩",
-    "流動性改善"
-  ],
-  "analyst_interpretation": {
-    "headline": "科技股估值與台灣流動性風險匯流",
-    "key_drivers": [
-      {
-        "event_id": "E1",
-        "fact": "台股11/19收38426.89，跌1768.02點，外資賣超243.12億元，三大法人合計賣超461.03億元",
-        "interpretation": "跌勢與流動性壓力匯流",
-        "source_url": "https://www.cna.com.tw/news/afe/202611190200.aspx",
-        "source_published_at": "2026-11-19T15:07:00+08:00",
-        "observed_at": "2026-11-20T07:59:27+08:00",
-        "confidence": "MEDIUM"
-      },
-      {
-        "event_id": "E2",
-        "fact": "11/19新台幣收32.942，盤中曾跌破33；報導指Fed會議紀錄偏鷹",
-        "interpretation": "美元利率壓力可能傳至台股估值",
-        "source_url": "https://money.udn.com/money/story/5616/9889552",
-        "source_published_at": "2026-11-19T17:45:38+08:00",
-        "observed_at": "2026-11-20T07:59:27+08:00",
-        "confidence": "MEDIUM"
-      },
-      {
-        "event_id": "E3",
-        "fact": "Anthropic 11/19 IPO首日收97.17美元，高於83美元發行價；Nasdaq跌約2.3%",
-        "interpretation": "AI個股熱度與科技股整體下跌形成矛盾訊號",
-        "source_url": "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
-        "source_published_at": "2026-11-19",
-        "observed_at": "2026-11-20T07:59:27+08:00",
-        "confidence": "MEDIUM"
-      }
-    ],
-    "previous_day_comparison": "11/19主觀研究Global 84、Taiwan 94、Semiconductor 95；分數不可當概率",
-    "contradictions": [
-      "台股重挫與外資賣超",
-      "Anthropic IPO首日上漲；穩市政策可能減緩壓力"
-    ],
-    "taiwan_mxf_observation": "現貨與外資已核實；夜盤及SOX精確數據未核實"
-  },
-  "scenario_forecasts": [
-    {
-      "scenario_id": "BASE_1d",
-      "horizon": "1d",
-      "horizon_end": "2026-11-23",
-      "narrative": "高波動延續",
-      "causal_chain": [
-        "Fed偏鷹",
-        "美元與殖利率",
-        "NASDAQ/SOX估值",
-        "台積電",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "BASE_1w",
-      "horizon": "1w",
-      "horizon_end": "2026-11-27",
-      "narrative": "高波動延續",
-      "causal_chain": [
-        "Fed偏鷹",
-        "美元與殖利率",
-        "NASDAQ/SOX估值",
-        "台積電",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "BASE_1m",
-      "horizon": "1m",
-      "horizon_end": "2026-12-18",
-      "narrative": "高波動延續",
-      "causal_chain": [
-        "Fed偏鷹",
-        "美元與殖利率",
-        "NASDAQ/SOX估值",
-        "台積電",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_EASING_1d",
-      "horizon": "1d",
-      "horizon_end": "2026-11-23",
-      "narrative": "科技股止跌與資金回流",
-      "causal_chain": [
-        "台股急跌",
-        "穩市措施",
-        "短線賣壓可能減輕",
-        "波動回落"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_EASING_1w",
-      "horizon": "1w",
-      "horizon_end": "2026-11-27",
-      "narrative": "科技股止跌與資金回流",
-      "causal_chain": [
-        "台股急跌",
-        "穩市措施",
-        "短線賣壓可能減輕",
-        "波動回落"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_EASING_1m",
-      "horizon": "1m",
-      "horizon_end": "2026-12-18",
-      "narrative": "科技股止跌與資金回流",
-      "causal_chain": [
-        "台股急跌",
-        "穩市措施",
-        "短線賣壓可能減輕",
-        "波動回落"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_ESCALATION_1d",
-      "horizon": "1d",
-      "horizon_end": "2026-11-23",
-      "narrative": "美元與半導體同步承壓",
-      "causal_chain": [
-        "AI資本開支與估值",
-        "科技股調整",
-        "亞洲半導體",
-        "台灣外資流向",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_ESCALATION_1w",
-      "horizon": "1w",
-      "horizon_end": "2026-11-27",
-      "narrative": "美元與半導體同步承壓",
-      "causal_chain": [
-        "AI資本開支與估值",
-        "科技股調整",
-        "亞洲半導體",
-        "台灣外資流向",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    },
-    {
-      "scenario_id": "RISK_ESCALATION_1m",
-      "horizon": "1m",
-      "horizon_end": "2026-12-18",
-      "narrative": "美元與半導體同步承壓",
-      "causal_chain": [
-        "AI資本開支與估值",
-        "科技股調整",
-        "亞洲半導體",
-        "台灣外資流向",
-        "TAIEX/MXF"
-      ],
-      "observable_triggers": [
-        "SOX方向",
-        "外資流向",
-        "USD/TWD"
-      ],
-      "invalidation_conditions": [
-        "SOX及外資流向反轉"
-      ],
-      "affected_assets": [
-        "TAIEX",
-        "MXF",
-        "TSMC"
-      ],
-      "confidence": "LOW",
-      "source_ids": [
-        "S1",
-        "S2",
-        "S3"
-      ],
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED"
-    }
-  ],
-  "forecast_cards": [
-    {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-20_0759-F1",
-      "issued_at": "2026-11-20T07:59:27+08:00",
-      "data_cutoff_at": "2026-11-20T07:59:27+08:00",
-      "target_market": "TAIEX",
-      "target_metric": "official close",
-      "horizon_end": "2026-11-23",
-      "direction_or_condition": "DOWN_OR_RANGE",
-      "baseline_value": 38426.89,
-      "baseline_timestamp": "2026-11-19T13:30:00+08:00",
-      "baseline_source_id": "S1",
-      "baseline_status": "VERIFIED",
-      "thesis": "市場仍處估值與資金壓力",
-      "causal_drivers": [
-        "E1",
-        "E2",
-        "E3"
-      ],
-      "confirmation_signals": [
-        "科技股弱勢",
-        "外資賣超"
-      ],
-      "invalidation_conditions": [
-        "科技股反彈",
-        "外資轉買"
-      ],
-      "confidence": "LOW",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "resolution_rule": "到期後以官方收盤數據對比原始基準；基準缺漏或方向不精確時標INDETERMINATE，不可事後修改"
-    },
-    {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-20_0759-F2",
-      "issued_at": "2026-11-20T07:59:27+08:00",
-      "data_cutoff_at": "2026-11-20T07:59:27+08:00",
-      "target_market": "SOX",
-      "target_metric": "official close",
-      "horizon_end": "2026-11-27",
-      "direction_or_condition": "UNCERTAIN",
-      "baseline_value": null,
-      "baseline_timestamp": null,
-      "baseline_source_id": null,
-      "baseline_status": "NOT_VERIFIED",
-      "thesis": "市場仍處估值與資金壓力",
-      "causal_drivers": [
-        "E1",
-        "E2",
-        "E3"
-      ],
-      "confirmation_signals": [
-        "科技股弱勢",
-        "外資賣超"
-      ],
-      "invalidation_conditions": [
-        "科技股反彈",
-        "外資轉買"
-      ],
-      "confidence": "LOW",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "resolution_rule": "到期後以官方收盤數據對比原始基準；基準缺漏或方向不精確時標INDETERMINATE，不可事後修改"
-    },
-    {
-      "forecast_id": "AI-TradeCore_Global_Risk_Report_2026-11-20_0759-F3",
-      "issued_at": "2026-11-20T07:59:27+08:00",
-      "data_cutoff_at": "2026-11-20T07:59:27+08:00",
-      "target_market": "US10Y",
-      "target_metric": "official close",
-      "horizon_end": "2026-12-18",
-      "direction_or_condition": "UNCERTAIN",
-      "baseline_value": null,
-      "baseline_timestamp": null,
-      "baseline_source_id": null,
-      "baseline_status": "NOT_VERIFIED",
-      "thesis": "市場仍處估值與資金壓力",
-      "causal_drivers": [
-        "E1",
-        "E2",
-        "E3"
-      ],
-      "confirmation_signals": [
-        "科技股弱勢",
-        "外資賣超"
-      ],
-      "invalidation_conditions": [
-        "科技股反彈",
-        "外資轉買"
-      ],
-      "confidence": "LOW",
-      "assessment_method": "AI_JUDGMENT",
-      "calibration_status": "UNCALIBRATED",
-      "resolution_rule": "到期後以官方收盤數據對比原始基準；基準缺漏或方向不精確時標INDETERMINATE，不可事後修改"
-    }
+    "SOX and Nasdaq recover with breadth over several sessions",
+    "Foreign and dealer selling abates and Taiwan cash liquidity stabilizes",
+    "USD/TWD and FX volatility stabilize on verified quotes",
+    "Oil shipping disruptions subside and yields/credit spreads normalize"
   ],
   "sources": [
     {
       "id": "S1",
-      "url": "https://www.cna.com.tw/news/afe/202611190200.aspx",
-      "published_at": "2026-11-19T15:07:00+08:00"
+      "title": "Reuters global markets 2026-11-20",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
     },
     {
       "id": "S2",
-      "url": "https://money.udn.com/money/story/5616/9889552",
-      "published_at": "2026-11-19T17:45:38+08:00"
+      "title": "Reuters AI tech rout 2026-11-20",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
     },
     {
       "id": "S3",
-      "url": "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
-      "published_at": "2026-11-19"
+      "title": "CNA Taiwan institutional flows 2026-11-20",
+      "url": "https://money.udn.com/money/story/5612/9891471",
+      "published_at": "2026-11-20T15:22:05+08:00",
+      "observed_at": "2026-11-21T07:55:29+08:00"
     },
     {
       "id": "S4",
-      "url": "https://www.reuters.com/commentary/breakingviews/anthropics-2-trln-ipo-may-be-last-hurrah-2026-11-19/",
-      "published_at": "2026-11-19"
+      "title": "AP US market close 2026-11-20",
+      "url": "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
     }
   ],
   "limitations": [
-    "能源、信用利差、美債精確殖利率及MXF夜盤未核實",
-    "分數主觀且未校準",
-    "非投資建議"
+    "Subjective uncalibrated scores; weights null, no reproducible formula",
+    "Taiwan closed on Saturday; no new Taiwan cash session",
+    "TSMC ADR, precise SOX close, USD/TWD, credit spreads and MXF night not independently verified",
+    "No deterministic trading rule executed",
+    "Do not write future outcome into original snapshot"
+  ],
+  "scenario_forecasts": [
+    {
+      "scenario": "stress",
+      "horizon": "next trading week",
+      "condition": "SOX weakness and Taiwan foreign selling persist",
+      "probability": null,
+      "confidence": "LOW",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario": "relief",
+      "horizon": "next trading week",
+      "condition": "semiconductors rebound and foreign flows stabilize",
+      "probability": null,
+      "confidence": "LOW",
+      "calibration_status": "UNCALIBRATED"
+    }
   ]
 }

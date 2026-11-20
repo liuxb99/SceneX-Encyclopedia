@@ -1,0 +1,635 @@
+{
+  "schema_version": "0.6.2",
+  "report_id": "AI-TradeCore_Global_Risk_Report_2026-11-21_0755",
+  "generated_at": "2026-11-21T07:55:29+08:00",
+  "timezone": "Asia/Taipei",
+  "data_cutoff_at": "2026-11-21T07:55:29+08:00",
+  "as_of_market_session": "Taiwan 2026-11-20 cash close; US 2026-11-20 close; weekend 2026-11-21 no Taiwan cash session",
+  "model_version": "global-risk-butterfly-v0.6.2-research-20261121",
+  "calibration_status": "UNCALIBRATED",
+  "events": [
+    {
+      "event_id": "E1",
+      "fact": "11/20 Nasdaq -5.28%, S&P 500 -3.70%, US semiconductor stocks -10.7%; US10Y yield 4.948%, down 10.43bp.",
+      "interpretation": "AI估值修正與避險買債並行；利率下降未能即時抵銷科技股賣壓。",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E2",
+      "fact": "11/20台股收36033.29，跌2393.60點；三大法人賣超522.46億元，外資及陸資賣超94.13億元。",
+      "interpretation": "台灣現貨賣壓與美國隔夜半導體跌勢匯流，下一交易日仍可能出現波動與流動性壓力。",
+      "source_url": "https://money.udn.com/money/story/5612/9891471",
+      "source_published_at": "2026-11-20T15:22:05+08:00",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "HIGH"
+    },
+    {
+      "event_id": "E3",
+      "fact": "Reuters指出AI相關科技股資金流出並輪動至美債及價值股，市場關注通膨與Fed升息風險。",
+      "interpretation": "資金輪動不等於全面信用危機，須區分估值重定價與信用傳染。",
+      "source_url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "MEDIUM"
+    },
+    {
+      "event_id": "E4",
+      "fact": "Reuters報導中東供應安全憂慮推動油價上漲；黃金下跌，美債殖利率下行。",
+      "interpretation": "能源供給風險與避險流動性需求同時存在，可能使通膨與風險資產走勢分歧。",
+      "source_url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "source_published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00",
+      "confidence": "MEDIUM"
+    }
+  ],
+  "shocks": [
+    {
+      "node": "NASDAQ/SOX",
+      "direction": "negative",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "TAIEX/foreign_flow",
+      "direction": "negative",
+      "magnitude": "HIGH",
+      "evidence_event_ids": [
+        "E2"
+      ]
+    },
+    {
+      "node": "US10Y",
+      "direction": "down",
+      "magnitude": "10.43bp",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "node": "energy_supply",
+      "direction": "risk_up",
+      "magnitude": "UNQUANTIFIED",
+      "evidence_event_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "AI valuation shock",
+      "target": "NASDAQ/SOX",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "NASDAQ/SOX",
+      "target": "TSMC ADR/supply chain",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "TSMC ADR/supply chain",
+      "target": "TAIEX/MXF",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "TAIEX/MXF",
+      "target": "News Risk Candidate",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Fed rate hike concerns",
+      "target": "discount rate",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "1d-1m",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "discount rate",
+      "target": "growth valuation",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "1d-1m",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "growth valuation",
+      "target": "global equity flows",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "1d-1m",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "global equity flows",
+      "target": "Taiwan",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "1d-1m",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E3"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "equity liquidation",
+      "target": "Treasury safe-haven demand",
+      "direction": "risk_down_partial",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Treasury safe-haven demand",
+      "target": "US10Y decline",
+      "direction": "risk_down_partial",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "US10Y decline",
+      "target": "partial valuation relief",
+      "direction": "risk_down_partial",
+      "weight": null,
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E1"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "Middle East supply concerns",
+      "target": "oil",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "oil",
+      "target": "inflation expectations",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "inflation expectations",
+      "target": "rates/earnings margins",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    },
+    {
+      "source": "rates/earnings margins",
+      "target": "Taiwan energy import costs",
+      "direction": "risk_up",
+      "weight": null,
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "evidence_ids": [
+        "E4"
+      ],
+      "validation_status": "HYPOTHESIS_UNVALIDATED"
+    }
+  ],
+  "propagation_paths": [
+    {
+      "path_id": "P1",
+      "nodes": [
+        "AI valuation shock",
+        "NASDAQ/SOX",
+        "TSMC ADR/supply chain",
+        "TAIEX/MXF",
+        "News Risk Candidate"
+      ],
+      "direction": "risk_up",
+      "strength": "HIGH",
+      "confidence": "MEDIUM",
+      "lag": "next Taiwan session to 1w",
+      "decay": "conditional",
+      "regime": "risk-off",
+      "evidence_event_ids": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    {
+      "path_id": "P2",
+      "nodes": [
+        "Fed rate hike concerns",
+        "discount rate",
+        "growth valuation",
+        "global equity flows",
+        "Taiwan"
+      ],
+      "direction": "risk_up",
+      "strength": "MEDIUM",
+      "confidence": "LOW",
+      "lag": "1d-1m",
+      "decay": "conditional",
+      "regime": "inflation-sensitive",
+      "evidence_event_ids": [
+        "E3"
+      ]
+    },
+    {
+      "path_id": "P3",
+      "nodes": [
+        "equity liquidation",
+        "Treasury safe-haven demand",
+        "US10Y decline",
+        "partial valuation relief"
+      ],
+      "direction": "risk_down_partial",
+      "strength": "MEDIUM",
+      "confidence": "MEDIUM",
+      "lag": "same day to 1w",
+      "decay": "conditional",
+      "regime": "risk-off",
+      "evidence_event_ids": [
+        "E1"
+      ]
+    },
+    {
+      "path_id": "P4",
+      "nodes": [
+        "Middle East supply concerns",
+        "oil",
+        "inflation expectations",
+        "rates/earnings margins",
+        "Taiwan energy import costs"
+      ],
+      "direction": "risk_up",
+      "strength": "MEDIUM",
+      "confidence": "LOW",
+      "lag": "days-weeks",
+      "decay": "conditional",
+      "regime": "supply shock",
+      "evidence_event_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "convergence": {
+    "nodes": [
+      "semiconductor valuation",
+      "risk appetite",
+      "Taiwan foreign flows"
+    ],
+    "drivers": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "deduplication": "AI valuation shock and equity liquidation counted as overlapping drivers; do not sum independently"
+  },
+  "regime": "GLOBAL_RISK_OFF_WITH_BOND_SAFE_HAVEN",
+  "taiwan_exposure": {
+    "taiex_close": 36033.29,
+    "taiex_change": -2393.6,
+    "institutional_net_sell_twd_100m": 522.46,
+    "foreign_net_sell_twd_100m": 94.13,
+    "tsmc_adr": "NOT_VERIFIED",
+    "sox_exact_close": "NOT_VERIFIED",
+    "us10y_pct": 4.948,
+    "usd_twd": "NOT_VERIFIED",
+    "mxf_night": "NOT_VERIFIED",
+    "china_asia": "Regional tech selling reported; exact regional closes not verified",
+    "energy_import": "Oil upside supply risk",
+    "shipping": "Middle East disruptions risk, no Taiwan-specific freight measure",
+    "taiwan_strait": "No independently verified new incident this cutoff"
+  },
+  "scores": {
+    "global": {
+      "value": 94,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "AI科技股急跌",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "全球股市風險偏好",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "債券避險",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "taiwan": {
+      "value": 99,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "台股單日跌幅",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "法人賣超",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "美國半導體跌勢",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "semiconductor": {
+      "value": 99,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "美國晶片股-10.7%",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "AI資本支出疑慮",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "rates": {
+      "value": 88,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "Fed升息預期",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "美債避險買盤",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "energy": {
+      "value": 78,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "中東供應風險",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "油價波動",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "credit": {
+      "value": 82,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "風險偏好下降",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "信用利差未驗證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    },
+    "geopolitical": {
+      "value": 87,
+      "scale": "0-100 experimental research score, not probability",
+      "assessment_method": "AI_JUDGMENT",
+      "formula_version": "none-subjective-v0.6.2",
+      "factor_contributions": [
+        {
+          "factor": "中東衝突",
+          "weight": null,
+          "contribution": null
+        },
+        {
+          "factor": "台海當日增量未驗證",
+          "weight": null,
+          "contribution": null
+        }
+      ],
+      "assumptions": [
+        "Qualitative relative severity only; no reproducible aggregation or historical calibration"
+      ],
+      "uncertainty": "HIGH",
+      "calibration_status": "UNCALIBRATED"
+    }
+  },
+  "news_risk": {
+    "candidate": "BLOCK_CANDIDATE",
+    "deterministic_rule_applied": false,
+    "rule_version": null,
+    "reason": "Extreme Taiwan and US semiconductor declines; candidate only, not order-blocking instruction"
+  },
+  "downgrade_conditions": [
+    "SOX and Nasdaq recover with breadth over several sessions",
+    "Foreign and dealer selling abates and Taiwan cash liquidity stabilizes",
+    "USD/TWD and FX volatility stabilize on verified quotes",
+    "Oil shipping disruptions subside and yields/credit spreads normalize"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Reuters global markets 2026-11-20",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
+    },
+    {
+      "id": "S2",
+      "title": "Reuters AI tech rout 2026-11-20",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
+    },
+    {
+      "id": "S3",
+      "title": "CNA Taiwan institutional flows 2026-11-20",
+      "url": "https://money.udn.com/money/story/5612/9891471",
+      "published_at": "2026-11-20T15:22:05+08:00",
+      "observed_at": "2026-11-21T07:55:29+08:00"
+    },
+    {
+      "id": "S4",
+      "title": "AP US market close 2026-11-20",
+      "url": "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
+      "published_at": "2026-11-20",
+      "observed_at": "2026-11-21T07:55:29+08:00"
+    }
+  ],
+  "limitations": [
+    "Subjective uncalibrated scores; weights null, no reproducible formula",
+    "Taiwan closed on Saturday; no new Taiwan cash session",
+    "TSMC ADR, precise SOX close, USD/TWD, credit spreads and MXF night not independently verified",
+    "No deterministic trading rule executed",
+    "Do not write future outcome into original snapshot"
+  ],
+  "scenario_forecasts": [
+    {
+      "scenario": "stress",
+      "horizon": "next trading week",
+      "condition": "SOX weakness and Taiwan foreign selling persist",
+      "probability": null,
+      "confidence": "LOW",
+      "calibration_status": "UNCALIBRATED"
+    },
+    {
+      "scenario": "relief",
+      "horizon": "next trading week",
+      "condition": "semiconductors rebound and foreign flows stabilize",
+      "probability": null,
+      "confidence": "LOW",
+      "calibration_status": "UNCALIBRATED"
+    }
+  ]
+}
